@@ -6,14 +6,18 @@ tags = ["changelog"]
 categories = ["general information"]
 lastmod = "2024-09-04"
 +++
+{{% pageinfo %}}
 
-RsyncUI is [signed and notarized](/docs/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
+If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue. All suggestions about enhancements are welcome.
+
+{{% /pageinfo %}}
 
 ## Version 2.1.5 (build 115) - work in progress
 
 The work on next release is commenced. Focus in this version is to make most of functions as context sensitive as possible. An example is within the Rsync parameters view:
 - functions, data and selections are unavaliable until a task is selected
 - the function verify a task, the checker flag, is only presented when a task is selected
+- and as always, refactor and cleanup of code
 
 {{< figure src="/images/215/noselection.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/215/selected.png" alt="" position="center" style="border-radius: 8px;" >}}

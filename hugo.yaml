@@ -1,5 +1,5 @@
 baseURL: https://testrsyncuidocs.netlify.app
-title: RsyncUI
+title: RsyncUI documents
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -48,7 +48,7 @@ languages:
     languageName: English
     title: RsyncUI
     params:
-      description: RsyncUI documentation
+      description: How to use RsyncUI
 markup:
   goldmark:
     parser:

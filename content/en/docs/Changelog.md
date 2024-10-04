@@ -1,15 +1,13 @@
----
-title: Changelog
-description: >
-  This is the Changelog
-date: 2024-10-03
-weight: 3
----
-{{% pageinfo %}}
++++
+author = "Thomas Evensen"
+title = "Changelog"
+date = "2024-09-04"
+tags = ["changelog"]
+categories = ["general information"]
+lastmod = "2024-09-04"
++++
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
-
-{{% /pageinfo %}}
 
 ## Version 2.1.5 (build 115) - work in progress
 

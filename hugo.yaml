@@ -1,5 +1,5 @@
 baseURL: https://example.docsy.dev
-title: Goldydocs
+title: RsyncUI
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -46,9 +46,9 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    title: RsyncUI
     params:
-      description: A Docsy example site
+      description: RsyncUI documentation
 markup:
   goldmark:
     parser:

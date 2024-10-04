@@ -33,7 +33,7 @@ To use my own ssh-key and keypath data, the following is added to RsyncUI in set
 
 ## Ssh keypath and identityfile
 
-How to set ssh keypath and identityfile in [the user configuration](/post/sshsettings/).
+How to set ssh keypath and identityfile in [the user configuration](/docs/sshsettings/).
 
 If global ssh parameters are set, it applies to all configurations. It is possible to set other ssh values on each task. There is a check of the ssh keypath and identityfile. When enabling user selected ssh keypath and identityfile please make sure it is in compliance with:
 

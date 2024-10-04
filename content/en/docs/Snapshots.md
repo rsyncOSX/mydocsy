@@ -41,7 +41,7 @@ RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to th
 
 ## Create a snapshot
 
-To create a snapshot task select `snapshot` as type in [add tasks](/post/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncUI saves the number `n` to the task. The number `n` is the next snapshot number. The number n is used when computing the parameter for rsync
+To create a snapshot task select `snapshot` as type in [add tasks](/docs/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncUI saves the number `n` to the task. The number `n` is the next snapshot number. The number n is used when computing the parameter for rsync
 and is picked up from the configuration.
 
 ## Snapshot administration

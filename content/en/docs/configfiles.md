@@ -27,7 +27,7 @@ If profile is utilized:
 
 # User settings
 
-The [user settings](/post/settings/) are stored as:
+The [user settings](/docs/settings/) are stored as:
 
 `$HOME/.rsyncosx/macserialnumber/rsyncuiconfig.json`
 

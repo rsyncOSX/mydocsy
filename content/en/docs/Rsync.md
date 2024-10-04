@@ -13,7 +13,7 @@ The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia is not equal. Bot
 - macOS Sequoia, `rsync` is a [version 2.6.9 compatible rsync](https://github.com/kristapsdz/openrsync), based on the BSD-licence
     - the command `/usr/bin/rsync --version` displays `openrsync: protocol version 29, rsync version 2.6.9 compatible`.
 
-It is adviced to install the latest version of `rsync`. There is news about the [latest release](https://download.samba.org/pub/rsync/NEWS). Due to new features in rsync and dependency to shared libraries it is not possible to bundle the latest version together with RsyncUI. It is recommended to install rsync as part of Homebrew. In RsyncUI, select settings and then [Rsync and path](/post/rsyncandpath/). If `rsync` is installed by Homebrew, just tick of `Rsync ver3.x` and RsyncUI set the correct path for `rsync`. 
+It is adviced to install the latest version of `rsync`. There is news about the [latest release](https://download.samba.org/pub/rsync/NEWS). Due to new features in rsync and dependency to shared libraries it is not possible to bundle the latest version together with RsyncUI. It is recommended to install rsync as part of Homebrew. In RsyncUI, select settings and then [Rsync and path](/docs/rsyncandpath/). If `rsync` is installed by Homebrew, just tick of `Rsync ver3.x` and RsyncUI set the correct path for `rsync`. 
 
 Install [homebrew](https://brew.sh/) and install the latest version of rsync as part of homebrew. Execute the command:
 
@@ -23,4 +23,4 @@ brew install rsync
 
 ## Snapshots
 
-RsyncUI supports [snapshots](/post/snapshots/) of files. Due to a bug in version 2.6.9 in rsync, the snapshot feature of RsyncUI require to install the latest version of rsync.
+RsyncUI supports [snapshots](/docs/snapshots/) of files. Due to a bug in version 2.6.9 in rsync, the snapshot feature of RsyncUI require to install the latest version of rsync.

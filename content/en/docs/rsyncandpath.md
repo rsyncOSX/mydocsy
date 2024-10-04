@@ -20,7 +20,7 @@ It is advised to install the latest version of `rsync` by Homebrew. RsyncUI disc
 
 ## Path rsync
 
-The path for rsync is set to default values if rsync is installed by Homebrew, using default path or rsync as part your macOS.  [The snapshot feature](/post/snapshots/) require version 3.2.x of rsync.
+The path for rsync is set to default values if rsync is installed by Homebrew, using default path or rsync as part your macOS.  [The snapshot feature](/docs/snapshots/) require version 3.2.x of rsync.
  
  If version of rsync is **not** installed by Homebrew set path to rsync.
 

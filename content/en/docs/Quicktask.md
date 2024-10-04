@@ -6,7 +6,7 @@ tags = ["quick task"]
 categories = ["synchronize"]
 lastmod = "2021-03-18"
 +++
-Use RsyncUI for quickly synchronize files to either local or remote storage. If synchronizing to a remote storage require setup of [passwordless login](/post/remotelogins/).
+Use RsyncUI for quickly synchronize files to either local or remote storage. If synchronizing to a remote storage require setup of [passwordless login](/docs/remotelogins/).
 
 There are two types of quick tasks:
 

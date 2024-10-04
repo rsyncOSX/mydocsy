@@ -1,4 +1,4 @@
-baseURL: https://example.docsy.dev
+baseURL: https://testrsyncuidocs.netlify.app
 title: RsyncUI
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
@@ -194,7 +194,7 @@ module:
   # workspace: docsy.work
   hugoVersion:
     extended: true
-    min: 0.110.0
+    min: 0.135.0
   imports:
     - path: github.com/google/docsy
       disable: false

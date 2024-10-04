@@ -7,7 +7,7 @@ categories = ["general information"]
 lastmod = "2024-09-04"
 +++
 
-RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
+RsyncUI is [signed and notarized](/docs/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
 ## Version 2.1.5 (build 115) - work in progress
 
@@ -60,7 +60,7 @@ There will be a new version 2.1.3 (build 113) including fixes for the above by n
 
 ## Version 2.1.1 (build 111) - 10 September 2024
 
-Built on macOS Sequoia by Xcode 16. Built for macOS Sonoma and macOS Sequoia. The default `rsync` on macOS Sequia is `openrsync`, see info about [rsync versions](/post/rsync/).
+Built on macOS Sequoia by Xcode 16. Built for macOS Sonoma and macOS Sequoia. The default `rsync` on macOS Sequia is `openrsync`, see info about [rsync versions](/docs/rsync/).
 
 ### Updates in version 2.1.1 
 
@@ -75,11 +75,11 @@ The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete
 - RsyncUI is tested on macOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
 - there is a new export and import function, tasks can now be exported and imported between profiles and to new Macs
 	- import and export is by file
-	- some more info [about export and import](/post/exportandimport/)
+	- some more info [about export and import](/docs/exportandimport/)
 - fixed bug if user defined path for `rsync` is *not* valid 
 - restore data only valid from remote servers, restore data from local attached disc by macOS Finder only
 - fixed a bug in parameters to rsync and create SSH-key, default and user define SSH-key
-- fixed a bug in [passwordless logins](/post/ssh/)
+- fixed a bug in [passwordless logins](/docs/ssh/)
 	- example of the rsync command which causes the issue is: `rsync -e ssh -r --list-only thomas@raspberrypi:/backups/Documents/`
 	- should be `rsync --verbose --compress -e ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22 -r --list-only thomas@raspberrypi:/backups/Documents/` if user defined ssh-key and identityfile are enabled
 - it is allowed to change snapshot number in snapshot tasks

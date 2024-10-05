@@ -29,6 +29,14 @@ The work on next release is commenced. Focus in this version is to make most of 
 - the function verify a task, the checker flag, is only presented when a task is selected
 - and as always, refactor and cleanup of code
 
+{{< alert color="warning" >}}
+
+There is still an issue with deafult SSH-parameters and remote servers. The issue is fixed in version 2.1.5. The issue is if destination is a remote server and encryption of data by SSH-tunnel. If there is no information about SSH-keys set, e.g. using default SSH-keys, RsyncUI should append the parameter `-e ssh` to ensure encryption of data by SSH. 
+
+If you are synchronizing data to remote servers in version 2.1.4, a workaround is in RsyncUI settings set SSH : `~/.ssh/id_rsa` and port `22`. This will add the parameter `-e  "ssh -i ~/.ssh/id_rsa -p 22"` to the rsync command.
+
+{{< /alert >}}
+
 {{< figure src="/images/215/noselection.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/215/selected.png" alt="" position="center" style="border-radius: 8px;" >}}
 

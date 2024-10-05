@@ -10,11 +10,17 @@ Using RsyncUI to synchronise data to a remote server requires what is called *pa
 
 {{% pageinfo %}}
 
-Before commencing to use RsyncUI to synchronize data to a *remote server*, it is required to setup and enable passwordless login by ssh-key. It is recommended to setup and enable this by terminal before using RsyncUI. 
+Before commencing to use RsyncUI to synchronize data to a *remote server*, it is required to setup and enable passwordless login by ssh-key. It is recommended to setup and enable this by terminal before using RsyncUI.
 
 {{% /pageinfo %}}
 
 There are two ways to setup and enable passwordless login by ssh-key, either by default values or by your own values. Default values for RSA based ssh-keys are `~/.ssh/id_rsa` and portnumber `22`. 
+
+{{% pageinfo %}}
+
+If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI append the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by SSH. The above applies if destination is a remote server only and to restore data as well.
+
+{{% /pageinfo %}}
 
 ## Important
 

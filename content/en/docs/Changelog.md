@@ -12,6 +12,16 @@ If you miss some functions please drop me an email: thomeven@gmail.com or create
 
 {{% /pageinfo %}}
 
+{{% pageinfo %}}
+
+About refactoring of code. There are in version 2.1.5, to be released later in October 2024, 145 Swift files and 10,422 lines of code.
+RsyncUI is stable, and there are always parts of the code that are not reviewed for a long period of time. When I am reviewing old code,
+I often see there is potential for updates and refactors. Sometimes, not often, a refactor does not work as expected. But most of the time a refactor
+makes the code better and more efficient. By every new release all changes in code compared to previous version are attached to the new release.
+
+{{% /pageinfo %}}
+
+
 ## Version 2.1.5 (build 115) - work in progress
 
 The work on next release is commenced. Focus in this version is to make most of functions as context sensitive as possible. An example is within the Rsync parameters view:

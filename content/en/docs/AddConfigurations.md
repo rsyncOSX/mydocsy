@@ -6,7 +6,11 @@ tags = ["add","profile"]
 categories = ["synchronize"]
 lastmod = "2024-09-03"
 +++
-Always verify, by `--dry-run`, the result of a new task before executing it. After adding the task, select it, in Add task view, select the `checker flag` will execute a `--dry-run`. 
+{{< alert color="warning" >}}
+
+Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it. After adding the task, in Add task view, select the task and then select the `checker flag` for an estimation run.
+
+{{< /alert >}}
 
 A task require as minimum a *local catalog* and a *remote catalog*. 
 

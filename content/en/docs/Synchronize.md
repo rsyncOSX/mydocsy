@@ -7,7 +7,11 @@ categories = ["synchronize"]
 lastmod = "2024-09-02"
 +++
 
-Always verify, by `--dry-run`,  the result of a new task before executing it. The *easiest* way to verify a task, select the task and then the shortcut `⌘E` for estimate.
+{{< alert color="warning" >}}
+
+Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it. After adding the task, in Add task view, select the task and then select the `checker flag` for an estimation run. Or in the main Synchronize view, select the task and the shortcut `⌘E` for estimate.
+
+{{< /alert >}}
 
 The main task view lets you execute *all* or *selected* tasks in one go. A *double click* on a task wil execute a `--dry-run`, the *next double click* will execute the real run. 
 

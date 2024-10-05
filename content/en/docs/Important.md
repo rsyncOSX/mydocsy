@@ -20,8 +20,6 @@ Every time you add a *new task* to RsyncUI, please execute an estimation run and
 
 Default parameters set by RsyncUI to `rsync` can be disabled task by task. If you decide to disable a default parameter, be sure you understand what the result is. A disabled default parameter can be enabled again.
 
-
-
 ## Be safe
 
 `rsync` is a fantastic tool, but used wrong may cause damage and lost data. There are some verification and checks in RsyncUI. It is your responsibilty to verify new tasks in RsyncUI does exactly what you want it to do.

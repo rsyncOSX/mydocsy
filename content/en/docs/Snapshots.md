@@ -6,7 +6,11 @@ tags = ["snapshot"]
 categories = ["synchronize"]
 lastmod = "2020-12-13"
 +++
+{{% pageinfo %}}
+
 Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
+
+{{% /pageinfo %}}
 
 If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink only to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation. In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation for delete. 
 

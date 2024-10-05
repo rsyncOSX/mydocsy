@@ -35,6 +35,14 @@ There is still an issue with default SSH-parameters and remote servers. The issu
 
 If you are synchronizing data to remote servers in version 2.1.4, a workaround is in RsyncUI settings set SSH : `~/.ssh/id_rsa` and port `22`. This will add the parameter `-e  "ssh -i ~/.ssh/id_rsa -p 22"` to the rsync command tunnel data by SSH for encryption.
 
+As an example how the command should be is:
+
+`/opt/homebrew/bin/rsync --archive --verbose --compress --delete  -e ssh --exclude-from=/Users/thomas/Documents/excludersync/exclude-list-github.txt --dry-run --stats /Users/thomas/GitHub/ thomas@raspberrypi:/backups/GitHub`
+
+And with workaround:
+
+`/opt/homebrew/bin/rsync --archive --verbose --compress --delete -e  "ssh -i ~/.ssh/id_rsa -p 22"  --exclude-from=/Users/thomas/Documents/excludersync/exclude-list-github.txt --dry-run --stats /Users/thomas/GitHub/ thomas@raspberrypi:/backups/GitHub/ `
+
 {{< /alert >}}
 
 {{< figure src="/images/215/noselection.png" alt="" position="center" style="border-radius: 8px;" >}}

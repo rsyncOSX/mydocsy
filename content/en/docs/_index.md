@@ -14,7 +14,9 @@ RsyncUI is a pure *SwiftUI* based macOS application, built for macOS Sonoma and 
 
 ## Changelog and install
 
-See the [changelog](/docs/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  RsyncUI can be installed by Homebrew or by [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). 
+See the [changelog](/docs/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  
+
+RsyncUI can be installed by Homebrew or by [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). 
 
 ```bash
 brew install --cask rsyncui
@@ -24,7 +26,9 @@ If installed by Homebrew, the shasum is automatically verified. If downloaded fr
 
 ## New users
 
-If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/) to install. The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
+If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/) to install. 
+
+The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
 
 ##  Local attached disks, remote servers and passwordless logins
 

@@ -50,9 +50,7 @@ One important requirement for macOS apps on Apple App Store is quote Apple: *"To
 
 ## How are these pages built?
 
-Hugo, which is a static site generator, is the web framework serving these pages. The source for this website is hosted on GitHub. Netlify, which runs the web server, automatically picks up changes on the main branch and rebuilds the server. The Hugo theme used is another open-source project hosted on GitHub.
-
-Every time I change or add pages, I commit the changes to GitHub, and Netlify automatically builds the new server in seconds.
+Hugo, which is a static site generator, is the web framework serving these pages. The source for this website is hosted on GitHub. Netlify, which runs the web server, automatically picks up changes on the main branch and rebuilds the server. The Hugo theme is [docsy](https://github.com/google/docsy), another open-source project hosted on GitHub. Every time I change or add pages, I commit the changes to GitHub, and Netlify automatically builds the new server in seconds.
 
 {.text-center}
 

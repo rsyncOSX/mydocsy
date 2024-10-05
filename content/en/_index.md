@@ -9,7 +9,6 @@ title: How to use RsyncUI
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
 RsyncUI is a GUI only on top of rsync. 
 
@@ -18,7 +17,6 @@ RsyncUI is a pure *SwiftUI* based macOS application, built for macOS Sonoma and 
 RsyncUI is signed and notarized by Apple.
 
 {{% /blocks/lead %}}
-
 {{% blocks/section color="dark" type="row" %}}
 
 {.text-center}

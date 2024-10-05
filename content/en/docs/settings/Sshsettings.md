@@ -6,7 +6,7 @@ tags = ["userconfig"]
 categories = ["remote servers"]
 lastmod = "2021-03-11"
 +++
-In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. There is some more info [about ssh](/docs/ssh/).
+In this view you can let RsyncUI assist in creating SSH-keys and setup global SSH keypath and identityfile. SSH-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for SSH-keys or set your own. There is some more info [about SSH and passwordless logins](/docs/ssh/).
 
 {{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 

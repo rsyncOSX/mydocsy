@@ -1,5 +1,7 @@
-baseURL: https://testrsyncuidocs.netlify.app
+baseURL: https://rsyncui.netlify.app
 title: RsyncUI documents
+
+googleAnalytics: G-T68PYCDHJ5
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 

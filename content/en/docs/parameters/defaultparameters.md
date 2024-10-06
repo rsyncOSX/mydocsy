@@ -23,7 +23,7 @@ The following parameters are applied to all tasks and *cannot* be switched off:
 
 {{< alert color="warning" >}}
 
-RsyncUI does *not* officially support `rsync daemon:` but there is possible to tweak and enable a rsync daemon setup. But be aware of a rsync daemon setup does *NOT* encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a SSH protocol, see how to setup [SSH passwordless logins](/docs/ssh/).
+RsyncUI does *not* officially support `rsync daemon:` but there is possible to tweak and enable a rsync daemon setup. But be aware of a rsync daemon setup does *NOT* encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, see how to setup [ssh passwordless logins](/docs/ssh/).
 
 {{< /alert >}}
 

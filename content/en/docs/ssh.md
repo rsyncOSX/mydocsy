@@ -18,7 +18,7 @@ There are two ways to setup and enable passwordless login by ssh-key, either by 
 
 {{% pageinfo %}}
 
-If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI append the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by SSH. The above applies if destination is a remote server only and to restore data as well.
+If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI add the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by ssh. The above applies if destination is a remote server only and to restore data as well.
 
 {{% /pageinfo %}}
 
@@ -26,11 +26,11 @@ If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI a
 
 {{% pageinfo %}}
 
-If default values for ssh-keys are used, it is *not* required to add information about SSH-keys to RsyncUI. It is only necessary to add information if you create your own ssh-keypath and identityfile. 
+If default values for ssh-keys are used, it is *not* required to add information about ssh-keys to RsyncUI. It is only necessary to add information if you create your own ssh-keypath and identityfile. 
 
 {{% /pageinfo %}}
 
-The SSH parameter within the rsync command is, if ssh-keypath and identityfile is set by the user:
+The ssh parameter within the rsync command is, if ssh-keypath and identityfile is set by the user:
 
 ```bash
 -e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
@@ -73,7 +73,7 @@ The ssh functions assist in two methods:
 
 If creating a new public ssh key pair based upon default ssh values for RSA based key, RsyncUI does not add any parameters to the rsync command because this is default values. Ssh parameters to the rsync command is only added if the second method is chosen.
 
-The following commands for creating a new, alternative private and public ssh key pair:
+The following commands for creating a new, alternative private and public ssh-key pair:
 
 ```bash
 cd

@@ -11,7 +11,7 @@ There are a few settings to be tweaked. Settings are saved to permanent store. U
 
 - [Rsync and path](/docs/settings/rsyncandpath/) - rsync and path settings
 - [Monitor and log](/docs/settings/networksettings/) - monitor and log settings
-- [Ssh](/docs/settings/sshsettings) - SSH settings
+- [ssh](/docs/settings/sshsettings) - ssh settings
 - Environment - set environment variables for ssh, there are a few variables to set, RsyncUI only support one environment variable
 
 The *Info* shows version of rsync in use and the path for storing and reading configurations to permanent store.

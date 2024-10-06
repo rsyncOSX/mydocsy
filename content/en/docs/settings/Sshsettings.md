@@ -6,11 +6,17 @@ tags = ["userconfig"]
 categories = ["remote servers"]
 lastmod = "2021-03-11"
 +++
-In this view you can let RsyncUI assist in creating SSH-keys and setup global SSH keypath and identityfile. SSH-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for SSH-keys or set your own. There is some more info [about SSH and passwordless logins](/docs/ssh/).
+{{% pageinfo %}}
+
+In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh-keypath and identityfile. ssh-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for ssh-keys or set your own. 
+
+{{% /pageinfo %}}
+
+There is some more info [about ssh and passwordless logins](/docs/ssh/).
 
 {{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-SSH keys
+ssh keys
 
 {{< figure src="/images/usersettings/sshkeys.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -38,4 +44,4 @@ where
 - `-i` is the ssh keypath and identityfile
 - `-p` is the port number ssh communicates through, default port 22
 
-If global ssh parameters are set, it applies to *all configurations*. It is possible to set other ssh values on each task. Global SSH keypath and identityfile in use.
+If global ssh parameters are set, it applies to *all configurations*. It is possible to set other ssh values on each task. Global ssh keypath and identityfile in use.

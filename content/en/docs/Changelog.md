@@ -16,8 +16,10 @@ If you miss some functions please drop me an email: thomeven@gmail.com or create
 
 About refactoring of code. There are in version 2.1.5, to be released later in October 2024, 145 Swift files and 10,422 lines of code.
 RsyncUI is stable, and there are always parts of the code that are not reviewed for a long period of time. When I am reviewing old code,
-I often see there is potential for updates and refactors. Sometimes, not often, a refactor does not work as expected. But most of the time a refactor
-makes the code better and more efficient. By every new release all changes in code compared to previous version are attached to the new release.
+I often see there is potential for updates and refactors. Sometimes a refactor does not work as expected. But most of the time a refactor
+makes the code better and more efficient. 
+
+By every new release all changes in code compared to previous version are attached to the new release.
 
 {{% /pageinfo %}}
 
@@ -31,9 +33,13 @@ The work on next release is commenced. Focus in this version is to make most of 
 
 {{< alert color="warning" >}}
 
-There is still an issue with default SSH-parameters and remote servers. The issue is fixed in version 2.1.5. The issue is if destination is a remote server and encryption of data by SSH-tunnel. If there is no information about SSH-keys set, e.g. using default SSH-keys, RsyncUI should append the parameter `-e ssh` to ensure encryption of data by SSH. 
+There is still an issue with default ssh-parameters and remote servers. The issue is fixed in version 2.1.5. 
+The issue is if destination is a remote server and encryption of data by ssh-tunnel. If there is no information 
+about ssh-keys set, e.g. using default ssh-keys, RsyncUI should add the parameter `-e ssh` to ensure encryption of data by ssh. 
 
-If you are synchronizing data to remote servers in version 2.1.4, a workaround is in RsyncUI settings, set SSH : `~/.ssh/id_rsa` and port `22`. This will add the parameter `-e  "ssh -i ~/.ssh/id_rsa -p 22"` to the rsync command tunnel data by SSH for encryption.
+If you are synchronizing data to remote servers in version 2.1.4 using default values for ssh-keys, a workaround is in RsyncUI settings, 
+set ssh: `~/.ssh/id_rsa` and port `22`. This will add the parameter `-e  "ssh -i ~/.ssh/id_rsa -p 22"` to the rsync command tunnel data by ssh for encryption. 
+You may also set the ssh-data within the Rsync parameters view on the task itself. 
 
 As an example how the command should be:
 
@@ -74,17 +80,17 @@ The following are updates:
 
 ## Version 2.1.3 (build 113) - 16 September 2024
 
-Sorry for many updates in a few days, but sometime a previous quick bugfix is not working as expected. Which was the case with previous release. There has been a few updates in this release. Mostly in computing arguments for SSH-parameters, applies for remote servers only. And there has also been a couple of GUI updates as well.
+Sorry for many updates in a few days, but sometime a previous quick bugfix is not working as expected. Which was the case with previous release. There has been a few updates in this release. Mostly in computing arguments for ssh-parameters, applies for remote servers only. And there has also been a couple of GUI updates as well.
 
 Next release again will probably be in a month or two, depending if no other bugs are found within this period.
 
 ## Version 2.1.2 (build 112) - 13 September 2024
 
-Fixed a bug in SSH-parameters, applies for using remote servers only. 
+Fixed a bug in ssh-parameters, applies for using remote servers only. 
 
-After some more testing, using Swift Testing, I discovered a few more issues about SSH-parameters. Local set SSH-parameters rules global set SSH-parameters.  Local SSH-sshkeypath or SSH-port should only set one of them even if there are global set SSH-sshkeypath and SSH-port.
+After some more testing, using Swift Testing, I discovered a few more issues about ssh-parameters. Local set ssh-parameters rules global set ssh-parameters.  Local ssh-sshkeypath or ssh-port should only set one of them even if there are global set ssh-sshkeypath and ssh-port.
 
-SSH parameters in version 2.1.2 (build 112) does not work as expected. But default values for RSA based SSH-key and identityfile, `~/.ssh/id_rsa` and SSH-port = `22`, are automatically picked up by `rsync`. This is a workaround until version 2.1.3 is released in some days.
+ssh parameters in version 2.1.2 (build 112) does not work as expected. But default values for RSA based ssh-key and identityfile, `~/.ssh/id_rsa` and ssh-port = `22`, are automatically picked up by `rsync`. This is a workaround until version 2.1.3 is released in some days.
 
 There will be a new version 2.1.3 (build 113) including fixes for the above by next week, the week starting with Monday 16 September 2024. The package [RsyncArguments](https://github.com/rsyncOSX/RsyncArguments) and tests are updated.
 
@@ -108,7 +114,7 @@ The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete
 	- some more info [about export and import](/docs/exportandimport/)
 - fixed bug if user defined path for `rsync` is *not* valid 
 - restore data only valid from remote servers, restore data from local attached disc by macOS Finder only
-- fixed a bug in parameters to rsync and create SSH-key, default and user define SSH-key
+- fixed a bug in parameters to rsync and create ssh-key, default and user define ssh-key
 - fixed a bug in [passwordless logins](/docs/ssh/)
 	- example of the rsync command which causes the issue is: `rsync -e ssh -r --list-only thomas@raspberrypi:/backups/Documents/`
 	- should be `rsync --verbose --compress -e ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22 -r --list-only thomas@raspberrypi:/backups/Documents/` if user defined ssh-key and identityfile are enabled
@@ -120,8 +126,8 @@ The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete
 The new version number of RsyncUI is ver 2.1.1 build 111 due to using Swift Package Manager (SPM) and Swift Testing is a significant change to increase quality of code. By using SPM, parts of the source code in RsyncUI is extraced and created as packages.
 
 - [RsyncArguments](https://github.com/rsyncOSX/RsyncArguments) - create parameters to `rsync` from configurations
-- [SSHCreateKey](https://github.com/rsyncOSX/SSHCreateKey) - assist to create SSH identityfile and key in RsyncUI
-	- create RSA based SSH-key for default and user defined keys including SSH-port number
+- [sshCreateKey](https://github.com/rsyncOSX/sshCreateKey) - assist to create ssh identityfile and key in RsyncUI
+	- create RSA based ssh-key for default and user defined keys including ssh-port number
 - [DecodeEncodeGeneric](https://github.com/rsyncOSX/DecodeEncodeGeneric) - generic code for Decode and Encode JSON data
 - [ParseRsyncOutput](https://github.com/rsyncOSX/ParseRsyncOutput) - parse and extract numbers from output from `rsync`, used in view for details and log result of a synchronize tasks
 

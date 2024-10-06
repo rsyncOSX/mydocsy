@@ -13,11 +13,11 @@ RsyncUI implements a few default parameters which are fine for synchronize data.
 
 {{% /pageinfo %}}
 
-The user can remove default parameters if required. Parameters to rsync are saved by task including a local SSH parameter on the task. The local SSH parameter overrides a global SSH parameter if set.
+The user can remove default parameters if required. Parameters to rsync are saved by task including a local ssh parameter on the task. The local ssh parameter overrides a global ssh parameter if set.
 
 {{% pageinfo %}}
 
-If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI append the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by SSH. The above applies if destination is a remote server only and to restore data as well.
+If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI append the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by ssh. The above applies if destination is a remote server only and to restore data as well.
 
 {{% /pageinfo %}}
 

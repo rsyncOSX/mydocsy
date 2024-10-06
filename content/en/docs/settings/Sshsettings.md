@@ -8,9 +8,7 @@ lastmod = "2021-03-11"
 +++
 {{% pageinfo %}}
 
-In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh-keypath and identityfile. ssh-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for ssh-keys or set your own. 
-
-There is some more info about [passwordless logins](/docs/ssh/).
+In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh-keypath and identityfile. ssh-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for ssh-keys or set your own. There is some more info about [passwordless logins](/docs/ssh/).
 
 {{% /pageinfo %}}
 
@@ -30,7 +28,7 @@ Default values for RSA based ssh-key is `~/.ssh/id_rsa` and portnumber `22`. It 
 
 ## Set ssh-keypath and identityfile
 
-The user can set a selected ssh keypath and identityfile which applies to all configurations.
+The user can set a selected ssh-keypath and identityfile which applies to all configurations.
 
 - ssh-keypath + identityfile, user selected if other than default
 - portnumber, which `ssh` communicates through
@@ -43,7 +41,7 @@ If global values are set, this is what the ssh parameter within the rsync comman
 
 where
 
-- `-i` is the ssh keypath and identityfile
+- `-i` is the ssh-keypath and identityfile
 - `-p` is the port number ssh communicates through, default port 22
 
-If global ssh parameters are set, it applies to *all configurations*. It is possible to set other ssh values on each task. Global ssh keypath and identityfile in use.
+If global ssh parameters are set, it applies to *all configurations*. It is possible to set other ssh values on each task. Global ssh-keypath and identityfile in use.

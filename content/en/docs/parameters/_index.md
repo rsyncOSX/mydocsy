@@ -26,7 +26,7 @@ If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI a
 The by task ssh parameters overrides global ssh parameters set in the user config.
 
 - ssh port, set if ssh uses other port than standard port 22
-- the ssh keypath and identity file, normally this is `.ssh/id_rsa`, set  only if other keypath and identity file to be used by ssh
+- the ssh-keypath and identity file, normally this is `.ssh/id_rsa`, set  only if other keypath and identity file to be used by ssh
 
 ## Adding parameters to rsync
 

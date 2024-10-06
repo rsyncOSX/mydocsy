@@ -19,14 +19,14 @@ If `syncremote` the localcatalog in the form is the remote data and remotecatalo
 
 After entering data, default is a `--dry-run` task. It is adviced to inspect the result before the real run.
 
-#### Catalog parameters
+### Catalog parameters
 - **Local catalog**: required field
 - **Remote catalog**: required field
   - a `~` is expanded as the home catalog with full path by the remote operating system
   - the remote catalog might also be added by full path, depends where the backup catalog is placed on remote server
   - the backup catalog might also be a local catalog on a local attached disk
 
-#### Remote parameters
+### Remote parameters
 - **Remote username**:
   - username for login to remote server
 - **Remote server**: 

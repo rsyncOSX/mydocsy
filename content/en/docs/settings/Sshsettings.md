@@ -20,13 +20,13 @@ ssh keys
 
 {{< figure src="/images/usersettings/sshkeys.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Local ssh-key is present
+### Local ssh-key is present
 
 If `on` RsyncUI has found a local ssh-key.
 
 Default values for RSA based ssh-key is `~/.ssh/id_rsa` and portnumber `22`. It is not required to set your own values for ssh-keypath and identityfile if default values are used. If there are no local ssh-key selecting the `Create` button will create the keys. If ssh-key is present, either default values or by the user set ssh-keypath and identityfile, RsyncUI will mark it.
 
-## Set ssh-keypath and identityfile
+### Set ssh-keypath and identityfile
 
 The user can set a selected ssh-keypath and identityfile which applies to all configurations.
 

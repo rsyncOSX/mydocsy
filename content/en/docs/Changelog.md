@@ -24,7 +24,7 @@ By every new release all changes in code compared to previous version are attach
 {{% /pageinfo %}}
 
 
-## Version 2.1.5 (build 115) - work in progress
+### Version 2.1.5 (build 115) - work in progress
 
 The work on next release is commenced. Focus in this version is to make most of functions as context sensitive as possible. An example is within the Rsync parameters view:
 - functions, data and selections are unavaliable until a task is selected
@@ -56,7 +56,7 @@ and with adviced workaround:
 
 Next version to be released late in October 2024. The main repository is updated with latest commits. Critical bugs will of course be fixed as soon as possible.
 
-## Version 2.1.4 (build 114) - 27 September 2024
+### Version 2.1.4 (build 114) - 27 September 2024
 
 The following are updates:
 
@@ -78,13 +78,13 @@ The following are updates:
 	- from Swift 5 there is a unified logging feature `OSLog`. 
 	- the OSLogs might be read by using the macOS Console app, set the Action in Console app menu to `Include Info Messages` and enter `no.blogspot.RsyncUI` as subsystem within the search field
 
-## Version 2.1.3 (build 113) - 16 September 2024
+### Version 2.1.3 (build 113) - 16 September 2024
 
 Sorry for many updates in a few days, but sometime a previous quick bugfix is not working as expected. Which was the case with previous release. There has been a few updates in this release. Mostly in computing arguments for ssh-parameters, applies for remote servers only. And there has also been a couple of GUI updates as well.
 
 Next release again will probably be in a month or two, depending if no other bugs are found within this period.
 
-## Version 2.1.2 (build 112) - 13 September 2024
+### Version 2.1.2 (build 112) - 13 September 2024
 
 Fixed a bug in ssh-parameters, applies for using remote servers only. 
 
@@ -94,11 +94,11 @@ ssh parameters in version 2.1.2 (build 112) does not work as expected. But defau
 
 There will be a new version 2.1.3 (build 113) including fixes for the above by next week, the week starting with Monday 16 September 2024. The package [RsyncArguments](https://github.com/rsyncOSX/RsyncArguments) and tests are updated.
 
-## Version 2.1.1 (build 111) - 10 September 2024
+### Version 2.1.1 (build 111) - 10 September 2024
 
 Built on macOS Sequoia by Xcode 16. Built for macOS Sonoma and macOS Sequoia. The default `rsync` on macOS Sequia is `openrsync`, see info about [rsync versions](/docs/rsync/).
 
-### Updates in version 2.1.1 
+#### Updates in version 2.1.1 
 
 The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete.
 
@@ -133,7 +133,7 @@ The new version number of RsyncUI is ver 2.1.1 build 111 due to using Swift Pack
 
 By SPM and Swift Testing, the code for RsyncUI is modularized, isolated, and tested before committing changes. 
 
-## Version 1.9.2 (build 100) - 11 June 2024
+### Version 1.9.2 (build 100) - 11 June 2024
 
 This is most likely the last release before macOS 15, macOS Sequoia is released sometime after the summer. Bugs will be fixed, though, if found. The work with Swift 6 and Xcode 16 beta commenced today. The major work in next release 2.0.0 (build 101) is compliance with the new concurrency model of Swift 6. And there are some new things there for me to learn and understand.
 
@@ -145,7 +145,7 @@ This is most likely the last release before macOS 15, macOS Sequoia is released 
     - last twenty lines of output from rsync which includes a summary of the task
 - the Settingsview is updated
 
-## Previous releases
+### Previous releases
 
 Dates and version only
 

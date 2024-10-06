@@ -11,14 +11,14 @@ Settings are automatically saved when changed.
 
 {{< figure src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Version rsync
+### Version rsync
 
 It is advised to install the latest version of `rsync` by Homebrew. RsyncUI discover what type of Mac you are on. The default path for Homebrew is: 
 
 - Intel based Mac is: `/usr/local/bin`
 - on the Apple Silicon: `/opt/homebrew/bin`.
 
-## Path rsync
+### Path rsync
 
 The path for rsync is set to default values if rsync is installed by Homebrew, using default path or rsync as part your macOS.  [The snapshot feature](/docs/snapshots/) require version 3.2.x of rsync.
  
@@ -29,16 +29,16 @@ The path for rsync is set to default values if rsync is installed by Homebrew, u
 
 
 
-## Path for restore
+### Path for restore
 
 - preset temporary path for restoring single files and catalogs
 - preset temporary path for a full restore
 
-## Mark days after
+### Mark days after
 
 Tasks with older execute date than number of days are marked red.
 
-## Backup configurations
+### Backup configurations
 
 You can any time backup the current setup, configurations and logs including all profiles by the `wrench` button. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`. 
 

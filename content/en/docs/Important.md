@@ -8,7 +8,7 @@ lastmod = "2024-01-10"
 +++
 If you are new to the command line tool `rsync` and RsyncUI please read this information. RsyncUI is a GUI only on top of the command line tool. It is `rsync` which does the actual work, not RsyncUI
 
-## The --delete parameter and new tasks
+### The --delete parameter and new tasks
 
 The `--delete` parameter is a *default parameter* set by RsyncUI. The parameter instructs rsync too keep the *source* and *destination* in sync. The parameter instructs rsync to *delete* all files in the destination which are not present in the source. 
 
@@ -20,7 +20,7 @@ Every time you add a *new task* to RsyncUI, please execute an estimation run and
 
 Default parameters set by RsyncUI to `rsync` can be disabled task by task. If you decide to disable a default parameter, be sure you understand what the result is. A disabled default parameter can be enabled again.
 
-## Be safe
+### Be safe
 
 `rsync` is a fantastic tool, but used wrong may cause damage and lost data. There are some verification and checks in RsyncUI. It is your responsibilty to verify new tasks in RsyncUI does exactly what you want it to do.
 
@@ -42,7 +42,7 @@ If you change it, there are some cleanups to do before executing next snapshot s
 
 If you let RsyncUI do the job and you are most likely safe. RsyncUI is a free and opensource application, please read the [MIT licence](https://github.com/rsyncOSX/RsyncUI/blob/main/Licence.MD).
 
-## Aborting tasks
+### Aborting tasks
 
 Please be aware it is an external task not controlled by RsyncUI, which executes the command line tool `rsync`. RsyncUI is monitoring the task for progress and termination. 
 
@@ -52,7 +52,7 @@ The user can abort a tasks at any time. Please let the abort to finish and clean
 
 {{< /alert >}}
 
-## RsyncUI as your main tool for backup
+### RsyncUI as your main tool for backup
 
 {{< alert >}}
 

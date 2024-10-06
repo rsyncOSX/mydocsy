@@ -25,7 +25,7 @@ tunneled and encrypted by ssh. The above applies if destination is a remote serv
 
 {{% /pageinfo %}}
 
-## Important
+### Important
 
 {{% pageinfo %}}
 
@@ -41,7 +41,7 @@ The ssh parameter within the rsync command is, if ssh-keypath and identityfile i
 ```
 where `-i ~/.ssh_keypath/identityfile` is the ssh-keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22. 
 
-## Example
+### Example
 
 As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the RSA based identityfile is `rsyncosx`, default port `22`. 
 The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi server is:
@@ -56,7 +56,7 @@ To use my own ssh-key and keypath data, the following is added to RsyncUI in set
 
 {{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Ssh-keypath and identityfile
+### Ssh-keypath and identityfile
 
 How to set ssh-keypath and identityfile in [the user configuration](/docs/sshsettings/).
 
@@ -68,7 +68,7 @@ If global ssh parameters are set, it applies to all configurations. It is possib
 
 The prefix has to be `~` followed by a `/`. RsyncUI will verify that the ssh-keypath is prefix by `~` and at least two `/` before saving the new keypath.
 
-## Tools used
+### Tools used
 
 The following ssh tools are used: `ssh-keygen` and `ssh-copy-id`. RsyncUI only assist in setting up RSA based key.
 

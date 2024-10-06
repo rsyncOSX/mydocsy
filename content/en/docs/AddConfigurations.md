@@ -14,34 +14,34 @@ Always verify, by `--dry-run` which is an estimation run,  the result of a new t
 
 A task require as minimum a *local catalog* and a *remote catalog*. 
 
-## Enter tasks
+### Enter tasks
 
 Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or the `checkmark` icon on the toolbar will add a new task. Tasks are saved to permanent storage after each entry.
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Update 
+### Update 
 
 To update a task, select the task and to save changes, select the `checkmark` icon on the toolbar or use the `Enter` key.
 
-## Copy and paste
+### Copy and paste
 
 Shortcuts for copy and paste are `⌘C` and  `⌘V` or from the Edit menu. The copy and paste makes a copy of selected tasks and marks them with copy. The copy inlcudes all parameters of the copied tasks.
 
 {{< figure src="/images/add/copy.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/add/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Delete
+### Delete
 
 Select tasks to be deleted and delete from the Edit menu or the `backspace` button.
 
 {{< figure src="/images/add/delete.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Data about tasks
+### Data about tasks
 
 The following are data about tasks:
 
-### Task
+#### Task
 
 - `synchronize`, which is default and keeps source and destination in sync
 - `snapshot`, save changes and deletes ahead of a synchronize
@@ -49,25 +49,25 @@ The following are data about tasks:
 - Dont´t add `/`
   - by default a trailing `/` is added to both source and destination
 
-### Catalog parameters
+#### Catalog parameters
 
 - Local catalog: required field
 - Remote catalog: required field
   - the backup catalog might also be a local catalog on a local attached disk
 
-### Synchronize ID
+#### Synchronize ID
 
 - Synchronize ID:
   - informal tag for the task
 
-### Remote parameters
+#### Remote parameters
 
 - Remote username:
   - username for login to remote server
 - Remote server:
   - either server name or IP-address for remote server
   
-## Catalogs
+### Catalogs
 
 Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the mounted volumes are presented. Select the homecatalog and mounted volume, return to main Task view and RsyncUI suggest some values. 
 

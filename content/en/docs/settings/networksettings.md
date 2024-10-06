@@ -11,7 +11,7 @@ Settings are automatically saved when changed.
 
 {{< figure src="/images/usersettings/network.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Monitor network, error and log settings
+### Monitor network, error and log settings
 
 - Monitor network
     - monitor the network connection during execution of tasks

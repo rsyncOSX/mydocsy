@@ -40,10 +40,8 @@ Tasks with older execute date than number of days are marked red.
 
 ## Backup configurations
 
-You can any time backup the current setup, configurations and logs including all profiles by the `wrench` button. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`.
+You can any time backup the current setup, configurations and logs including all profiles by the `wrench` button. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`. 
 
-`$HOME/Documents/RsyncUIcopy-05-06-2021/08/21`
-
-When opening the catalog it might be seen as empty. The copy is a `.catalog` and your filebrowser might not see such catalogs.
+The backups is located in your Documents catalog: `$HOME/Documents/RsyncUIcopy-05-06-2021/08/21`
 
 

@@ -1,8 +1,8 @@
 +++
 author = "Thomas Evensen"
 date = "2021-04-16"
-title = "Passwordless logins by ssh-keys"
-tags = ["passwordless","ssh-keys"]
+title = "Passwordless login"
+tags = ["passwordless","ssh-key"]
 categories = ["remote servers"]
 lastmod = "2020-04-16"
 +++

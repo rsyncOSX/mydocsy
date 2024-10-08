@@ -8,7 +8,7 @@ lastmod = "2021-03-11"
 +++
 {{% pageinfo %}}
 
-In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh-keypath and identityfile. ssh-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for ssh-keys or set your own. There is some more info about [passwordless logins](/docs/ssh/).
+In this view you can let RsyncUI assist in creating ssh-key and setup global ssh-keypath and identityfile. ssh-key is requiered for passwordless logins to remotes servers. You can either utilizing default values for ssh-key or set your own. There is some more info about [passwordless logins](/docs/ssh/).
 
 {{% /pageinfo %}}
 

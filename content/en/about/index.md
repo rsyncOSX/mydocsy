@@ -10,11 +10,11 @@ menu: {main: {weight: 10}}
 
 {{% blocks/section %}}
 
-Hi, I am Thomas, e-mail: <thomeven@gmail.com>, the developer of RsyncUI (and RsyncOSX which was archived and not maintained August 2024). The development of RsyncOSX commenced early in 2016 as a personal project to learn Swift. And the development of RsyncUI began late in 2020 to learn SwiftUI. I have a master's degree in computing science, but I am not a *professional developer*. I did my master's in the days when Linux was released in 1991 and the Internet became a public service. And a few years ahead of that, in 1989, the Web was invented at Cern.
+Hi, I am Thomas, e-mail: <thomeven@gmail.com>, the developer of RsyncUI and RsyncOSX which was archived and not maintained August 2024. The development of RsyncOSX commenced early in 2016 as a personal project to learn Swift. And the development of RsyncUI began late in 2020 to learn SwiftUI. I have a master's degree in computing science, but I am not a *professional developer*. I did my master's in the days when Linux was released in 1991 and the Internet became a public service. And a few years ahead of that, in 1989, the Web was invented at Cern.
 
-There is one developer only, me, and I am doing what I can to keep RsyncUI as stable and user-friendly as possible. I am not a UI designer, and some users might find the UI complicated and less user-friendly. The maintenance and development of RsyncUI is one of my hobbies. If you like using RsyncUI, please consider giving me a star on the GitHub repository. Every single star is motivation for me to continue developing and keeping the apps updated for the latest version of macOS.
+There is one developer only, me, and I am doing what I can to keep RsyncUI as stable and user-friendly as possible. I am not a UI designer, and some users might find the UI complicated and less user-friendly. The maintenance and development of RsyncUI is one of my hobbies. If you like using RsyncUI, please consider giving me a star on the GitHub repository. Every single star is motivation for me to continue development of RsyncUI.
 
-In May 2022, I retired from work at the age of 62. I am [a passionate photographer](https://photosbythomas.netlify.app/) of birds and love staying in the Norwegian mountains. Grandkids, photography, continuing maintenance of my macOS applications, and cross-country skiing are keeping me busy.
+In May 2022, I retired from work at the age of 62. I am [a passionate photographer](https://photosbythomas.netlify.app/) of birds and love staying in the Norwegian mountains. Grandkids, photography, development of RsyncUI and cross-country skiing are some activities which keep me busy.
 
 {.text-center}
 
@@ -30,7 +30,7 @@ I am learning almost every day and by every new release of Swift, SwiftUI and Xc
 
 #### No right or wrong
 
-I also believe there is no *right* or *wrong* in development. There are literally hundreds of guidelines out there for writing code. But each developer and team chooses their way to develop based on their skills and what they want to achieve. What I also experience is how my own understanding of OO, declarative programming, Swift and SwiftUI is growing. I would not write code today as I did when I commenced my project in 2015. But still, I am not a professional developer, and there are several topics within Swift and SwiftUI that I do not understand. But I am capable of learning; if I spend enough time on a topic, there is a good probability that I will get the idea.
+I believe there is no *right* or *wrong* in development. There are literally hundreds of guidelines out there for writing code. But each developer and team chooses their way to develop based on their skills and what they want to achieve. What I also experience is how my own understanding of OO, declarative programming, Swift and SwiftUI is growing. I would not write code today as I did when I commenced my project in 2015. But still, I am not a professional developer, and there are several topics within Swift and SwiftUI that I do not understand. But I am capable of learning; if I spend enough time on a topic, there is a good probability that I will get the idea.
 
 #### Why not App Store
 

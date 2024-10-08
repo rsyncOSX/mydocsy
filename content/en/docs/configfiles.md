@@ -19,11 +19,7 @@ If profile is utilized:
 
 ### Log records
 
-`$HOME/.rsyncosx/macserialnumber/logrecords.json`
-
-If profile is utilized:
-
-`$HOME/.rsyncosx/macserialnumber/profile/logrecords.json`
+`$HOME/.rsyncosx/macserialnumber/<profile>/logrecords.json`
 
 ### User settings
 

@@ -35,9 +35,9 @@ The work on next release is commenced. Focus in this version is to make most of 
 
 There is still an issue with default ssh-parameters and remote servers. The issue is fixed in version 2.1.5. 
 The issue is if destination is a remote server and encryption of data by ssh-tunnel. If there is no information 
-about ssh-keys set, e.g. using default ssh-keys, RsyncUI should add the parameter `-e ssh` to ensure encryption of data by ssh. 
+about ssh-key set, e.g. using default ssh-key, RsyncUI should add the parameter `-e ssh` to ensure encryption of data by ssh. 
 
-If you are synchronizing data to remote servers in version 2.1.4 using default values for ssh-keys, a workaround is in RsyncUI settings, 
+If you are synchronizing data to remote servers in version 2.1.4 using default values for ssh-key, a workaround is in RsyncUI settings, 
 set ssh: `~/.ssh/id_rsa` and port `22`. This will add the parameter `-e  "ssh -i ~/.ssh/id_rsa -p 22"` to the rsync command tunnel data by ssh for encryption. 
 You may also set the ssh-data within the Rsync parameters view on the task itself. 
 
@@ -88,7 +88,7 @@ Next release again will probably be in a month or two, depending if no other bug
 
 Fixed a bug in ssh-parameters, applies for using remote servers only. 
 
-After some more testing, using Swift Testing, I discovered a few more issues about ssh-parameters. Local set ssh-parameters rules global set ssh-parameters.  Local ssh-sshkeypath or ssh-port should only set one of them even if there are global set ssh-sshkeypath and ssh-port.
+After some more testing, using Swift Testing, I discovered a few more issues about ssh-parameters. Local set ssh-parameters rules global set ssh-parameters.  Local ssh-keypath or ssh-port should only set one of them even if there are global set ssh-keypath and ssh-port.
 
 ssh parameters in version 2.1.2 (build 112) does not work as expected. But default values for RSA based ssh-key and identityfile, `~/.ssh/id_rsa` and ssh-port = `22`, are automatically picked up by `rsync`. This is a workaround until version 2.1.3 is released in some days.
 

@@ -8,7 +8,7 @@ lastmod = "2024-09-06"
 +++
 {{% pageinfo %}}
 
-RsyncUI is a pure *SwiftUI* based macOS application, built for macOS Sonoma and later, utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.
+RsyncUI is a pure *SwiftUI*, *Swift* based macOS application, built for macOS Sonoma and later, utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.
 
 {{% /pageinfo %}}
 
@@ -34,11 +34,11 @@ The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/ma
 
 {{% pageinfo %}}
 
-RsyncUI can synchronize your data to local attached disk, remote servers on the Internet and servers on your local LAN. If you only want to synchronize data to a local attached disk, connect the disk, add source and destination and you are ready for your first task. 
+RsyncUI can synchronize your data to local attached disk, remote servers on the Internet and on your local LAN. If you only want to synchronize data to a local attached disk, connect the disk, add source and destination and you are ready for your first task. 
 
 {{% /pageinfo %}}
 
-If you want to synchronize data to a server, on Internet or your local LAN, there is some more setup to do. If you have enabled passwordless login by ssh-keys you only have to add source, destination, login id and servername and you are ready to synchronize. If you have not enabled passwordless login, there are some more actions required before your first task.
+If you want to synchronize data to a server, on Internet or your local LAN, there is some more setup to do. If you have enabled passwordless login by ssh-key you only have to add source, destination, login id and servername and you are ready to synchronize. If you have not enabled passwordless login, there are some more actions required before your first task.
 
 ### New tasks, verify task and synchronizing data
 

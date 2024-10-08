@@ -29,7 +29,7 @@ tunneled and encrypted by ssh. The above applies if destination is a remote serv
 
 {{% pageinfo %}}
 
-If default values for ssh-keys are used, it is *not* required to add information about ssh-key to RsyncUI. 
+If default values for ssh-key is used, it is *not* required to add information about ssh-key to RsyncUI. 
 It is only necessary to add information if you create your own ssh-keypath and identityfile. 
 
 {{% /pageinfo %}}
@@ -43,7 +43,7 @@ where `-i ~/.ssh_keypath/identityfile` is the ssh-keypath and identityfile and `
 
 ### Example
 
-As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the RSA based identityfile is `rsyncosx`, default port `22`. 
+As an example I have created ssh-key for rsync only. The ssh-keypath is set to `~/.ssh_rsyncosx/` and the RSA based identityfile is `rsyncosx`, default port `22`. 
 The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi server is:
 
 ```bash
@@ -52,7 +52,7 @@ The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my 
 /Users/thomas/Documents/ thomas@raspberrypi:/backups/Documents/ 
 ```
 
-To use my own ssh-key and keypath data, the following is added to RsyncUI in settings.
+To use my own ssh-key and ssh-keypath data, the following is added to RsyncUI in settings.
 
 {{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -66,7 +66,7 @@ If global ssh parameters are set, it applies to all configurations. It is possib
 ~/.mynewsshcatalog/mynewkey
 ```
 
-The prefix has to be `~` followed by a `/`. RsyncUI will verify that the ssh-keypath is prefix by `~` and at least two `/` before saving the new keypath.
+The prefix has to be `~` followed by a `/`. RsyncUI will verify that the ssh-keypath is prefix by `~` and at least two `/` before saving the new ssh-keypath.
 
 ### Tools used
 

@@ -42,9 +42,15 @@ If you want to synchronize data to a server, on Internet or your local LAN, ther
 
 ### New tasks, verify task and synchronizing data
 
-After  [adding](/docs/addconfigurations/) a task, in the main view,  *a double click* on the task executes a `--dry-run` and the second double click executes the real run.  A verification of a new task might also be executed by opening the Task or Rsync parameters view from the main sidebar, select the task and choose the `Checker flag` on the toolbar. Press the `Checker flag` executes an estimation run. e.g a  `--dry-run` task.
+After  [adding](/docs/addconfigurations/) a task, in the main view,  *a double click* on the task executes a `--dry-run` and the second double click executes the real run.  A verification of a new task might also be executed by opening the *Tasks* or *Rsync parameters* view from the main sidebar, select the task and choose the `Checker flag` on the toolbar. Press the `Checker flag` executes an estimation run, a `--dry-run` to verify the task.
 
-For more experienced users of rsync, from within the Rsync parameters view, select the new task. Copy and paste the *synchronization* string into a terminal view. The rsync command includes the `--dry-run` parameter as default within this view. Always verify, by a `--dry-run`, the result of a new task before executing it.
+For more experienced users of rsync, from within the Rsync parameters view, select the new task. Copy and paste the *synchronization* string into a terminal view. The rsync command includes the `--dry-run` parameter as default within this view. 
+
+{{< alert color="warning" >}}
+
+Always verify by an estimate run, a `--dry-run` to verify the task.
+
+{{< /alert >}}
 
 ### Aborting a task
 

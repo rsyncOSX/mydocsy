@@ -14,12 +14,11 @@ If you miss some functions please drop me an email: thomeven@gmail.com or create
 
 {{% pageinfo %}}
 
-About refactoring of code. There are in version 2.1.5, to be released later in October 2024, 145 Swift files and 10,422 lines of code.
+About refactoring of code. There are about 140 Swift files and about 10,000 lines of code in RsyncUI. There are no external libraries, 
+RsyncUI is built only by using default Swift libraries and Swift/SwiftUI code.
 RsyncUI is stable, and there are always parts of the code that are not reviewed for a long period of time. When I am reviewing old code,
-I often see there is potential for updates and refactors. Sometimes a refactor does not work as expected. But most of the time a refactor
+I often see there is potential for update and refactor. Sometimes a refactor does not work as expected. But most of the time a refactor
 makes the code better and more efficient. 
-
-By every new release all changes in code compared to previous version are attached to the new release.
 
 {{% /pageinfo %}}
 
@@ -30,6 +29,7 @@ The work on next release is commenced. Focus in this version is to make most of 
 - functions, data and selections are unavaliable until a task is selected
 - the function verify a task, the checker flag, is only presented when a task is selected
 - and as always, refactor and cleanup of code
+- and fixed another bug in ssh and remote servers
 
 {{< alert color="warning" >}}
 

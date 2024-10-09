@@ -29,7 +29,8 @@ The work on next release is commenced. Focus in this version is to make most of 
 - functions, data and selections are unavaliable until a task is selected
 - the function verify a task, the checker flag, is only presented when a task is selected
 - and as always, refactor and cleanup of code
-- and fixed another bug in ssh and remote servers
+- fixed another bug in ssh and remote servers
+- a few minor GUI updates
 
 {{< alert color="warning" >}}
 

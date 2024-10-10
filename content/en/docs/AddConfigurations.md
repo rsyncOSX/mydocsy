@@ -12,8 +12,11 @@ Always verify, by `--dry-run` which is an estimation run,  the result of a new t
 
 {{< /alert >}}
 
+{{< alert >}}
+
 A task require as minimum a *local catalog* and a *remote catalog*. 
 
+{{< /alert >}}
 ### Enter tasks
 
 Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or the `checkmark` icon on the toolbar will add a new task. Tasks are saved to permanent storage after each entry.

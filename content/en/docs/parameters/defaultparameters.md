@@ -13,8 +13,8 @@ Some of the default parameters can be switched on or off on a task.
 
 The following parameters might be switched on/off:
 
-- `--delete` delete all files at **destination** which are not in the **source**
 - `--compress` compress files before transmitting, networked tasks only
+- `--delete` delete all files at **destination** which are not in the **source**
 
 The following parameters are applied to all tasks and *cannot* be switched off:
 

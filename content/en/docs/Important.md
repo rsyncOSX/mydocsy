@@ -10,11 +10,11 @@ If you are new to the command line tool `rsync` and RsyncUI please read this inf
 
 ### The --delete parameter and new tasks
 
-The `--delete` parameter is a *default parameter* set by RsyncUI. The parameter instructs rsync too keep the *source* and *destination* in sync. The parameter instructs rsync to *delete* all files in the destination which are not present in the source. 
+The `--delete` parameter is a *default parameter* set by RsyncUI. The parameter instructs rsync to keep the *source* and *destination* in sync. The parameter instructs rsync to *delete* all files in the destination which are not present in the source. 
 
 {{< alert color="warning" >}}
 
-Every time you add a *new task* to RsyncUI, please execute an estimation run and inspect the result before executing a real run. If you by accident set an empty catalog as source, `rsync` by RsyncUI, will delete all files in the destination.
+Every time you add a *new task* to RsyncUI, please execute an estimation run and inspect the result before executing a real run. If you by accident set an empty catalog as source, `rsync` by RsyncUI, will delete all files in the destination. See the *Add and update tasks* view for how to execute an estimation run.
 
 {{< /alert >}}
 
@@ -22,7 +22,7 @@ Default parameters set by RsyncUI to `rsync` can be disabled task by task. If yo
 
 ### Be safe
 
-`rsync` is a fantastic tool, but used wrong may cause damage and lost data. There are some verification and checks in RsyncUI. It is your responsibilty to verify new tasks in RsyncUI does exactly what you want it to do.
+`rsync` is a fantastic tool, but used wrong may cause damage and lost data. There are some verification and checks in RsyncUI. But it is your own responsibilty to verify a new tasks does exactly what you want it to do.
 
 {{< alert color="warning" >}}
 

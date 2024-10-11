@@ -12,7 +12,7 @@ Restore data from within RsyncUI is only allowed for remote servers. Restore dat
 
 {{% /pageinfo %}}
 
-List of filenames with more than 10,000 lines will be truncated due to performance and poorly responding UI.  A workaround if list of filenames are truncated, either search for filenames by filter or go for a fulle restore, `./.` A filterstring will only fetch filenames ahead of a restore, which containes the filterstring.
+List of filenames with more than 10,000 lines will be truncated due to UI performance.  A workaround if list of filenames are truncated, either search for filenames by filter or go for a full restore by `./.`. A filterstring will only fetch filenames ahead of a restore, which containes the filterstring.
 
 {{< figure src="/images/restore/restore_filter_all.png" alt="" position="center" style="border-radius: 8px;" >}}
 

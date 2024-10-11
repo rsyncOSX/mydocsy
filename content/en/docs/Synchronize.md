@@ -9,7 +9,9 @@ lastmod = "2024-09-02"
 
 {{< alert color="warning" >}}
 
-Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it. After adding the task, in Add task view, select the task and then select the `checker flag` for an estimation run. Or in the main Synchronize view, select the task and the shortcut `⌘E` for estimate.
+Every time you add a *new task* to RsyncUI, please execute an estimation run and inspect the result before executing a real run. If you by accident set an empty catalog as source, `rsync` by RsyncUI, will delete all files in the destination. See the *Add and update tasks* view for how to execute an estimation run.
+
+Or in the main Synchronize view, select the task and the shortcut `⌘E` for estimate.
 
 {{< /alert >}}
 
@@ -18,7 +20,7 @@ The main task view lets you execute *all* or *selected* tasks in one go. A *doub
 The following are allowed shortcut actions:
 
 - `Estimate` - `⌘E` estimates all or selected tasks
-- `Synchronize` - `⌘R` synchronize all or selected tasks
+- `Synchronize` - `⌘R` synchronize all or selected tasks, no estimation and no progress bar during synchronization
 - `Abort` - `⌘K` abort and halt any ongoing task
 
 When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.

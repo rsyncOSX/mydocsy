@@ -8,9 +8,7 @@ lastmod = "2024-09-10"
 +++
 {{% pageinfo %}}
 
-The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia is not equal, but both are version 2.6.9 protocol 29. The licence for `/usr/bin/rsync` is different. And there might also be some differences in code. 
-
-For both default versions, there has been a lot of changes since version 2.6.9 was released.
+The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia is not equal, but both are version 2.6.9 protocol 29. The licence for `/usr/bin/rsync` is different. And there might also be some differences in code. For both default versions, there has been a lot of changes since version 2.6.9 was released.
 
 {{% /pageinfo %}}
 

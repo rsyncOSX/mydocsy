@@ -39,9 +39,16 @@ where
 - `/Volumes/user/data/` is the source catalog
 - `~/snapshots/` is the remote catalog where snapshots are saved, the remote catalog is set by the user
 
-If remote catalog is a local volume full path must be added. The source catalog is **never** touched, only read by rsync.
 
-RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to the user home catalog on remote server. Utilizing snapshot on local attached disks require full path for remote catalog.
+{{< alert color="warning" >}}
+
+If the *destination* is on a local attached disc, the full path of source must be added.
+If the *destination* is on a remote server, if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used. 
+The tilde character is automatically expanded as the $HOME catalog on FreeBSD and Linux servers.
+
+RsyncUI creates the snapshots within the remote catalog.
+
+{{< /alert >}}
 
 `~/snapshots/1`
 

@@ -8,37 +8,37 @@ lastmod = "2024-01-10"
 +++
 If you are new to the command line tool `rsync` and RsyncUI please read this information. RsyncUI is a GUI only on top of the command line tool. It is `rsync` which does the actual work, not RsyncUI
 
+{{< alert color="warning" >}}
+Setting wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so.
+
+
+Every time you add a *new task* to RsyncUI, please execute an estimation run,a `--dry-run`, and inspect the result before executing a real run. 
+If you by accident set an empty catalog as source, `rsync` by RsyncUI, will delete all files in the destination. 
+See the *Add and update tasks* view for how to execute an estimation run.
+ 
+{{< /alert >}}
+
 ### The --delete parameter and new tasks
 
 The `--delete` parameter is a *default parameter* set by RsyncUI. The parameter instructs rsync to keep the *source* and *destination* in sync. The parameter instructs rsync to *delete* all files in the destination which are not present in the source. 
-
-{{< alert color="warning" >}}
-
-Every time you add a *new task* to RsyncUI, please execute an estimation run and inspect the result before executing a real run. If you by accident set an empty catalog as source, `rsync` by RsyncUI, will delete all files in the destination. See the *Add and update tasks* view for how to execute an estimation run.
-
-{{< /alert >}}
 
 Default parameters set by RsyncUI to `rsync` can be disabled task by task. If you decide to disable a default parameter, be sure you understand what the result is. A disabled default parameter can be enabled again.
 
 ### Be safe
 
-`rsync` is a fantastic tool, but used wrong may cause damage and lost data. There are some verification and checks in RsyncUI. But it is your own responsibilty to verify a new tasks does exactly what you want it to do.
-
-{{< alert color="warning" >}}
-
- *Verify* all new new tasks by an estimate run, a `--dry-run`. Setting wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute an estimate run and inspect the result before a real run.
-
-{{< /alert >}}
+`rsync` is a fantastic tool, but used wrong may cause damage and lost data. There are some verification and checks in RsyncUI. 
+But it is your own responsibilty to verify that a new tasks does exactly what you want it to do before the real run.
 
 The snapshot feature of `rsync` is a very nice feature. It is possible to change the snapshot number. 
 
 {{< alert color="warning" >}}
 
 If you by *some reason* want to change the snapshot number, please be sure you know what you are doing and why you want to change it. 
+If you change it, there are some cleanups to do before executing next snapshot synchronize task.
 
 {{< /alert >}}
 
-If you change it, there are some cleanups to do before executing next snapshot synchronize task.
+
 
 If you let RsyncUI do the job and you are most likely safe. RsyncUI is a free and opensource application, please read the [MIT licence](https://github.com/rsyncOSX/RsyncUI/blob/main/Licence.MD).
 

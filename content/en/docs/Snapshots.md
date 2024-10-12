@@ -6,13 +6,23 @@ tags = ["snapshot"]
 categories = ["synchronize"]
 lastmod = "2020-12-13"
 +++
+
+
 {{% pageinfo %}}
 
 Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
 
 {{% /pageinfo %}}
 
-If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink only to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation. In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation for delete. 
+{{< alert color="warning" >}}
+In every snapshot task, RsyncUI stores on the task, the next snapshot number yo use. The snapshot number is only a running number, increased by one every time a snapshot task is executed. 
+The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number to use on the task. In the log view, the snapshot number is written 
+as part of the timestamp of the log.
+ 
+{{< /alert >}}
+
+
+If a `file.txt` is saved in the first snapshot and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink to the original file in the first snapshot. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation. In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation for delete. 
 
 Snapshot is **not** possible in a rsync daemon setup.
 

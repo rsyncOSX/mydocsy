@@ -26,7 +26,7 @@ Default parameters set by RsyncUI to `rsync` can be disabled task by task. If yo
 
 {{< alert color="warning" >}}
 
- *Verify* all new new tasks by a `--dry-run`, an estimate run.
+ *Verify* all new new tasks by an estimate run, a `--dry-run`. Setting wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute an estimate run and inspect the result before a real run.
 
 {{< /alert >}}
 
@@ -60,5 +60,4 @@ RsyncUI is not developed to be an easy to use synchronize and backup tool. The m
 
 {{< /alert >}}
 
-The User Interface of RsyncUI can for users who dont know `rsync`, be difficult or complex to understand. The main objective is to ease the use of `rsync`, not teach macOS users how to use it. That is beyond the scope. Setting wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run, `--dry-run`, and inspect what happens before a real run.
-
+The User Interface of RsyncUI can for users who dont know `rsync`, be difficult or complex to understand. The main objective is to ease the use of `rsync`, not teach macOS users how to use it. That is beyond the scope. 

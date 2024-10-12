@@ -6,6 +6,14 @@ tags = ["overview"]
 categories = ["general information"]
 lastmod = "2024-09-06"
 +++
+
+
+{{% pageinfo %}}
+
+If there is anything in this documentation that is unclear or imprecise, I would greatly appreciate it if you could let me know. English is not my mother tongue, and even in Norwegian, which is my mother tongue, I can be unclear and imprecise. If you see errors, ambiguities and unclear text please let me know or create an issue. Docsy, the Hugo theme for these pages, appends at bottom on page a Feedback button.
+
+{{% /pageinfo %}}
+
 {{% pageinfo %}}
 
 RsyncUI is a pure *SwiftUI*, *Swift* based macOS application, built for macOS Sonoma and later, utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.
@@ -14,9 +22,7 @@ RsyncUI is a pure *SwiftUI*, *Swift* based macOS application, built for macOS So
 
 ### Changelog and install
 
-See the [changelog](/docs/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  
-
-RsyncUI can be installed by Homebrew or by [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). 
+See the [changelog](/docs/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by Homebrew or by [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). 
 
 ```bash
 brew install --cask rsyncui
@@ -26,9 +32,7 @@ If installed by Homebrew, the shasum is automatically verified. If downloaded fr
 
 ### New users
 
-If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/) to install. 
-
-The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
+If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/) to install. The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
 
 ###  Local attached disks, remote servers and passwordless logins
 

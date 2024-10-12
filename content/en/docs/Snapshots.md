@@ -15,7 +15,7 @@ Utilizing snapshot is an effective method to restore old versions of data and de
 {{% /pageinfo %}}
 
 {{< alert color="warning" >}}
-In every snapshot task, RsyncUI stores on the task, the next snapshot number yo use. The snapshot number is only a running number, increased by one every time a snapshot task is executed. 
+In every snapshot task, RsyncUI stores on the task, the next snapshot number to use. The snapshot number is only a running number, increased by one every time a snapshot task is executed. 
 The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number to use on the task. In the log view, the snapshot number is written 
 as part of the timestamp of the log.
  

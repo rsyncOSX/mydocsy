@@ -23,39 +23,18 @@ makes the code better and more efficient.
 {{% /pageinfo %}}
 
 
-### Version 2.1.5 (build 115) - work in progress
+### Version 2.1.5 (build 115) - 13 October 2024
 
-The work on next release is commenced. Focus in this version is to make most of functions as context sensitive as possible. An example is within the Rsync parameters view:
+Maintenance release, a few bugfixes and GUI updates. Focus in this version is to make most of functions context sensitive.
+
 - functions, data and selections are unavaliable until a task is selected
-- the function verify a task, the checker flag, is only presented when a task is selected
-- and as always, refactor and cleanup of code
+- refactor and cleanup of code
 - fixed another bug in ssh and remote servers
+- fixed a bug in Settings view
 - a few minor GUI updates
-
-{{< alert color="warning" >}}
-
-There is still an issue with default ssh-parameters and remote servers. The issue is fixed in version 2.1.5. 
-The issue is if destination is a remote server and encryption of data by ssh-tunnel. If there is no information 
-about ssh-key set, e.g. using default ssh-key, RsyncUI should add the parameter `-e ssh` to ensure encryption of data by ssh. 
-
-If you are synchronizing data to remote servers in version 2.1.4 using default values for ssh-key, a workaround is in RsyncUI settings, 
-set ssh: `~/.ssh/id_rsa` and port `22`. This will add the parameter `-e  "ssh -i ~/.ssh/id_rsa -p 22"` to the rsync command tunnel data by ssh for encryption. 
-You may also set the ssh-data within the Rsync parameters view on the task itself. 
-
-As an example how the command should be:
-
-`/opt/homebrew/bin/rsync --archive --verbose --compress --delete  -e ssh --dry-run --stats /Users/thomas/GitHub/ thomas@raspberrypi:/backups/GitHub`
-
-and with adviced workaround:
-
-`/opt/homebrew/bin/rsync --archive --verbose --compress --delete -e  "ssh -i ~/.ssh/id_rsa -p 22" --dry-run --stats /Users/thomas/GitHub/ thomas@raspberrypi:/backups/GitHub/ `
-
-{{< /alert >}}
 
 {{< figure src="/images/215/noselection.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/215/selected.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Next version to be released late in October 2024. The main repository is updated with latest commits. Critical bugs will of course be fixed as soon as possible.
 
 ### Version 2.1.4 (build 114) - 27 September 2024
 

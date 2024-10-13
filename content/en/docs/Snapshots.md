@@ -21,7 +21,6 @@ as part of the timestamp of the log.
  
 {{< /alert >}}
 
-
 If a `file.txt` is saved in the first snapshot and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink to the original file in the first snapshot. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation. In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation for delete. 
 
 Snapshot is **not** possible in a rsync daemon setup.
@@ -42,8 +41,8 @@ where
 
 {{< alert color="warning" >}}
 
-If the *destination* is on a local attached disc, the full path of source must be added.
-If the *destination* is on a remote server, if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used. 
+If the *destination* is on a local attached disc, set *full path* of destination. If the *destination* is on a remote server, 
+if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used. 
 The tilde character is automatically expanded as the $HOME catalog on FreeBSD and Linux servers.
 
 RsyncUI creates the snapshots within the remote catalog.

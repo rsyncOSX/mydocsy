@@ -14,20 +14,20 @@ If you miss some functions please drop me an email: thomeven@gmail.com or create
 
 {{% pageinfo %}}
 
-About refactoring of code. There are about 140 Swift files and about 10,000 lines of code in RsyncUI. There are no external libraries, 
-RsyncUI is built only by using default Swift libraries and Swift/SwiftUI code.
-RsyncUI is stable, and there are always parts of the code that are not reviewed for a long period of time. When I am reviewing old code,
-I often see there is potential for update and refactor. Sometimes a refactor does not work as expected. But most of the time a refactor
-makes the code better and more efficient. 
+About refactoring of code. There are about 140 Swift files and about 10,000 lines of code in RsyncUI. There are no external libraries,
+RsyncUI is built only by using default Swift libraries and Swift/SwiftUI code. RsyncUI is stable, and there are always parts of the code
+which are not reviewed for some period of time. When I am reviewing old code, I often see a potential for update and refactor. Sometimes a
+refactor does not work as expected. But most of the time a refactor makes the code better and more efficient.
 
 {{% /pageinfo %}}
 
-
 ### Version 2.1.5 (build 115) - 13 October 2024
 
-Maintenance release, a few bugfixes and GUI updates. Focus in this version is to make most of functions context sensitive.
+This is a maintenance release, some refactor of code, a few bugfixes and GUI updates. Focus in this version is to make most of
+functions context sensitive.
 
-- functions, data and selections are unavaliable until a task is selected
+- functions, data and selections are *hidden* until a task is selected
+  - an example is within the *Rsync parameters* view, the checker flag for a `--dry-run` is not visible until a task is selected
 - refactor and cleanup of code
 - fixed another bug in ssh and remote servers
 - fixed a bug in Settings view
@@ -49,13 +49,13 @@ The following are updates:
 - show command strings (in view for Rsync parameters)
 	- RsyncUI creates commands for external execution, almost all commands are dependent upon values in each configuration
 	- this view is for documentation for users who want to do a more detailed view of what RsyncUI does
-	- by using the Console app, see below, all major steps of what RsyncUI does might be viewed 
+	- by using the Console app, see below, all major steps of what RsyncUI does might be viewed
 - refactor in parts of code
 	- refactoring and cleanup of internal code are always in focus, there is always potential for cleanup and improvements
 	- there are about 146 Swift files and 10,000 lines of Swift code, there are no memory leaks, verified by the Xcode instruments tool
 	- see [the release](https://github.com/rsyncOSX/RsyncUI/releases) for details about changes
 - Console and OSLog
-	- from Swift 5 there is a unified logging feature `OSLog`. 
+	- from Swift 5 there is a unified logging feature `OSLog`.
 	- the OSLogs might be read by using the macOS Console app, set the Action in Console app menu to `Include Info Messages` and enter `no.blogspot.RsyncUI` as subsystem within the search field
 
 ### Version 2.1.3 (build 113) - 16 September 2024
@@ -66,7 +66,7 @@ Next release again will probably be in a month or two, depending if no other bug
 
 ### Version 2.1.2 (build 112) - 13 September 2024
 
-Fixed a bug in ssh-parameters, applies for using remote servers only. 
+Fixed a bug in ssh-parameters, applies for using remote servers only.
 
 After some more testing, using Swift Testing, I discovered a few more issues about ssh-parameters. Local set ssh-parameters rules global set ssh-parameters.  Local ssh-keypath or ssh-port should only set one of them even if there are global set ssh-keypath and ssh-port.
 
@@ -78,12 +78,12 @@ There will be a new version 2.1.3 (build 113) including fixes for the above by n
 
 Built on macOS Sequoia by Xcode 16. Built for macOS Sonoma and macOS Sequoia. The default `rsync` on macOS Sequia is `openrsync`, see info about [rsync versions](/docs/rsync/).
 
-#### Updates in version 2.1.1 
+#### Updates in version 2.1.1
 
 The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete.
 
 - RsyncUI is now fully adapted to Swifts new concurrency model and Swift version 6
-	- in Xcode `SWIFT_STRICT_CONCURRENCY = complete` and `SWIFT_VERSION = 6;` is set 
+	- in Xcode `SWIFT_STRICT_CONCURRENCY = complete` and `SWIFT_VERSION = 6;` is set
 - there has been several refactor of code and a few UI updates
 - by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
 - some of the code is created as packages, see comments about Swift Testing and Swift Package Manager below
@@ -92,7 +92,7 @@ The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete
 - there is a new export and import function, tasks can now be exported and imported between profiles and to new Macs
 	- import and export is by file
 	- some more info [about export and import](/docs/exportandimport/)
-- fixed bug if user defined path for `rsync` is *not* valid 
+- fixed bug if user defined path for `rsync` is *not* valid
 - restore data only valid from remote servers, restore data from local attached disc by macOS Finder only
 - fixed a bug in parameters to rsync and create ssh-key, default and user define ssh-key
 - fixed a bug in [passwordless logins](/docs/ssh/)
@@ -111,7 +111,7 @@ The new version number of RsyncUI is ver 2.1.1 build 111 due to using Swift Pack
 - [DecodeEncodeGeneric](https://github.com/rsyncOSX/DecodeEncodeGeneric) - generic code for Decode and Encode JSON data
 - [ParseRsyncOutput](https://github.com/rsyncOSX/ParseRsyncOutput) - parse and extract numbers from output from `rsync`, used in view for details and log result of a synchronize tasks
 
-By SPM and Swift Testing, the code for RsyncUI is modularized, isolated, and tested before committing changes. 
+By SPM and Swift Testing, the code for RsyncUI is modularized, isolated, and tested before committing changes.
 
 ### Version 1.9.2 (build 100) - 11 June 2024
 

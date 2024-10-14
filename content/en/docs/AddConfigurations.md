@@ -8,28 +8,31 @@ lastmod = "2024-09-03"
 +++
 {{< alert color="warning" >}}
 
-Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it. After adding the task, in Add task view, select the task and then select the `checker flag` for an estimation run.
+Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it.
+After adding the task, in the *Add and update task* view, this view, select the task and then select the `checker flag` for an estimation run.
 
 {{< /alert >}}
 
 {{< alert >}}
 
-A task require as minimum a *local catalog* and a *remote catalog*. 
+A task require as minimum a *local catalog* and a *remote catalog*.
 
 {{< /alert >}}
 ### Enter tasks
 
-Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or the `checkmark` icon on the toolbar will add a new task. Tasks are saved to permanent storage after each entry.
+Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or the `checkmark` icon on the toolbar
+will add a new task. Tasks are saved to permanent storage after each entry.
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Update 
+### Update
 
 To update a task, select the task and to save changes, select the `checkmark` icon on the toolbar or use the `Enter` key.
 
 ### Copy and paste
 
-Shortcuts for copy and paste are `⌘C` and  `⌘V` or from the Edit menu. The copy and paste makes a copy of selected tasks and marks them with copy. The copy inlcudes all parameters of the copied tasks.
+Shortcuts for copy and paste are `⌘C` and  `⌘V` or from the Edit menu. The copy and paste makes a copy of selected tasks and marks them with copy.
+The copy inlcudes all parameters of the copied tasks.
 
 {{< figure src="/images/add/copy.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/add/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
@@ -69,10 +72,11 @@ The following are data about tasks:
   - username for login to remote server
 - Remote server:
   - either server name or IP-address for remote server
-  
+
 ### Catalogs
 
-Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the mounted volumes are presented. Select the homecatalog and mounted volume, return to main Task view and RsyncUI suggest some values. 
+Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the mounted volumes are presented.
+Select the homecatalog and mounted volume, return to main Task view and RsyncUI suggest some values.
 
 {{< figure src="/images/add/homecatalog.png" alt="" position="center" style="border-radius: 8px;" >}}
 

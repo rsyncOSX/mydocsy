@@ -61,7 +61,8 @@ The rsync command includes the `--dry-run` parameter as default within this view
 
 {{< alert color="warning" >}}
 
-Always verify by an estimate run, a `--dry-run` to verify the task.
+Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it.
+After adding the task, in the *Add and update task* view, select the task and then select the `checker flag` for an estimation run.
 
 {{< /alert >}}
 

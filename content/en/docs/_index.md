@@ -38,7 +38,7 @@ If installed by Homebrew, the shasum is automatically verified. If downloaded fr
 If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/) to install.
 The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
 
-###  Local attached disks, remote servers and passwordless logins
+###  Local attached disk, remote server and passwordless login
 
 {{% pageinfo %}}
 
@@ -47,8 +47,10 @@ connect the disk, add source and destination and you are ready for your first ta
 
 {{% /pageinfo %}}
 
-If you want to synchronize data to a server, on Internet or your local LAN, there is some more setup to do. If you have enabled passwordless login by ssh-key you only have to add
-source, destination, login id and servername and you are ready to synchronize. If you have not enabled passwordless login, there are some more actions required before your first task.
+If you want to synchronize data to a server, on Internet or your local LAN, there is some more setup to do.
+If you have enabled *passwordless login* by ssh-key you only have to add
+*source*, *destination*, *login id* and *servername* and you are ready to synchronize data.
+If you have *not* enabled passwordless login, there are some more actions required before your first task.
 
 ### New tasks, verify task and synchronizing data
 

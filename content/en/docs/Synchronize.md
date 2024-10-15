@@ -23,7 +23,7 @@ Shortcut actions within the *Synchronize* view:
 
 {{% /pageinfo %}}
 
-When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.
+When RsyncUI starts it automatically open the *Synchronize* view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 

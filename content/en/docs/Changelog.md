@@ -23,6 +23,9 @@ refactor does not work as expected. But most of the time a refactor makes the co
 
 ### Version 2.1.5 (build 115) - 13 October 2024
 
+There is a minor issue in this version, the links for documentation and the changelog in RsyncUI are not updated after
+new theme for documentation is changed.
+
 This is a maintenance release, some refactor of code, a few bugfixes and GUI updates. Focus in this version is to make most of
 functions context sensitive.
 

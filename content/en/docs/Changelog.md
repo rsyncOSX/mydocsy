@@ -23,8 +23,8 @@ refactor does not work as expected. But most of the time a refactor makes the co
 
 ### Version 2.1.6 (build 116) - to be released in some weeks
 
-Work on the next version is commenced. I am reviewing old code and there are a few refactors already. If there reported any
-critical issues a new version will be released immediately.
+Work on the next version is commenced. I am reviewing old code and there are a few refactors already. If there are reported any
+critical issues, a new version will be released immediately.
 
 - issue with not working links to the Changelog and documentation is fixed
 - I have tested RsyncUI on a new macOS, a virtual machine, and added some fixes when there is an empty profile

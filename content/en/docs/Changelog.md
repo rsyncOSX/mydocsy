@@ -21,6 +21,22 @@ refactor does not work as expected. But most of the time a refactor makes the co
 
 {{% /pageinfo %}}
 
+### Version 2.1.6 (build 116) - to be released in some weeks
+
+Work on the next version is commenced. I am reviewing old code and there are a few refactors already. If there reported any
+critical issues a new version will be released immediately.
+
+- issue with not working links to the Changelog and documentation is fixed
+- I have tested RsyncUI on a new macOS, a virtual machine, and added some fixes when there is an empty profile
+  - added a check if the selected profile contains any tasks, functions like estimate and execute are disabled
+- in *Rsync parameters* view, minor fix when adding your own parameters to `rsync`
+  - it is working today, but the view itself is not properly reset after adding a parameter
+
+Stay safe, and do backups. My advice is, make backups to two or more media and store at least one of them
+outside your flat or house. And update your backups on a regular basis. I am myself, almost every day, updating
+by using RsyncUI, two SSD drives and my Raspberry Pi server. Most important are synchronizing and backup of my photos.
+My development sources and web pages are also synchronized, by Git, to GitHub as well.
+
 ### Version 2.1.5 (build 115) - 13 October 2024
 
 There is a minor issue in this version, the links for documentation and the changelog in RsyncUI are not updated after

@@ -26,9 +26,9 @@ refactor does not work as expected. But most of the time a refactor makes the co
 Work on the next version is commenced. I am reviewing old code and there are a few refactors already. If there are reported any
 critical issues, a new version will be released immediately.
 
-- issue with not working links to the Changelog and documentation is fixed
+- issue with wrong links to the Changelog and documentation are fixed
 - I have tested RsyncUI on a new macOS, a virtual machine, and added some fixes when there is an empty profile
-  - added a check if the selected profile contains any tasks, functions like estimate and execute are disabled
+  - added a check if the selected profile contains any tasks, functions like estimate and execute are disabled if no tasks
 - in *Rsync parameters* view, minor fix when adding your own parameters to `rsync`
   - it is working today, but the view itself is not properly reset after adding a parameter
 

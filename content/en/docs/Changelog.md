@@ -34,8 +34,8 @@ critical issues, a new version will be released immediately.
 
 Stay safe, and do backups. My advice is, make backups to two or more media and store at least one of them
 outside your flat or house. And update your backups on a regular basis. I am myself, almost every day, updating
-by using RsyncUI, two SSD drives and my Raspberry Pi server. Most important are synchronizing and backup of my photos.
-My development sources and web pages are also synchronized, by Git, to GitHub as well.
+my backups by using RsyncUI, to two SSD drives and a ZFS based Raspberry Pi5 server. Most important are synchronizing and
+backup of my photos. My development sources and web pages are also synchronized, by git, to GitHub as well.
 
 ### Version 2.1.5 (build 115) - 13 October 2024
 

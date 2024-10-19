@@ -10,4 +10,6 @@ github.com/google/docsy v0.10.1-0.20240529105443-333c2f8d4172 h1:1gAAuOfHRok/hJq
 github.com/google/docsy v0.10.1-0.20240529105443-333c2f8d4172/go.mod h1:c0nIAqmRTOuJ01F85U/wJPQtc3Zj9N58Kea9bOT2AJc=
 github.com/google/docsy v0.10.1-0.20241010163453-fe0d785d8f01 h1:PGGIH7Ht1jK6P+OADMs6LnKQd1gayU3Jqc+7jWlQIgg=
 github.com/google/docsy v0.10.1-0.20241010163453-fe0d785d8f01/go.mod h1:hGGW0OjNuG5ZbH5JRtALY3yvN8ybbEP/v2iaK4bwOUI=
+github.com/google/docsy v0.11.0 h1:QnV40cc28QwS++kP9qINtrIv4hlASruhC/K3FqkHAmM=
+github.com/google/docsy v0.11.0/go.mod h1:hGGW0OjNuG5ZbH5JRtALY3yvN8ybbEP/v2iaK4bwOUI=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

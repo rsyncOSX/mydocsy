@@ -29,8 +29,10 @@ be sure you understand what the result is. A disabled default parameter can be e
 ### Remote servers
 
 RsyncUI forces to transfer data by ssh if the *destination* is a remote server. The parameter, `-e ssh`, to rsync make it
-transfer data to be tunneled by ssh. This is the only way to secure data is encrypted when transferring over a network connection.
-See the chapter about *Passwordless login* for more info about ssh and ssh-key. This feature cannot be disabled.
+transfer data to be tunneled by ssh. It seems like recent versions or rsync does not requiere the parameter, but for
+safety RsyncUI appends this parameter if *destination* is a remote server. By the ssh-tunnel, the transfer is
+encrypted when transferring over a network connection. See the chapter about *Passwordless login* for more info about
+ssh and ssh-key. This feature cannot be disabled.
 
 ### Be safe
 

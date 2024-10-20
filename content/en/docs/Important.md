@@ -12,7 +12,6 @@ line tool. It is `rsync` which does the actual work, not RsyncUI
 {{< alert color="warning" >}}
 Setting wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so.
 
-
 Every time you add a *new task* to RsyncUI, please execute an estimation run,a `--dry-run`, and inspect the result before
 executing a real run. If you by accident set an empty catalog as source, `rsync` by RsyncUI, will delete all files in the destination.
 See the *Add and update tasks* view for how to execute an estimation run.
@@ -29,9 +28,9 @@ be sure you understand what the result is. A disabled default parameter can be e
 
 ### Remote servers
 
-RsyncUI forces to transfer data by SSH if the *destination* is a remote server. The parameter, `-e ssh`, to rsync which make it
-transfer data by SSH cannot be deleted. Transfer data by SSH is the only way to secure data is encrypted when transferring data
-over a network connection. See the chapter about *Passwordless login* for more info about SSH.
+RsyncUI forces to transfer data by ssh if the *destination* is a remote server. The parameter, `-e ssh`, to rsync make it
+transfer data to be tunneled by ssh. This is the only way to secure data is encrypted when transferring over a network connection.
+See the chapter about *Passwordless login* for more info about ssh and ssh-key. This feature cannot be disabled.
 
 ### Be safe
 

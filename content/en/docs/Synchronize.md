@@ -7,13 +7,14 @@ categories = ["synchronize"]
 lastmod = "2024-09-02"
 +++
 
-{{% pageinfo %}}
+{{< alert >}}
 
-The *Synchronize* view lets you execute *all* or *selected* tasks in one go. A *double click* on a task wil execute a `--dry-run`, the *next double click* will execute the real run.
+The *Synchronize* view lets you execute *all* or *selected* tasks in one go. A *double click* on a task wil execute a `--dry-run`,
+the *next double click* will execute the real run.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
-{{% pageinfo %}}
+{{< alert >}}
 
 Shortcut actions within the *Synchronize* view:
 
@@ -21,7 +22,7 @@ Shortcut actions within the *Synchronize* view:
 - `Synchronize` - `⌘R` synchronize all or selected tasks, *no estimation* and *no progress* bar during synchronization
 - `Abort` - `⌘K` abort and halt any ongoing task
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 When RsyncUI starts it automatically open the *Synchronize* view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.
 

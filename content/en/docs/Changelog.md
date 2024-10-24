@@ -6,21 +6,20 @@ tags = ["changelog"]
 categories = ["general information"]
 lastmod = "2024-09-04"
 +++
-{{% pageinfo %}}
+{{< alert >}}
 
 If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue. All suggestions about enhancements are welcome.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
-{{% pageinfo %}}
+{{< alert >}}
 
 About refactoring of code. There are about 140 Swift files and about 10,000 lines of code in RsyncUI. There are no external libraries,
 RsyncUI is built only by using default Swift libraries and Swift/SwiftUI code. RsyncUI is stable, and there are always parts of the code
 which are not reviewed for some period of time. When I am reviewing old code, I often see a potential for update and refactor. Sometimes a
 refactor does not work as expected. But most of the time a refactor makes the code better and more efficient.
 
-{{% /pageinfo %}}
-
+{{< /alert >}}
 ### Version 2.1.6 (build 116) - to be released in some weeks
 
 Work on the next version is commenced. I am reviewing old code and there are a few refactors already. If there are reported any
@@ -34,7 +33,7 @@ critical issues, a new version will be released immediately.
 - there has been several refactor last week
   - some code is refactored using higher order functions like `map`, `compactMap` to replace `for loops`
   - Combine is replaced where used for `debounce`, replaced by using like `try await Task.sleep(seconds: 1)`
-  - Combine is used only in Process object listening for signals when `rsync` executes
+  - Combine is used only in Process object listening for signals from `rsync` when it executes
   - cleaned up "trimming" of output from `rsync` used in Snapshots, Restore
   - and a few other refactors as well, I am reviewing most of the code
 
@@ -57,9 +56,6 @@ functions context sensitive.
 - fixed another bug in ssh and remote servers
 - fixed a bug in Settings view
 - a few minor GUI updates
-
-{{< figure src="/images/215/noselection.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/215/selected.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ### Version 2.1.4 (build 114) - 27 September 2024
 

@@ -6,50 +6,50 @@ tags = ["passwordless","ssh-key"]
 categories = ["remote servers"]
 lastmod = "2020-04-16"
 +++
-Using RsyncUI to synchronize data to a remote server requires what is called *passwordless login by ssh-key*. 
-It is not possible to supply a user login and password in the progress of synchronizing data in RsyncUI. 
+Using RsyncUI to synchronize data to a remote server requires what is called *passwordless login by ssh-key*.
+It is not possible to supply a user login and password in the progress of synchronizing data in RsyncUI.
 
-{{% pageinfo %}}
+{{< alert >}}
 
 Before commencing to use RsyncUI to synchronize data to a *remote server*, it is required to setup and enable passwordless login by ssh-key. It is recommended to setup and enable this by terminal before using RsyncUI.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 There are two ways to setup and enable passwordless login by ssh-key, either by default value or by your own value. 
-Default value for RSA based ssh-key is `~/.ssh/id_rsa` and portnumber `22`. 
+Default value for RSA based ssh-key is `~/.ssh/id_rsa` and portnumber `22`.
 
-{{% pageinfo %}}
+{{< alert >}}
 
-If using default ssh-key value and no info about ssh-key in RsyncUI, RsyncUI add the parameter `-e ssh` to the rsync command to ensure data is 
+If using default ssh-key value and no info about ssh-key in RsyncUI, RsyncUI add the parameter `-e ssh` to the rsync command to ensure data is
 tunneled and encrypted by ssh. The above applies if destination is a remote server only and to restore data as well.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ### Important
 
-{{% pageinfo %}}
+{{< alert >}}
 
-If default values for ssh-key is used, it is *not* required to add information about ssh-key to RsyncUI. 
-It is only necessary to add information if you create your own ssh-keypath and identityfile. 
+If default values for ssh-key is used, it is *not* required to add information about ssh-key to RsyncUI.
+It is only necessary to add information if you create your own ssh-keypath and identityfile.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 The ssh parameter within the rsync command is, if ssh-keypath and identityfile is set by the user:
 
 ```bash
 -e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
 ```
-where `-i ~/.ssh_keypath/identityfile` is the ssh-keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22. 
+where `-i ~/.ssh_keypath/identityfile` is the ssh-keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22.
 
 ### Example
 
-As an example I have created ssh-key for rsync only. The ssh-keypath is set to `~/.ssh_rsyncosx/` and the RSA based identityfile is `rsyncosx`, default port `22`. 
+As an example I have created ssh-key for rsync only. The ssh-keypath is set to `~/.ssh_rsyncosx/` and the RSA based identityfile is `rsyncosx`, default port `22`.
 The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi server is:
 
 ```bash
-/opt/homebrew/bin/rsync --archive --verbose --compress --delete \ 
--e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22" --stats \ 
-/Users/thomas/Documents/ thomas@raspberrypi:/backups/Documents/ 
+/opt/homebrew/bin/rsync --archive --verbose --compress --delete \
+-e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22" --stats \
+/Users/thomas/Documents/ thomas@raspberrypi:/backups/Documents/
 ```
 
 To use my own ssh-key and ssh-keypath data, the following is added to RsyncUI in settings.

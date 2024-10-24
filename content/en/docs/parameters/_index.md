@@ -7,19 +7,19 @@ categories = ["rsync parameters"]
 lastmod = "2023-12-18"
 +++
 
-{{% pageinfo %}}
+{{< alert >}}
 
-RsyncUI implements a few default parameters which are fine for synchronize data. The actual default parameters used in tasks are depended upon executing rsync over *network connection* or to *local attached discs*. 
+RsyncUI implements a few default parameters which are fine for synchronize data. The actual default parameters used in tasks are depended upon executing rsync over *network connection* or to *local attached discs*.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 The user can remove default parameters if required. Parameters to rsync are saved by task including a local ssh parameter on the task. The local ssh parameter overrides a global ssh parameter if set.
 
-{{% pageinfo %}}
+{{< alert >}}
 
 If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI append the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by ssh. The above applies if destination is a remote server only and to restore data as well.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ### Ssh parameters by task
 
@@ -36,7 +36,7 @@ To add a parameter to rsync add the parameter in the field. RsyncUI enables seve
 
 Parameters are normally constructed as:
 
-- parameter=value 
+- parameter=value
 	- `--exclude-from=/Volumes/home/user/exclude-list.txt`
 - parameter only
 	- `--stats`
@@ -61,4 +61,3 @@ The resulting commandline string is dynamically updated when changing parameters
 {{< figure src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Regarding the Verify flag and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
-

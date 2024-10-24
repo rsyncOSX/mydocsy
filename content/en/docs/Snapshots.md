@@ -8,29 +8,30 @@ lastmod = "2020-12-13"
 +++
 
 
-{{% pageinfo %}}
+{{< alert >}}
 
 Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
 
-{{% /pageinfo %}}
-
-{{< alert color="warning" >}}
-In every snapshot task, RsyncUI stores on the task, the *next* snapshot number to use. The snapshot number is only a running number, increased by one every time a snapshot task is executed. 
-The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number to use on the task. In the log view, the snapshot number is written 
-as part of the timestamp of the log.
- 
 {{< /alert >}}
 
-If a `file.txt` is saved in the first snapshot and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink to the original file in the first snapshot. 
-If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation. 
+{{< alert color="warning" >}}
+
+In every snapshot task, RsyncUI stores on the task, the *next* snapshot number to use. The snapshot number is only a running number, increased by one every time a snapshot task is executed.
+The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number to use on the task. In the log view, the snapshot number is written
+as part of the timestamp of the log.
+
+{{< /alert >}}
+
+If a `file.txt` is saved in the first snapshot and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink to the original file in the first snapshot.
+If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
 In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted.
 
 Snapshot is **not** possible in a rsync daemon setup.
 
 ### What is a snapshot?
 
-A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog *at the time* of creating the snapshot. 
-Previous versions of files can be restored from a snapshot. The snapshot is by utilizing the `--link-dest` parameter to rsync. 
+A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog *at the time* of creating the snapshot.
+Previous versions of files can be restored from a snapshot. The snapshot is by utilizing the `--link-dest` parameter to rsync.
 
 ##### Remote server
 
@@ -61,8 +62,8 @@ where
 
 {{< alert color="warning" >}}
 
-If the *destination* is on a local attached disc, set *full path* of destination. If the *destination* is on a remote server, 
-if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used. 
+If the *destination* is on a local attached disc, set *full path* of destination. If the *destination* is on a remote server,
+if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used.
 The tilde character is automatically expanded as the $HOME catalog on FreeBSD and Linux servers.
 
 {{< /alert >}}
@@ -82,7 +83,7 @@ Deleting snapshots is a *destructive* operation and should be performed with car
 
 Selecting the `Tag` button evaluates all snapshots based on the date withing the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
 
-Even if all snapshots are tagged for delete, the first and last snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation (internal) of delete. 
+Even if all snapshots are tagged for delete, the first and last snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation (internal) of delete.
 
 The plan is based upon three parts where the parameter `plan` has an effect on *previous months (and years)*:
 

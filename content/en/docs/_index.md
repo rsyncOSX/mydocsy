@@ -7,20 +7,20 @@ categories = ["general information"]
 lastmod = "2024-09-06"
 +++
 
-{{% pageinfo %}}
+{{< alert >}}
 
 If there is anything in this documentation that is unclear or imprecise, I would greatly appreciate it if you could let me know.
 English is not my mother tongue, and even in Norwegian, which is my mother tongue, I can be unclear and imprecise. If you see errors, ambiguities
 and unclear text please let me know or create an issue. Docsy, the Hugo theme for these pages, appends at bottom on page a Feedback button.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
-{{% pageinfo %}}
+{{< alert >}}
 
 RsyncUI is a pure *SwiftUI*, *Swift* based macOS application, built for macOS Sonoma and later, utilizing the command line tool `rsync` for synchronizing files.
 It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ### Changelog and install
 
@@ -40,12 +40,12 @@ The catalog for storing files is `$HOME/.rsyncosx/macserialnumber/.
 
 ###  Local attached disk, remote server and passwordless login
 
-{{% pageinfo %}}
+{{< alert >}}
 
 RsyncUI can synchronize your data to local attached disk, remote servers on the Internet and on your local LAN. If you only want to synchronize data to a local attached disk,
 connect the disk, add source and destination and you are ready for your first task.
 
-{{% /pageinfo %}}
+{{< /alert >}}
 
 If you want to synchronize data to a server, on Internet or your local LAN, there is some more setup to do.
 If you have enabled *passwordless login* by ssh-key you only have to add

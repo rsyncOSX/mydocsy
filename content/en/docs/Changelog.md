@@ -31,6 +31,12 @@ critical issues, a new version will be released immediately.
   - added a check if the selected profile contains any tasks, functions like estimate and execute are disabled until a task is added
 - in *Rsync parameters* view, minor fix when adding your own parameters to `rsync`
   - it is working today, but the view itself is not properly reset after adding a parameter
+- there has been several refactor last week
+  - some code is refactored using higher order functions like `map`, `compactMap` to replace `for loops`
+  - Combine is replaced where used for `debounce`, replaced by using like `try await Task.sleep(seconds: 1)`
+  - Combine is used only in Process object listening for signals when `rsync` executes
+  - cleaned up "trimming" of output from `rsync` used in Snapshots, Restore
+  - and a few other refactors as well, I am reviewing most of the code
 
 Stay safe, and do backups. My advice is, make backups to two or more media and store at least one of them
 outside your flat or house. And update your backups on a regular basis. I am myself, almost every day, updating

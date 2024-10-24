@@ -41,7 +41,7 @@ But it is your own responsibilty to verify that a new tasks does exactly what yo
 
 The snapshot feature of `rsync` is a very nice feature. It is possible to change the snapshot number.
 
-{{< alert color="warning" >}}
+{{< alert >}}
 
 If you by *some reason* want to change the snapshot number, please be sure you know what you are doing and why you want to change it.
 If you change it, there are some cleanups to do before executing next snapshot synchronize task.

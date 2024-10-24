@@ -36,7 +36,7 @@ If installed by Homebrew, the shasum is automatically verified. If downloaded fr
 ### New users
 
 If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/) to install.
-The catalog for [storing files](/docs/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
+The catalog for storing files is `$HOME/.rsyncosx/macserialnumber/.
 
 ###  Local attached disk, remote server and passwordless login
 

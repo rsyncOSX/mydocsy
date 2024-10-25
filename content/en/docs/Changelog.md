@@ -20,10 +20,11 @@ which are not reviewed for some period of time. When I am reviewing old code, I 
 refactor does not work as expected. But most of the time a refactor makes the code better and more efficient.
 
 {{< /alert >}}
-### Version 2.1.6 (build 116) - to be released in some weeks
 
-Work on the next version is commenced. I am reviewing old code and there are a few refactors already. If there are reported any
-critical issues, a new version will be released immediately.
+### Version 2.1.6 (build 116) - to be released mid November 2024
+
+If there are reported any critical issues, a new version will be released immediately. A couple of issues are fixed.
+This release is primarly a review and refactor of code where appropriate.
 
 - issue with links to the Changelog and documentation are fixed
 - I have tested RsyncUI on new macOS Sequoia, a virtual machine, and added some updates when there is a new install
@@ -31,9 +32,12 @@ critical issues, a new version will be released immediately.
 - in *Rsync parameters* view, minor fix when adding your own parameters to `rsync`
   - it is working today, but the view itself is not properly reset after adding a parameter
 - there has been several refactor last week
-  - some code is refactored using higher order functions like `map`, `compactMap` to replace `for loops`
-  - Combine is replaced where used for `debounce`, replaced by using like `try await Task.sleep(seconds: 1)`
-  - Combine is used only in Process object listening for signals from `rsync` when it executes
+  - some code is refactored using higher order functions like `map`, `compactMap` to replace `for` loops,
+  higher order functions are quicker and makes the code cleaner and more easy to read
+  - Combine is replaced where used for `debounce`, replaced by using like `try await Task.sleep(seconds: 1)`,
+  seconds may be 1, 2 or 3 seconds depends on the case
+  - Combine is used only in Process object listening for signals from `rsync` when it executes, as far as I
+ understand from reading other articles about Combine it is not clear what the future of Combine is
   - cleaned up "trimming" of output from `rsync` used in Snapshots, Restore
   - and a few other refactors as well, I am reviewing most of the code
 

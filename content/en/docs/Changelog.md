@@ -8,7 +8,8 @@ lastmod = "2024-09-04"
 +++
 {{< alert >}}
 
-If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue. All suggestions about enhancements are welcome.
+If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue.
+Any suggestions about enhancements are welcome.
 
 {{< /alert >}}
 
@@ -18,6 +19,15 @@ About refactoring of code. There are about 140 Swift files and about 10,000 line
 RsyncUI is built only by using default Swift libraries and Swift/SwiftUI code. RsyncUI is stable, and there are always parts of the code
 which are not reviewed for some period of time. When I am reviewing old code, I often see a potential for update and refactor. Sometimes a
 refactor does not work as expected. But most of the time a refactor makes the code better and more efficient.
+
+{{< /alert >}}
+
+{{< alert >}}
+
+RsyncUI is compliant to the new concurrency model of Swift 6. This means the compiler can guarantee that RsyncUI is
+free of data races. Quote swift.org: *"More formally, a data race occurs when one thread accesses memory while the
+same memory is being mutated by another thread. The Swift 6 language mode eliminates these problems by preventing data races at
+compile time."*
 
 {{< /alert >}}
 
@@ -40,11 +50,6 @@ This release is primarly a review and refactor of code where appropriate.
  understand from reading other articles about Combine it is not clear what the future of Combine is
   - cleaned up "trimming" of output from `rsync` used in Snapshots, Restore
   - and a few other refactors as well, I am reviewing most of the code
-
-Stay safe, and do backups. My advice is, make backups to two or more media and store at least one of them
-outside your flat or house. And update your backups on a regular basis. I am myself, almost every day, updating
-my backups by using RsyncUI, to two SSD drives and a ZFS based Raspberry Pi5 server. Most important are synchronizing and
-backup of my photos. My development sources and web pages are also synchronized, by git, to GitHub as well.
 
 ### Version 2.1.5 (build 115) - 13 October 2024
 

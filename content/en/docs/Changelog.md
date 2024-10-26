@@ -21,7 +21,7 @@ refactor does not work as expected. But most of the time a refactor makes the co
 
 {{< /alert >}}
 
-### Version 2.1.6 (build 116) - to be released mid November 2024
+### Version 2.1.6 (build 116) - to be released November 2024
 
 If there are reported any critical issues, a new version will be released immediately. A couple of issues are fixed.
 This release is primarly a review and refactor of code where appropriate.

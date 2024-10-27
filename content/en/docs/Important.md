@@ -48,10 +48,8 @@ If you change it, there are some cleanups to do before executing next snapshot s
 
 {{< /alert >}}
 
-
-
 If you let RsyncUI do the job and you are most likely safe. RsyncUI is a free and opensource application,
-please read the [MIT licence](https://github.com/rsyncOSX/RsyncUI/blob/main/Licence.MD).
+please read the [MIT licence](/docs/license/).
 
 ### Aborting tasks
 

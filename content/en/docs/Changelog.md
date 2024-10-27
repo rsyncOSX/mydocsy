@@ -17,8 +17,7 @@ Any suggestions about enhancements are welcome.
 
 About refactoring of code. There are about 140 Swift files and about 10,000 lines of code in RsyncUI. There are no external libraries,
 RsyncUI is built only by using default Swift libraries and Swift/SwiftUI code. RsyncUI is stable, and there are always parts of the code
-which are not reviewed for some period of time. When I am reviewing old code, I often see a potential for update and refactor. Sometimes a
-refactor does not work as expected. But most of the time a refactor makes the code better and more efficient.
+which are not reviewed for some period of time. Most of the time, a refactor makes the code better and more efficient.
 
 {{< /alert >}}
 
@@ -42,11 +41,11 @@ This release is primarly a review and refactor of code where appropriate.
 - in *Rsync parameters* view, minor fix when adding your own parameters to `rsync`
   - it is working today, but the view itself is not properly reset after adding a parameter
 - there has been several refactor last week
-  - some code is refactored using higher order functions like `map`, `compactMap` to replace `for` loops,
-  higher order functions are quicker and makes the code cleaner and more easy to read
-  - Combine is replaced where used for `debounce`, replaced by using like `try await Task.sleep(seconds: 1)`,
+  - most `for` loops are refactored using *higher order* functions like `map`, `compactMap`, *higher order* functions are quicker
+  and makes the code cleaner and easier to read
+  - Combine is replaced where used for `debounce` function only, replaced by using  `try await Task.sleep(seconds: 1)`,
   seconds may be 1, 2 or 3 seconds depends on the case
-  - Combine is used only in Process object listening for signals from `rsync` when it executes, as far as I
+  - Combine is *only* used in Process object listening for signals from `rsync` when it executes, as far as I
  understand from reading other articles about Combine it is not clear what the future of Combine is
   - cleaned up "trimming" of output from `rsync` used in Snapshots, Restore
   - and a few other refactors as well, I am reviewing most of the code

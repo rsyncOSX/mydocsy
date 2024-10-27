@@ -9,14 +9,6 @@ lastmod = "2024-09-06"
 
 {{< alert >}}
 
-If there is anything in this documentation that is unclear or imprecise, I would greatly appreciate it if you could let me know.
-English is not my mother tongue, and even in Norwegian, which is my mother tongue, I can be unclear and imprecise. If you see errors, ambiguities
-and unclear text please let me know or create an issue. Docsy, the Hugo theme for these pages, appends at bottom on page a Feedback button.
-
-{{< /alert >}}
-
-{{< alert >}}
-
 RsyncUI is a pure *SwiftUI*, *Swift* based macOS application, built for macOS Sonoma and later, utilizing the command line tool `rsync` for synchronizing files.
 It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.
 

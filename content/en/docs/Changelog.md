@@ -32,7 +32,7 @@ compile time."*
 
 ### Version 2.1.6 (build 116) - 29 October 2024
 
-This release is primarly review and refactor of code where appropriate. And a few minor fize as well. And the review of
+This release is primarly review and refactor of code where appropriate. And a few minor fixes as well. And the review of
 code will continue until all code is checked...
 
 - issue with links to the Changelog and documentation are fixed

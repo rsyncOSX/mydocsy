@@ -30,6 +30,23 @@ compile time."*
 
 {{< /alert >}}
 
+### Version 2.1.7 (build 117) - in development
+
+Most likely to be released late in November 2024. Changes will be updated here. The views will probably be changed before
+release, the development is just commenced.
+
+- the estimate view is updated, an arrow points which task is estimated, blue text indicate task is estimated
+{{< figure src="/images/217/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+- in *Task view*, there will be a new view for global changes, either parts of string or full text
+  - an example, the server and user name is changed, update all tasks all in one go
+  - another example, the mountpoint for local attached disk is changed, update only the mountpoint all tasks in one go
+  - changes of data to be confirmed before update
+
+{{< figure src="/images/217/globalchange.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
+
 ### Version 2.1.6 (build 116) - 29 October 2024
 
 This release is primarly review and refactor of code where appropriate. And a few minor fixes as well. And the review of

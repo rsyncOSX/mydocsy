@@ -35,14 +35,17 @@ compile time."*
 Most likely to be released late in November 2024. Changes and enhancements to be be updated here.
 
 - the estimate view is updated, an arrow points which task is estimated, blue text indicate task is estimated
+
 {{< figure src="/images/217/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 - in *Task view*, there will be a new view for global changes, either parts of string or full text
-  - an example, the server and user name is changed, update all tasks in one go
-  - another example, the mountpoint for local attached disk is changed, update only the mountpoint all tasks in one go
+  - an example, the mountpoint for local attached disk is changed, update only the mountpoint all tasks in one go
+    - the `$` is used as split character, the string `LaCie $ NewMount` updates all mountpoints
+    - if no split character `$` the complete string is replaced
   - changes of data to be confirmed before update
 
 {{< figure src="/images/217/globalchange.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/217/globalchange2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 
 

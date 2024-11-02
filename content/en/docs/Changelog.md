@@ -38,13 +38,17 @@ Most likely to be released late in November 2024. Changes and enhancements to be
 
 {{< figure src="/images/217/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-- in *Task view*, there will be a new view for global changes, either parts of string or full text
+- in *Task view*, there will be a new view for global changes, either parts of string or full string
   - an example, the mountpoint for local attached disk is changed, update only the mountpoint all tasks in one go
     - the `$` is used as split character, the string `LaCie $ NewMount` updates all mountpoints
-    - if no split character `$` the complete string is replaced
-  - changes of data to be confirmed before update
+    - if no split character `$` the complete string is replaced, like if you want to replace a servername or login id,
+    just enter new string and no split character
+  - changes of data to be confirmed before update and write updated data to storage
 
 {{< figure src="/images/217/globalchange.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The mountpoint `/Volume/LaCie` is updated on all tasks to `/Volume/NewMount`, and only the mountpoint is updated.
+
 {{< figure src="/images/217/globalchange2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 

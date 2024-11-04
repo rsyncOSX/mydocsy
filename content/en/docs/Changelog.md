@@ -32,8 +32,8 @@ compile time."*
 
 ### Version 2.1.7 (build 117) - 4 nov 2024 release candidate
 
-The rc will be updated when there are updates. The rc will be released as version 2.1.8 when
-released to make sure also users of the rc gets notified when released. Version 2.1.8 is most likely to be
+The rc will be updated when there are updates. The rc will be released as version 2.1.8
+to make sure also users of the rc gets notified when released. Version 2.1.8 is most likely to be
 released late in November 2024. Changes and enhancements to be be updated here.
 
 - the estimate view is updated, an arrow points which task is estimated, blue text indicate task is estimated

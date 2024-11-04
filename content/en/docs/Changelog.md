@@ -30,9 +30,11 @@ compile time."*
 
 {{< /alert >}}
 
-### Version 2.1.7 (build 117) - in development
+### Version 2.1.7 (build 117) - 4 nov 2024 release candidate
 
-Most likely to be released late in November 2024. Changes and enhancements to be be updated here.
+The rc will be updated when there are updates. The rc will be released as version 2.1.8 when
+released to make sure also users of the rc gets notified when released. Version 2.1.8 is most likely to be
+released late in November 2024. Changes and enhancements to be be updated here.
 
 - the estimate view is updated, an arrow points which task is estimated, blue text indicate task is estimated
 
@@ -50,8 +52,6 @@ Most likely to be released late in November 2024. Changes and enhancements to be
 The mountpoint `/Volume/LaCie` is updated on all tasks to `/Volume/NewMount`, and only the mountpoint is updated.
 
 {{< figure src="/images/217/globalchange2.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-
 
 ### Version 2.1.6 (build 116) - 29 October 2024
 

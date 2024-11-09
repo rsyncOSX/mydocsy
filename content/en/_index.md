@@ -10,11 +10,11 @@ title: How to use RsyncUI
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
-RsyncUI is a GUI only on top of rsync. 
+RsyncUI is a GUI only on top of rsync.
 
-RsyncUI is a pure *SwiftUI* based macOS application, built for macOS Sonoma and later, utilizing the command line tool *rsync* for synchronizing files. It is *rsync* which executes the real synchronizing task, not RsyncUI.
-
-RsyncUI is signed and notarized by Apple.
+RsyncUI is a *Swift* and *SwiftUI* based macOS application, built for macOS Sonoma and later, utilizing the command line tool *rsync* for
+synchronizing files. It is rsync which executes the synchronizing tasks, not RsyncUI. RsyncUI is a GUI only ontop of rsync.
+RsyncUI is *signed* and *notarized* by Apple.
 
 {{% /blocks/lead %}}
 {{% blocks/section color="dark" type="row" %}}

@@ -10,8 +10,14 @@ menu: {main: {weight: 10}}
 
 {{% blocks/section %}}
 
-Hi, I am Thomas, e-mail: <thomeven@gmail.com>. The development of RsyncOSX commenced early in 2016 as a personal project to learn Swift.
-And the development of RsyncUI began late in 2020 to learn SwiftUI. I have a master's degree in computing science, but I am
+My e-mail is: <thomeven@gmail.com>, if you have any ideas or thougths about RsyncUI, please drop me an e-mail.
+**RsyncOSX** was archived and development stopped in August 2024. **RsyncUI** is in active development. All experience I
+have from developing RsyncOSX, are used in the development of RsyncUI.
+
+The development of RsyncOSX commenced early in 2016 as a personal project to learn Swift.
+And the development of RsyncUI began late in 2020 to learn SwiftUI.
+
+I have a master's degree in computing science, but I am
 not a *professional developer*. I did my master's in the days when Linux was released in 1991 and the Internet became a public
 service. And a few years ahead of that, in 1989, the Web was invented at Cern.
 

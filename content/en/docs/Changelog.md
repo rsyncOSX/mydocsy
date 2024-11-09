@@ -32,7 +32,7 @@ compile time."*
 
 ### Version 2.1.7 (build 117) - 4 nov 2024 release candidate
 
-The rc will be released as version 2.1.8 later in November 2024, to make sure also users of the rc gets notified when released.
+The rc will be released as version 2.1.8 later in November 2024, to make sure users of the rc also gets notified when released.
 Changes and enhancements to be be updated here.
 
 - a few refactors in code, most of the code are now reviewed

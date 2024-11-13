@@ -30,29 +30,12 @@ compile time."*
 
 {{< /alert >}}
 
-### Version 2.1.7 (build 117) - 4 nov 2024 release candidate
+### Version 2.1.8 (build 117) - to be relased soon
 
-The rc will be released as version 2.1.8 later in November 2024, to make sure users of the rc also gets notified when released.
-Changes and enhancements to be be updated here.
+Update 13 November 2024
 
-- a few refactors in code, most of the code are now reviewed
-- the message of new version is changed, a minor update
-- the estimate view is updated, an arrow points which task is estimated, blue text indicate task is estimated
-
-{{< figure src="/images/217/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-- in *Task view*, there will be a new view for global changes, either parts of string or full string
-  - an example, the mountpoint for local attached disk is changed, update only the mountpoint all tasks in one go
-    - the `$` is used as split character, the string `LaCie $ NewMount` updates all mountpoints
-    - if no split character `$` the complete string is replaced, like if you want to replace a servername or login id,
-    just enter new string and no split character
-  - changes of data to be confirmed before update and write updated data to storage
-
-{{< figure src="/images/217/globalchange.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-The mountpoint `/Volume/LaCie` is updated on all tasks to `/Volume/NewMount`, and only the mountpoint is updated.
-
-{{< figure src="/images/217/globalchange2.png" alt="" position="center" style="border-radius: 8px;" >}}
+There are few refactors and fixes, most of the code are now reviewed. And a few [enhancements](/docs/version218/)
+as well.
 
 ### Version 2.1.6 (build 116) - 29 October 2024
 

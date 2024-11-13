@@ -31,7 +31,7 @@ will commit changes, by confirm.
 
 I have two macs now, got the new Mac Mini 4 some days ago. In version 1.1.9, not this version, there will
 be a view to let you synchronize and update your local data from a remote source. If remote data is
-on a Git server, like GitHub, there is no need for this. Just do `git pull` and `git push` to updare
+on a Git server, like GitHub, there is no need for this. Just do `git push` and `git pull` to update
 your local data. All my development, swift code and Hugo based sites are hosted on GitHub.
 
 But I have more than 100GB of photos to keep in sync on my two macs. All my photos are backed up on

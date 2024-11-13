@@ -39,18 +39,17 @@ But I have more than 100GB of photos to keep in sync on my two macs. All my phot
 a local server, and the challenge is to discover when and how to update local data on
 either of the macs.
 
-My other mac, a MacBook Pro M3 travels with on like like photo trips. When I am back in house I
+My other mac, a MacBook Pro M3 travels with on like photo trips. When I am back in house I
 always synchronize data to my remote server. And then I have to update my new Mac Mini as well
 without loosing any data. A real challenge.
 
 {{< figure src="/images/218/synchronize.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-There is already added arguments for checking if a remote got more data than your local mac. Until next
-release 1.1.9, the rsync string might be copied and pasted into a terminal window.
+There is already added arguments for checking if a remote got more data than your local mac. Until next release 1.1.9, the rsync string might be copied and pasted into a terminal window for check.
 
 {{< figure src="/images/218/checkremote.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-There is some new strings as well. Both rsync version and notify when there is an update.
+There are some new strings as well. Both rsync version and notify when there is an update.
 
 {{< figure src="/images/218/newstrings.png" alt="" position="center" style="border-radius: 8px;" >}}
 

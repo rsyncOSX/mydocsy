@@ -9,7 +9,8 @@ lastmod = "2024-09-04"
 
 ### Version 2.1.8 (build 118) - to be released soon
 
-The estimate view is updated, an arrow points which task is estimated, blue text indicate task is estimated
+The estimate view is updated, an arrow points which task is estimated, blue text indicate estimate is
+completed.
 
 {{< figure src="/images/218/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -53,6 +54,6 @@ There is some new strings as well. Both rsync version and notify when there is a
 
 {{< figure src="/images/218/newstrings.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-And the Tasks view notify you to remeber update wgen there are changes.
+And the Tasks view notify you to remeber update when there are changes.
 
 {{< figure src="/images/218/addtask.png" alt="" position="center" style="border-radius: 8px;" >}}

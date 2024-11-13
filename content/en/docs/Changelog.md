@@ -30,7 +30,7 @@ compile time."*
 
 {{< /alert >}}
 
-### Version 2.1.8 (build 117) - to be relased soon
+### Version 2.1.8 (build 118) - to be relased soon
 
 Update 13 November 2024
 

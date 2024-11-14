@@ -7,12 +7,18 @@ categories = ["general information"]
 lastmod = "2024-09-04"
 +++
 
-### Version 2.1.8 (build 118) - to be released soon
+### Version 2.1.8 (build 118)
+
+To be released soon
+
+#### Estimates
 
 The estimate view is updated, an arrow points which task is estimated, blue text indicate estimate is
 completed.
 
 {{< figure src="/images/218/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+#### Global changes
 
 In *Task view*, there is a new view for global changes, either parts of string or full string.
 
@@ -30,9 +36,11 @@ will commit changes, by confirm.
 
 {{< figure src="/images/218/replace2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-I have two macs now, got the new Mac Mini 4 some days ago. In version 1.1.9, not this version, there will
+#### Keep two macs in sync, partially in place
+
+I have two macs now, got the new Mac Mini 4 some days ago. In **version 1.1.9** there will
 be a view to let you synchronize and update your local data from a remote source. If remote data is
-on a Git server, like GitHub, there is no need for this. Just do `git push` and `git pull` to update
+on a Git server, like GitHub, there is no need for this. Just do a `git push` and `pull` to update
 your local data. All my development, swift code and Hugo based sites are hosted on GitHub.
 
 But I have more than 100GB of photos to keep in sync on my two macs. All my photos are backed up on
@@ -45,13 +53,18 @@ without loosing any data. A real challenge.
 
 {{< figure src="/images/218/synchronize.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-There is already added arguments for checking if a remote got more data than your local mac. Until next release 1.1.9, the rsync string might be copied and pasted into a terminal window for check.
+There is already added arguments for checking if a remote got more data than your local mac. Until next release 1.1.9,
+the rsync string might be copied and pasted into a terminal window for check.
 
 {{< figure src="/images/218/checkremote.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+#### New strings
 
 There are some new strings as well. Both rsync version and notify when there is an update.
 
 {{< figure src="/images/218/newstrings.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+#### Message about update
 
 And the Tasks view notify you to remeber update when there are changes.
 

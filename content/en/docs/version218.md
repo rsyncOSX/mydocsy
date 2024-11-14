@@ -9,7 +9,7 @@ lastmod = "2024-09-04"
 
 ### Version 2.1.8 (build 118)
 
-To be released soon
+Released 14 November 2024.
 
 #### Estimates
 

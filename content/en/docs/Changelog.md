@@ -30,9 +30,7 @@ compile time."*
 
 {{< /alert >}}
 
-### Version 2.1.8 (build 118) - to be relased soon
-
-Update 13 November 2024
+### Version 2.1.8 (build 118) - 14 November 2024
 
 There are few refactors and fixes, most of the code are now reviewed. And a few [enhancements](/docs/version218/)
 as well.

@@ -36,31 +36,10 @@ will commit changes, by confirm.
 
 {{< figure src="/images/218/replace2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-#### Keep two macs in sync, partially in place
+#### New string
 
-I have two macs now, got the new Mac Mini 4 some days ago. In **version 1.1.9** there will
-be a view to let you synchronize and update your local data from a remote source. If remote data is
-on a Git server, like GitHub, there is no need for this. Just do a `git push` and `pull` to update
-your local data. All my development, swift code and Hugo based sites are hosted on GitHub.
-
-But I have more than 100GB of photos to keep in sync on my two macs. All my photos are backed up on
-a local server, and the challenge is to discover when and how to update local data on
-either of the macs.
-
-My other mac, a MacBook Pro M3 travels with on like photo trips. When I am back in house I
-always synchronize data to my remote server. And then I have to update my new Mac Mini as well
-without loosing any data. A real challenge.
-
-{{< figure src="/images/218/synchronize.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-There is already added arguments for checking if a remote got more data than your local mac. Until next release 1.1.9,
-the rsync string might be copied and pasted into a terminal window for check.
-
-{{< figure src="/images/218/checkremote.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-#### New strings
-
-There are some new strings as well. Both rsync version and notify when there is an update.
+There are some new strings as well. Both rsync version and a notify when there is a new version
+avaliable for download.
 
 {{< figure src="/images/218/newstrings.png" alt="" position="center" style="border-radius: 8px;" >}}
 

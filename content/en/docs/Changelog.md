@@ -30,6 +30,32 @@ compile time."*
 
 {{< /alert >}}
 
+### Version 2.1.9 (build 119) - not yet released
+
+The main new feature in this release is a view to verify if your local data needs to be updated from remote or not. If you are
+using two ore more macs, which I do, and all macs synchronize data to the same remote storage. If that remote storage is not
+a Git server, like GitHub, there might be some challenges to keep the macs in sync and not loosing any data.
+
+It do also recommend to use `git` on your local data. If any local data is either deleted or overwritten, as simple git
+command will reverce any changes.
+
+There are some restrictions:
+
+- a parameter `--exclude=.git` is appended
+- a parameter `--exclude=.DS_Store` is appended
+- the parameter `--delete` is removed, it is a regular copy of missing files
+  - this parameter is a default parameter to keep source and destination i sync
+- normally additional parameters for rsync is not needed, but the user might choose to include user added parameters
+
+If the remote is a Gitserver, a regular `git push` and `pull` will do the magic.
+
+I do need this enhancement myself. I have more than 3000 bird photos from the last four years which are backed up to a
+local remote server at home. There are photos added, deleted and changes to sidecars of photos. A sidecar is small file which
+stores any changes to the raw photofile. As long as I was using only one mac all changes was on that mac. Now, with two macs,
+I will use both macs working on my photos. And when I synchronize my changes, I need to pick up those changes on my second mac.
+
+The new view will by no means be automatic. But there will be info collected for you to decide what to do.
+
 ### Version 2.1.8 (build 118) - 14 November 2024
 
 There are few refactors and fixes, most of the code are now reviewed. And a few [enhancements](/docs/version218/)

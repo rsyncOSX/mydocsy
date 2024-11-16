@@ -59,8 +59,12 @@ The new view will by no means be automatic. But there will be information collec
 
 ### Version 2.1.8 (build 118) - 14 November 2024
 
-There are few refactors and fixes, most of the code are now reviewed. And a few [enhancements](/docs/version218/)
-as well.
+The following are updated, and the user documentation is updated as well.
+
+- a few refactors and fixes, most of the code are now reviewed
+- the estimate view is updated, an arrow points which task is estimated, blue text indicate estimate is completed
+- in *Task view*, there is a new view for global changes, either parts of string or full string
+- in *Task view*, a notify to remeber update when there are changes
 
 ### Version 2.1.6 (build 116) - 29 October 2024
 

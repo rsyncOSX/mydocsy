@@ -64,6 +64,28 @@ The following are data about tasks:
 - Remote server:
   - either server name or IP-address for remote server
 
+
+#### Global changes
+
+Global changes, either parts of string or full string. This function might be used to change and update all
+tasks in one go. You might update task by task, but if there are changes to all tasks this is an effective
+method to apply changes.
+
+- an example, parts of remote catalog is changed, update all tasks in one go
+  - the `$` is used as split character, the string `backups $ newbackup` updates all remote catalogs
+  - if no split character `$`, the complete string is replaced
+- there is no split character for remote user and remote server
+- changes of data to be confirmed before update and write updated data to storage
+- and when split character `$` is added, the view updates dynamically with string of replace
+
+{{< figure src="/images/add/replace1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The remote catalog `/backups/` is updated on all tasks to `/newbackup/`. By pressing enter in any field
+will commit changes, by confirm.
+
+{{< figure src="/images/add/replace2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
 #### Catalogs
 
 Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the mounted volumes are presented.
@@ -76,7 +98,7 @@ Return, select the left arrow on the toolbar, to main Task view. To add suggeste
 {{< figure src="/images/add/homecatalog_return.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 
-### Copy and paste
+#### Copy and paste
 
 Shortcuts for copy and paste are `⌘C` and  `⌘V` or from the Edit menu. The copy and paste makes a copy of selected tasks and marks them with copy.
 The copy inlcudes all parameters of the copied tasks.

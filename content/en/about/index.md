@@ -4,11 +4,11 @@ linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About" %}}
+{{% blocks/cover title="About" height="auto" %}}
 
 {{% /blocks/cover %}}
 
-{{% blocks/section %}}
+{{% blocks/section color="primary" %}}
 
 My e-mail is: <thomeven@gmail.com>, if you have any ideas or thougths about RsyncUI, please drop me an e-mail.
 **RsyncOSX** was archived and development stopped in August 2024. **RsyncUI** is in active development. All experience I
@@ -26,13 +26,14 @@ I am not a UI designer, and some users might find the UI complicated and less us
 The maintenance and development of RsyncUI is one of my hobbies. If you like using RsyncUI, please consider giving me a
 star on the GitHub repository. Every single star is motivation for me to continue development of RsyncUI.
 
-In May 2022, I retired from work at the age of 62. I am [a passionate photographer](https://photosbythomas.netlify.app/) of birds and love staying in the Norwegian mountains. Grandkids, photography, development of RsyncUI and cross-country skiing are some activities which keep me busy.
+In May 2022, I retired from work at the age of 62. I am [a passionate photographer](https://photosbythomas.netlify.app/) of birds and
+love staying in the Norwegian mountains. Grandkids, photography, development of RsyncUI and cross-country skiing are some activities which keep me busy.
 
 {.text-center}
 
 {{% /blocks/section %}}
 
-{{% blocks/section %}}
+{{% blocks/section color="white" %}}
 
 #### A few words about the code
 
@@ -67,7 +68,7 @@ switch on. And I have not yet any success when RsyncUI is set to use default rsy
 
 {{% /blocks/section %}}
 
-{{% blocks/section %}}
+{{% blocks/section color="primary" %}}
 
 #### How are these pages built?
 

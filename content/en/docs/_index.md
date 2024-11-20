@@ -1,11 +1,8 @@
-+++
-author = "Thomas Evensen"
-title = "RsyncUI - a GUI for rsync"
-date = "2024-09-06"
-tags = ["overview"]
-categories = ["general information"]
-lastmod = "2024-09-06"
-+++
+---
+title: RsyncUI - a GUI for rsync
+linkTitle: Documentation
+menu: { main: { weight: 20 } }
+---
 
 {{< alert >}}
 

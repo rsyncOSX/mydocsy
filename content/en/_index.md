@@ -1,5 +1,6 @@
 ---
-title: How to use RsyncUI
+title: RsyncUI - a GUI for rsync
+description: How to use RsyncUI
 ---
 
 {{< blocks/cover title="How to use RsyncUI" image_anchor="top" height="full" >}}

@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
 title = "Changelog"
-date = "2024-09-04"
+date = "2024-11-14"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod = "2024-09-04"
 +++
 {{< alert >}}
 

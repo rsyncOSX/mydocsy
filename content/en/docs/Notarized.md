@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
+date = "2020-08-06"
 title =  "Signing and notarization"
 tags = ["notarize","signing"]
 categories = ["general information"]
-lastmod = "2020-08-06"
 +++
 
 {{< alert >}}

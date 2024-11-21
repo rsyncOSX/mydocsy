@@ -14,7 +14,7 @@ RsyncUI is *signed* and *notarized* by Apple.
 
 ### Changelog and install
 
-See the [changelog](/docs/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.
+See the [changelog](/blog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.
 RsyncUI can be installed by Homebrew or by [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases).
 
 ```bash

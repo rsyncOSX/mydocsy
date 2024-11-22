@@ -37,6 +37,8 @@ And when I synchronise my changes, I need to pick up those changes on my second 
 
 #### Other changes
 
+- there is a bug in discover `rsync error:`, discover error must be set in RsyncUI Settings
+  - the discover is fixed, an error is thrown if RsyncUI discover any output from rsync with the above error
 - still a few refactors
 - the number of output from rsync is increased from 10,000 to 30,000 before truncation of output
   - seems like SwiftUI handles tables of 30,000 lines very well

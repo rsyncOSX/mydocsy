@@ -42,3 +42,19 @@ And when I synchronise my changes, I need to pick up those changes on my second 
 - still a few refactors
 - the number of output from rsync is increased from 10,000 to 30,000 before truncation of output
   - seems like SwiftUI handles tables of 30,000 lines very well
+
+#### The discover error bug
+
+In version 2.1.6, there was a refactor to replace Combine in several places in code. Combine is only used within the Process object:
+
+*Combine is *only* used in the [Process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/ProcessRsync.swift)
+listening for signals from `rsync` when it executes, as far as I understand from reading other articles about Combine it is not clear what the future of
+Combine is*
+
+The refactor of Combine introduced a bug for discover `rsync error:` Discover `rsync error:` from
+the rsync output requiere set on in RsyncUI Settings. If an error is discovered, a message is thrown and the error is
+written to the log.
+
+{{< figure src="/images/219/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/219/error1.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/219/error2.png" alt="" position="center" style="border-radius: 8px;" >}}

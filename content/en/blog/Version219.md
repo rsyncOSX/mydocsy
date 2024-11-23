@@ -10,25 +10,29 @@ categories = ["changelog"]
 
 The main new feature in this release is a view to verify if your local data needs to be updated from remote or not.
 If you are using two or more macs, which I do, and all macs synchronise data to the same remote storage. If that
-remote storage is **not** a Git server, like GitHub, there might be some challenges to keeping the macs in sync and not losing any data.
+remote storage is **not** a Git server, like GitHub, there might be some challenges keeping the macs in sync and
+not losing any data.
 
 There are some restrictions to the arguments for rsync. Before appending the below arguments it is verified if any of
-these arguments are already added. The adjusted arguments are because the rsync command for push and pull is like
-a copy of files.
+these arguments are already added. The adjusted arguments are because the rsync command for push and pull to
+act like a regular *copy of files*, e.g. no `--delete` parameter.
 
 - the verify is for remote destinations on servers only
-- a parameter `--exclude=.git/` is appended
+- the arguments is a `--dry-run`, e.g an estimater run only
+- a parameter `--exclude=.git/` is appended, git repositories might be huge
 - a parameter `--exclude=.DS_Store` is appended
-- the parameter `--delete` is removed, it is a regular copy of missing files
+- the parameter `--delete` is removed, it is like a regular *copy of files*
   - this parameter is a default parameter to keep source and destination sync
-- the new view will by no means be automatic, but there will be information collected for you to decide what to do
+
+The new view is by no means automatic. But there will be information collected for you to decide what to do. And it is
+your own responsibility to verify your next action.
 
 If the remote destinations is stored on a Git server, like GitHub, a regular `git push` and `pull` will do the magic. There is need to
 verify a push and pull.
 
 #### Why this feature
 
-I do need this enhancement myself. I have more than 3000 bird photos of 130 GB from the last four years, which are synchronized, by RsyncUI,
+I have more than 3000 bird photos of 130 GB from the last four years, which are synchronized, by RsyncUI,
 to a local remote server at home. There are new photos added, old photos deleted, and updates to sidecars of photos. A sidecar is a small
 file that stores changes to the raw photofile.
 

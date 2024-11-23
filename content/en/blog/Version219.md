@@ -13,31 +13,7 @@ If you are using two or more macs, which I do, and all macs synchronise data to 
 remote storage is **not** a Git server, like GitHub, there might be some challenges keeping the macs in sync and
 not losing any data.
 
-There are some restrictions to the arguments for rsync. Before appending the below arguments it is verified if any of
-these arguments are already added. The adjusted arguments are because the rsync command for push and pull to
-act like a regular *copy of files*, e.g. no `--delete` parameter.
-
-- the verify is for remote destinations on servers only
-- the arguments is a `--dry-run`, e.g an estimater run only
-- a parameter `--exclude=.git/` is appended, git repositories might be huge
-- a parameter `--exclude=.DS_Store` is appended
-- the parameter `--delete` is removed, it is like a regular *copy of files*
-  - this parameter is a default parameter to keep source and destination sync
-
-The new view is by no means automatic. But there will be information collected for you to decide what to do. And it is
-your own responsibility to verify your next action.
-
-If the remote destinations is stored on a Git server, like GitHub, a regular `git push` and `pull` will do the magic. There is need to
-verify a push and pull.
-
-#### Why this feature
-
-I have more than 3000 bird photos of 130 GB from the last four years, which are synchronized, by RsyncUI,
-to a local remote server at home. There are new photos added, old photos deleted, and updates to sidecars of photos. A sidecar is a small
-file that stores changes to the raw photofile.
-
-As long as I was using only one mac, all updates were on that mac. Now, with two macs, I use both macs working on my photos.
-And when I synchronise my changes, I need to pick up those changes on my second mac.
+See [more info](/blog/2024/11/23/verify-a-remote/).
 
 #### Other changes
 

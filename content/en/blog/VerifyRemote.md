@@ -19,7 +19,7 @@ these arguments are already added. The adjusted arguments are because the rsync 
 act like a regular *copy of files*, e.g. no `--delete` parameter.
 
 - the verify is for remote destinations on servers only
-- the arguments is a `--dry-run`, e.g an estimater run only
+- the arguments is a `--dry-run`, e.g an estimate run
 - a parameter `--update` as appended, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a
 modified time that is newer than the source file
 - a parameter `--exclude=.git/` is appended, git repositories might be huge

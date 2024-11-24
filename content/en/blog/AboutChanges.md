@@ -34,7 +34,11 @@ a refactor does not work as expected.
 
 - [RsyncUI](https://github.com/rsyncOSX/RsyncUI) - the main repository
 
-##### Packages
+##### Swift Package Manager
+
+Swift Package Manager (SPM) and Swift Testing is a significant change to increase quality of code. By using SPM, parts of the source code in RsyncUI is
+extraced and created as packages. By SPM and Swift Testing, code is modularized, isolated, and tested before committing changes. Swift Testing is new and
+the latest framework for testing code.
 
 - [RsyncArguments](https://github.com/rsyncOSX/RsyncArguments) - create parameters to `rsync` from configurations
 - [sshCreateKey](https://github.com/rsyncOSX/sshCreateKey) - assist to create ssh identityfile and key in RsyncUI

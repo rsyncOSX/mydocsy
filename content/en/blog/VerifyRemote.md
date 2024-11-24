@@ -20,6 +20,8 @@ act like a regular *copy of files*, e.g. no `--delete` parameter.
 
 - the verify is for remote destinations on servers only
 - the arguments is a `--dry-run`, e.g an estimater run only
+- a parameter `--update` as appended, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a
+modified time that is newer than the source file
 - a parameter `--exclude=.git/` is appended, git repositories might be huge
 - a parameter `--exclude=.DS_Store` is appended
 - the parameter `--delete` is removed, it is like a regular *copy of files*

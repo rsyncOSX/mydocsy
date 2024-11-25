@@ -102,13 +102,13 @@ params:
 
   # A link to latest version of the docs. Used in the "version-banner" partial to
   # point people to the main doc site.
-  url_latest_version: https://github.com/rsyncOSX/docsy
+  url_latest_version: https://github.com/rsyncOSX/mydocsy
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/rsyncOSX/docsy
+  github_repo: https://github.com/rsyncOSX/mydocsy
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/rsyncOSX/docsy
+  github_project_repo: https://github.com/rsyncOSX/mydocsy
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
@@ -127,7 +127,8 @@ params:
   prism_syntax_highlighting: false
 
   copyright:
-    authors: Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+    authors:
+      Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
     from_year: 2018
 
   # User interface configuration
@@ -151,9 +152,13 @@ params:
       enable: true
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
-        Glad to hear it! Please <a href="https://github.com/rsyncOSX/docsy/issues/new">tell us how we can improve</a>.
+        Glad to hear it! Please <a
+        href="https://github.com/rsyncOSX/mydocsy/issues/new">tell us how we can
+        improve</a>.
       'no': >-
-        Sorry to hear that. Please <a href="https://github.com/rsyncOSX/docsy/issues/new">tell us how we can improve</a>.
+        Sorry to hear that. Please <a
+        href="https://github.com/rsyncOSX/mydocsy/issues/new">tell us how we can
+        improve</a>.
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
@@ -179,7 +184,7 @@ params:
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
-        url: https://github.com/google/docsy
+        url: https://github.com/rsyncOSX/mydocsy
         icon: fab fa-github
         desc: Development takes place here!
     #  - name: Slack

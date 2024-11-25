@@ -76,19 +76,20 @@ updated on my local mac and it makes sence I dont want to pull it from remote.
 #### How does it work?
 
 The code for evaluate is by no means advanced. The last 15 rows, which are statistics from rsync, are removed from both
-the `pull` and `push`. And all rows which has trailing `/` are also removed, rows which are catalogs.
+the `pull` and `push`. And all rows with trailing `/` are also removed, rows which are catalogs.
 
-The result from the `pull` are subtracted with result from `push`. And the other way around, `push`is subtraced with result
-from `pull`.
+The result from the `pull` is subtracted with result from `push`. And the other way around, `push`is subtraced with result
+from `pull`. After both subtractions, the resulting arrays of rows, which are `[String]`, are compared by number of rows.
 
-After both subtractions, the resulting arrays of rows, which are `[String]`, are compared by number of rows.
 And the result is:
 
 - if `pull` has more data than `push`, most likely the remote is more updated than local
 - if `push`has more data than `pull`, most likely the local is more updated than remote
 - if equal amount of rows, most likely the local is more updated than remote
 
-The code below shows the result of both rsync commands. The parameter `--update` is important, it checks the timestamps.
+The code below shows the result of both rsync commands, copied from RsyncUI and pasted into a
+terminal view. The parameter `--update` is important, it checks the timestamps. This paramater is
+not appended to the normal synchroize tasks within RsyncUI.
 
 ```code
 // A PULL from REMOTE --> LOCAL

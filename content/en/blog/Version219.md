@@ -41,3 +41,22 @@ written to the log.
 {{< figure src="/images/219/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/219/error1.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/219/error2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+#### Monitor network
+
+Monitor network is set on or off in RsyncUI settings.
+
+Lately, on macOS Sequoia, the monitor network has reported some false negatives. And sometimes it does not complain
+about missing network at all. I dont know why this happens. There is a timout, a few seconds, on the check, and if the
+respond from server is not received before timeout an error is thrown.
+
+The check verify, by TCP on port 22 if port is not changed, that the server responds. And sometimes when the code
+throws an error dropped network, RsyncUI still manage to pull data from the server.
+
+Anyway, I have for the moment switched off the check. If on, the check is executed at every networked task, and that might
+be to much.
+
+So, I will refactor the code to only do a check for dropped network, only when the loaded profile contains networked tasks.
+
+If you discover any issues with monitor network, just switch it off. There will be some changes before version 1.2.0
+is released in first week of December 2024.

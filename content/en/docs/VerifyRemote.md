@@ -78,7 +78,7 @@ updated on my local mac and it makes sence I dont want to pull it from remote.
 #### Copy and paste
 
 In Rsync parameters, choose the function *Show parameters* on the toolbar. After selecting the task, select the *Pull remote*
-and copy the rsync command. The rsync command includes the `--dry-run` parameter, which has to be removed you have verify
+and copy the rsync command. The rsync command includes the `--dry-run` parameter, which has to be removed when you have verify
 the command.
 
 {{< figure src="/images/verify/copyandpaste.png" alt="" position="center" style="border-radius: 8px;" >}}

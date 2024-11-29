@@ -43,7 +43,7 @@ research and advice on how to solve specific problems. Reading about other devel
 valuable input for me.
 
 I am learning almost every day and by every new release of Swift, SwiftUI and Xcode there are new features to learn.
-All major changes and updates are updated in the [changelog](/docs/changelog/). I am also using tools
+All major changes and updates are updated in the [changelog](/blog/). I am also using tools
 like [SwiftLint](https://github.com/realm/SwiftLint), [SwiftFormat](https://github.com/nicklockwood/SwiftFormat)
 and [periphery](https://github.com/peripheryapp/periphery) to assist me in developing code.
 

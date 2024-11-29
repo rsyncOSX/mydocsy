@@ -52,10 +52,5 @@ respond from server is not received before timeout an error is thrown.
 The check verify, by TCP on port 22 if port is not changed, that the server responds. And sometimes when the code
 throws an error dropped network, RsyncUI still manage to pull data from the server.
 
-Anyway, I have for the moment switched off the check. If on, the check is executed at every networked task, and that might
-be to much.
-
-So, I will refactor the code to only do a check for dropped network, only when the loaded profile contains networked tasks.
-
-If you discover any issues with monitor network, just switch it off. There will be some changes before version 1.2.0
-is released in first week of December 2024.
+The monitor network code is refactored and only checked once, if set on, when the profile is loaded and
+there are networked tasks.

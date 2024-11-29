@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-09-03"
+date = "2024-11-28"
 title =  "Update tasks"
 tags = ["update","profile"]
 categories = ["synchronize"]
-lastmod = "2024-09-03"
 +++
 
 To update a task, select the task and to save changes, select the `checkmark` icon on the toolbar or use the `Enter` key.

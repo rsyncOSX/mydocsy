@@ -13,7 +13,7 @@ If you are using two or more macs, which I do, and all macs synchronise data to 
 remote storage is **not** a Git server, like GitHub, there might be some challenges keeping the macs in sync and
 not losing any data.
 
-See [more info](/blog/2024/11/25/verify-a-remote/).
+See [more info](/docs/verifyremote/).
 
 #### Other changes
 

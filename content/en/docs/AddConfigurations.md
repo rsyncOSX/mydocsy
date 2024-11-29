@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-09-03"
+date = "2024-11-29"
 title =  "Add tasks"
 tags = ["add","profile"]
 categories = ["synchronize"]
-lastmod = "2024-09-03"
 +++
 {{< alert color="warning" >}}
 

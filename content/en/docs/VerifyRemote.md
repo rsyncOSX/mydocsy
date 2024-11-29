@@ -1,16 +1,10 @@
 +++
 author = "Thomas Evensen"
-title = "Verify a remote"
-date = "2024-11-25"
-tags = ["changelog","version 2.1.9"]
-categories = ["changelog"]
+title = "Verify remote"
+date = "2024-11-20"
+tags = ["verify remote"]
+categories = ["synchronize"]
 +++
-
-This feature is to be released as part of version 2.1.9. The main new feature in this release is a view to verify if your local data
-needs to be updated from remote or not.
-
-This post takes some minutes to read, and the objective is to present how the *Verify a remote* is implemented.
-
 
 {{< alert >}}
 
@@ -23,6 +17,15 @@ be handy.
 a push and pull data.
 
 The verify is for remote destinations on servers only,
+
+{{< /alert >}}
+
+{{< alert >}}
+
+If you use this function and decide to pull data from remote, please see bottom of this page. The easy way to pull data from a
+remote is copy the actual rsync command and paste it into a terminal view.
+
+You may also add a `syncremote` task, but I don´t advice to do so. You have more control if you copy and paste the command.
 
 {{< /alert >}}
 
@@ -71,6 +74,14 @@ updated on my local mac and it makes sence I dont want to pull it from remote.
 
 {{< figure src="/images/verify/local.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/verify/remote.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+#### Copy and paste
+
+In Rsync parameters, choose the function *Show parameters* on the toolbar. After selecting the task, select the *Pull remote*
+and copy the rsync command. The rsync command includes the `--dry-run` parameter, which has to be removed you have verify
+the command.
+
+{{< figure src="/images/verify/copyandpaste.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 
 #### How does it work?
@@ -148,9 +159,3 @@ Total bytes received: 532
 sent 201,243 bytes  received 532 bytes  403,550.00 bytes/sec
 total size is 142,287,735,879  speedup is 705,180.21 (DRY RUN)
 ```
-
-#### Only for networked tasks
-
-This feature is for networked tasks only.
-
-{{< figure src="/images/verify/noverify.png" alt="" position="center" style="border-radius: 8px;" >}}

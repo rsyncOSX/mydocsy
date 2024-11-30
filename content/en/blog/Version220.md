@@ -6,7 +6,7 @@ tags = ["changelog","version 2.2.0"]
 categories = ["changelog"]
 +++
 
-### Version 2.2.0 (build 120) - released 29 November 2024
+### Version 2.2.0 (build 120) - 29 November 2024
 
 The main new feature in this release is a view to verify if your local data needs to be updated from remote or not.
 If you are using two or more macs, which I do, and all macs synchronise data to the same remote storage. If that

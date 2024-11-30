@@ -8,7 +8,8 @@ categories = ["synchronize"]
 {{< alert color="warning" >}}
 
 Always verify, by `--dry-run` which is an estimation run,  the result of a new task before executing it.
-After adding the task, in the *Add and update task* view, select the task and then select the `checker flag` for an estimation run.
+After adding the task, in the *Add and update task* view, select the task and then the `play` icon on the toolbar,
+for an estimation run.
 
 {{< /alert >}}
 

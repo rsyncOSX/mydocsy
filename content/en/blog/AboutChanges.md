@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "About changes"
-date = "2024-11-29"
+date = "2024-11-30"
 tags = ["changelog","about changes"]
 categories = ["changelog"]
 +++

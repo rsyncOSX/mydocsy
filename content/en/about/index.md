@@ -60,9 +60,9 @@ there is a good probability that I will get the idea.
 
 One important requirement for macOS apps on Apple App Store is quote Apple:
 *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."*
-There are restrictions what an app can do inside the App Sandbox. Execute *rsync*, obvious, and enable passwordless
-login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when
-switch on. And I have not yet any success when RsyncUI is set to use default rsync in macOS and only attached discs.
+There are restrictions what an app can do inside the App Sandbox. Execute *rsync*, obvious, and *enable passwordless
+login by ssh* to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when
+switch on.
 
 {.text-center}
 

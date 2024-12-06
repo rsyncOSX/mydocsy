@@ -25,7 +25,7 @@ of the task is not known ahead.
 
 By Swift version 6, Apple released *strict concurrency*. By adopting to:
 
-- *Swift 6 mode*
+- *Swift 6 language mode*
 - *strict concurrency*
 
 developers has a tool that helps you find and fix data races at compile time.
@@ -46,8 +46,8 @@ What is new about asynchronous execution in version 2.2.2 of RsyncUI?
 
 If:
 
-- *Swift 6 Language Mode* is set on
-- *Strict Concurrency Checking* is set to *Complete*
+- *Swift 6 language Mode* is set on
+- *strict concurrency* checking is set to *Complete*
 
 Xcode will not allow, at compile time, any possible data race.
 

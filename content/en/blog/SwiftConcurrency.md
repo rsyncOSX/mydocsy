@@ -7,10 +7,10 @@ categories = ["changelog"]
 +++
 
 First of all, I need to communicate that I am only scratching the surface of Swift concurrency. And I am learning
-almost every day about Swift and SwiftUI. RsyncUI is a GUI application; most work is executed on the *main thread*. But from
-version 2.2.2, some work is moved from the main thread to background threads. RsyncUI works very well as it is, but
-RsyncUI is also a project to learn new features. It is also important that RsyncUI is stable. And every time new Swift features
-are adopted into RsyncUI, I am not releasing new versions before I know it is stable.
+almost every day about Swift and SwiftUI. RsyncUI is a GUI application; most work is executed on the *main thread*. But in
+version 2.2.2, most resource demanding work are moved from the main thread to background threads.
+RsyncUI works very well as it is, but RsyncUI is also a project to learn new features. It is also important that RsyncUI is stable.
+And every time new Swift features are adopted into RsyncUI, I am not releasing new versions before I know it is stable.
 
 ### Swift concurrency and asynchronous execution
 
@@ -51,13 +51,15 @@ If:
 
 Xcode will not allow, at compile time, any possible data race.
 
-In version 2.2.2 most of read data, decode data and sort data are executed on a background thread. Swift concurrency makes sure that
-no data race will occur. And again it is important for me to communicate I am only scratching the surface of Swift concurrency,
-and learning new stuff every day.
-I am not developing RsyncUI into a complex, by code, application.
+In version 2.2.2 most of read data, decode data and sort data are executed on a background thread. Sorting logrecords and
+prepare output from rsync for view are also moved to a background thread.
 
-The best example of how Swift concurrency works in RsyncUI is within the log view. Loading log records are done one a background thread.
-If there are like 1000 log records, you will see there is a slight delay before log records appear. When work is done on
+With the above settings in Xcode, Xcode makes sure that no data race will occur. And again it is important for me to communicate
+I am only scratching the surface of Swift concurrency, and learning new stuff every day. But I am not developing RsyncUI into a complex,
+by code, application. RsyncUI is still, in my opinion, easy to read and understand.
+
+One example of how Swift concurrency works in RsyncUI is within the log view. Loading log records are done one a background thread.
+If there are like 1000 or more log records, you will see there is a slight delay before log records appear. When work is done on
 the background thread, RsyncUI updates the view on the main thread.
 
 ### Combine and asynchronous execution

@@ -6,7 +6,7 @@ tags = ["changelog","version 2.2.2"]
 categories = ["changelog"]
 +++
 
-### Version 2.2.2 (build 120) - not yet released
+### Version 2.2.2 (build 122) - not yet released
 
 Version 2.2.2 is to be released in January 2025. Most of the resource demanding work, like sort and filter logrecords, prepare
 output from rsync which might be very big are refactored to background threads. The limit for number of lines in output from

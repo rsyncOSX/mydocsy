@@ -14,14 +14,14 @@ All GUI updates are executed on the *main thread*. Moving *resource demanding* w
 is beneficial for not blocking GUI updates. And the GUI does also respond when work is executed on a
 background thread.
 
-Most resource demanding works which are refactored to a background thread:
+Most resource demanding works are refactored to background threads:
 
 - sort and filter logrecords
-- prepare output from rsync, which might be big
+- prepare output from rsync
   - output from rsync can often be more than 50,000 rows
   - the previous limit before truncation, 40,000 rows, are now removed
 - reading data from permanent store is on a background thread
-  - reading and sorting logrecords may requiere some work if there is many records
+  - reading and sorting logrecords may requiere some work if there are many records
 - filter and soring logrecords
 
 See [blog about Swift concurrency](/blog/2024/12/06/swift-concurrency/) for more info what is the major change in this version.

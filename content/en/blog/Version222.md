@@ -10,11 +10,12 @@ categories = ["changelog"]
 
 Version 2.2.2 is to be released in January 2025.
 
-All GUI updates are executed on the *main thread*. Moving *resource demanding* work to the background
-is beneficial for not blocking GUI updates. And the GUI does also respond when work is executed on a
-background thread.
+The [main repository](https://github.com/rsyncOSX/RsyncUI) is updated with latest development.
 
-Most resource demanding works are refactored to background threads:
+All GUI updates are executed on the *main thread*. Moving *resource demanding* work to the background
+thread is beneficial for possible not blocking for GUI updates.
+
+The following are refactored to background threads, by using `actor`:
 
 - sort and filter logrecords
 - prepare output from rsync

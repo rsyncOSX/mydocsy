@@ -15,7 +15,9 @@ The [main repository](https://github.com/rsyncOSX/RsyncUI) is updated with lates
 All GUI updates are executed on the *main thread*. Moving *resource demanding* work to the background
 thread is beneficial for possible not blocking for GUI updates.
 
-The following are refactored to background threads, by using `actor`:
+The following are refactored to background threads, by using `actor`. Only read data, sort and
+filter data and prepare data for views are asynchronous by using `actor`. Writing
+data to permanent store is from the main thread, by annotate with `@MainActor`.
 
 - sort and filter logrecords
 - prepare output from rsync
@@ -23,7 +25,6 @@ The following are refactored to background threads, by using `actor`:
   - the previous limit before truncation, 40,000 rows, are now removed
 - reading data from permanent store is on a background thread
   - reading and sorting logrecords may requiere some work if there are many records
-- filter and soring logrecords
 
 See [blog about Swift concurrency](/blog/2024/12/06/swift-concurrency/) for more info what is the major change in this version.
 

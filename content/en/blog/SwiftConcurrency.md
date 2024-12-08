@@ -6,66 +6,51 @@ tags = ["changelog","swift concurrency", "asynchronous"]
 categories = ["changelog"]
 +++
 
-First of all, I need to communicate that I am only scratching the surface of Swift concurrency. And I am learning
-almost every day about Swift and SwiftUI. RsyncUI is a GUI application; most work is executed on the *main thread*. But in
-version 2.2.2, most resource demanding work are moved from the main thread to background threads.
-RsyncUI works very well as it is, but RsyncUI is also a project to learn new features. It is also important that RsyncUI is stable.
-And every time new Swift features are adopted into RsyncUI, I am not releasing new versions before I know it is stable.
+To begin, I must acknowledge that my understanding of Swift concurrency is limited. I am actively learning about Swift and SwiftUI. RsyncUI is a graphical
+user interface (GUI) application; most of its work is executed on the main thread. However, in version 2.2.2, most resource-intensive tasks are moved from
+the main thread to background threads. RsyncUI functions effectively as it is, but it also serves as a learning opportunity for new features.
+Stability is also a crucial aspect of RsyncUI. Consequently, I refrain from releasing new versions until I am confident in its stability.
 
 ### Swift concurrency and asynchronous execution
 
-Concurrency and asynchronous execution are key components of the Swift language. The latest version of Swift makes it even easier
-to write asynchronous code using Swift´s `async` and `await` keywords. And using `actor` for executing work on a background thread.
-The concurrency model of Swift is complex, and it requires, at least for me, time and study to
-understand even the basics. Apart from GUI updates, which SwiftUI takes care of, there is no concurrency in RsyncUI.
-But there is asynchronous execution, but only one at a time.  Every time a `rsync` synchronize and restore tasks, the termination
-of the task is not known ahead.
+Concurrency and asynchronous execution are fundamental concepts in Swift. The latest version of Swift simplifies the writing of asynchronous code
+using Swift's `async` and `await` keywords, as well as the `actor` keyword for executing work on background threads. The Swift concurrency model is
+intricate, and it requires dedicated time and study to grasp its fundamentals. Apart from GUI updates, which SwiftUI handles, RsyncUI does not
+incorporate concurrency. However, it does support asynchronous execution, but only one task at a time. Each time a `rsync` synchronize and restore task is
+initiated, its termination is uncertain.
 
 ### Swift version 6 and the new concurrency model
 
-By Swift version 6, Apple released *strict concurrency*. By adopting to:
+Swift version 6 introduced *strict concurrency*. By adopting Swift 6 language mode and strict concurrency, developers gain access to a tool that assists
+in identifying and resolving data races at compile time.
 
-- *Swift 6 language mode*
-- *strict concurrency*
+Quote swift.org: *"More formally, a data race occurs when one thread accesses memory while the same memory is being modified by another thread.
+The Swift 6 language mode eliminates these issues by preventing data races at compile time."*
 
-developers has a tool that helps you find and fix data races at compile time.
+RsyncUI adheres to the new concurrency model of Swift 6. However, with the release of version 2.2.1 of RsyncUI, the majority of its work is performed on
+the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI),
+it is advantageous to execute these tasks on a background thread rather than the main thread. Executing such tasks on the main thread significantly
+increases the likelihood of GUI blocking and the application's unresponsiveness.
 
-Quote swift.org: *"More formally, a data race occurs when one thread accesses memory while
-the same memory is being mutated by another thread. The Swift 6 language mode eliminates these problems
-by preventing data races at compile time."*
+### RsyncUI Version 2.2.2
 
-RsyncUI is compliant to the new concurrency model of Swift 6. But, by the release of version 2.2.1 of RsyncUI, most of the work is
-done on what is called the `@MainActor`, which is the main thread.
-If an macOS application has some serious and resource demanding work to do behind the GUI, it is beneficial to execute that work on
-a *background thread* and not on the *main thread*. If executed on the main thread, there is a high probability that GUI is blocked and the
-application is not responding.
+**Asynchronous Execution Enhancements in Version 2.2.2 of RsyncUI**
 
-### RsyncUI version 2.2.2
+Version 2.2.2 of RsyncUI introduces significant improvements to asynchronous execution.
 
-What is new about asynchronous execution in version 2.2.2 of RsyncUI?
+**Key Changes:**
 
-If:
+- **Swift 6 Language Mode and Strict Concurrency Checking:** When Swift 6 language mode is enabled and strict concurrency checking is set to "Complete," Xcode at compile time prevents any potential data races.
+- **Background Thread Execution:** In version 2.2.2, the majority of read operations, data decoding, and sorting are executed on background threads. Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
+- **Ensuring Data Race Prevention:** With these Xcode settings, Xcode guarantees the absence of data races. It is important to note that while I am proficient in Swift concurrency and continuously learning, I am not developing RsyncUI into a complex, code-intensive application. My goal is to maintain its simplicity and ease of understanding.
 
-- *Swift 6 language Mode* is set on
-- *strict concurrency* checking is set to *Complete*
+**Example of Swift Concurrency in RsyncUI:**
 
-Xcode will not allow, at compile time, any possible data race.
+Swift concurrency is exemplified within the log view. Loading log records is performed on a background thread. When the number of log records exceeds 1000, a slight delay is observed before the records appear. Upon completion of the background thread's work, RsyncUI updates the view on the main thread.
 
-In version 2.2.2 most of read data, decode data and sort data are executed on a background thread. Sorting logrecords and
-prepare output from rsync for view are also moved to a background thread.
+**Combine and Asynchronous Execution:**
 
-With the above settings in Xcode, Xcode makes sure that no data race will occur. And again it is important for me to communicate
-I am only scratching the surface of Swift concurrency, and learning new stuff every day. But I am not developing RsyncUI into a complex,
-by code, application. RsyncUI is still, in my opinion, easy to read and understand.
-
-One example of how Swift concurrency works in RsyncUI is within the log view. Loading log records are done one a background thread.
-If there are like 1000 or more log records, you will see there is a slight delay before log records appear. When work is done on
-the background thread, RsyncUI updates the view on the main thread.
-
-### Combine and asynchronous execution
-
-Combine is only used within the `Process` object. This object is responsible for kicking of
-external task, like `rsync` synchronize task. Combine is used to monitor two *notifications*:
+The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks, such as the `rsync` synchronize task. Combine is employed to monitor two specific notifications.
 
 - `NSNotification.Name.NSFileHandleDataAvailable`
 - `Process.didTerminateNotification`

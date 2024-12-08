@@ -8,24 +8,21 @@ categories = ["changelog"]
 
 ### Version 2.2.2 (build 122) - not yet released
 
-Version 2.2.2 is to be released in January 2025.
+Version 2.2.2 is scheduled for release in January 2025.
 
-The [main repository](https://github.com/rsyncOSX/RsyncUI) is updated with latest development.
+The primary repository (https://github.com/rsyncOSX/RsyncUI) has been updated with the latest development.
 
-All GUI updates are executed on the *main thread*. Moving *resource demanding* work to the background
-thread is beneficial for possible not blocking for GUI updates.
+All graphical updates are executed on the main thread. Moving resource-intensive work to the background thread is advantageous to
+prevent GUI updates from blocking.
 
-The following are refactored to background threads, by using `actor`. Only read data, sort and
-filter data and prepare data for views are asynchronous by using `actor`. Writing
-data to permanent store is from the main thread, by annotate with `@MainActor`.
+The following tasks have been refactored to background threads using the `actor` framework: reading data, sorting and filtering data,
+and preparing data for views. Writing data to the permanent storage remains on the main thread, annotated with `@MainActor`.
 
-- sort and filter logrecords
-- prepare output from rsync
-  - output from rsync can often be more than 50,000 rows
-  - the previous limit before truncation, 40,000 rows, are now removed
-- reading data from permanent store is on a background thread
-  - reading and sorting logrecords may requiere some work if there are many records
+- Sorting and filtering log records
+- Preparing output from rsync
+  - rsync output can often exceed 50,000 rows. The previous limit of 40,000 rows has been removed.
+- Reading data from the permanent storage is executed on a background thread. Reading and sorting log records may require additional  work if there are numerous records.
 
-See [blog about Swift concurrency](/blog/2024/12/06/swift-concurrency/) for more info what is the major change in this version.
+For further details on the major changes in this version, please refer to the blog post at [blog/2024/12/06/swift-concurrency/](/blog/2024/12/06/swift-concurrency/).
 
-And there are a few other enhancements as well.
+Additionally, there are several other enhancements implemented in this version.

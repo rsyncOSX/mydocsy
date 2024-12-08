@@ -8,9 +8,10 @@ categories = ["changelog"]
 
 ### Version 2.2.1 (build 120) - 30 November 2024
 
-Sometimes a refactor causes some sideeffects. And sometimes it is difficult to verify that the refactor does not cause any issues.
-But when it happens, it is important to quick fix the issue and make a new release. The fix this time was a simple one line
-update in code, temporarly disable the Monitor network when updating profiles.
+Occasionally, refactoring can result in unintended side effects. Verifying that a refactoring does not cause any issues can be challenging.
+However, when such an occurrence arises, it is crucial to promptly address the issue and release a new version. The fix for this particular
+issue was relatively straightforward, involving a single line of code modification. Temporarily disabling the Monitor network during profile updates
+was implemented to resolve the problem.
 
-- fixed a bug in *Profiles view*, if Monitor network is on, RsyncUI enters a kind of endless loop informing no connection to network
-  - *Profiles view* is where you create and delete profiles
+The bug in question affected the *Profiles view*, where users create and delete profiles. When the Monitor network was enabled,
+RsyncUI entered an infinite loop, displaying no connection to the network.

@@ -22,7 +22,7 @@ such actions.
 Before executing a new task in RsyncUI, please perform an estimation run, a `--dry-run` , and inspect the result.
 If you inadvertently set an empty catalog as the source, RsyncUI, via rsync, will delete all files in the destination.
 
-For instructions on executing an estimation run, refer to the "Add tasks" view.
+For instructions on executing an estimation run, refer to the "Add tasks" section.
 
 {{< /alert >}}
 

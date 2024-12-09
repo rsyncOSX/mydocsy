@@ -29,7 +29,7 @@ If installed via Homebrew, the SHA-256 hash is automatically verified. For downl
 ### For New Users
 
 For new users, kindly refer to the [important information](/docs/important/) section. Additionally, please find information about the
-latest version of rsync to install: [latest version of rsync](/docs/rsync/).
+latest version [of rsync to install](/docs/rsync/).
 
 ### File Storage and Synchronization
 
@@ -56,7 +56,7 @@ If passwordless login is not enabled, additional actions are required before you
 ### New Tasks, Verification, and Synchronization
 
 After adding a task, you can execute a `--dry-run` by double-clicking on the
-task in the main view. The second double-click will execute the task in real time.
+task in the main view. The *second double-click* will execute, a synchronization, the task in real time.
 
 {{< alert color="warning" >}}
 
@@ -71,7 +71,11 @@ string into a terminal view, and execute the rsync command. The `--dry-run` para
 ### New users
 
 If you are new to RsyncUI, please read the [important information](/docs/important/). There is also info about the [latest version of rsync](/docs/rsync/)
-to install. The catalog for storing files is `$HOME/.rsyncosx/macserialnumber/.
+to install. The catalog for storing files is:
+
+```bash
+$HOME/.rsyncosx/macserialnumber/
+```
 
 ###  Local attached disk, remote server and passwordless login
 

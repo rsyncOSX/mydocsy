@@ -17,19 +17,18 @@ My email address is thomeven@gmail.com. If you have any ideas or thoughts about 
 **RsyncOSX** was archived and development ceased in August 2024. **RsyncUI** is currently in active development. All experience gained
 from developing RsyncOSX is being utilized in the development of RsyncUI.
 
-The development of RsyncOSX commenced in early 2016 as a personal project to learn Swift.
-
-The development of RsyncUI commenced in late 2020 to learn SwiftUI.
+The development of RsyncOSX commenced in early 2016 as a personal project to learn Swift. And the development of RsyncUI
+commenced in late 2020 to learn SwiftUI.
 
 I hold a master's degree in computing science, but I am not a professional developer. I completed my master's degree during the early 1990s, when Linux was released and the Internet became a public service. A few years prior to that, in 1989, the Web was invented at CERN.
 
-There is only one developer involved in the development of RsyncUI, and I am committed to ensuring its stability and user-friendliness.
+There is only one developer involved in the development of RsyncUI, and I am committed to ensuring its stability and user-friendliness. While I am not a
+UI designer, some users may find the UI complex and less user-friendly.
 
-While I am not a UI designer, some users may find the UI complex and less user-friendly.
+The maintenance and development of RsyncUI are among my hobbies. If you find RsyncUI useful, I would appreciate it if you could consider
+giving me a star on the GitHub repository. Each star serves as motivation for me to continue developing RsyncUI.
 
-The maintenance and development of RsyncUI are among my hobbies. If you find RsyncUI useful, I would appreciate it if you could consider giving me a star on the GitHub repository. Each star serves as motivation for me to continue developing RsyncUI.
-
-In May 2022, I retired from work at the age of 62. In my spare time, I am a passionate photographer of birds and enjoy spending time in the Norwegian mountains. My grandchildren, photography, the development of RsyncUI, and cross-country skiing are some of the activities that keep me occupied.
+In May 2022, I retired from work at the age of 62. In my spare time, I am a passionate [photographer of birds](https://photosbythomas.netlify.app) and enjoy spending time in the Norwegian mountains. My grandchildren, photography, the development of RsyncUI, and cross-country skiing are some of the activities that keep me occupied.
 
 {.text-center}
 

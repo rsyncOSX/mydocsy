@@ -18,7 +18,6 @@ RsyncUI is signed and notarized by Apple.
 For the most up-to-date information, please refer to the [changelog](/blog/). RsyncUI is constructed as a Universal macOS Binary, ensuring native
 execution on Apple Silicon and Intel-based Mac computers.
 
-**Installation Methods:**
 RsyncUI can be installed via Homebrew or [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases):
 
 ```bash
@@ -36,8 +35,7 @@ latest version of rsync to install: [latest version of rsync](/docs/rsync/).
 
 RsyncUI provides a centralized catalog for storing files, located at `$HOME/.rsyncosx/macserialnumber/.`
 
-**Synchronization Options:**
-RsyncUI supports synchronizing data to various destinations, including:
+RsyncUI supports synchronizing data to:
 
 - Local attached disk
 - Remote servers on the Internet or local LAN

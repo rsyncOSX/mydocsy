@@ -57,7 +57,7 @@ If passwordless login is not enabled, additional actions are required before you
 
 ### New Tasks, Verification, and Synchronization
 
-After adding a task (refer to /docs/addconfigurations/ for instructions), you can execute a `--dry-run` by double-clicking on the
+After adding a task, you can execute a `--dry-run` by double-clicking on the
 task in the main view. The second double-click will execute the task in real time.
 
 {{< alert color="warning" >}}

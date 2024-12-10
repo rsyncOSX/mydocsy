@@ -7,16 +7,17 @@ categories = ["remote servers"]
 lastmod = "2020-04-16"
 +++
 
-The following ssh tools are used: `ssh-keygen` and `ssh-copy-id`. RsyncUI only assist in setting up RSA based key.
+The following SSH tools are utilized: `ssh-keygen` and `ssh-copy-id`. RsyncUI primarily assists in establishing an RSA-based key.
 
-The ssh functions assist in two methods:
+The SSH functions facilitate two methods:
 
-- private and public ssh key pair based upon default ssh values for RSA based key `~/.ssh/id_rsa`
-- private and public ssh key pair based upon user selected values as `~/.ssh_rsyncosx/rsyncosx`
+- Private and public SSH-key pairs based on default SSH values for RSA keys (`~/.ssh/id_rsa`)
+- Private and public SSH-key pairs based on user-selected values (`~/.ssh_rsyncosx/rsyncosx`)
 
-If creating a new public ssh key pair based upon default ssh values for RSA based key, RsyncUI does not add any parameters to the rsync command because this is default values. Ssh parameters to the rsync command is only added if the second method is chosen.
+If creating a new public SSH-key pair based on default SSH values for RSA keys, RsyncUI does not add any parameters to the rsync
+command because these are default values. SSH parameters are added to the rsync command only when the second method is selected.
 
-The following commands for creating a new, alternative private and public ssh-key pair:
+The following commands for creating a new, alternative private and public SSH-key pair are provided:
 
 ```bash
 cd
@@ -24,23 +25,24 @@ mkdir .ssh_rsyncosx
 ssh-keygen -t rsa -N "" -f ~/.ssh_rsyncosx/rsyncosx
 ```
 
-where
+where:
 
-- `-t rsa ""` generates a RSA based key-pair
+- `-t rsa ""` generates a RSA-based key pair
 - `-N ""` sets no password
-- and `~/.ssh_rsyncosx/rsyncosx` is set by the user
+- `~/.ssh_rsyncosx/rsyncosx` is set by the user
 
-The following command copy the newly created public key to the server:
+The following command copies the newly created public key to the server:
 
 ```bash
 ssh-copy-id -i /Users/thomas/.ssh_rsyncosx/rsyncosx -p NN user@server
 ```
 
-You can also setup the new ssh-keypath and identityfile in a terminal window and after setup add the new ssh-keypath and identityfile in Userconfig. RsyncUI will automatically enable it when added in user config.
+The user can also configure the new SSH keypath and identityfile in a terminal window and subsequently add them to the Userconfig.
+RsyncUI will automatically enable these settings when added to the Userconfig.
 
-The user can also apply local ssh-keypath and identityfile and ssh port, which rules the global settings, on each task.
+The user can also apply local SSH keypath and identityfile and SSH port, which govern global settings, to each task.
 
-Make sure that the new ssh catalog has the correct permissions. Open a terminal window and execute the following command.
+Ensure that the new SSH catalog has the appropriate permissions. Open a terminal window and execute the following command:
 
 ```bash
 chmod 700 ~/.ssh_rsyncosx

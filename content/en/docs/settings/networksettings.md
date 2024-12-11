@@ -20,16 +20,10 @@ Settings are automatically saved when changed.
     - if the word `error` is discovered in output from rsync it is notified
     - se below
 - Add summary logrecord
-    - by default `on`, a summary only of each synchronization is added to the logrecords, view `Log Listings` from Sidebar 
-- Log summary logfile
-    - by default `off`, there is also possible to add a short summary to the logfile
-        - timestamp
-        - last twenty lines of output from rsync which includes a summary of the task
-        
-
+    - by default `on`, a summary only of each synchronization is added to the logrecords, view `Log Listings` from Sidebar
 - Confirm execute
     - see below
-    
+
 The log file is stored at `$HOME/.rsyncosx/macserial/rsyncui.txt`. The logfile can be opened from the main view.
 
 ### Error output rsync
@@ -49,8 +43,7 @@ The confirm dialog if number of files to synchronize is like a new task. Sometim
 /dev/disk5s2 on /Volumes/Import bilder (apfs, local, nodev, nosuid, journaled, noowners)
 /dev/disk6s1 on /Volumes/Backups (apfs, local, nodev, nosuid, journaled, noowners)
 ```
-Below the local attached volume is not connected, the estimate may think there is a new synchronize task. If you just forgot to attach the disk you dont want RsyncUI to synchronize data to the `/Volume` catalog. 
+Below the local attached volume is not connected, the estimate may think there is a new synchronize task. If you just forgot to attach the disk you dont want RsyncUI to synchronize data to the `/Volume` catalog.
 {{< figure src="/images/usersettings/summarizedview.png" alt="" position="center" style="border-radius: 8px;" >}}
-When the switch is on RsyncUI ask to confirm synchronize. 
+When the switch is on RsyncUI ask to confirm synchronize.
 {{< figure src="/images/usersettings/confirmdialog.png" alt="" position="center" style="border-radius: 8px;" >}}
-

@@ -7,57 +7,59 @@ categories = ["rsync parameters"]
 lastmod = "2023-12-18"
 +++
 
-{{< alert >}}
+RsyncUI provides default parameters for data synchronization. However, the actual default parameters used in tasks are determined by
+whether the rsync operation is performed over a network connection or to a local attached disk.
 
-RsyncUI implements a few default parameters which are fine for synchronize data. The actual default parameters used in tasks are depended upon executing rsync over *network connection* or to *local attached discs*.
+**User Parameter Management**
 
-{{< /alert >}}
+Users can modify default parameters as needed. Parameters to rsync are stored in tasks, including a local ssh parameter.
+The local ssh parameter overrides a global ssh parameter if set.
 
-The user can remove default parameters if required. Parameters to rsync are saved by task including a local ssh parameter on the task. The local ssh parameter overrides a global ssh parameter if set.
+**SSH Key Handling**
 
-{{< alert >}}
+If default ssh-key values are used and no information about ssh-keys is provided in RsyncUI, the parameter `-e ssh` is appended to the rsync command
+to ensure data is tunneled and encrypted using ssh. This applies only to remote servers and data restoration.
 
-If using default ssh-key values and no info about ssh-keys in RsyncUI, RsyncUI append the parameter `-e ssh` to the rsync command to ensure data is tunneled and encrypted by ssh. The above applies if destination is a remote server only and to restore data as well.
+**Task-Specific SSH Parameters**
 
-{{< /alert >}}
+Task-specific ssh parameters override global ssh parameters set in the user configuration.
 
-### Ssh parameters by task
+- ssh port: Set if ssh uses a port other than the standard port 22.
+- ssh-keypath and identity file: Normally, these are `.ssh/id_rsa`. Set only if other keypath and identity file are to be used by ssh.
 
-The by task ssh parameters overrides global ssh parameters set in the user config.
+**Adding Parameters to Rsync**
 
-- ssh port, set if ssh uses other port than standard port 22
-- the ssh-keypath and identity file, normally this is `.ssh/id_rsa`, set  only if other keypath and identity file to be used by ssh
-
-### Adding parameters to rsync
-
-To add a parameter to rsync add the parameter in the field. RsyncUI enables seven user added parameters. Use any of the field to add parameter.  The user is responsible for adding correct parameter. If there is added parameters which rsync dont understand, rsync will throw an error message.
+To add a parameter to rsync, enter it in the corresponding field. RsyncUI supports seven user-defined parameters. Users can add parameters
+using any of the fields. However, users are responsible for ensuring that the added parameters are correct. If an incorrect parameter is added,
+rsync will generate an error message.
 
 {{< figure src="/images/rsyncparameters/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Parameters are normally constructed as:
+Parameters are typically constructed as follows:
 
 - parameter=value
 	- `--exclude-from=/Volumes/home/user/exclude-list.txt`
-- parameter only
-	- `--stats`
-	- `--dry-run`
+- `--stats`: Enables the display of statistics during the synchronization process.
+- `--dry-run`: Executes a simulated synchronization without modifying the files.
 
-For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
+For a comprehensive list of parameters for rsync, please refer to the [rsync documentation](https://download.samba.org/pub/rsync/rsync.html).
 
-### Backup switch
+**Backup Switch**
 
-You can instruct rsync to save changed and deleted files in a separate backup catalog ahead of the change. This feature is utilized by setting the following parameters:
+The `rsync` command allows you to instruct it to save modified and deleted files in a separate backup catalog prior to
+the synchronization process. This feature can be enabled by setting the following parameters:
 
-- `--backup` parameter instructs rsync to save changed files
-- `--backup-dir` parameter where to save changed or deleted files before rsync synchronize source and destination
-	- RsyncUI does suggest a value for the `--backup-dir` but you might set it to whatever you want
+- `--backup`: Enables the saving of modified files.
+- `--backup-dir`: Specifies the directory where modified or deleted files should be saved before synchronization.
+The `RsyncUI` provides a default value for this parameter, but you can customize it as per your requirements.
 
-Default catalog for backup of `<catalog to synchronize>` relativ to the synchronized catalog is: `../backup_<catalog to synchronize>`
+The default backup catalog for the `<catalog to synchronize>` relative to the synchronized catalog is `../backup_<catalog to synchronize>`.
 
-### The Verify flag (icon)
+**Verify changes**
 
-The resulting commandline string is dynamically updated when changing parameters. By the `Verify` flag new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The `Verify` is context sensitive. If like the `verify` swicth is selected the verify executes a verify. And likewise for `synchronize` and `restore` switch.
+The resulting command-line string is dynamically updated when modifying parameters. The `Play` icon on the toolbar
+allows you to test new parameters before saving them. The `Play` executes a `--dry-run` task for verification of parameters.
+The `Play` icon is context-sensitive. If the `verify` switch is selected, the `Verify` command is executed.
+Similarly, the `synchronize` and `restore` switches execute the corresponding commands.
 
 {{< figure src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Regarding the Verify flag and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.

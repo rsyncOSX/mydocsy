@@ -7,24 +7,25 @@ categories = ["rsync parameters"]
 lastmod = "2023-12-18"
 +++
 
-Some of the default parameters can be switched on or off on a task.
+Certain default parameters can be enabled or disabled on a task basis.
 
 {{< figure src="/images/rsyncparameters/default.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The following parameters might be switched on/off:
 
-- `--compress` compress files before transmitting, networked tasks only
-- `--delete` delete all files at **destination** which are not in the **source**
+The following parameters may be enabled or disabled:
 
-The following parameters are applied to all tasks and *cannot* be switched off:
+- `--compress`: Compresses files before transmission, applicable only to networked tasks.
+- `--delete`: Deletes all files at the destination that are not present in the source.
 
-- `--archive` ensures that all files are transferred with all attributes preserved
-- `--verbose` make rsync very outspoken, required for counting files in RsyncUI
+The following parameters are applied to all tasks and cannot be disabled:
 
-{{< alert color="warning" >}}
+- `--archive`: Ensures that all files are transferred with all attributes preserved.
+- `--verbose`: Enables verbose output from rsync, necessary for counting files in RsyncUI.
 
-RsyncUI does *not* officially support `rsync daemon:` but there is possible to tweak and enable a rsync daemon setup. But be aware of a rsync daemon setup does *NOT* encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, see how to setup [ssh passwordless logins](/docs/ssh/).
+RsyncUI does not officially support the `rsync daemon:` command. However, it is possible to configure a rsync daemon setup.
+Please note that a rsync daemon setup does not encrypt the transfer between the client and server.
+To encrypt the transfer, you need to tunnel the traffic using the SSH protocol. For more information on setting up
+SSH passwordless logins, please refer to the documentation at [passwordless logins](/docs/passwordless/).
 
-{{< /alert >}}
-
-`Enable rsync daemon` - enabling rsync daemon puts a double colon `::` in address parameter to rsync. It forces rsync to use the rsync daemon remote. 
+**Enable rsync daemon:**
+Enabling the rsync daemon involves adding a double colon `::` to the address parameter in the rsync command. This forces rsync to use the rsync daemon remote.

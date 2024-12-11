@@ -7,7 +7,8 @@ categories = ["general information"]
 lastmod = "2024-07-26"
 +++
 
-Tasks can be exported and imported between profiles and to new Macs. Select the "File" menu and then choose "Export and import."
+**Export:** Tasks can be exported and imported between profiles and to new Macs. Select the "File" menu
+and then choose "Export and import."
 
 {{< figure src="/images/exportimport/export.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -19,7 +20,7 @@ Tasks can be exported and imported between profiles and to new Macs. Select the 
 
 {{< figure src="/images/exportimport/importtasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Import: The file for import is selected, and data for import is presented. You can select specific tasks or import all tasks.
+**Import:** The file for import is selected, and data for import is presented. You can select specific tasks or import all tasks.
 
 {{< figure src="/images/exportimport/tasksimported.png" alt="" position="center" style="border-radius: 8px;" >}}
 

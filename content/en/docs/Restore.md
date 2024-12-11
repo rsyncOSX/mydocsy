@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2024-03-11"
 title =  "Restore data"
 tags = ["restore"]
 categories = ["synchronize"]
-lastmod = "2021-03-18"
+lastmod = "2024-03-18"
 +++
 {{< alert >}}
 

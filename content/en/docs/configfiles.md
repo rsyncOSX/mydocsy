@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2021-04-16"
+date = "2024-04-16"
 title =  "RsyncUI files, JSON"
 tags = ["files", "JSON"]
 categories = ["general information"]

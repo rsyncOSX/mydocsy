@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2021-04-16"
+date = "2024-04-16"
 title =  "Snapshots"
 tags = ["snapshot"]
 categories = ["synchronize"]
@@ -10,17 +10,14 @@ lastmod = "2020-12-13"
 
 {{< alert >}}
 
-Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
+Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link)
+and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
 
 {{< /alert >}}
 
-{{< alert color="warning" >}}
-
-In every snapshot task, RsyncUI stores on the task, the *next* snapshot number to use. The snapshot number is only a running number, increased by one every time a snapshot task is executed.
-The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number to use on the task. In the log view, the snapshot number is written
-as part of the timestamp of the log.
-
-{{< /alert >}}
+In every snapshot task, RsyncUI stores on the task, the *next* snapshot number to use. The snapshot number is only a running number, increased by one
+every time a snapshot task is executed. The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number
+to use on the task. In the log view, the snapshot number is written as part of the timestamp of the log.
 
 If a `file.txt` is saved in the first snapshot and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink to the original file in the first snapshot.
 If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
@@ -60,7 +57,7 @@ where
 - `/Volume/backup/snapshots/` is *the destination* catalog where snapshots are synchronized
 
 
-{{< alert color="warning" >}}
+{{< alert >}}
 
 If the *destination* is on a local attached disc, set *full path* of destination. If the *destination* is on a remote server,
 if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used.

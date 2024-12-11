@@ -13,15 +13,11 @@ the *next double click* will execute the real run.
 
 {{< /alert >}}
 
-{{< alert >}}
-
 Shortcut actions within the *Synchronize* view:
 
 - `Estimate` - `⌘E` estimates all or selected tasks
 - `Synchronize` - `⌘R` synchronize all or selected tasks, *no estimation* and *no progress* bar during synchronization
 - `Abort` - `⌘K` abort and halt any ongoing task
-
-{{< /alert >}}
 
 When RsyncUI starts it automatically open the *Synchronize* view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.
 

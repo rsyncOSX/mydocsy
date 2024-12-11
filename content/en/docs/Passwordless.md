@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2021-04-16"
+date = "2024-04-16"
 title = "Passwordless login"
 tags = ["passwordless","ssh-key"]
 categories = ["remote servers"]
@@ -11,9 +11,12 @@ To synchronize data to a remote server using RsyncUI, passwordless login by SSH-
 It is not possible to provide a user login and password during data synchronization from RsyncUI.
 SSH-key authentication is generally considered more secure than password-based authentication.
 
-**Important Note:**
+{{< alert >}}
+
 If default values for RSA-based SSH-key are used, no additional information about the SSH-key is required in RsyncUI.
 However, it is necessary to provide information if custom SSH-keypath, identityfile, or port number is used.
+
+{{< /alert >}}
 
 **Example:**
 For demonstration purposes, I have created an SSH-key specifically for rsync. The SSH-keypath is set to `~/.ssh_rsyncosx/`, and

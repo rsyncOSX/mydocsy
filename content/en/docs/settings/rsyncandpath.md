@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2024-03-11"
 title =  "Rsync and path"
 tags = ["userconfig"]
 categories = ["general information"]
-lastmod = "2021-03-11"
+lastmod = "2024-03-11"
 +++
 
 Settings are automatically saved when changed. 
@@ -42,6 +42,6 @@ Tasks with older execute date than number of days are marked red.
 
 You can any time backup the current setup, configurations and logs including all profiles by the `wrench` button. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`. 
 
-The backups is located in your Documents catalog: `$HOME/Documents/RsyncUIcopy-05-06-2021/08/21`
+The backups is located in your Documents catalog: `$HOME/Documents/RsyncUIcopy-05-06-2024/08/21`
 
 

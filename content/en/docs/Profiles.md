@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2024-03-11"
 title =  "Profiles"
 tags = ["profile"]
 categories = ["synchronize"]
-lastmod = "2021-03-18"
+lastmod = "2024-03-18"
 +++
 Tasks may be organized in profiles. A profile is the name of the catalog at the location where
 RsyncUI stores it files. When you create a `newprofile`, RsyncUI creates a new catalog at

@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2024-03-11"
 title =  "Quicktask"
 tags = ["quick task"]
 categories = ["synchronize"]
-lastmod = "2021-03-18"
+lastmod = "2024-03-18"
 +++
 Use RsyncUI for quickly synchronize files to either local or remote storage. If synchronizing to a remote storage require
 setup of [passwordless login](/docs/passwordless/).

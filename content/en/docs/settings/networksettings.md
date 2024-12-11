@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2024-03-11"
 title =  "Monitor and log"
 tags = ["userconfig"]
 categories = ["general information"]
-lastmod = "2021-03-11"
+lastmod = "2024-03-11"
 +++
 
 Settings are automatically saved when changed.

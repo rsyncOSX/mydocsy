@@ -15,9 +15,10 @@ A double click on a task initiates a `--dry-run`, while the subsequent double cl
 
 Shortcut actions within the *Synchronize* view:
 
-- `Estimate`: `⌘E` estimates all or selected tasks.
-- `Synchronize`: `⌘R` synchronizes all or selected tasks without estimation or progress bar during synchronization.
-- `Abort`: `⌘K` aborts and halts any ongoing task.
+- Estimate: `⌘E` estimates all or selected tasks
+- Synchronize: `⌘R` synchronizes all or selected tasks without estimation
+  - no progress bar during synchronization, progress bar requiere estimation first
+- Abort: `⌘K` aborts and halts any ongoing task
 
 Upon launching RsyncUI, it automatically opens the *Synchronize* view. Selecting the "wand and stars" (shortcut `⌘E`)
 from the toolbar initiates task estimation.

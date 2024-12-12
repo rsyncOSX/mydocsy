@@ -36,21 +36,23 @@ increases the likelihood of GUI blocking and the application's unresponsiveness.
 
 **Asynchronous Execution Enhancements in Version 2.2.2 of RsyncUI**
 
-Version 2.2.2 of RsyncUI introduces significant improvements to asynchronous execution.
+Version 2.2.2 of RsyncUI introduces improvements to asynchronous execution.
 
 **Key Changes:**
 
 - **Swift 6 Language Mode and Strict Concurrency Checking:** When Swift 6 language mode is enabled and strict concurrency checking is set to "Complete," Xcode at compile time prevents any potential data races.
 - **Background Thread Execution:** In version 2.2.2, the majority of read operations, data decoding, and sorting are executed on background threads. Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
-- **Ensuring Data Race Prevention:** With these Xcode settings, Xcode guarantees the absence of data races. It is important to note that while I am proficient in Swift concurrency and continuously learning, I am not developing RsyncUI into a complex, code-intensive application. My goal is to maintain its simplicity and ease of understanding.
+- **Ensuring Data Race Prevention:** With these Xcode settings, Xcode guarantees the absence of data races.
 
 **Example of Swift Concurrency in RsyncUI:**
 
-Swift concurrency is exemplified within the log view. Loading log records is performed on a background thread. When the number of log records exceeds 1000, a slight delay is observed before the records appear. Upon completion of the background thread's work, RsyncUI updates the view on the main thread.
+Swift concurrency is exemplified within the log view. Loading log records is performed on a background thread. When the number of log records exceeds 1000,
+a slight delay is observed before the records appear. Upon completion of the background thread's work, RsyncUI updates the view on the main thread.
 
 **Combine and Asynchronous Execution:**
 
-The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks, such as the `rsync` synchronize task. Combine is employed to monitor two specific notifications.
+The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks, such as the `rsync` synchronize task.
+Combine is employed to monitor two specific notifications.
 
 - `NSNotification.Name.NSFileHandleDataAvailable`
 - `Process.didTerminateNotification`

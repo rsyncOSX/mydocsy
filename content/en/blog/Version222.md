@@ -20,8 +20,10 @@ and preparing data for views. Writing data to the permanent storage remains on t
 
 - Sorting and filtering log records
 - Preparing output from rsync
-  - rsync output can often exceed 50,000 rows. The previous limit of 40,000 rows has been removed.
-- Reading data from the permanent storage is executed on a background thread. Reading and sorting log records may require additional  work if there are numerous records.
+  - rsync output can often exceed 50,000 rows, previous limit of 40,000 rows has been removed
+  - RsynUI presents as many rows there are
+  - each row is mapped into a struct containing an UUID and the line of output
+- Reading data from the permanent storage is executed on a background thread, mapping log records may require additional work if there are numerous log records
 
 For further details on the major changes in this version, please refer to the blog post at [blog/2024/12/06/swift-concurrency/](/blog/2024/12/06/swift-concurrency/).
 

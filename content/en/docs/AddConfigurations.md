@@ -39,7 +39,7 @@ The following data pertains to tasks:
 
 ##### Trailing /
 
-Dont´t add `/`: by default a trailing `/` is added to both source and destination
+- Dont´t add `/`: by default a trailing `/` is added to both source and destination
 
 ##### Synchronize ID
 

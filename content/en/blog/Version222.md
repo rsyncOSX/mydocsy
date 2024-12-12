@@ -10,7 +10,7 @@ categories = ["changelog"]
 
 Version 2.2.2 is scheduled for release in January 2025.
 
-The primary repository (https://github.com/rsyncOSX/RsyncUI) has been updated with the latest development.
+The primary repository (https://github.com/rsyncOSX/RsyncUI) is updated with the latest development.
 
 All graphical updates are executed on the main thread. Moving resource-intensive work to the background thread is advantageous to
 prevent GUI updates from blocking.
@@ -25,4 +25,4 @@ and preparing data for views. Writing data to the permanent storage remains on t
 
 For further details on the major changes in this version, please refer to the blog post at [blog/2024/12/06/swift-concurrency/](/blog/2024/12/06/swift-concurrency/).
 
-Additionally, there are several other enhancements implemented in this version.
+Additionally, there are a few other enhancements implemented in this version as well.

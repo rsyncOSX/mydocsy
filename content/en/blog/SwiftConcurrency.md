@@ -11,7 +11,7 @@ user interface (GUI) application; most of its work is executed on the main threa
 the main thread to background threads. RsyncUI functions effectively as it is, but it also serves as a learning opportunity for new features.
 Stability is also a crucial aspect of RsyncUI. Consequently, I refrain from releasing new versions until I am confident in its stability.
 
-### Swift concurrency and asynchronous execution
+#### Swift concurrency and asynchronous execution
 
 Concurrency and asynchronous execution are fundamental concepts in Swift. The latest version of Swift simplifies the writing of asynchronous code
 using Swift's `async` and `await` keywords, as well as the `actor` keyword for executing work on background threads. The Swift concurrency model is
@@ -19,7 +19,7 @@ intricate, and it requires dedicated time and study to grasp its fundamentals. A
 incorporate concurrency. However, it does support asynchronous execution, but only one task at a time. Each time a `rsync` synchronize and restore task is
 initiated, its termination is uncertain.
 
-### Swift version 6 and the new concurrency model
+#### Swift version 6 and the new concurrency model
 
 Swift version 6 introduced *strict concurrency*. By adopting Swift 6 language mode and strict concurrency, developers gain access to a tool that assists
 in identifying and resolving data races at compile time.
@@ -32,27 +32,22 @@ the `@MainActor`, which corresponds to the main thread. If an macOS application 
 it is advantageous to execute these tasks on a background thread rather than the main thread. Executing such tasks on the main thread significantly
 increases the likelihood of GUI blocking and the application's unresponsiveness.
 
-### RsyncUI Version 2.2.2
+**Swift 6 Language Mode and Strict Concurrency Checking:** When Swift 6 language mode is *enabled* and strict concurrency checking is
+set to *Complete*, Xcode at compile time prevents any potential data races.
 
-**Asynchronous Execution Enhancements in Version 2.2.2 of RsyncUI**
+#### RsyncUI Version 2.2.2
 
-Version 2.2.2 of RsyncUI introduces improvements to asynchronous execution.
+In version 2.2.2, the majority of read operations, decoding and encoding data are executed on background threads.
+Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
 
-**Key Changes:**
-
-- **Swift 6 Language Mode and Strict Concurrency Checking:** When Swift 6 language mode is enabled and strict concurrency checking is set to "Complete," Xcode at compile time prevents any potential data races.
-- **Background Thread Execution:** In version 2.2.2, the majority of read operations, data decoding, and sorting are executed on background threads. Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
-- **Ensuring Data Race Prevention:** With these Xcode settings, Xcode guarantees the absence of data races.
-
-**Example of Swift Concurrency in RsyncUI:**
-
-Swift concurrency is exemplified within the log view. Loading log records is performed on a background thread. When the number of log records exceeds 1000,
-a slight delay is observed before the records appear. Upon completion of the background thread's work, RsyncUI updates the view on the main thread.
+Swift concurrency is exemplified within the log view. Loading log records is performed on a background thread. When the
+number of log records exceeds 1000, a slight delay is observed before the records appear. Upon completion of the background
+thread's work, RsyncUI updates the view on the main thread.
 
 **Combine and Asynchronous Execution:**
 
-The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks, such as the `rsync` synchronize task.
-Combine is employed to monitor two specific notifications.
+The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks,
+such as the `rsync` synchronize task. Combine is employed to monitor two specific notifications.
 
 - `NSNotification.Name.NSFileHandleDataAvailable`
 - `Process.didTerminateNotification`

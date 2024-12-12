@@ -7,32 +7,27 @@ categories = ["general information"]
 lastmod = "2024-09-10"
 +++
 
-The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia is not equal, but both are version 2.6.9 protocol 29.
-The licence for `/usr/bin/rsync` is different. And there might also be some differences in code. For both default versions,
-there has been a lot of changes since version 2.6.9 was released.
+The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia differ in their versions. Both versions adhere to protocol 29 of version 2.6.9,
+but the licenses for these versions are distinct. Additionally, there may be variations in the underlying code.
 
-In macos Sonoma, the default verson is [version 2.6.9](https://download.samba.org/pub/rsync/NEWS#2.6.9) which was released
-in November 2006. In macOS Sequoia, the default verson is a [version 2.6.9 compatible rsync](https://github.com/kristapsdz/openrsync),
-based on the BSD-licence. The command, in macOS Sequoia:
+In macOS Sonoma, the default version is version 2.6.9 (https://download.samba.org/pub/rsync/NEWS#2.6.9), released in
+November 2006. In macOS Sequoia, the default version is a compatible rsync based on the BSD license (https://github.com/kristapsdz/openrsync).
+
+The command `/usr/bin/rsync --version` in macOS Sequoia displays `openrsync: protocol version 29, rsync version 2.6.9 compatible`.
+
+It is recommended to install the latest release of `rsync` via Homebrew. To install Homebrew, execute the following command:
 
 ```bash
- /usr/bin/rsync --version
- ```
- displays `openrsync: protocol version 29, rsync version 2.6.9 compatible`.
+brew install homebrew
+```
 
-It is adviced to install [the latest release](https://download.samba.org/pub/rsync/NEWS) of `rsync` by Homebrew.
-Install [Homebrew](https://brew.sh/) and install the latest version of rsync by the command:
+Then, install the latest version of `rsync` using the command:
 
 ```bash
 brew install rsync
 ```
 
-In RsyncUI, select settings and then [Rsync and path](/docs/settings/rsyncandpath/). If `rsync` is installed by Homebrew,
-just tick of `Rsync ver3.x` and RsyncUI set the correct path for `rsync`.
+In RsyncUI, navigate to the settings menu and select `Rsync and path`. If `rsync` is installed via Homebrew, simply tick the boxes for `Rsync ver3.x` and ensure that RsyncUI correctly sets the path for `rsync`.
 
-{{< alert >}}
-
-RsyncUI supports [snapshots](/docs/snapshots/) of files. Due to a bug in version 2.6.9 of rsync, the snapshot feature
-of RsyncUI require to install the latest version of rsync.
-
-{{< /alert >}}
+**Note:**
+RsyncUI supports snapshots of files. However, due to a bug in version 2.6.9 of rsync, the snapshot feature in RsyncUI requires the installation of the latest version of rsync.

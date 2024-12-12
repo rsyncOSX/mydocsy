@@ -7,28 +7,27 @@ categories = ["synchronize"]
 lastmod = "2020-12-13"
 +++
 
-
 {{< alert >}}
 
-Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link)
-and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
+Utilizing snapshots is an effective method for restoring previous versions of data and deleted files. Snapshots employ hardlinks (https://en.wikipedia.org/wiki/Hard_link) to save only modified and deleted files as separate files in a snapshot. Files that remain unchanged are hardlinks to the original file.
 
 {{< /alert >}}
 
-In every snapshot task, RsyncUI stores on the task, the *next* snapshot number to use. The snapshot number is only a running number, increased by one
-every time a snapshot task is executed. The rsync command automatically creates the next snapshotcatalog, by number, and stores the next snapshot number
-to use on the task. In the log view, the snapshot number is written as part of the timestamp of the log.
+In every snapshot task, RsyncUI stores the next available snapshot number for use. The snapshot number is a sequential number incremented by one after each snapshot task execution. The rsync command automatically creates the next snapshot catalog by number and stores the next snapshot number to use on the task. The snapshot number is displayed as part of the log timestamp.
 
-If a `file.txt` is saved in the first snapshot and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink to the original file in the first snapshot.
-If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
-In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted.
+If a file named "file.txt" is saved in the initial snapshot and remains unchanged or deleted, the file "file.txt" in the latest snapshot is a hardlink to the original file in the first snapshot.
 
-Snapshot is **not** possible in a rsync daemon setup.
+If the "file.txt" is deleted from the initial snapshot, the filesystem handles the update and determines the appropriate location to save the original file as part of the delete operation.
 
-### What is a snapshot?
+In RsyncUI, even if all snapshots are marked for deletion, the first and last snapshots are not deleted.
 
-A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog *at the time* of creating the snapshot.
-Previous versions of files can be restored from a snapshot. The snapshot is by utilizing the `--link-dest` parameter to rsync.
+**Note:** Snapshot functionality is not available in a rsync daemon setup.
+
+### Definition of a Snapshot:
+
+A snapshot is a saved state or backup of data at a specific point in time. Each snapshot is synchronized with the local catalog at the time of creation.
+
+Previous versions of files can be restored from a snapshot using the `--link-dest` parameter with rsync.
 
 ##### Remote server
 
@@ -56,33 +55,25 @@ where
 - `/Users/thomas/data/` is *the source* catalog, only read by rsync
 - `/Volume/backup/snapshots/` is *the destination* catalog where snapshots are synchronized
 
+**Snapshot Creation**
 
-{{< alert >}}
+To create a snapshot task, select "snapshot" as the task type in the [add tasks](/docs/addconfigurations/) section. Do not copy and paste the command for execution within a terminal window. RsyncUI automatically saves the snapshot number "n" to the task. This number represents the next available snapshot number and is used to calculate the rsync parameter. The value of "n" is retrieved from the configuration.
 
-If the *destination* is on a local attached disc, set *full path* of destination. If the *destination* is on a remote server,
-if the snapshot catalog is in the remote users $HOME catalog, the tilde character  `~` might be used.
-The tilde character is automatically expanded as the $HOME catalog on FreeBSD and Linux servers.
+**Snapshot Administration**
 
-{{< /alert >}}
+Snapshot administration is crucial to maintain an organized and efficient backup system. It involves deleting unnecessary or irrelevant snapshots to prevent clutter and simplify the management of the backup space. Regularly reviewing and deleting snapshots is essential to ensure that only the most relevant data is retained.
 
-### Create a snapshot
+**Deleting Snapshots**
 
-To create a snapshot task select `snapshot` as type in [add tasks](/docs/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncUI saves the number `n` to the task. The number `n` is the next snapshot number. The number n is used when computing the parameter for rsync
-and is picked up from the configuration.
+Deleting snapshots is a destructive operation that should be performed with caution. It is important to have a plan in place to determine which snapshots to keep and which to delete. RsyncUI provides a simple plan for deleting and keeping snapshots.
 
-### Snapshot administration
+**The Plan for Keep and Delete**
 
-It is important to administrate snapshots. By administrate means deleting not relevant snapshots. If snapshots are never deleted the number of snapshots might become difficult to use. A snapshot is most likely used to restore old and deleted files. This is why a plan to administrate snapshots is important. RsyncUI can assist you in this.
+Selecting the "Tag" button evaluates all snapshots based on the date within the log record. Based on the selected plan and date, snapshots are either tagged with "keep" or "delete." Snapshots tagged with "delete" are also preselected for deletion. To delete the marked snapshots, select the "Delete" button.
 
-Deleting snapshots is a *destructive* operation and should be performed with care. It is important to have a plan about which snapshots to keep and which to delete. RsyncUI utilizes a simple plan for delete and keep snapshots.
+Even if all snapshots are tagged for deletion, the first and last snapshots are not deleted. The first and last snapshots are removed from the delete list as part of the internal preparation for deletion.
 
-### The plan for keep and delete
-
-Selecting the `Tag` button evaluates all snapshots based on the date withing the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
-
-Even if all snapshots are tagged for delete, the first and last snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation (internal) of delete.
-
-The plan is based upon three parts where the parameter `plan` has an effect on *previous months (and years)*:
+The plan is based on three parts, where the parameter `plan` has an effect on *previous months (and years)*:
 
 - *the current week*
   - keep all the snapshots within the current week
@@ -95,7 +86,6 @@ The plan is based upon three parts where the parameter `plan` has an effect on *
   - if `plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
   - if `plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
 
-### Tagging and delete snapshots
+### Tagging and Deleting Snapshots
 
-It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
-It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
+It is recommended to optimize the number of snapshots. Select a plan, tag the snapshots, and delete the snapshots marked for deletion.

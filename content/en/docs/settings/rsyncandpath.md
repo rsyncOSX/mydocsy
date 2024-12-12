@@ -7,41 +7,39 @@ categories = ["general information"]
 lastmod = "2024-03-11"
 +++
 
-Settings are automatically saved when changed. 
+Changes to settings are automatically saved.
 
 {{< figure src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Version rsync
+#### Version rsync
 
-It is advised to install the latest version of `rsync` by Homebrew. RsyncUI discover what type of Mac you are on. The default path for Homebrew is: 
+It is recommended to install the latest version of `rsync` using Homebrew. `RsyncUI` will determine the type of Mac you are using. The default path for Homebrew is:
 
-- Intel based Mac is: `/usr/local/bin`
-- on the Apple Silicon: `/opt/homebrew/bin`.
+- Intel-based Mac: `/usr/local/bin`
+- Apple Silicon: `/opt/homebrew/bin`
 
-### Path rsync
+#### Path rsync
 
-The path for rsync is set to default values if rsync is installed by Homebrew, using default path or rsync as part your macOS.  [The snapshot feature](/docs/snapshots/) require version 3.2.x of rsync.
- 
- If version of rsync is **not** installed by Homebrew set path to rsync.
+If `rsync` is installed by Homebrew, the path is set to the default value or `rsync` if it is part of your macOS. The *snapshot* feature
+requires version 3.2.x of `rsync`.
 
- - if Rsync v3.x is `on` - set optional path if **NOT** by Homebrew
- - any version of rsync should work, but only version 2.6.9 and last release of version 3.2.x are tested and verified
+If the version of `rsync` is not installed by Homebrew, set the path to `rsync`.
 
+- If `Rsync v3.x` is enabled, set the optional path if not installed by Homebrew.
+- Any version of `rsync` will work, but only versions 2.6.9 and the latest release of version 3.2.x have been tested and verified.
 
+#### Path for restore
 
-### Path for restore
+- Preset temporary path for restoring single files and catalogs
+- Preset temporary path for a full restore
 
-- preset temporary path for restoring single files and catalogs
-- preset temporary path for a full restore
+#### Mark days after
 
-### Mark days after
+Tasks with an execution date older than the number of days are marked red.
 
-Tasks with older execute date than number of days are marked red.
+#### Backup configurations
 
-### Backup configurations
+You can backup the current setup, configurations, and logs, including all profiles, at any time by clicking the `wrench` button.
+The backup executes a copy to your Documents catalog and appends a timestamp `-month-day-year/hour/minute` to the copy.
 
-You can any time backup the current setup, configurations and logs including all profiles by the `wrench` button. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`. 
-
-The backups is located in your Documents catalog: `$HOME/Documents/RsyncUIcopy-05-06-2024/08/21`
-
-
+The backups are located in your Documents catalog: `$HOME/Documents/RsyncUIcopy-05-06-2024/08/21`

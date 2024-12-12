@@ -6,37 +6,33 @@ tags = ["update","profile"]
 categories = ["synchronize"]
 +++
 
-To update a task, select the task and to save changes, select the `checkmark` icon on the toolbar or use the `Enter` key.
+To update a task, select the task and then select the checkmark icon on the toolbar or press the Enter key.
 
 {{< figure src="/images/add/update.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-#### Global changes
+*Global changes*, either partial or complete string modifications, can be applied to all tasks simultaneously. While updating tasks individually may be feasible, this method is more effective for modifying all tasks.
 
-Global changes, either parts of string or full string. This function might be used to change and update all
-tasks in one go. You might update task by task, but if there are changes to all tasks this is an effective
-method to apply changes.
+**Example:**
+Suppose parts of a remote catalog need to be updated. The `$` character serves as a split character, allowing the string `backups $ newbackup` to update all remote catalogs. If no split character is present, the entire string is replaced.
 
-- an example, parts of remote catalog is changed, update all tasks in one go
-  - the `$` is used as split character, the string `backups $ newbackup` updates all remote catalogs
-  - if no split character `$`, the complete string is replaced
-- there is no split character for remote user and remote server
-- changes of data to be confirmed before update and write updated data to storage
-- and when split character `$` is added, the view updates dynamically with string of replace
+**Remote User and Server:**
+There is no split character for remote users and servers.
+
+**Data Confirmation and Storage Update:**
+Changes to data must be confirmed before being updated and written to storage.
+
+**Dynamic View Updates:**
+When a split character `$` is added, the view dynamically updates with the replaced string.
 
 {{< figure src="/images/add/replace1.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-The remote catalog `/backups/` is updated on all tasks to `/newbackup/`. By pressing enter in any field
-will commit changes, by confirm.
 
 {{< figure src="/images/add/replace2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 #### Catalogs
 
-Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the mounted volumes are presented.
-Select the homecatalog and mounted volume, return to main Task view and RsyncUI suggest some values.
+Selecting the "Home" icon displays all catalogs from your "$Home" directory. If a local disk is attached, the mounted volumes are also presented.
+Select the home catalog and the mounted volume. Return to the main Task view, and RsyncUI will suggest some values.
 
 {{< figure src="/images/add/homecatalog.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Return, select the left arrow on the toolbar, to main Task view. To add suggested task select `checkmark` on the toolbar.
 
 {{< figure src="/images/add/homecatalog_return.png" alt="" position="center" style="border-radius: 8px;" >}}

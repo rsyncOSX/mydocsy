@@ -6,36 +6,27 @@ tags = ["quick task"]
 categories = ["synchronize"]
 lastmod = "2024-03-18"
 +++
-Use RsyncUI for quickly synchronize files to either local or remote storage. If synchronizing to a remote storage require
-setup of [passwordless login](/docs/passwordless/).
-
-{{< alert >}}
-
-Quicktask will save the last executed quicktask as default values. Default values might be cleared by function on the toolbar.
-
-{{< /alert >}}
-
+Use QuickTask for quickly synchronize files to either local or remote storage.
+QuickTask will save the last executed quick task as default values. Default values can be cleared by the toolbar function.
 
 There are two types of quick tasks:
 
-- `synchronize` - synchronize local files to remote
-- `syncremote` - synchronize remote files to local
+- `synchronize`: Synchronize local files to remote.
+- `syncremote`: Synchronize remote files to local.
 
-If `syncremote` the localcatalog in the form is the remote data and remotecatalog is the local data where remote data will land when pulled.
+If `syncremote`, the local catalog in the form is the remote data, and the remote catalog is the local data where the remote data will be stored when pulled.
 
 {{< figure src="/images/quicktask/quicktask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-After entering data, default is a `--dry-run` task. It is adviced to inspect the result before the real run.
+After entering data, the default task is a `--dry-run` task. It is recommended to inspect the result before executing the actual run.
 
 #### Catalog parameters
-- **Local catalog**: required field
-- **Remote catalog**: required field
-  - a `~` is expanded as the home catalog with full path by the remote operating system
-  - the remote catalog might also be added by full path, depends where the backup catalog is placed on remote server
-  - the backup catalog might also be a local catalog on a local attached disk
+- **Local catalog**: a required field
+- **Remote catalog**: a required field
+  - a `~` is expanded as the home catalog with the full path by the remote operating system
+  - the remote catalog may also be specified by full path, depending on where the backup catalog is located on the remote server
+  - the backup catalog may also be a local catalog on a local attached disk
 
 #### Remote parameters
-- **Remote username**:
-  - username for login to remote server
-- **Remote server**:
-  - either server name or IP-address for remote server
+- **Remote username**: the username for logging into the remote server
+- **Remote server**: either the server name or IP address for the remote server

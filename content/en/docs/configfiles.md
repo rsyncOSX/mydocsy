@@ -12,7 +12,7 @@ The location of files is: `$HOME/.rsyncosx/macserialnumber`. RsyncUI get the com
 At startup RsyncUI reads the user settings and default configurations from JSON data. Log records are only loaded when viewing logs
 and when updating the logs after a synchronization task.
 
-### Configuration files
+#### Configuration files
 
 `$HOME/.rsyncosx/macserialnumber/configurations.json`
 
@@ -20,11 +20,11 @@ If profile is utilized:
 
 `$HOME/.rsyncosx/macserialnumber/profile/configurations.json`
 
-### Log records
+#### Log records
 
 `$HOME/.rsyncosx/macserialnumber/<profile>/logrecords.json`
 
-### User settings
+#### User settings
 
 The [user settings](/docs/settings/) are stored as:
 
@@ -32,7 +32,7 @@ The [user settings](/docs/settings/) are stored as:
 
 The user settings applies to all profiles.
 
-### The logfile
+#### The logfile
 
 The logfile is a text file and normally view within RsyncUI.
 

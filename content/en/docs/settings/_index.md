@@ -7,13 +7,14 @@ categories = ["general information"]
 lastmod = "2024-03-12"
 +++
 
-There are a few settings to be tweaked. Settings are saved to permanent store. Usersettings might be opened by the default shortcut `⌘,`.
+There are several settings that can be adjusted. These settings are saved to a permanent storage location.
+Users can access their settings by default using the shortcut `⌘,`.
 
-- [Rsync and path](/docs/settings/rsyncandpath/) - rsync and path settings
-- [Monitor and log](/docs/settings/networksettings/) - monitor and log settings
-- [SSH](/docs/settings/sshsettings) - SSH settings
-- Environment - set environment variables for ssh, there are a few variables to set, RsyncUI only support one environment variable
+- **Rsync and Path:** - Settings for rsync and path
+- **Monitor and Log:** - Settings for monitoring and logging
+- **SSH:** - Settings for SSH
+- **Environment:** - Setting environment variables for SSH. There are several variables that can be set, but RsyncUI only supports one environment variable.
 
-The *Info* shows version of rsync in use and the path for storing and reading configurations to permanent store.
+The "Info" section displays the version of rsync in use and the path for storing and retrieving configurations to the permanent storage location.
 
 {{< figure src="/images/usersettings/info.png" alt="" position="center" style="border-radius: 8px;" >}}

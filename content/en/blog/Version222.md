@@ -12,7 +12,7 @@ Version 2.2.2 is scheduled for release in January 2025.
 
 The primary repository (https://github.com/rsyncOSX/RsyncUI) is updated with the latest development.
 
-All graphical updates are executed on the main thread. Moving resource-intensive work to the background thread is advantageous to
+All GUI updates are executed on the main thread. Moving resource-intensive work to the background thread is advantageous to
 prevent GUI updates from blocking.
 
 The following tasks have been refactored to background threads using the `actor` framework: reading data, sorting and filtering data,

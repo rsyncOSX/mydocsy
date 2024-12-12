@@ -21,8 +21,8 @@ initiated, its termination is uncertain.
 
 #### Swift version 6 and the new concurrency model
 
-Swift version 6 introduced *strict concurrency*. By adopting Swift 6 language mode and strict concurrency, developers gain access to a tool that assists
-in identifying and resolving data races at compile time.
+Swift version 6 introduced strict concurrency checking. By enabling *Swift 6 language mode*  and *strict concurrency checking*, Xcode assists
+in identifying and resolving possible data races at compile time.
 
 Quote swift.org: *"More formally, a data race occurs when one thread accesses memory while the same memory is being modified by another thread.
 The Swift 6 language mode eliminates these issues by preventing data races at compile time."*
@@ -32,8 +32,6 @@ the `@MainActor`, which corresponds to the main thread. If an macOS application 
 it is advantageous to execute these tasks on a background thread rather than the main thread. Executing such tasks on the main thread significantly
 increases the likelihood of GUI blocking and the application's unresponsiveness.
 
-**Swift 6 Language Mode and Strict Concurrency Checking:** When Swift 6 language mode is *enabled* and strict concurrency checking is
-set to *Complete*, Xcode at compile time prevents any potential data races.
 
 #### RsyncUI Version 2.2.2
 
@@ -52,52 +50,21 @@ such as the `rsync` synchronize task. Combine is employed to monitor two specifi
 - `NSNotification.Name.NSFileHandleDataAvailable`
 - `Process.didTerminateNotification`
 
-and act when they are observed. The `rsync` synchronize task is completed when the
-last notification is observed.
+and act when they are observed. The `rsync` synchronize task is completed when the last notification is observed.
 
 ```bash
 // Combine, subscribe to NSNotification.Name.NSFileHandleDataAvailable
-        NotificationCenter.default.publisher(
-            for: NSNotification.Name.NSFileHandleDataAvailable)
-            .sink { [self] _ in
-                let data = outHandle.availableData
-                if data.count > 0 {
-                    if let str = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
-                        str.enumerateLines { line, _ in
-                            self.output.append(line)
-                            if SharedReference.shared.checkforerrorinrsyncoutput,
-                               self.errordiscovered == false
-                            {
-                                do {
-                                    try self.checklineforerror?.checkforrsyncerror(line)
-                                } catch let e {
-                                    self.errordiscovered = true
-                                    let error = e
-                                    self.propogateerror(error: error)
-                                }
-                            }
-                        }
-                        // Send message about files
-                        if usefilehandler {
-                            filehandler(output.count)
-                        }
-                    }
-                    outHandle.waitForDataInBackgroundAndNotify()
-                }
-            }.store(in: &subscriptons)
-        // Combine, subscribe to Process.didTerminateNotification
-        NotificationCenter.default.publisher(
-            for: Process.didTerminateNotification)
-            .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
-            .sink { [self] _ in
-                processtermination(output, config?.hiddenID)
-                // Log error in rsync output to file
-                if errordiscovered, let config {
-                    Logfile(command: config.backupID,
-                            stringoutputfromrsync: output)
-                }
-                SharedReference.shared.process = nil
-                // Release Combine subscribers
-                subscriptons.removeAll()
-            }.store(in: &subscriptons)
+NotificationCenter.default.publisher(
+  for: NSNotification.Name.NSFileHandleDataAvailable)
+  .sink { [self] _ in
+  ....
+  }.store(in: &subscriptons)
+// Combine, subscribe to Process.didTerminateNotification
+NotificationCenter.default.publisher(
+    for: Process.didTerminateNotification)
+        .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
+        .sink { [self] _ in
+        ....
+        subscriptons.removeAll()
+    }.store(in: &subscriptons)
 ```

@@ -17,14 +17,14 @@ is advantageous to prevent blocking GUI updates.
 The following tasks have been refactored to background threads using the `actor` framework: reading data, sorting and filtering data,
 and preparing data for views. Writing data to the permanent storage remains on the main thread, annotated with `@MainActor`.
 
-- preparing output from rsync
-  - rsync output can often exceed 50,000 rows, previous limit of 40,000 rows has been removed, RsynUI presents as many rows there are
-  - each row is mapped into a struct containing an UUID and the line of output, in compliance to `Identifiable` protocol
 - reading data from the permanent storage
-  - log records are mapped to a structure fit for viewing, also in compliance to `Identifiable` protocol
-- sorting and filtering log records in view Logrecords
+  - log records are mapped into a structure fit for viewing, in compliance to `Identifiable` protocol
+- preparing output from rsync
+  - output from rsync can often be huge, previous limit of 40,000 rows has been removed, RsynUI presents as many rows there are
+  - each row is mapped into a struct containing an UUID and the line of output, also in compliance to `Identifiable` protocol
+- sorting and filtering log records in view "Log listings"
 
-Details about [LogRecords and Logs](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/LogRecords.swift),
+Details about [LogRecords and Logs](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/LogRecords.swift)
 and [Output from rsync](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Global/ObservableOutputfromrsync.swift).
 Before viewing, it is requiered to map data into the above data structure.
 

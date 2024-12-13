@@ -1,14 +1,21 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.2"
-date = "2024-12-07"
+date = "2024-12-13"
 tags = ["changelog","version 2.2.2"]
 categories = ["changelog"]
 +++
 
-### Version 2.2.2 (build 122) - not yet released
+### Version 2.2.2 (build 122) - release candidate
 
-Version 2.2.2 is scheduled for release in January 2025. The primary repository (https://github.com/rsyncOSX/RsyncUI)
+Released 13 December 2024.
+
+Most refactor, internal changes. A lot of changed files, most are changes for moving some work
+to background tasks, see below. The "Verify remote" is in beta, Push and Pull actions still
+includes `--dry-run`. To actually use it, copy the command string, paste it into a terminal and
+remove the `--dry-run` if you want it to actually do some work.
+
+Version 2.2.2 is scheduled for release in *January 2025*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
 is updated with the latest development.
 
 All updates for the GUI are executed on the main thread. Moving resource-intensive work to the background thread

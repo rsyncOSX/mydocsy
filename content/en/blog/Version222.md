@@ -10,10 +10,10 @@ categories = ["changelog"]
 
 Released 13 December 2024.
 
-Most refactor, internal changes. A lot of changed files, most are changes for moving some work
-to background tasks, see below. The "Verify remote" is in beta, Push and Pull actions still
-includes `--dry-run`. To actually use it, copy the command string, paste it into a terminal and
-remove the `--dry-run` if you want it to actually do some work.
+The majority of the refactoring involves internal changes. Many files have been modified, primarily to move certain tasks
+to background processes. The "Verify remote" feature is currently in beta.  The "Push" and "Pull" actions still
+support the `--dry-run` option. To use the "Verify remote" feature, copy the command string,
+paste it into a terminal, and remove the `--dry-run` option if you wish to execute the action.
 
 Version 2.2.2 is scheduled for release in *January 2025*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
 is updated with the latest development.

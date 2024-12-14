@@ -8,8 +8,13 @@ categories = ["synchronize"]
 
 {{< alert >}}
 
-The *Synchronize* view enables the execution of either all or selected tasks in a single operation.
-A double click on a task initiates a `--dry-run`, while the subsequent double click executes the actual run.
+The *Synchronize* view enables the execution of either all or selected tasks in a single operation,
+either by *shortcut actions* or by *functions* on the toolbar.
+
+Or, for a single task,
+
+a double click *on one task* initiates a `--dry-run`, an estimate run, and the subsequent
+double click executes the actual run for that task.
 
 {{< /alert >}}
 
@@ -20,8 +25,8 @@ Shortcut actions within the *Synchronize* view:
   - no progress bar during synchronization, progress bar requiere estimation first
 - Abort: `⌘K` aborts and halts any ongoing task
 
-Upon launching RsyncUI, it automatically opens the *Synchronize* view. Selecting the "wand and stars" (shortcut `⌘E`)
-from the toolbar initiates task estimation.
+Upon launching RsyncUI, it automatically opens the *Synchronize* view. Selecting the *wand and stars* (shortcut `⌘E`)
+from the toolbar initiates estimation of all tasks.
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 

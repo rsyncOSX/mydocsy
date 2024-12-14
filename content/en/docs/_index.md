@@ -4,7 +4,7 @@ linkTitle: Documentation
 menu: { main: { weight: 20 } }
 ---
 
-**RsyncUI** is a macOS application developed using Swift and SwiftUI, designed for macOS Sonoma and subsequent versions.
+*RsyncUI* is a macOS application developed using Swift and SwiftUI, designed for macOS Sonoma and subsequent versions.
 It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while
 RsyncUI provides a graphical user interface (GUI) on top of rsync.
 
@@ -25,12 +25,13 @@ If installed via Homebrew, the SHA-256 hash is automatically verified. For downl
 
 ### For New Users
 
-For new users, kindly refer to the [important information](/docs/important/) section. Additionally, please find information
-about the latest version of rsync to install [here](/docs/rsync/).
+For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information
+about the latest version of rsync to [install](/docs/rsync/).
 
 ### File Storage and Synchronization
 
-RsyncUI provides a centralized catalog for storing files, located at `$HOME/.rsyncosx/macserialnumber/.`
+RsyncUI provides a centralized catalog for storing files, located at:
+- `$HOME/.rsyncosx/macserialnumber/.`
 
 RsyncUI supports synchronizing data to:
 
@@ -39,12 +40,10 @@ RsyncUI supports synchronizing data to:
 
 **Additional Setup Required for Data Synchronization**
 
-For synchronizing data to servers on the Internet or local LAN, additional setup is necessary.
+For synchronizing data to *servers* on the Internet or local LAN, additional setup is necessary. If passwordless login
+via SSH keys has been enabled, you can initiate data synchronization by adding the source, destination, login ID, and server name.
 
-If passwordless login via SSH keys has been enabled, you can initiate data synchronization by adding the source,
-destination, login ID, and server name.
-
-If passwordless login is not enabled, additional actions must be taken before executing your first task.
+If passwordless login is *not enabled*, additional actions must be taken before executing your first task.
 
 ### New Tasks, Verification, and Synchronization
 
@@ -63,14 +62,6 @@ selecting the task, and choosing the "play" icon on the toolbar. This action wil
 
 You can select the new task from the Rsync parameters view, copy and paste the synchronization string into a terminal view,
 and execute the rsync command. The `--dry-run` parameter is automatically set as default in this view.
-
-**For new users:**
-
-If you are new to RsyncUI, please read the [important information](/docs/important/). There is also information about the [latest version of rsync](/docs/rsync/) to install. The catalog for storing files is:
-
-```bash
-$HOME/.rsyncosx/macserialnumber/
-```
 
 **Local attached disk, remote server, and passwordless login:**
 

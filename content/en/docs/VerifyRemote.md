@@ -14,13 +14,13 @@ rsync to be installed and enabled.
 
 *It is still in development for the upcoming version 2.2.2.* The following screenshots are from the development.
 
-The function is not intended to be automated. Users must verify their subsequent actions. If the remote destinations are stored on a Git server,
-such as GitHub or Gitea, regular `git push` and `pull` commands will suffice. Git is a superior tool for version control,
-but in certain situations, creating a Git repository may not be feasible, and this function may prove useful.
+{{< /alert >}}
+
+The function is not intended to be automated. Users must verify their subsequent actions. If the remote destinations are stored
+on a Git server, such as GitHub or Gitea, regular `git push` and `pull` commands will suffice. Git is a superior tool for
+version control, but in certain situations, creating a Git repository may not be feasible, and this function may prove useful.
 
 The verification applies only to remote destinations on servers.
-
-{{< /alert >}}
 
 #### Synchronization of Multiple Macs to a Remote Server
 
@@ -38,22 +38,18 @@ RsyncUI indicates my local repository is in sync with remote. However, this is m
 
 {{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-#### Arguments for Rsync
+#### Arguments for rsync
 
-Before appending the following arguments, it is verified if any of these arguments are already present. The modified arguments are intended to modify the
-rsync command for push and pull to function like a regular file copy, eliminating the `--delete` parameter.
+The following arguments are used in both push and pull.
 
-- parameter `--itemize-changes`is appended, output a change-summary for all updates
-- parameter `--dry-run` is appendend, rsync execute an estimate run
-- parameter `--update` is appended, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a modified time that is newer than the source file
-- parameter `--exclude=.git/` is appended, git repositories might be huge and it make no sense to include it
-- parameter `--exclude=.DS_Store` is appended, as above, make no sense til include it
-- parameter `--delete` is removed, this parameter is a default parameter in RsyncUI to keep source and destination in sync
+- `--itemize-changes`, output change-summary for all updates
+- `--dry-run`, rsync execute an estimate run
+- `--update`, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a modified time that is newer than the source file
+- `--exclude=.git/`, git repositories might be huge and it make no sense to include it
+- `--exclude=.DS_Store`, as above, make no sense til include it
 
-The code for evaluating is *not particularly advanced*. The last 15 rows, which are statistics from rsync, are removed from both the `pull` and `push` commands.
-Additionally, all rows with trailing `/` are removed, as these represent catalogs. The result from the `pull` command is subtracted from the result
-of the `push` command. Conversely, the `push` command is subtracted from the result of the `pull` command. After both subtractions,
-the resulting arrays of rows, which are `[String]`, are compared based on the number of rows.
+The result from the `pull` command is subtracted from the result of the `push` command. Conversely, the `push` command is subtracted
+from the result of the `pull` command. After both subtractions, the resulting arrays are compared based on the number of rows.
 
 The outcome is as follows:
 

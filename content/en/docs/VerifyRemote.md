@@ -6,10 +6,11 @@ tags = ["verify remote"]
 categories = ["synchronize"]
 +++
 
-{{< alert color="warning" >}}
+{{< alert" >}}
 
 The user is solely responsible for determining the appropriate action. RsyncUI provides only advisory guidance,
-based on a rudimentary evaluation of a push and pull data comparison.
+based on a rudimentary evaluation of a push and pull data comparison. The function also requiere version 3.x of
+rsync to be installed and enabled.
 
 *It is still in development for the upcoming version 2.2.2.* The following screenshots are from the development.
 
@@ -42,11 +43,12 @@ RsyncUI indicates my local repository is in sync with remote. However, this is m
 Before appending the following arguments, it is verified if any of these arguments are already present. The modified arguments are intended to modify the
 rsync command for push and pull to function like a regular file copy, eliminating the `--delete` parameter.
 
-- a parameter `--dry-run` is appendend, rsync execute an estimate run
-- a parameter `--update` is appended, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a modified time that is newer than the source file
-- a parameter `--exclude=.git/` is appended, git repositories might be huge and it make no sense to include it
-- a parameter `--exclude=.DS_Store` is appended, as above, make no sense til include it
-- the parameter `--delete` is removed, this parameter is a default parameter in RsyncUI to keep source and destination in sync
+- parameter `--itemize-changes`is appended, output a change-summary for all updates
+- parameter `--dry-run` is appendend, rsync execute an estimate run
+- parameter `--update` is appended, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a modified time that is newer than the source file
+- parameter `--exclude=.git/` is appended, git repositories might be huge and it make no sense to include it
+- parameter `--exclude=.DS_Store` is appended, as above, make no sense til include it
+- parameter `--delete` is removed, this parameter is a default parameter in RsyncUI to keep source and destination in sync
 
 The code for evaluating is *not particularly advanced*. The last 15 rows, which are statistics from rsync, are removed from both the `pull` and `push` commands.
 Additionally, all rows with trailing `/` are removed, as these represent catalogs. The result from the `pull` command is subtracted from the result

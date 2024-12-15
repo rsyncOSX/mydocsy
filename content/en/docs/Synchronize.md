@@ -34,10 +34,14 @@ from the toolbar initiates estimation of all tasks.
 
 The outcome of an estimate is displayed, with blue numbers indicating data that requires synchronization.
 To execute the actual run, either directly from the summarized estimated view by pressing the left arrow (shortcut `⌘R`)
-on the toolbar or by selecting a row and pressing the details button, you will be presented with the detailed information.
+on the toolbar.
+
+By selecting a row within the summarized estimation view, you will be presented with the detailed information.
 
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/images/tasks/estimatedetails.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+After execution, logs are updated.
 
 {{< figure src="/images/tasks/logrecords.png" alt="" position="center" style="border-radius: 8px;" >}}

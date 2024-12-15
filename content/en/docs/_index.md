@@ -5,8 +5,8 @@ menu: { main: { weight: 20 } }
 ---
 
 **Note**: I have utilized the new AI-based writing tools in macOS 15.2 for proofreading all text within this
-documentation. Even if it is excelent tools, especially if your toung language is not English, there may
-be some weird translations within the text. Please let me know if you find text which dows not make sence.
+documentation. Even if it is excelent tools, especially if your native language is not English, there may
+be some weird translations within the text. Please let me know if you find text which does not make sence.
 
 *RsyncUI* is a macOS application developed using Swift and SwiftUI, designed for macOS Sonoma and subsequent versions.
 It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while

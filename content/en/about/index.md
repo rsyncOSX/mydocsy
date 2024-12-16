@@ -14,7 +14,7 @@ Hello,
 
 My email address is thomeven@gmail.com. If you have any ideas or thoughts about RsyncUI, please do not hesitate to contact me.
 
-**RsyncOSX** was archived and development ceased in August 2024. **RsyncUI** is currently in active development. All experience gained
+**RsyncOSX** was archived and development ceased in August 2024. **RsyncUI** is in active development. All experience gained
 from developing RsyncOSX is being utilized in the development of RsyncUI.
 
 The development of RsyncOSX commenced in early 2016 as a personal project to learn Swift. And the development of RsyncUI

@@ -12,7 +12,7 @@ The user is solely responsible for determining the appropriate action. RsyncUI p
 based on a rudimentary evaluation of a push and pull data comparison. The function also requiere version 3.x of
 rsync to be installed and enabled.
 
-*It is still in development for the upcoming version 2.2.2.* The following screenshots are from the development.
+**It is still in development for the upcoming version 2.2.2.** The following screenshots are from the development.
 
 {{< /alert >}}
 
@@ -27,20 +27,18 @@ The verification applies only to remote destinations on servers.
 If you are using multiple Macs, as I do, and all Macs synchronize data to the same remote storage, there may be challenges maintaining synchronization
 and preventing data loss, particularly if the remote storage is **not** a Git server, such as GitHub and Gitea.
 
-I have over 3,000 bird photographs (130 GB) from the past four years that are synchronized using RsyncUI to a local remote server at home.
-New photographs are added, old photographs are deleted, and updates are made to sidecars of the photographs.  As long as I was using only one Mac,
-all updates were made on that Mac. However, with two Macs, I now use both Macs to work on my photographs.
+I have over 3,000 bird photos (130 GB) from the past four years that are synchronized using RsyncUI to a local remote server at home.
+New photos are added, old photos are deleted, and updates are made to sidecars of the photos.  As long as I was using only one Mac,
+all updates were made on that Mac. However, with two Macs, I now use both Macs to work on my photos.
 When I synchronize my changes, I need to transfer those changes to my second Mac.
 
 #### Arguments for rsync
 
 The following arguments are used in both push and pull.
 
-- `--itemize-changes`, output change-summary for all updates
-- `--dry-run`, rsync execute an estimate run
-- `--update`, evaluates the timestamp, forces rsync to skip any files which exist on the destination and have a modified time that is newer than the source file
-- `--exclude=.git/`, git repositories might be huge and it make no sense to include it
-- `--exclude=.DS_Store`, as above, make no sense til include it
+- `--itemize-changes` - output change-summary for all updates
+- `--dry-run` - rsync execute an estimate run
+- `--update` - evaluates the timestamp
 
 The result from the `pull` command is subtracted from the result of the `push` command. Conversely, the `push` command is subtracted
 from the result of the `pull` command. After both subtractions, the resulting arrays are compared based on the number of rows.
@@ -52,7 +50,7 @@ The outcome is as follows:
 - If the number of rows is equal, it is likely that the local repository is more up-to-date than the remote repository.
 
 
-#### Itemized output, push or pull
+#### Itemized output - push or pull
 
 The parameter `-i` or `--itemize-changes` produces details about each file. The format of the output is **YXcstpoguax**:
 

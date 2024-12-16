@@ -10,16 +10,15 @@ categories = ["changelog"]
 
 Released 13 December 2024.
 
-The majority of the refactoring involves internal changes. Many files have been modified, primarily to move certain tasks
-to background processes. The "Verify remote" feature is currently in beta.  The "Push" and "Pull" actions still
-support the `--dry-run` option. To use the "Verify remote" feature, copy the command string,
-paste it into a terminal, and remove the `--dry-run` option if you wish to execute the action.
-
 Version 2.2.2 is scheduled for release in *January 2025*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
 is updated with the latest development.
 
-All updates for the GUI are executed on the main thread. Moving resource-intensive work to the background thread
-is advantageous to prevent blocking GUI updates.
+The "Verify remote" feature is still in development.  The "Push" and "Pull" actions still
+includes the `--dry-run` option.
+
+The majority of the refactoring are internal changes, primarily to move a few tasks
+to background processes. Moving resource-intensive work to the background thread
+is advantageous to prevent blocking GUI updates. All updates for the GUI are executed on the main thread.
 
 The following tasks have been refactored to background threads using the `actor` framework.
 Writing data to the permanent storage remains on the main thread, annotated with `@MainActor`.

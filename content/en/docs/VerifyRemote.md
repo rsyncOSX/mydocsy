@@ -12,7 +12,8 @@ The user is solely responsible for determining the appropriate action. RsyncUI p
 based on a rudimentary evaluation of a push and pull data comparison. The function also requiere version 3.x of
 rsync to be installed and enabled.
 
-**It is still in development for the upcoming version 2.2.2.** The following screenshots are from the development.
+**It is still in development for the upcoming version 2.2.2.** The following screenshots are from the development
+and **not** yet in the release candidate.
 
 {{< /alert >}}
 
@@ -90,4 +91,7 @@ YXcstpoguax
 {{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 RsyncUI indicates my local repository is more updated than remote. However, this is merely an advisory.
-I must verify this independently to ensure my certainty.
+I must verify this independently to ensure my certainty. From the toolbar, choose to show push or pull
+view to see more details.
+
+{{< figure src="/images/verify/pushview.png" alt="" position="center" style="border-radius: 8px;" >}}

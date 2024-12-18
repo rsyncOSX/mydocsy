@@ -8,13 +8,15 @@ categories = ["changelog"]
 
 ### Version 2.2.2 (build 122) - release candidate
 
-Released 13 December 2024.
+Updated 18 December 2024.
 
-Version 2.2.2 is scheduled for release in *January 2025*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
+Version 2.2.2 is scheduled for release latwr in *December 2024*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
 is updated with the latest development.
 
-The "Verify remote" feature is still in development.  The "Push" and "Pull" actions still
-includes the `--dry-run` option.
+The *Verify remote* feature has been completed. If you are utilizing this feature, please ensure that you verify either
+push or pull before disabling the `—dry-run` option. This feature is primarily intended for users who have multiple
+Macs and synchronize both Macs to a remote storage location that is **not** a Git repository. The function also
+requiere version 3.x of rsync to be installed and enabled.
 
 The majority of the refactoring are internal changes, primarily to move a few tasks
 to background processes. Moving resource-intensive work to the background thread

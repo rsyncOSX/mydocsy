@@ -6,14 +6,11 @@ tags = ["verify remote"]
 categories = ["synchronize"]
 +++
 
-{{< alert >}}
+{{< alert color="warning" >}}
 
 The user is solely responsible for determining the appropriate action. RsyncUI provides only advisory guidance,
 based on a rudimentary evaluation of a push and pull data comparison. The function also requiere version 3.x of
 rsync to be installed and enabled.
-
-**It is still in development for the upcoming version 2.2.2.** The following screenshots are from the development
-and **not** yet in the release candidate.
 
 {{< /alert >}}
 

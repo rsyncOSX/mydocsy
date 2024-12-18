@@ -10,7 +10,7 @@ categories = ["changelog"]
 
 Updated 18 December 2024.
 
-Version 2.2.2 is scheduled for release latwr in *December 2024*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
+Version 2.2.2 is scheduled for release later in *December 2024*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
 is updated with the latest development.
 
 The *Verify remote* feature has been completed. If you are utilizing this feature, please ensure that you verify either

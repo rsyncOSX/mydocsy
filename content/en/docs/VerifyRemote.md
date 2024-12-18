@@ -90,8 +90,8 @@ YXcstpoguax
 
 {{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI indicates my local repository is more updated than remote. However, this is merely an advisory.
+RsyncUI indicates  remote is more updated than my local repository. However, this is merely an advisory.
 I must verify this independently to ensure my certainty. From the toolbar, choose to show push or pull
 view to see more details.
 
-{{< figure src="/images/verify/pushview.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/verify/pullview.png" alt="" position="center" style="border-radius: 8px;" >}}

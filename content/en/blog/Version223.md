@@ -1,17 +1,12 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.2"
-date = "2024-12-18"
+date = "2024-12-20"
 tags = ["changelog","version 2.2.2"]
 categories = ["changelog"]
 +++
 
-### Version 2.2.2 (build 122) - release candidate
-
-Updated 18 December 2024.
-
-Version 2.2.2 is scheduled for release later in *December 2024*. The primary repository (https://github.com/rsyncOSX/RsyncUI)
-is updated with the latest development.
+### Version 2.2.3 (build 125) - 20 December 2024
 
 The *Verify remote* feature is completed. If you are utilizing this feature, please ensure that you verify either
 push or pull before disabling the `—dry-run` option. This feature is primarily intended for users who have multiple
@@ -22,8 +17,8 @@ The majority of the refactoring are internal changes, primarily to move a few ta
 to background processes. Moving resource-intensive work to the background thread
 is advantageous to prevent blocking GUI updates. All updates for the GUI are executed on the main thread.
 
-The following tasks have been refactored to background threads using the `actor` framework.
-Writing data to the permanent storage remains on the main thread, annotated with `@MainActor`.
+The following tasks have been refactored to background threads. *Writing data* to the permanent storage remains on the
+main thread.
 
 - reading data from the permanent storage
   - log records are mapped into a structure fit for viewing
@@ -38,6 +33,7 @@ is mapped into a new Array of `structs` which are compliance with the `Identifia
 mapping 100K may take a second or two depending on the hardware. If the above mapping is performed on the main thread,
 it is a possibility that the *spinning beach ball* is presented.
 
-For further details on the major changes in this version, please refer to the blog post at [blog/2024/12/06/swift-concurrency/](/blog/2024/12/06/swift-concurrency/).
+For further details on the major changes in this version, please refer to the blog
+post at [blog/2024/12/06/swift-concurrency/](/blog/2024/12/06/swift-concurrency/).
 
 Additionally, there are a few other enhancements implemented in this version as well.

@@ -7,7 +7,7 @@ categories = ["changelog"]
 +++
 
 To begin, I must acknowledge that my understanding of Swift concurrency is limited. I am actively learning about Swift and SwiftUI. RsyncUI is a graphical
-user interface (GUI) application; most of its work is executed on the main thread. However, in version 2.2.2, most resource-intensive tasks are moved from
+user interface (GUI) application; most of its work is executed on the main thread. However, in version 2.2.3, most resource-intensive tasks are moved from
 the main thread to background threads. RsyncUI functions effectively as it is, but it also serves as a learning opportunity for new features.
 Stability is also a crucial aspect of RsyncUI. Consequently, I refrain from releasing new versions until I am confident in its stability.
 
@@ -33,9 +33,9 @@ it is advantageous to execute these tasks on a background thread rather than the
 increases the likelihood of GUI blocking and the application's unresponsiveness.
 
 
-#### RsyncUI Version 2.2.2
+#### RsyncUI Version 2.2.3
 
-In version 2.2.2, the majority of read operations, decoding and encoding data are executed on background threads.
+In version 2.2.3, the majority of read operations, decoding and encoding data are executed on background threads.
 Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
 
 Swift concurrency is exemplified within the log view. Loading log records is performed on a background thread. When the

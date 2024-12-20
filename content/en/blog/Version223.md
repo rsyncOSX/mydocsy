@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-title = "Version 2.2.2"
+title = "Version 2.2.3"
 date = "2024-12-20"
 tags = ["changelog","version 2.2.2"]
 categories = ["changelog"]

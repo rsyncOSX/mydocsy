@@ -14,8 +14,8 @@ rsync to be installed and enabled.
 
 {{< /alert >}}
 
-**Note**: Within the "Push Pull" view, the text switching `--dry-run` mode "off" is incorrect. The switch itself is correct,
-but the text displayed in the button is misleading; text should be *Off*.
+**Note**: Within the *Push or pull* view, the text switching `--dry-run` mode *off* is incorrect. The switch itself is correct,
+but the text displayed in the button is misleading; text should be *Off*. Fixed in code.
 
 {{< figure src="/images/verify/button.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -93,7 +93,7 @@ YXcstpoguax
 {{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 RsyncUI indicates  remote is more updated than my local repository. However, this is merely an advisory.
-I must verify this independently to ensure my certainty. From the toolbar, choose to show push or pull
-view to see more details.
+I must verify this independently to ensure my certainty. From the toolbar, choose  *Push* or *Pull*
+to view  more details.
 
 {{< figure src="/images/verify/pullview.png" alt="" position="center" style="border-radius: 8px;" >}}

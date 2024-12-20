@@ -14,6 +14,11 @@ rsync to be installed and enabled.
 
 {{< /alert >}}
 
+**Note**: Within the "Push Pull" view, the text switching `--dry-run` mode "off" is incorrect. The switch itself is correct,
+but the text displayed in the button is misleading; text should be *Off*.
+
+{{< figure src="/images/verify/button.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 The function is not intended to be automated. Users must verify their subsequent actions. If the remote destinations are stored
 on a Git server, such as GitHub or Gitea, regular `git push` and `pull` commands will suffice. Git is a superior tool for
 version control, but in certain situations, creating a Git repository may not be feasible, and this function may prove useful.

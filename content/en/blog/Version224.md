@@ -24,4 +24,7 @@ Supporting *deep links* in RsyncUI is still in an early alpha phase. An example 
 - the URL is pasted into Safari, see [the deep link in action](https://youtu.be/J9CB7H2caJ8)
 
 The idea to enable App Intents is to use Shortcuts and Siri for direct execute synchronize tasks in RsyncUI. For the moment App Intents
-in Rsync UI is not yet working. I am still learning how to integrate it.
+in Rsync UI is not yet working. I am still learning how to integrate it. There is only a *mockup* shortcut in RsyncUI
+enabled, only to verify that shortcuts from RsyncUI are avaliable from within Shortcuts application.
+
+{{< figure src="/images/224/appintents.png" alt="" position="center" style="border-radius: 8px;" >}}

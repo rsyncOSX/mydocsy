@@ -1,30 +1,30 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.4"
-date = "2024-12-24"
+date = "2024-12-26"
 tags = ["changelog","version 2.2.4"]
 categories = ["changelog"]
 +++
 
 ### Version 2.2.4 (build 126) - not yet released
 
-Next features in RsyncUI are *Deep links* and *App Intents*.
+Next feature in RsyncUI is *Deep links*. Deep links enables direct access to application features by using URL.
+Notepad can store URL links, and by using deep links it is easy to excute RsyncUI action by one click
+only.
 
-Deep links enables direct access to application features by using URL links.
+The URL links are created with one or two parameters (`name=value`) together with the action. The video of the
+screen presents two actions, with two and one parameters, for demo only.  Supporting *deep links* in RsyncUI is still in
+an early alpha phase.
 
-App Intents - quote Apple: *"The App Intents framework provides functionality to deeply integrate your app’s actions and
-content with system experiences across platforms, including Siri, Spotlight, widgets, controls and more. With Apple Intelligence and enhancements
-to App Intents, Siri suggests your app’s actions to help people discover your app’s features and gains the ability to take actions in and across apps."*
+The two URL´s are:
+- `rsyncuiapp://loadprofileandverify?profile=Pictures&task=first`
+  - action is - load profile and verify remote for the first task
+  - two parameters `profile=Picture` and `task=first`
+- `rsyncuiapp://loadprofileandestimate?profile=Pictures`
+  - action is - load profile and estimate all tasks
+  - one parameter `profile=Picture`
+- [demo of deeplinks](https://www.youtube.com/watch?v=lsa3KU5KtYs)
 
-Supporting *deep links* in RsyncUI is still in an early alpha phase. An example of deep link URL for RsynUI is:
-
-- the URL `rsyncuiapp://loadandestimateprofile?profile=Pictures`
-  - the URL instructs to start RsyncUI, load profile `Pictures` and execute an estimation run
-  - the above is just an example of a deep link
-- the URL is pasted into Safari, see [the deep link in action](https://youtu.be/J9CB7H2caJ8)
-
-The idea to enable App Intents is to use Shortcuts and Siri for direct execute synchronize tasks in RsyncUI. For the moment App Intents
-in Rsync UI is not yet working. I am still learning how to integrate it. There is only a *mockup* shortcut in RsyncUI
-enabled, only to verify that shortcuts from RsyncUI are avaliable from within Shortcuts application.
-
-{{< figure src="/images/224/appintents.png" alt="" position="center" style="border-radius: 8px;" >}}
+Before release sometime in January 2025, development must be completed and I have to test and verify that the feature is
+robust. By using this feature it should be possible as an example, to execute synchronize and backup of data by one
+click on a stored UR link.

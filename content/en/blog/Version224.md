@@ -8,6 +8,10 @@ categories = ["changelog"]
 
 ### Version 2.2.4 (build 126) - not yet released
 
+The main repository is updated with the latest development including code for *deep links*.  Be aware of
+code for deep links might be unstable. The deep link code is activated by `.onOpenURL {}` from the 
+main sidebar.  Apart from that rest of code base is equal to verison 2.2.3, e.g. a stable code base. 
+
 Next feature in RsyncUI is *deep links*. Deep links enables direct access to application features by using
 URL links. Notepad can store URL´s, and by using deep links it is easy to excute RsyncUI action by one click
 only.

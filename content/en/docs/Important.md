@@ -8,12 +8,10 @@ lastmod = "2024-01-10"
 +++
 
 The User Interface of RsyncUI may pose challenges for users unfamiliar with the `rsync` command. The primary objective is to
-simplify the usage of `rsync`, rather than providing a comprehensive introduction to macOS users. This scope is beyond the
-intended purpose of the interface.
+simplify the usage of `rsync`, rather than providing a comprehensive introduction of `rsync` to macOS users. This scope is beyond the intended purpose of the interface.
 
 For those unfamiliar with the command-line tool `rsync` and its graphical user interface (GUI) RsyncUI, the following
-information is provided: RsyncUI functions as a graphical layer atop the command-line tool `rsync`. It does not directly perform the underlying
-operations; `rsync` is responsible for the actual execution.
+information is provided: RsyncUI functions as a graphical layer atop the command-line tool `rsync`. It does not directly perform the underlying operations; `rsync` is responsible for the actual execution.
 
 {{< alert color="warning" >}}
 

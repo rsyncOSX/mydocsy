@@ -30,3 +30,16 @@ The two URL´s are:
 Before release sometime in January 2025, the development and testing must be completed. I must also verify, by
 using it myself for some periode of time, a robust feature.  By using *deep links* it should be possible, as an example,
 to execute synchronize and backup of data by one click only.
+
+#### Errors in URL link ####
+
+If RsyncUI cannot resolve the URL link, *errors* like the below is thrown. Only well defined URL´s (for RsyncUI)
+is computed and executed. All URL´s are validated as correct URL, but only defined URL´s for RsyncUI are
+executed.
+
+**Action** is not known
+{{< figure src="/images/224/error.png" alt="" position="center" style="border-radius: 8px;" >}}
+**Profile** is not known
+{{< figure src="/images/224/error2.png" alt="" position="center" style="border-radius: 8px;" >}}
+**Action** is  known but **profile** does no exist
+{{< figure src="/images/224/error3.png" alt="" position="center" style="border-radius: 8px;" >}}

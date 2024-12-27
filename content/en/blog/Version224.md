@@ -41,5 +41,5 @@ executed.
 {{< figure src="/images/224/error.png" alt="" position="center" style="border-radius: 8px;" >}}
 **Profile** is not known
 {{< figure src="/images/224/error2.png" alt="" position="center" style="border-radius: 8px;" >}}
-**Action** is  known but **profile** does no exist
+**Action** is  known but **profile** does not exist
 {{< figure src="/images/224/error3.png" alt="" position="center" style="border-radius: 8px;" >}}

@@ -17,14 +17,14 @@ screen presents two actions for demo only.  Supporting URL´s in RsyncUI is stil
 an early alpha phase.
 
 The two URL´s are:
-- `rsyncuiapp://loadprofileandverify?profile=Pictures&task=first`
+- `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
   - action is *load profile and verify remote for the first task*
-  - two parameters `profile=Picture` and `task=first`
+  - two parameters `profile=Picture` and `id=Pictures_backup`
 - `rsyncuiapp://loadprofileandestimate?profile=Pictures`
   - action is *load profile and estimate all tasks*
   - one parameter `profile=Picture`
 - [demo of deeplinks](https://www.youtube.com/watch?v=lsa3KU5KtYs)
 
-Before release sometime in January 2025, the development and testing must be completed I must also verify, by
-using it myself for some periode of time, that the feature is robust.  By using this feature it should be possible as an example,
+Before release sometime in January 2025, the development and testing must be completed. I must also verify, by
+using it myself for some periode of time, a robust feature.  By using *deep links* it should be possible, as an example,
 to execute synchronize and backup of data by one click only.

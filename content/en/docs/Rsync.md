@@ -7,8 +7,7 @@ categories = ["general information"]
 lastmod = "2024-09-10"
 +++
 
-The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia differ in their versions. Both versions adhere to protocol 29 of version 2.6.9,
-but the licenses for these versions are distinct. Additionally, there may be variations in the underlying code.
+The default `/usr/bin/rsync` on macOS Sonoma and macOS Sequoia differ in their versions. Both versions adhere to protocol 29 of version 2.6.9, but the licenses for these versions are distinct. Additionally, there may be variations in the underlying code.
 
 In macOS Sonoma, the default version is version 2.6.9 (https://download.samba.org/pub/rsync/NEWS#2.6.9), released in
 November 2006. In macOS Sequoia, the default version is a compatible rsync based on the BSD license (https://github.com/kristapsdz/openrsync).

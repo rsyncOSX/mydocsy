@@ -15,7 +15,7 @@ Pressing the `Enter` key will advance to the next field. Pressing the `Enter` ke
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Delete
+### Delete Tasks
 
 Select the tasks you wish to delete and delete them from the Edit menu or by pressing the `backspace` button.
 

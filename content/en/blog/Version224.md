@@ -1,21 +1,27 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.4"
-date = "2024-12-29"
-tags = ["changelog","version 2.2.4"]
+date = "2024-12-30"
+tags = ["changelog","version 2.2.4","deep links"]
 categories = ["changelog"]
 +++
 
 ### Version 2.2.4 (build 126) - not yet released
 
 Next feature in RsyncUI is *deep links*. Deep links enables direct access to application features by using
-URL links. Notepad can store URL´s, and by using deep links it is easy to excute RsyncUI action by one click
-only. By using *deep links* it should be possible, as an example to execute synchronize and backup of data by one click only.
+URL links. Notepad can store URL´s. By using deep links enables by one click only, to excute a estimate and synchronize action.
 
-The main repository is updated with the latest development, including code for deep links. Be aware that the deep link code may be unstable. It's activated by the `.onOpenURL {}` event from the main sidebar. The rest of the code base is stable, version 2.2.3. One challenge with deep links in RsyncUI is grouping together actions which normally are two ore more actions by user. Another important task is to make the code for deep links isolated not to introduce any sideeffects to normal use of RsyncUI.
+The main repository is updated with the latest development, including code for deep links. Be aware that the deep link code may be unstable (yet). All code for deep links are separated from other code in RsyncUI. Normal use of RsyncUI does not involve any deep link code. This secure there are no sideeffects in integrating deep links in RsyncUI. The rest of the code base is stable, version 2.2.3. 
 
-The URL is created with one or two parameters (`name=value`) together with the action. Supporting URL´s in RsyncUI is still in a beta phase. Still some more testing is requiered before release. And there will be a release candidate as well before release. 
+Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input.
 
+##### New feature planned
+
+By developing code for deep links also makes it possible to automate actions from *within* RsyncUI. A single click (or Shortcut action) may execute an estimate and synchronize action in one go. RsyncUI will create the requiered URL based upon the loaded profile and wanted acion.
+
+##### Working URL´s
+
+The following URL´s are working as expected. The URL´s are saved in Notepad, and by one click only opens RsyncUI and executes the action. 
 
 The two main URL´s are:
 
@@ -24,10 +30,10 @@ The two main URL´s are:
   - if there is data to synchronize, data will automatically be synchronized after a periode of time (seconds), the automatically synchronize of data may be aborted
   - one parameter `profile=Picture`
 - `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
-  - action is *load profile and verify remote for the first task*
+  - action is *load profile and verify  task with synchronizeID=Pictures backup*, the space in synchronize ID on task is converted to `_` when searching for task in RsyncUI
   - two parameters `profile=Picture` and `id=Pictures_backup`
 
-#### Errors in URL link ####
+##### Errors in URL link 
 
 If RsyncUI cannot resolve the URL link, *errors* like the below is thrown. Only well defined URL´s (for RsyncUI)
 is computed and executed. All URL´s are validated as correct URL, but only defined URL´s for RsyncUI are

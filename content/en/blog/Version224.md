@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.4"
-date = "2024-12-30"
+date = "2025-01-01"
 tags = ["changelog","version 2.2.4","deep links"]
 categories = ["changelog"]
 +++

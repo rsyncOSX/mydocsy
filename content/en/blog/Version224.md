@@ -15,10 +15,6 @@ The main repository is updated with the latest development, including code for d
 
 Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input.
 
-##### Execute URL´s from within RsyncUI
-
-By developing code for deep links also makes it possible to automate actions from *within* RsyncUI. A single click (or Shortcut action) may execute an estimate and synchronize action in one go. RsyncUI will create the requiered URL based upon the loaded profile and requiered action.
-
 ##### Working URL´s
 
 The following URL´s are working as expected. The URL´s might be saved in Notepad, and by one click only opens RsyncUI and executes the action.  First priority now are:
@@ -29,13 +25,21 @@ The following URL´s are working as expected. The URL´s might be saved in Notep
 
 The two main URL´s are:
 
-- `rsyncuiapp://loadprofileandestimate?profile=Pictures`
-  - action is *load profile, estimate all tasks and automatically synchronize data*
-  - if there is data to synchronize, data will automatically be synchronized after a periode of time (seconds), the automatically synchronize of data may be aborted
+- (*one*) `rsyncuiapp://loadprofileandestimate?profile=Pictures` 
+   - action is *load profile, estimate all tasks and automatically synchronize data*
+    - if there is data to synchronize, data will automatically be synchronized after a periode of time (seconds), the automatically synchronize of data may be aborted
   - one parameter `profile=Picture`
-- `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
-  - action is *load profile and verify  task with synchronizeID=Pictures backup*, the space in synchronize ID on task is converted to `_` when searching for task in RsyncUI
-  - two parameters `profile=Picture` and `id=Pictures_backup`
+-  (*two*) `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
+      - action is *load profile and verify  task with synchronizeID=Pictures backup*, the space in synchronize ID on task is converted to `_` when searching for task in RsyncUI
+      - two parameters `profile=Picture` and `id=Pictures_backup`
+
+##### Execute URL´s from within RsyncUI
+
+By developing code for deep links also makes it possible to automate actions from *within* RsyncUI. A single click (or Shortcut action) may execute an estimate and synchronize action in one go. RsyncUI will create the requiered URL based upon the loaded profile and requiered action. 
+
+In beta, the two yellow icons on toolbar are, execute URL-commands from within RsyncUI as number *one* and *two* above.
+
+{{< figure src="/images/224/urlcommand.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ##### Errors in URL link 
 

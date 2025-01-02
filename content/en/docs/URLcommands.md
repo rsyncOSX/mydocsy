@@ -7,7 +7,7 @@ categories = ["synchronize"]
 +++
 **This page is in development. Deep link is not yet released.**
 
-The new feature in version 2.2.4 of RsyncUI is *deep links*. Deep links enables direct access to application features by using URL links. By using deep links, enables by one click only, to excute an estimate and synchronize action. Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input. 
+The new feature in version 2.2.4 of RsyncUI is *deep links*. Deep links enables direct access to application features by using URL links. By using deep links, enables by one click, to excute *an estimate and synchronize action* in one go. Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input. 
 
 There are two methods of using deep links:
 

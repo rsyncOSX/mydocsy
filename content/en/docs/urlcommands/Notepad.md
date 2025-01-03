@@ -34,9 +34,7 @@ Mounted as LaCie
 
 **URL for verify a remote**
 
-Verify remote is only for remote destinations. Remote server - raspberrypi with zfs filesystem.
-
-Profile is: Pictures backup, the space is replaced by a \_ in URL
+Verify remote is only for remote destinations. Remote server - raspberrypi with zfs filesystem. Profile is *Pictures* and Synchronize ID = *Pictures backup*, the space is replaced by a \_ in URL for the id tag in URL, which is the search for the wanted Synchronize ID.
 
 `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
 

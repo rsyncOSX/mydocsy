@@ -18,7 +18,7 @@ There are two methods of using deep links:
 
 ##### URL´s 
 
-URL´s must start with `rsyncuiapp://`. If not RsyncUI will not recognize the command.
+URL´s must start with `rsyncuiapp://`.
 
 | Action                                                | URL                                                                     |
 |-------------------------------------------------------|-------------------------------------------------------------------------|

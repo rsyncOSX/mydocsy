@@ -11,7 +11,7 @@ A few samples of URL´s I am executing from Notepad. URL´s must start with `rsy
 
 ##### Sample URLs which I am using
 
-URLs for estimate and execute. The URL´s must start with *rsyncuiapp://*
+URLs for estimate and execute.
 
 **Remote server** - raspberrypi with zfs filesystem
 
@@ -36,7 +36,7 @@ Mounted as LaCie
 
 **URL for verify a remote**
 
-Verify remote is only for remote destinations. Remote server - raspberrypi with zfs filesystem. Profile is *Pictures* and Synchronize ID = *Pictures backup*, the space is replaced by a \_ in URL for the id tag in URL, which is the search for the wanted Synchronize ID.
+Verify remote is only for remote destinations. Remote server - raspberrypi with zfs filesystem. Profile is *Pictures* and Synchronize ID = *Pictures backup*, the space is replaced by a `_` in URL for the id tag in URL, which is the search for the wanted Synchronize ID.
 
 - `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
 

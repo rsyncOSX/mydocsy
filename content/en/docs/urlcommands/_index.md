@@ -45,6 +45,15 @@ Deep links also enable automation of actions within RsyncUI. A single click on t
 
 {{< figure src="/images/url/urlcommand.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+##### View URLs
+
+**Note**: Not yet in the release candidate
+
+There will be a new view for view and copy of URL´s. The view is in development and to be released in next release candidate.
+
+{{< figure src="/images/url/viewurl.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
 ##### Errors in URL link
 
 If RsyncUI encounters an invalid URL link, it will generate errors, as illustrated below. Only well-defined URLs (specifically those supported by RsyncUI) are processed and executed. All URLs are validated as valid, but only defined URLs for RsyncUI are actually executed.

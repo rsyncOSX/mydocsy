@@ -41,8 +41,7 @@ The two main URL´s are:
 
 ##### Execute URL´s from within RsyncUI
 
-Deep links also enable automation of actions within RsyncUI. A single click on the toolbar icon executes an estimate and synchronizes the action simultaneously. RsyncUI generates the necessary URL based on the loaded profile and the required action. The two yellow toolbar icons allow execution of URL commands from within RsyncUI, as demonstrated above.
-
+Deep links also enable automation of actions within RsyncUI. A single click on the toolbar icon executes  the URL  action. RsyncUI generates the necessary URL based on the loaded profile and the required action. The two yellow toolbar icons allow execution of URL commands from within RsyncUI, as demonstrated in section above.
 
 {{< figure src="/images/url/urlcommand.png" alt="" position="center" style="border-radius: 8px;" >}}
 

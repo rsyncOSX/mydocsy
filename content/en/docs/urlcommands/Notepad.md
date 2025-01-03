@@ -20,6 +20,8 @@ URLs for estimate and execute. The URL´s must start with *rsyncuiapp://*
 
 **NVME SSD** disks
 
+The mount point, such as `/Volumes/WDBackup`, and the profile name are set to the same value solely for the purpose of simplifying the identification of the mounted disk and the corresponding profile to use in RsyncUI. As documented here, I am performing backups on several SSD disks and also to a remote server. The rationale behind having multiple backups is that it is straightforward to update all backups on a regular basis using RsyncUI. Additionally, if one disk or the server fails, I always have an updated backup to restore from.
+
 Mounted as WDBackup
 
 - `rsyncuiapp://loadprofileandestimate?profile=WDBackup`

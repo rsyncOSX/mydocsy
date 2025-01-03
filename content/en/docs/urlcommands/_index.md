@@ -6,9 +6,9 @@ tags = ["url commands"]
 categories = ["synchronize"]
 +++
 
-The new feature in version 2.2.4 of RsyncUI is *deep links*. Deep links enables direct access to application features by using URL links. By using deep links, enables by one click, to excute *an estimate and synchronize action* in one go. Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input. There is several examples of URLs in "URLs Notepad".
+The latest feature introduced in version 2.2.4 of RsyncUI is the implementation of "deep links." Deep links facilitate direct access to application features via URL links. By utilizing deep links, users can execute an estimate and synchronize actions in a single click. Deep links in RsyncUI enable the grouping of actions that typically require multiple user inputs.
 
-**Note**: please be aware there is a one second delay after initiating any URL-task, both from external URL link and by RsyncUI.
+For reference, please note that there is a one-second delay incurred after initiating any URL-related task, whether initiated from an external URL link or through RsyncUI.
 
 There are two methods of using deep links:
 
@@ -41,15 +41,14 @@ The two main URL´s are:
 
 ##### Execute URL´s from within RsyncUI
 
-Deep links also makes it possible to automate actions from *within* RsyncUI. A single click on toolbar icon  execute an estimate and synchronize action in one go. RsyncUI will create the requiered URL based upon the loaded profile and requiered action. The two yellow toolbar icons are, execute URL-commands from within RsyncUI as above.
+Deep links also enable automation of actions within RsyncUI. A single click on the toolbar icon executes an estimate and synchronizes the action simultaneously. RsyncUI generates the necessary URL based on the loaded profile and the required action. The two yellow toolbar icons allow execution of URL commands from within RsyncUI, as demonstrated above.
+
 
 {{< figure src="/images/url/urlcommand.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ##### Errors in URL link
 
-If RsyncUI cannot resolve the URL link, *errors* like the below is thrown. Only well defined URL´s (for RsyncUI)
-is computed and executed. All URL´s are validated as correct URL, but only defined URL´s for RsyncUI are
-executed.
+If RsyncUI encounters an invalid URL link, it will generate errors, as illustrated below. Only well-defined URLs (specifically those supported by RsyncUI) are processed and executed. All URLs are validated as valid, but only defined URLs for RsyncUI are actually executed.
 
 **Action** is not known
 {{< figure src="/images/url/error.png" alt="" position="center" style="border-radius: 8px;" >}}

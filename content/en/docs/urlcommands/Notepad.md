@@ -15,26 +15,26 @@ URLs for estimate and execute. The URL´s must start with *rsyncuiapp://*
 
 **Remote server** - raspberrypi with zfs filesystem
 
-`rsyncuiapp://loadprofileandestimate?profile=Pictures`
-`rsyncuiapp://loadprofileandestimate?profile=default`
+- `rsyncuiapp://loadprofileandestimate?profile=Pictures`
+- `rsyncuiapp://loadprofileandestimate?profile=default`
 
 **NVME SSD** disks
 
 Mounted as WDBackup
 
-`rsyncuiapp://loadprofileandestimate?profile=WDBackup`
+- `rsyncuiapp://loadprofileandestimate?profile=WDBackup`
 
 Mounted as Samsung
 
-`rsyncuiapp://loadprofileandestimate?profile=Samsung`
+- `rsyncuiapp://loadprofileandestimate?profile=Samsung`
 
 Mounted as LaCie
 
-`rsyncuiapp://loadprofileandestimate?profile=LaCie`
+- `rsyncuiapp://loadprofileandestimate?profile=LaCie`
 
 **URL for verify a remote**
 
 Verify remote is only for remote destinations. Remote server - raspberrypi with zfs filesystem. Profile is *Pictures* and Synchronize ID = *Pictures backup*, the space is replaced by a \_ in URL for the id tag in URL, which is the search for the wanted Synchronize ID.
 
-`rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
+- `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
 

@@ -6,7 +6,9 @@ tags = ["url commands"]
 categories = ["synchronize"]
 +++
 
-The new feature in version 2.2.4 of RsyncUI is *deep links*. Deep links enables direct access to application features by using URL links. By using deep links, enables by one click, to excute *an estimate and synchronize action* in one go. Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input. 
+The new feature in version 2.2.4 of RsyncUI is *deep links*. Deep links enables direct access to application features by using URL links. By using deep links, enables by one click, to excute *an estimate and synchronize action* in one go. Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input. There is several examples of URLs in "URLs Notepad".
+
+**Note**: please be aware there is a one second delay after initiating any URL-task, both from external URL link and by RsyncUI.
 
 There are two methods of using deep links:
 
@@ -21,7 +23,7 @@ URL´s must start with `rsyncuiapp://`. If not RsyncUI will not recognize the co
 | Action                                                | URL                                                                     |
 |-------------------------------------------------------|-------------------------------------------------------------------------|
 | Estimate all tasks and automatically synchronize data | `rsyncuiapp://loadprofileandestimate?profile=Pictures`                  |
-| Verify  task with synchronizeID=Pictures backup       | `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup` |
+| Verify  task, as an example, with Synchronize ID=Pictures backup      | `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup` |
 
 The two main URL´s are:
 
@@ -35,7 +37,7 @@ The two main URL´s are:
 
 **Note 1**: If only the default profile is in use, parameter is `profile=default`
 
-**Note 2**: If there are space in Synchronize ID, like "Pictures backup", the URL-parameter is `Pictures_backup`. RsyncUI automatically replaces the `_` with space when searching for the ID.
+**Note 2**: If there is space in Synchronize ID, like "Pictures backup", the URL-parameter is `id=Pictures_backup`. RsyncUI automatically replaces the `_` with space when searching for the ID.
 
 ##### Execute URL´s from within RsyncUI
 

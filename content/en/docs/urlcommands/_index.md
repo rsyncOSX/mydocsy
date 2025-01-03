@@ -5,7 +5,6 @@ date = "2024-11-20"
 tags = ["url commands"]
 categories = ["synchronize"]
 +++
-**This page is in development. Deep link is not yet released.**
 
 The new feature in version 2.2.4 of RsyncUI is *deep links*. Deep links enables direct access to application features by using URL links. By using deep links, enables by one click, to excute *an estimate and synchronize action* in one go. Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input. 
 
@@ -15,19 +14,9 @@ There are two methods of using deep links:
     - by one click one the URL-link opens RsyncUI and executes the task
 - use URL functions direct within RsyncUI
 
-The sample profile *Pictures*  is selected and the first task is annotated with Synchronize ID *Pictures backup*.
-
-{{< figure src="/images/url/pictures.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-URL´s saved in Notepad
-
-{{< figure src="/images/url/notepad.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-
-##### URL´s for Notepad
+##### URL´s 
 
 URL´s must start with `rsyncuiapp://`. If not RsyncUI will not recognize the command.
- 
 
 | Action                                                | URL                                                                     |
 |-------------------------------------------------------|-------------------------------------------------------------------------|

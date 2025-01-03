@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.4"
-date = "2025-01-01"
+date = "2025-01-03"
 tags = ["changelog","version 2.2.4","deep links"]
 categories = ["changelog"]
 +++
@@ -15,4 +15,4 @@ The main repository is updated with the latest development, including code for d
 
 Utilizing  deep links in RsyncUI is *grouping together* actions which normally are two ore more actions activated by user input.
 
-See documentation for more [info about deep links](/docs/urlcommands/)
+See documentation for more [info about deep links](/docs/urlcommands/).

@@ -51,9 +51,7 @@ Deep links also enable automation of actions within RsyncUI. A single click on t
 
 ##### View URLs
 
-**Note**: Not yet in the release candidate
-
-There will be a new view for view and copy of URL´s. The view is in development and to be released in next release candidate. You may copy the correct URLs and save the URLs in e.g Notepad for easy access to start a synchronize task.
+You may copy the correct URLs and save the URLs in e.g Notepad for easy access to start a synchronize task.
 
 {{< figure src="/images/url/viewurl.png" alt="" position="center" style="border-radius: 8px;" >}}
 

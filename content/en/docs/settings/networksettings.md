@@ -24,6 +24,10 @@ Changes to settings are automatically saved.
 
 - By default, "on," a summary of each synchronization is added to the log records. View "Log Listings" from the Sidebar.
 
+**No time delay Synchronize URL-actions**
+
+- If "on", the estimated tasks, by URL-action, will be Synchronized without any possibility to abort the action.
+
 **Confirm Execution:**
 
 - See below.
@@ -51,4 +55,3 @@ If a local disk is not attached, `rsync` will attempt to synchronize the data to
 ```
 Below the local attached volume is not connected, and the estimate may interpret this as a new synchronize task. If you have simply forgotten to attach the disk, you do not want `RsyncUI` to synchronize data to the `/Volume` catalog.
 {{< figure src="/images/usersettings/summarizedview.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/usersettings/network.png" alt="" position="center" style="border-radius: 8px;" >}}

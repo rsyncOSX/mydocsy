@@ -8,13 +8,13 @@ categories = ["synchronize"]
 
 The latest feature introduced in version 2.2.4 of RsyncUI is the implementation of "deep links." Deep links facilitate direct access to application features via URL links. By utilizing deep links, users can execute an estimate and synchronize actions in a single click. Deep links in RsyncUI enable the grouping of actions that typically require multiple user inputs.
 
-For reference, please note that there is a one-second delay incurred after initiating any URL-related task, whether initiated from an external URL link or through RsyncUI.
+For reference, please note that there is a one-second delay incurred after initiating any URL-related task, whether initiated from an external URL link or through RsyncUI. There are two methods of using deep links:
 
-There are two methods of using deep links:
-
-- save an URL-link in Notepad
+- save an URL-link in e.g. Notepad
     - by one click one the URL-link opens RsyncUI and executes the task
 - use URL functions direct within RsyncUI
+
+Within the Tasks view, URL strings may be copied for saving in e.g. Notepads as links.
 
 ##### URL´s 
 
@@ -25,18 +25,17 @@ URL´s must start with `rsyncuiapp://`.
 | Estimate all tasks and automatically synchronize data | `rsyncuiapp://loadprofileandestimate?profile=Pictures`                  |
 | Verify  task, as an example, with Synchronize ID=Pictures backup      | `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup` |
 
-The two main URL´s are:
+The two main URL´s actions are:
 
-- `rsyncuiapp://loadprofileandestimate?profile=Pictures`
-   - action is *load profile, estimate all tasks and automatically synchronize data*
-    - if there is data to synchronize, data will automatically be synchronized after a periode of time (seconds), the automatically synchronize of data may be aborted
+- *Estimate all tasks and automatically synchronize data*
+  - *load profile, estimate all tasks and automatically synchronize data*
+  - if there is data to synchronize, data will automatically be synchronized after a period of time (seconds), the automatically synchronize of data may be aborted, the delay may be switched off in Settings
   - one parameter `profile=Picture`
-- `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup`
-    - action is *load profile and verify  task with synchronizeID=Pictures backup*, the space in synchronize ID on task is converted to `_` when searching for task in RsyncUI
+- *Verify task, as an example, with Synchronize ID=Pictures backup*
+    - *load profile and verify  task with synchronizeID=Pictures backup*, the space in synchronize ID on task is converted to `_` when searching for task in RsyncUI
     - two parameters `profile=Picture` and `id=Pictures_backup`
 
-**Note**: The count down may be bypassed by toggle switch in Settings view, only for the latest rc build 127 updated 6 January 2025.
-There is a count down in *five six* to abort the synchronize task after estimate.
+There is a count down in  *six* seconds to abort the synchronize task after estimate. The count down may be bypassed by toggle switch in Settings view.
  
 {{< figure src="/images/url/count.png" alt="" position="center" style="border-radius: 8px;" >}}
 

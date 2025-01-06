@@ -1,12 +1,14 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.2.4"
-date = "2025-01-03"
+date = "2025-01-06"
 tags = ["changelog","version 2.2.4","deep links"]
 categories = ["changelog"]
 +++
 
-### Version 2.2.4 (build 126) - release candidate
+### Version 2.2.4 (build 127) - release candidate
+
+The release candidate is updated 6 January 2025. Most likely, version 2.2.5 to be released by next week.
 
 The next feature in RsyncUI is *deep links*. Deep links enable direct access to application features by using URL links. Notepad can store URLs. By using deep links, users can execute an estimate and synchronize actions with a single click.
 

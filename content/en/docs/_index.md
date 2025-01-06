@@ -80,3 +80,13 @@ RsyncUI monitors the task for progress and termination.
 The user can abort a task at any time. However, it is essential to allow the task to complete and perform any necessary
 cleanup operations before starting a new task. This process may take a few seconds, and if not, the applications may
 become unresponsive.
+
+### Deep links
+
+Since version 2.2.4 release candidate, RsyncUI now supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, for instance, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
+
+- Launch RsyncUI
+- Access the selected profile, which can be any profile saved by RsyncUI
+- Estimate all tasks for the selected profile, after which the data will be synchronized
+
+All of these actions can be accomplished with a single click. Additionally, this action may also be triggered within RsyncUI.

@@ -35,13 +35,14 @@ The two main URL´s are:
     - action is *load profile and verify  task with synchronizeID=Pictures backup*, the space in synchronize ID on task is converted to `_` when searching for task in RsyncUI
     - two parameters `profile=Picture` and `id=Pictures_backup`
 
-There is a count down in *five seconds* to abort the synchronize task after estimate.
+**Note**: The count down may be bypassed by toggle switch in Settings view, only for the latest rc build 127 updated 6 January 2025.
+There is a count down in *five six* to abort the synchronize task after estimate.
  
 {{< figure src="/images/url/count.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-**Note 1**: If only the default profile is in use, parameter is `profile=default`
+**Note**: If only the default profile is in use, parameter is `profile=default`
 
-**Note 2**: If there is space in Synchronize ID, like "Pictures backup", the URL-parameter is `id=Pictures_backup`. RsyncUI automatically replaces the `_` with space when searching for the ID.
+**Note**: If there is space in Synchronize ID, like "Pictures backup", the URL-parameter is `id=Pictures_backup`. RsyncUI automatically replaces the `_` with space when searching for the ID.
 
 ##### Execute URL´s from within RsyncUI
 

@@ -37,10 +37,6 @@ The refactor of Combine introduced a bug for discover `rsync error:` Discover `r
 the rsync output requiere set on in RsyncUI Settings. If an error is discovered, a message is thrown and the error is
 written to the log.
 
-{{< figure src="/images/219/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/219/error1.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/219/error2.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 #### Monitor network
 
 Monitor network is set on or off in RsyncUI settings.

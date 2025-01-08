@@ -18,12 +18,15 @@ Within the Tasks view, URL strings may be copied for saving in e.g. Notepads as 
 
 ##### URL´s 
 
-URL´s must start with `rsyncuiapp://`. The two main URL´s actions are, it may be added more in next release:
+URL´s must start with `rsyncuiapp://`. The two main URL´s actions are:
 
 | Action                                                | URL                                                                     |
 |-------------------------------------------------------|-------------------------------------------------------------------------|
 | Estimate all tasks and automatically synchronize data | `rsyncuiapp://loadprofileandestimate?profile=Pictures`                  |
 | Verify  task, as an example, with Synchronize ID=Pictures backup      | `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup` |
+
+In future releases, it may be added more URL actions.
+
 - *Estimate all tasks and automatically synchronize data*
   - *load profile, estimate all tasks and automatically synchronize data*
   - if there is data to synchronize, data will automatically be synchronized after a period of time (seconds), the automatically synchronize of data may be aborted, the delay may be switched off in Settings

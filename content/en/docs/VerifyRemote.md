@@ -44,8 +44,10 @@ from the result of the `pull` command. After both subtractions, the resulting ar
 The outcome is as follows:
 
 - If `pull` has more data than `push`, it is *likely* that the remote repository is more up-to-date than the local repository.
-- If `push` has more data than `pull`, it is likely that the local repository is more up-to-date than the remote repository.
-- If the number of rows is equal, it is likely that the local repository is more up-to-date than the remote repository.
+- If `push` has more data than `pull`, it is *likely* that the local repository is more up-to-date than the remote repository.
+- If the number of rows is equal, it is *likely* that the local repository is more up-to-date than the remote repository.
+
+If there are zero rows, most likely, local  and remote repository are in sync. 
 
 
 #### Itemized output - push or pull

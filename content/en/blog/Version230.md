@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.3.0"
-date = "2025-01-13"
+date = "2025-01-14"
 tags = ["changelog","version 2.3.0","deep links","widget"]
 categories = ["changelog"]
 +++

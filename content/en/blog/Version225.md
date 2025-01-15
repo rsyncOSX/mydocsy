@@ -6,7 +6,7 @@ tags = ["changelog","version 2.2.5","deep links"]
 categories = ["changelog"]
 +++
 
-### Version 2.2.5 (build 128)
+### Version 2.2.5 (build 128) - 8 January 2025
 
 The next feature in RsyncUI is *deep links*. Deep links enable direct access to application features by using URL links. Notepad can store URLs. By using deep links, users can execute an estimate and synchronize actions with a single click.
 

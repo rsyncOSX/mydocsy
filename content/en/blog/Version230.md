@@ -14,8 +14,20 @@ Version 2.2.5 introduced the primary new function: deep links. Deep links enable
 
 Additionally, new widgets for Estimate and Verify have been introduced. By clicking on the upper right corner of the screen, the date and time, the edit widgets are enabled. There are two widgets for RsyncUI. It is recommended to select the middle size for the widget.
 
-Please note that widgets are currently in **beta**. Before using widgets, in Tasks, View URLs, click on the task and Save.
+Please note that widgets are currently in **beta**. Before using widgets, in Tasks View URLs, click on the task and Save.
+
+#### Mid size widgets 
+
+After enable and save URLs, in Tasks View URLs, the widgets look like below.
 
 {{< figure src="/images/230/widgets.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/images/230/saveurl.png" alt="" position="center" style="border-radius: 8px;" >}}
+#### Save URLs
+
+As an example I have saved two URLs for action by widgets. First is my *Default profile*, by click on the widget *Estimate* , estimate and synchronize all tasks in default profile.
+
+{{< figure src="/images/230/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The second is my *Pictures* profile, task with Synchronize ID *"Pictures backup"*. By click on  the widget *Verify*, verify task against remote destination. 
+
+{{< figure src="/images/230/verify.png" alt="" position="center" style="border-radius: 8px;" >}}

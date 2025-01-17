@@ -8,7 +8,9 @@ menu: { main: { weight: 20 } }
 It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while
 RsyncUI provides a graphical user interface (GUI) on top of rsync. RsyncUI is *digitally signed* and *notarized* by Apple.
 
-### Changelog and Installation
+For further information regarding *Deep links* and *Widgets*, please refer to the last page. If you are new to RsyncUI, it may be advisable to postpone reading about these features until you have become familiar with RsyncUI and completed your initial tasks.
+
+#### Changelog and Installation
 
 For the most up-to-date information, please refer to the [changelog](/blog/). RsyncUI is constructed as a Universal macOS Binary,
 ensuring native execution on Apple Silicon and Intel-based Mac computers.
@@ -21,14 +23,15 @@ brew install --cask rsyncui
 
 If installed via Homebrew, the SHA-256 hash is automatically verified. For downloads from GitHub, please verify the SHA-256 hash manually.
 
-### For New Users
+#### For New Users
 
 For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information
 about the latest version of rsync to [install](/docs/rsync/).
 
-### File Storage and Synchronization
+#### File Storage and Synchronization
 
 RsyncUI provides a centralized catalog for storing files, located at:
+
 - `$HOME/.rsyncosx/macserialnumber/.`
 
 RsyncUI supports synchronizing data to:
@@ -43,7 +46,7 @@ via SSH keys has been enabled, you can initiate data synchronization by adding t
 
 If passwordless login is *not enabled*, additional actions must be taken before executing your first task.
 
-### New Tasks, Verification, and Synchronization
+#### New Tasks, Verification, and Synchronization
 
 After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second double-click will
 execute the task in real time, including synchronization.
@@ -81,7 +84,7 @@ The user can abort a task at any time. However, it is essential to allow the tas
 cleanup operations before starting a new task. This process may take a few seconds, and if not, the applications may
 become unresponsive.
 
-### Deep links
+#### Deep links
 
 RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, for instance, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
 
@@ -90,3 +93,13 @@ RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating 
 - Estimate all tasks for the selected profile, after which the data will be synchronized
 
 All of these actions can be accomplished with a single click. Additionally, this action may also be triggered within RsyncUI.
+
+#### RsyncUI widgets
+
+Two widgets are integrated into RsyncUI: one for *estimating and synchronizing*, and another for *verifying a remote* repository. Both widgets retrieve a saved URL link from storage. Within the RsyncUI Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present.
+
+To enable the widgets on macOS, click on the date and time icon located in the upper right corner of your screen. Edit the widgets and select RsyncUI. Then, add the widgets.
+
+After enabling the widgets, a single click on the widget will launch RsyncUI and execute the corresponding action.
+
+To modify the URLs, update and save the new URLs.

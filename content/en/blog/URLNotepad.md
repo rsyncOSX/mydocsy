@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "URLs Notepad"
 date = "2025-01-07"
-tags = ["url commands"]
+tags = ["url commands","deep links"]
 categories = ["synchronize"]
 +++
 A few samples of URL´s I am executing from Notepad. URL´s must start with `rsyncuiapp://`, if not RsyncUI will not recognize the command.  My URL´s saved in Notepad for easy access and execution of my most used tasks. The Notepad page might also be saved as a PDF document which includes til URL links.

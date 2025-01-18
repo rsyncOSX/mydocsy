@@ -96,7 +96,7 @@ All of these actions can be accomplished with a single click. Additionally, this
 
 #### RsyncUI widgets
 
-Two widgets are integrated into RsyncUI: one for *estimating and synchronizing*, and another for *verifying a remote* repository. Both widgets retrieve a saved URL link from storage. Within the RsyncUI Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present.
+Two widgets are integrated into RsyncUI: one for *estimating and synchronizing*, and another for *verifying remote* repository. Both widgets retrieve a saved URL link from storage. Within the RsyncUI Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present.
 
 To enable the widgets on macOS, click on the date and time icon located in the upper right corner of your screen. Edit the widgets and select RsyncUI. Then, add the widgets.
 

@@ -13,9 +13,6 @@ push or pull before disabling the `—dry-run` option. This feature is primarily
 Macs and synchronize at least two Macs to a remote storage location that is **not** a Git repository. The function also
 requiere version 3.x of rsync to be installed and enabled.
 
-**Note**: Text button switching `--dry-run` mode off is misleading. See [Verify remote](/docs/verifyremote),
-text should be *Off*, fixed in code.
-
 The majority of the refactoring are internal changes, primarily to move a few tasks
 to background processes. Moving resource-intensive work to the background thread
 is advantageous to prevent blocking GUI updates. All updates for the GUI are executed on the main thread.

@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Thoughts about Verify"
-date = "2024-11-20"
+date = "2024-12-19"
 tags = ["verify remote"]
 categories = ["synchronize"]
 +++
@@ -19,7 +19,6 @@ The detailed output from rsync, utilizing the `--itemize-changes` arguments for 
 Before the test commence, the local and remote only differs in timestamp for one file. One file in the local repository is more recently updated by date compared to the file in remote repository. This indicates a push operation by the verification.
 
 {{< figure src="/images/verify/pushafile.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 
 Then the date on the remote device was touched, and the date on the file was updated to the current time and date. Consequently, the verification now indicates a pull request.
 

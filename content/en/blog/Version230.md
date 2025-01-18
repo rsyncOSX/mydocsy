@@ -8,6 +8,8 @@ categories = ["changelog"]
 
 ### Version 2.3.0 (build 130) - 15 January 2025
 
+A version 2.3.1 of RsyncUI will be released in early February 2025. This update includes a minor change to widgets and the implementation of a URL validation mechanism before saving.  Additionally, there will be some other minor updates. 
+
 This version is released somewhat sooner than anticipated. Rsync version 3.4.1, protocol version 32, has recently been released and a minor bug, causing a fallback to the default version in macOS when the new version of rsync is enabled, has been fixed.
 
 Version 2.2.5 introduced the primary new function: deep links. Deep links enable direct access to application functions. In RsyncUI, two main deep link functions are now available: 

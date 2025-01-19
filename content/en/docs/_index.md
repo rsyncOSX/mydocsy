@@ -8,8 +8,6 @@ menu: { main: { weight: 20 } }
 It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while
 RsyncUI provides a graphical user interface (GUI) on top of rsync. RsyncUI is *digitally signed* and *notarized* by Apple.
 
-For further information regarding *Deep links* and *Widgets*, please refer to the last page. If you are new to RsyncUI, it may be advisable to postpone reading about these features until you have become familiar with RsyncUI and completed your initial tasks.
-
 #### Changelog and Installation
 
 For the most up-to-date information, please refer to the [changelog](/blog/). RsyncUI is constructed as a Universal macOS Binary,

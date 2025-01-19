@@ -18,43 +18,31 @@ RsyncUI supports synchronizing data to:
 
 ##### Local attached disk
 
-RsyncUI can synchronize your data to a local attached disk, remote servers on the Internet, and on your local LAN.
-If you only want to synchronize data to a local attached disk, connect the disk, add the source and destination,
-and you are ready for your first task.
+RsyncUI can synchronize your data to a local attached disk, remote servers on the Internet, and on your local LAN. If you only want to synchronize data to a local attached disk, connect the disk, add the source and destination, and you are ready for your first task.
 
 ##### Remote server and passwordless login
 
-If you want to synchronize data to a server, on the Internet, or your local LAN, there is some more setup to do.
-If you have enabled *passwordless login* by ssh-key, you only have to add *source*, *destination*, *login id*,
-and *servername* and you are ready to synchronize data. If you have *not* enabled passwordless login, there are some more
-actions required before your first task.
+If you want to synchronize data to a server, on the Internet, or your local LAN, there is some more setup to do. If you have enabled *passwordless login* by ssh-key, you only have to add *source*, *destination*, *login id*, and *servername* and you are ready to synchronize data. If you have *not* enabled passwordless login, there are some more actions required before your first task.
 
 ##### Verify new tasks
 
-After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second double-click will
-execute the task in real time, including synchronization.
+After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second double-click will execute the task in real time, including synchronization.
 
 {{< alert color="warning" >}}
 
-A verification of a new task can also be executed by opening the Tasks or Rsync parameters view from the main sidebar,
-selecting the task, and choosing the "play" icon on the toolbar. This action will execute an estimation run and a
-`--dry-run` to verify the task.
+A verification of a new task can also be executed by opening the Tasks or Rsync parameters view from the main sidebar, selecting the task, and choosing the "play" icon on the toolbar. This action will execute an estimation run, a `--dry-run`, to verify the task.
 
 {{< /alert >}}
 
 **For more experienced users of rsync:**
 
-You can select the new task from the Rsync parameters view, copy and paste the synchronization string into a terminal view,
-and execute the rsync command. The `--dry-run` parameter is automatically set as default in this view.
+You can select the new task from the Rsync parameters view, copy and paste the synchronization string into a terminal view, and execute the rsync command. The `--dry-run` parameter is automatically set as default in this view.
 
 ##### Aborting a task
 
-Please note that this is an external task not controlled by RsyncUI, which executes the command-line tool `rsync`.
-RsyncUI monitors the task for progress and termination.
+Please note that this is an external task not controlled by RsyncUI, which executes the command-line tool `rsync`. RsyncUI monitors the task for progress and termination.
 
-The user can abort a task at any time. However, it is essential to allow the task to complete and perform any necessary
-cleanup operations before starting a new task. This process may take a few seconds, and if not, the applications may
-become unresponsive.
+The user can abort a task at any time. However, it is essential to allow the task to complete and perform any necessary cleanup operations before starting a new task. This process may take a few seconds, and if not, the applications may become unresponsive.
 
 #### Deep links
 

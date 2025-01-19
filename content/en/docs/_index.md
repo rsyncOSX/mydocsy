@@ -23,4 +23,4 @@ If installed via Homebrew, the SHA-256 hash is automatically verified. For downl
 
 #### Getting Started
 
-For detailed instructions on how to begin using RsyncUI, refer to the *Getting started* section. If you are unfamiliar with RsyncUI and the command-line tool `rsync`, it is recommended to start with the default settings and gain a fundamental understanding of RsyncUI before modifying parameters and exploring Deep links and embedded widgets.
+For instructions on how to begin using RsyncUI, refer to the *Getting started* section. If you are unfamiliar with RsyncUI and the command-line tool `rsync`, it is recommended to start with the default settings and gain a fundamental understanding of RsyncUI before modifying parameters and exploring Deep links and embedded widgets.

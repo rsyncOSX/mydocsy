@@ -9,7 +9,7 @@ lastmod = "2024-01-10"
 
 For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information about the latest version of rsync to [install](/docs/rsync/).
 
-#### New Tasks, Verification, and Synchronization
+#### New Tasks and Verification
 
 RsyncUI supports synchronizing data to:
 
@@ -34,9 +34,7 @@ A verification of a new task can also be executed by opening the Tasks or Rsync 
 
 {{< /alert >}}
 
-**For more experienced users of rsync:**
-
-You can select the new task from the Rsync parameters view, copy and paste the synchronization string into a terminal view, and execute the rsync command. The `--dry-run` parameter is automatically set as default in this view.
+You may also select the new task from the Rsync parameters view, copy and paste the synchronization string into a terminal view, and execute the rsync command. The `--dry-run` parameter is appended as default in this view.
 
 ##### Aborting a task
 

@@ -18,7 +18,7 @@ After enable and save URLs, in Tasks View URLs, the widgets look like below.
 
 **Hide The Sidebar**
 
-The sidebar might be hidden. When hidden, the view is cleaner. When hidden, to select another profile, choose the new *list icon* on the toolbar. The sidebar can be hidden on/off by menu or by shortcut, see *View* on menu bar. Or by click on the toolbar icon. All functions for estimate, synchronize and action by URLs are working as expected when toolbar is hidden.
+The sidebar might be hidden. When hidden, the view is cleaner. When hidden, to select another profile, choose the new *list icon* on the toolbar. The sidebar can be hidden on/off by menu or by shortcut, see *View* on menu bar. Or by click on the toolbar icon. All functions for estimate, synchronize and action by URLs are working as expected when the Sidebar is hidden.
 
 {{< figure src="/images/231/sidebaron.png" alt="" position="center" style="border-radius: 8px;" >}}
 

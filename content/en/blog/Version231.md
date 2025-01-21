@@ -8,7 +8,7 @@ categories = ["changelog"]
 
 ### Version 2.3.1 (build 131) - not yet released
 
-A version 2.3.1 of RsyncUI will be released in early February 2025. This update includes a minor change to widgets and the implementation of a URL validation mechanism before saving. 
+A version 2.3.1 of RsyncUI will be released in early February 2025. This update includes a minor change to widgets and the implementation of a URL validation mechanism before saving.  And there are a few internal refactor of code as well.
 
 **Widgets** 
 

@@ -32,8 +32,7 @@ When a split character `$` is added, the view dynamically updates with the repla
 
 #### Catalogs
 
-Selecting the "Home" icon displays all catalogs from your "$Home" directory. If a local disk is attached, the mounted volumes are also presented.
-Select the home catalog and the mounted volume. Return to the main Task view, and RsyncUI will suggest some values.
+Selecting the "Home" icon displays all catalogs from your "$Home" directory. If a local disk is attached, the mounted volumes are also presented. Select the home catalog and the mounted volume. Return to the main Task view, and RsyncUI will suggest some values.
 
 {{< figure src="/images/add/homecatalog.png" alt="" position="center" style="border-radius: 8px;" >}}
 

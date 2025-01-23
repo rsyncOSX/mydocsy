@@ -4,14 +4,11 @@ linkTitle: Documentation
 menu: { main: { weight: 20 } }
 ---
 
-*RsyncUI* is a macOS application developed using Swift and SwiftUI, designed for macOS Sonoma and subsequent versions.
-It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while
-RsyncUI provides a graphical user interface (GUI) on top of rsync. RsyncUI is *digitally signed* and *notarized* by Apple.
+*RsyncUI* is a macOS application developed using Swift and SwiftUI, designed for macOS Sonoma and subsequent versions. It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while RsyncUI provides a graphical user interface (GUI) on top of rsync. RsyncUI is *digitally signed* and *notarized* by Apple.
 
 #### Changelog and Installation
 
-For the most up-to-date information, please refer to the [changelog](/blog/). RsyncUI is constructed as a Universal macOS Binary,
-ensuring native execution on Apple Silicon and Intel-based Mac computers.
+For the most up-to-date information, please refer to the [changelog](/blog/). RsyncUI is constructed as a Universal macOS Binary, ensuring native execution on Apple Silicon and Intel-based Mac computers.
 
 RsyncUI can be installed via Homebrew or [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases):
 

@@ -37,8 +37,7 @@ The following command copies the newly created public key to the server:
 ssh-copy-id -i /Users/thomas/.ssh_rsyncosx/rsyncosx -p NN user@server
 ```
 
-The user can also configure the new SSH keypath and identityfile in a terminal window and subsequently add them to the Userconfig.
-RsyncUI will automatically enable these settings when added to the Userconfig.
+The user can also configure the new SSH keypath and identityfile in a terminal window and subsequently add them to the Userconfig. RsyncUI will automatically enable these settings when added to the Userconfig.
 
 The user can also apply local SSH keypath and identityfile and SSH port, which govern global settings, to each task.
 

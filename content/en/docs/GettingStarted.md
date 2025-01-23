@@ -13,8 +13,8 @@ For new users, kindly refer to the [important information](/docs/important/). Ad
 
 RsyncUI supports synchronizing data to:
 
-- Local attached disk
-- Remote servers on the Internet or local LAN
+- local attached disk
+- remote servers on the Internet or local LAN
 
 ##### Local attached disk
 
@@ -46,9 +46,9 @@ The user can abort a task at any time. However, it is essential to allow the tas
 
 RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
 
-- Launch RsyncUI
-- Access the selected profile, which can be any profile saved by RsyncUI
-- Estimate all tasks for the selected profile, after which the data will be synchronized
+- launch RsyncUI
+- access the selected profile, which can be any profile saved by RsyncUI
+- estimate all tasks for the selected profile, after which the data will be synchronized
 
 All of these actions can be accomplished with a single click. Additionally, this action may also be triggered within RsyncUI.
 
@@ -56,7 +56,7 @@ All of these actions can be accomplished with a single click. Additionally, this
 
 Two widgets are embedded in RsyncUI: 
 - one for *estimating and synchronizing*
-- and the second for *verifying remote* repository.
+- and the second for *verifying remote* repository
 
 Both widgets retrieve a saved URL link from storage. Within the Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present. To enable the widgets on macOS, click on the date and time icon located in the upper right corner of your screen. Edit the widgets and select RsyncUI. Then, add the widgets.
 

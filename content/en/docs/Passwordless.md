@@ -7,12 +7,9 @@ categories = ["remote servers"]
 lastmod = "2020-04-16"
 +++
 
-To synchronize data to a remote server using RsyncUI, passwordless login via SSH-key authentication is required.
-It is not possible to provide a user login and password during data synchronization via RsyncUI.
-SSH-key authentication is generally considered more secure than password-based authentication.
+To synchronize data to a remote server using RsyncUI, passwordless login via SSH-key authentication is required. It is not possible to provide a user login and password during data synchronization via RsyncUI. SSH-key authentication is generally considered more secure than password-based authentication.
 
-If default values for RSA-based SSH-key authentication are used, no additional information about the SSH-key is required in RsyncUI.
-However, it is necessary to provide information if custom SSH-keypath, identityfile, or port number is used.
+If default values for RSA-based SSH-key authentication are used, no additional information about the SSH-key is required in RsyncUI. However, it is necessary to provide information if custom SSH-keypath, identityfile, or port number is used.
 
 **Example:**
 For demonstration purposes, I have created an SSH-key specifically for rsync. The SSH-keypath is set to `~/.ssh_rsyncosx/`, and the RSA-based SSH-key is used. The SSH-keypath and identityfile are specified as follows:
@@ -20,8 +17,7 @@ For demonstration purposes, I have created an SSH-key specifically for rsync. Th
 ```bash
 -e "ssh -i ~/.ssh_rsyncosx/identityfile -p NN"
 ```
-where `-i ~/.ssh_rsyncosx/identityfile` is the SSH-keypath and identityfile, and `-p NN` is the port number used for communication (default port 22). The identity file for rsync is `rsyncosx`, and the default port is `22`.
-The rsync command to synchronize my Documents catalog is set by RsyncUI to my Raspberry Pi server:
+where `-i ~/.ssh_rsyncosx/identityfile` is the SSH-keypath and identityfile, and `-p NN` is the port number used for communication (default port 22). The identity file for rsync is `rsyncosx`, and the default port is `22`. The rsync command to synchronize my Documents catalog is set by RsyncUI to my Raspberry Pi server:
 
 ```bash
 /opt/homebrew/bin/rsync --archive --verbose --compress --delete \

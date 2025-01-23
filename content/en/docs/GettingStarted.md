@@ -44,7 +44,7 @@ The user can abort a task at any time. However, it is essential to allow the tas
 
 #### Deep links
 
-RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, for instance, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
+RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
 
 - Launch RsyncUI
 - Access the selected profile, which can be any profile saved by RsyncUI
@@ -54,10 +54,10 @@ All of these actions can be accomplished with a single click. Additionally, this
 
 #### RsyncUI widgets
 
-Two widgets are integrated into RsyncUI: one for *estimating and synchronizing*, and another for *verifying remote* repository. Both widgets retrieve a saved URL link from storage. Within the RsyncUI Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present.
+Two widgets are embedded in RsyncUI: 
+- one for *estimating and synchronizing*
+- and the second for *verifying remote* repository.
 
-To enable the widgets on macOS, click on the date and time icon located in the upper right corner of your screen. Edit the widgets and select RsyncUI. Then, add the widgets.
+Both widgets retrieve a saved URL link from storage. Within the Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present. To enable the widgets on macOS, click on the date and time icon located in the upper right corner of your screen. Edit the widgets and select RsyncUI. Then, add the widgets.
 
-After enabling the widgets, a single click on the widget will launch RsyncUI and execute the corresponding action.
-
-To modify the URLs, update and save the new URLs.
+After enabling the widgets, a single click on the widget will launch RsyncUI and execute the corresponding action. To modify the URLs, update and save the new URLs.

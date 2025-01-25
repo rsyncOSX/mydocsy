@@ -10,6 +10,8 @@ categories = ["changelog"]
 
 A version 2.3.1 of RsyncUI will be released in early February 2025. This update includes a minor change to widgets and the implementation of a URL validation mechanism before saving.  And there are a few internal refactor of code as well.
 
+There is also a new option for deleting log records for Snapshot tasks. See blog *Clean log snapshots* for more details.
+
 **Widgets** 
 
 After enable and save URLs, in Tasks View URLs, the widgets look like below.

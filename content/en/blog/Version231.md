@@ -14,6 +14,8 @@ This update includes a minor change to widgets and the implementation of a URL v
 
 **Widgets** 
 
+To update widgets, edit and delete current widgets. Start version 2.3.1 of RsyncUI, edit widgets and add updated.
+
 After enable and save URLs, in Tasks View URLs, the widgets look like below.
 
 {{< figure src="/images/231/widgets.png" alt="" position="center" style="border-radius: 8px;" >}}

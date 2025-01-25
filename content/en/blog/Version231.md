@@ -1,16 +1,16 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.3.1"
-date = "2025-01-21"
+date = "2025-01-25"
 tags = ["changelog","version 2.3.1","widget"]
 categories = ["changelog"]
 +++
 
-### Version 2.3.1 (build 131) - not yet released
+### Version 2.3.1 (build 131) - 25 January 2025
 
-A version 2.3.1 of RsyncUI will be released in early February 2025. This update includes a minor change to widgets and the implementation of a URL validation mechanism before saving.  And there are a few internal refactor of code as well.
+This is a release candidate. If no issues are discovered within the next week, it will become the next release version 2.3.1. If no issues are found, the status will only be updated to the latest release without the need to compile a new version. However, if any issues are identified, the next release will be version 2.3.2, accompanied by a new compiled version.
 
-There is also a new option for deleting log records for Snapshot tasks. See blog *Clean log snapshots* for more details.
+This update includes a minor change to widgets and the implementation of a URL validation mechanism before saving.  And there are a few internal refactor of code as well. There is also a new option for deleting log records for Snapshot tasks. See blog *Clean log snapshots* for more details.
 
 **Widgets** 
 

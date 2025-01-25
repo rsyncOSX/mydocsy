@@ -12,8 +12,6 @@ Text TBD.
 
 {{< figure src="/images/cleanlogsnapshot/logdeletetasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/images/cleanlogsnapshot/confirmcleanlogs.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 {{< figure src="/images/cleanlogsnapshot/deletedsnapshots.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-
+{{< figure src="/images/cleanlogsnapshot/confirmcleanlogs.png" alt="" position="center" style="border-radius: 8px;" >}}

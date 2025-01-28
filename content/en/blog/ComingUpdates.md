@@ -29,8 +29,13 @@ The second method, which may become the sole method for RsyncUI in the future, i
 
 In forthcoming versions of RsyncUI, both methods will be employed. However, if Combine is deprecated in the future, it is straightforward to replace it. In version 2.1.6, a significant refactoring of code utilizing Combine was implemented. 
 
-##### Suspending tasks
+##### Halting tasks
 
-By right-clicking on a task, it can be suspended or released. A suspended task will be marked and not estimated or executed. Currently, it is not developed, but I have some ideas for its development. It may not be feasible if the code becomes too complex, which could make RsyncUI more vulnerable to side effects. Complexity refers to an excessive amount of code that is difficult to manage, potentially increasing the risk of unintended consequences.
+By right-clicking on a task, it can be halted or released. A halted task will be marked and not estimated or executed. Currently, this feature is still in early development. Enabling the halt of a task requires minimal code modification. The code for actual estimation and execution will only accept valid tasks that are synchronized, synchronized remote, or snapshot.
 
+Further testing and development are required. This feature will be released as part of version 2.3.2. 
+
+{{< figure src="/images/232/toggletask.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/images/232/halted.png" alt="" position="center" style="border-radius: 8px;" >}}
 

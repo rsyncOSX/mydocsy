@@ -1,25 +1,25 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.3.2"
-date = "2025-01-28"
+date = "2025-01-29"
 tags = ["changelog","version 2.3.2","widget"]
 categories = ["changelog"]
 +++
 
-### Version 2.3.2 (build 132) - not yet released
+### Version 2.3.2 (build 132) - 29 January 2025
 
-The plan was to release a version 2.3.1, which is avaliable as a release candidate. But there will be a new version 2.3.2 (build 132) including a few more updates. It will most likely be released within first week of February 2025.
+Updates within this release:
 
 - halting tasks
 - update widgets
 - hide the sidebar
 - notifications, refactor of the observation part
 
+And there has been some minor internal updates as well.
+
 ##### Halting tasks
 
-By right-clicking on a task, it can be halted or released from halted status. A halted task will be marked and not avaliable for estimate or execute.  Enabling the halt of a task requires minimal code modification. The code for actual estimation and execution will only accept valid tasks that are synchronized, syncremote, or snapshot.
-
-When releasing a task from halted status, it remeber which kind of task it was before halted. 
+By right-clicking on a task, *on column Synchronize ID or Task*, it can be halted or released from halted status. A halted task will be marked and not available for estimate or execute. When releasing a task from halted status, it remember which kind of task it was before halted. 
 
 {{< figure src="/images/232/toggletask.png" alt="" position="center" style="border-radius: 8px;" >}}
 

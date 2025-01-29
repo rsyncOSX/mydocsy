@@ -26,7 +26,7 @@ If you want to synchronize data to a server, on the Internet, or your local LAN,
 
 ##### Verify new tasks
 
-After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second double-click will execute the task in real time, including synchronization.
+After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second double-click will execute the real task, e.g. synchronize data from local to remote.
 
 {{< alert color="warning" >}}
 

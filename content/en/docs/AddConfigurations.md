@@ -6,8 +6,7 @@ tags = ["add","profile"]
 categories = ["synchronize"]
 +++
 
-Always verify the result of a new task before executing it using the `--dry-run` option, which performs an estimation run.
-After adding a task, select it from the *Add and update task* view and then click the `play` icon on the toolbar to perform an estimation run.
+Always verify the result of a new task before executing it using the `--dry-run` option, which performs an estimation run. After adding a task, select the task and then click the `play` icon on the toolbar to perform an estimation run.
 
 A task requires a minimum of a local catalog and a remote catalog.
 

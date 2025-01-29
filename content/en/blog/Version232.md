@@ -11,10 +11,9 @@ categories = ["changelog"]
 The plan was to release a version 2.3.1, which is avaliable as a release candidate. But there will be a new version 2.3.2 (build 132) including a few more updates. It will most likely be released within first week of February 2025.
 
 - halting tasks
-- widgets
+- update widgets
 - hide the sidebar
-- refactor of observations
-- some other refactor as well
+- notifications, refactor of the observation part
 
 ##### Halting tasks
 
@@ -26,7 +25,7 @@ When releasing a task from halted status, it remeber which kind of task it was b
 
 {{< figure src="/images/232/halted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-**Widgets** 
+**Update widgets** 
 
 This update includes a minor enhancement to widgets and the implementation of a URL validation mechanism prior to saving.  To update widgets, edit and delete current widgets. Start version 2.3.2 of RsyncUI, edit widgets and add updated. After enable and save URLs, in Tasks View URLs, the widgets look like below.
 

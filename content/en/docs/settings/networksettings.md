@@ -28,6 +28,10 @@ Changes to settings are automatically saved.
 
 - If "on", the estimated tasks, by URL-action, will be Synchronized without any possibility to abort the action.
 
+**Hide the Sidebar on startup**
+
+- the sidebar may be concealed, when on the sidebar will be hidden when RsyncUI start
+
 **Confirm Execution:**
 
 - See below.

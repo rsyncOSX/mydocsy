@@ -8,8 +8,6 @@ categories = ["changelog"]
 
 ### Version 2.3.2 (build 132) - 29 January 2025
 
-January 31, 2025: I am delighted to observe the number of downloads, approaching 600 at the time of this writing, within a few days of the recent release. The total number of downloads is publicly available on my GitHub repository. I extend my sincere gratitude to all of you who are using RsyncUI. And RsyncUI will stay open source and be Absolutely Free for all time.
-
 Updates within this release:
 
 - halting tasks

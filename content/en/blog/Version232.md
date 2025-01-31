@@ -8,7 +8,7 @@ categories = ["changelog"]
 
 ### Version 2.3.2 (build 132) - 29 January 2025
 
-January 31, 2025: I am delighted to observe the substantial number of downloads, approaching 600 at the time of this writing, within a few days of the recent release. The total number of downloads is publicly available on my GitHub repository. Since the beginning of 1990, I have been an ardent advocate for open-source code. Furthermore, I predominantly utilize open-source applications on my Macs. Developing and maintaining RsyncUI has been a rewarding experience, but I am particularly gratified to witness its adoption by individuals globally. I extend my sincere gratitude to all of you who are using RsyncUI. And RsyncUI will stay open source and be Absolutely Free for all time.
+January 31, 2025: I am delighted to observe the substantial number of downloads, approaching 600 at the time of this writing, within a few days of the recent release. The total number of downloads is publicly available on my GitHub repository. I extend my sincere gratitude to all of you who are using RsyncUI. And RsyncUI will stay open source and be Absolutely Free for all time.
 
 Updates within this release:
 

@@ -14,24 +14,32 @@ The detailed output from rsync, utilizing the `--itemize-changes` arguments for 
 
 - `>f.st`: The file is being transferred *from the remote host* to the local host (pull).
 
-#### Short test
+#### A case to discuss
 
-Before the test commence, the local and remote only differs in timestamp for one file. One file in the local repository is more recently updated by date compared to the file in remote repository. This indicates a push operation by the verification.
+In January 2025, I was photographing birds at my mountain cabin and editing the images using my MacBook Pro. Upon returning home, I should have updated my Mac Mini 4 to synchronize with my MacBook Pro. All new photos on my MacBook Pro were successfully synchronized with my home server. Additionally, I synchronize photos to local SSDs when traveling.
 
-{{< figure src="/images/verify/pushafile.png" alt="" position="center" style="border-radius: 8px;" >}}
+**Important Note**: My remote photo repository is not a Git repository. If it were a Git repository, I could use a git pull command to update my local photos on my Mac Mini 4. To ensure the synchronization of my two Macs, I developed the Verify function.
 
-Then the date on the remote device was touched, and the date on the file was updated to the current time and date. Consequently, the verification now indicates a pull request.
+The Verify function was executed, and it indicated that the remote repository was more up-to-date, which was accurate. 
 
-{{< figure src="/images/verify/pullafile.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-#### After the remote file was touched
+{{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-**Important**: an estimate, like for a normal synchronize task, indicates that the file should be transferred *from the local host* to the remote host. But, if the parameter `--update` is added, rsync *will not* mark the file for transfer. The parameter instructs rsync to evaluate  timestamps and if remote timestamp is more up to date, the file is not tagged for synchronization. An estimate run without the `--update` parameter.
+The pull view is displayed, indicating the presence of new files on the remote server.
+
+- `>f.st`: The file is being transferred *from the remote host* to the local host (pull).
+
+{{< figure src="/images/verify/pullview.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Therefore, a remote pull is the appropriate solution.
+
+#### Danger Zone
+
+Prior to executing the data pull, I conducted a standard *estimation as first of a synchronization task* as I typically do to synchronize data between my local and remote systems. A standard synchronization, in RsyncUI, task includes adding the `—delete` parameter to maintain synchronization between the local and remote systems. However, due to the `—delete` parameter, rsync would **delete** the newly added files to my remote storage.
+
+This highlights the importance of carefully considering the next step when synchronizing multiple Macs to the same remote repository, particularly if the remote repository is not a Git repository.
+
 
 {{< figure src="/images/verify/synchronize.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-#### With the parameter --update
-
- If the parameter `--update` is added, the estimate would show no files to synchronize. The challenge now seems to be that remote has a more up to date version of the file. But the Verify function seems to pick up that the file should be pulled from the remote.
 
 

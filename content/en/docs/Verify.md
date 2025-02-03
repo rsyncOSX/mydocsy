@@ -17,6 +17,8 @@ The verification applies only to remote destinations on servers.
 
 {{< alert color="warning" >}}
 
+I advice to read the short story "Thoughts about Verify" within the Blog section. 
+
 The user is solely responsible for determining the appropriate action. RsyncUI provides only advisory guidance, based on a rudimentary evaluation of a push and pull data comparison. Additionally, the function requires version 3.x of rsync to be installed and enabled.
 
 The Verify process necessitates that one of the Macs be synchronized with the remote. If both Macs have local unique updates, the outcome of the Verify is most likely inaccurate, potentially resulting in data loss.

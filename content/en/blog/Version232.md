@@ -48,5 +48,5 @@ Key feature of RsyncUI is observation for two notifications:
 - `NSNotification.Name.NSFileHandleDataAvailable`
 - `Process.didTerminateNotification`
 
-Without observation and required actions when observed, RsyncUI becomes useless. Both observations are linked to the external task executing the actual rsync task. For more info, see blog about Notifications.
+Without observation and required actions when observed, RsyncUI becomes useless. Both observations are linked to the external task executing the actual rsync task. For more info, see blog about "Swift concurrency".
 

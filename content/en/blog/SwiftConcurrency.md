@@ -1,8 +1,8 @@
 +++
 author = "Thomas Evensen"
 title = "Swift concurrency"
-date = "2024-12-06"
-tags = ["changelog","swift concurrency", "asynchronous"]
+date = "2025-01-28"
+tags = ["changelog","swift concurrency", "asynchronous", "notifications"]
 categories = ["changelog"]
 +++
 
@@ -23,12 +23,31 @@ Quote swift.org: *"More formally, a data race occurs when one thread accesses me
 RsyncUI adheres to the new concurrency model of Swift 6. However, with the release of version 2.2.1 of RsyncUI, the majority of its work is performed on the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI), it is advantageous to execute these tasks on a background thread rather than the main thread. Executing such tasks on the main thread significantly increases the likelihood of GUI blocking and the application's unresponsiveness.
 
 
-#### RsyncUI Version 2.2.3
+#### Background threads
 
 In version 2.2.3, the majority of read operations, decoding and encoding data are executed on background threads.
 Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
 
-**Combine and Asynchronous Execution:**
+#### Notifications
+
+Key feature of RsyncUI is observation for two notifications:
+
+- `NSNotification.Name.NSFileHandleDataAvailable`
+- `Process.didTerminateNotification`
+
+Without observation and required actions when observed, RsyncUI becomes useless. Both observations are linked to the external task executing the actual rsync task.
+
+The first observation monitors when the external task generates output. To display the progress of a synchronization task, RsyncUI relies on monitoring the output from rsync. Therefore, the `—verbose` parameter to rsync is crucial. This parameter instructs rsync to output information during execution.
+
+The second observation monitors when the task is completed, e.g. terminated. Typically, a termination indicates task completion. However, it may also be an abort action from the user, which then sends an interrupt signal to the external task. If RsyncUI fails to detect this signal, RsyncUI will not comprehend when a synchronization task is completed.
+
+In RsyncUI, two methods for enabling observations have been introduced in the version 2.3.2. The preferred method is to utilize the declarative library Combine, developed by Apple. However, the future of Combine is somewhat uncertain. I consulted a developer working with Apple and with a deep understanding of Swift Concurrency, who informed me that Combine is not yet deprecated but may be in the future. Therefore, it is advisable to commence replacing Combine code with alternative solutions. 
+
+The second method, which may become the sole method for RsyncUI in the future, involves utilizing a central Notification center. Observers for the two mentioned notifications are added to the Notification center, and the appropriate action is triggered when a signal is observed.
+
+In forthcoming versions of RsyncUI, both methods will be employed. However, if Combine is deprecated in the future, it is straightforward to replace it. In version 2.1.6, a significant refactoring of code utilizing Combine was implemented. 
+
+#### Combine, Publisher and Asynchronous Execution
 
 The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks,
 such as the `rsync` synchronize task. Combine is employed to monitor two specific notifications.
@@ -36,7 +55,7 @@ such as the `rsync` synchronize task. Combine is employed to monitor two specifi
 - `NSNotification.Name.NSFileHandleDataAvailable`
 - `Process.didTerminateNotification`
 
-and act when they are observed. The `rsync` synchronize task is completed when the last notification is observed.
+and act when they are observed. The `rsync` synchronize task is completed when the last notification is observed. By using Combine, a publisher is added to the Notification center. Every time the Notification center discover one of the notifications, it publish a message. 
 
 ```bash
 // Combine, subscribe to NSNotification.Name.NSFileHandleDataAvailable
@@ -53,4 +72,34 @@ NotificationCenter.default.publisher(
         ....
         subscriptons.removeAll()
     }.store(in: &subscriptons)
+```
+
+#### Observers and Asynchronous Execution
+
+As mentioned above, the second method for observing notifications is adding Observers to the Notification center. And when discovered, the completion handler is executed. The Process object is annotaded to execute on the main thread. And due to *Swift 6 language mode*  and *strict concurrency checking*, the completion handlers are calling asynchronous actions. 
+
+```bash
+// Observers
+var notificationsfilehandle: NSObjectProtocol?
+var notificationstermination: NSObjectProtocol?
+....
+notificationsfilehandle =
+    NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable,
+                                                   object: nil, queue: nil)
+        { _ in
+            Task {
+                await self.datahandle(pipe)
+            }
+        }
+
+notificationstermination =
+    NotificationCenter.default.addObserver(forName: Process.didTerminateNotification,
+                                                   object: task, queue: nil)
+        { _ in
+                Task {
+                    // Debounce termination for 500 ms
+                    try await Task.sleep(seconds: 0.5)
+                    await self.termination()
+                }
+        }
 ```

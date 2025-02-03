@@ -34,6 +34,6 @@ mapping 100K may take a second or two depending on the hardware. If the above ma
 it is a possibility that the *spinning beach ball* is presented.
 
 For further details on the major changes in this version, please refer to the blog
-post at [blog/2024/12/06/swift-concurrency/](/blog/2024/12/06/swift-concurrency/).
+post at "Swift concurrency".
 
 Additionally, there are a few other enhancements implemented in this version as well.

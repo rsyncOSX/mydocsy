@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "URL commands"
 date = "2024-11-20"
-tags = ["url commands"]
+tags = ["url commands","deep links"]
 categories = ["synchronize"]
 +++
 

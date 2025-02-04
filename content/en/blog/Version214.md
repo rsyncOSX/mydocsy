@@ -10,7 +10,6 @@ categories = ["changelog"]
 
 The following are updates:
 
-
 - disable main functions during work
 	- all main functions on the sidebar including change profile, are disabled when there are remote execution like synchronization, restore and so on
 	- this is to prevent any sideeffects when remote executions are at work

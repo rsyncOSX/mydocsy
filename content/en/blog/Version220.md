@@ -29,24 +29,16 @@ See [more info](/docs/verifyremote/).
 
 In version 2.1.6, there was a refactor to replace Combine in several places in code. Combine is only used within the Process object:
 
-*Combine is *only* used in the [Process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/ProcessRsync.swift)
-listening for signals from `rsync` when it executes, as far as I understand from reading other articles about Combine it is not clear what the future of
-Combine is*
+*Combine is *only* used in the [Process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/ProcessRsync.swift) listening for signals from `rsync` when it executes, as far as I understand from reading other articles about Combine it is not clear what the future of Combine is*
 
-The refactor of Combine introduced a bug for discover `rsync error:` Discover `rsync error:` from
-the rsync output requiere set on in RsyncUI Settings. If an error is discovered, a message is thrown and the error is
-written to the log.
+The refactor of Combine introduced a bug for discover `rsync error:` Discover `rsync error:` from the rsync output requiere set on in RsyncUI Settings. If an error is discovered, a message is thrown and the error is written to the log.
 
 #### Monitor network
 
 Monitor network is set on or off in RsyncUI settings.
 
-Lately, on macOS Sequoia, the monitor network has reported some false negatives. And sometimes it does not complain
-about missing network at all. I dont know why this happens. There is a timout, a few seconds, on the check, and if the
-respond from server is not received before timeout an error is thrown.
+Lately, on macOS Sequoia, the monitor network has reported some false negatives. And sometimes it does not complain about missing network at all. I dont know why this happens. There is a timout, a few seconds, on the check, and if the respond from server is not received before timeout an error is thrown.
 
-The check verify, by TCP on port 22 if port is not changed, that the server responds. And sometimes when the code
-throws an error dropped network, RsyncUI still manage to pull data from the server.
+The check verify, by TCP on port 22 if port is not changed, that the server responds. And sometimes when the code throws an error dropped network, RsyncUI still manage to pull data from the server.
 
-The monitor network code is refactored and only checked once, if set on, when the profile is loaded and
-there are networked tasks.
+The monitor network code is refactored and only checked once, if set on, when the profile is loaded and there are networked tasks.

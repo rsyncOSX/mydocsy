@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Version 2.1.3"
 date = "2024-09-16"
-tags = ["changelog","version 2.1.3"]
+tags = ["changelog","version 2.1.3","version 2.1.2"]
 categories = ["changelog"]
 +++
 

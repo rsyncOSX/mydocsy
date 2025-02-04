@@ -6,13 +6,19 @@ tags = ["changelog","swift concurrency", "asynchronous", "notifications"]
 categories = ["changelog"]
 +++
 
-To begin, I must acknowledge that my understanding of Swift concurrency is limited. I am actively learning about Swift and SwiftUI. RsyncUI is a graphical user interface (GUI) application; most of its work is executed on the main thread. However, in version 2.2.3, most resource-intensive tasks are moved from the main thread to background threads. RsyncUI functions effectively as it is, but it also serves as a learning opportunity for new features. Stability is also a crucial aspect of RsyncUI. Consequently, I refrain from releasing new versions until I am confident in its stability.
+To begin, I must acknowledge that my understanding of Swift concurrency is limited. I am actively learning about Swift and SwiftUI. RsyncUI is a graphical user interface (GUI) application; most of its work is executed on the main thread. However, some resource-intensive tasks are performed on background threads. RsyncUI functions effectively as it is, but it also serves as a learning opportunity for new features. Stability is also a crucial aspect of RsyncUI. Consequently, I refrain from releasing new versions until I am confident in its stability.
 
-The most important work, execution of `rsync` tasks, monitoring progress and termination of tasks is executed on the main thread. Also all write operations of data are executed on the main thread.
+The most important work: 
+
+- execution of `rsync` tasks
+- monitoring progress and termination of `rsync` tasks
+- write operations of data to storage
+
+is executed on the main thread.
 
 #### Swift concurrency and asynchronous execution
 
-Concurrency and asynchronous execution are fundamental concepts in Swift. The latest version of Swift simplifies the writing of asynchronous code using Swift's `async` and `await` keywords, as well as the `actor` keyword for executing work on background threads. The Swift concurrency model is intricate, and it requires dedicated time and study to grasp its fundamentals. Apart from GUI updates, which SwiftUI handles, RsyncUI does *not incorporate concurrency*. However, it does support asynchronous execution, but only one task at a time. Each time a `rsync` task is initiated, its termination is uncertain.
+Concurrency and asynchronous execution are fundamental concepts in Swift. The latest version of Swift simplifies the writing of asynchronous code using Swift's `async` and `await` keywords, as well as the `actor` protocol for executing work on background threads. The Swift concurrency model is intricate, and it requires, at least for me, dedicated time and study to grasp its fundamentals. Apart from GUI updates, which SwiftUI handles, RsyncUI does *not incorporate concurrency*. But there is asynchronous execution, on main thread and on background threads.
 
 #### Swift version 6 and the new concurrency model
 
@@ -20,13 +26,19 @@ Swift version 6 introduced strict concurrency checking. By enabling *Swift 6 lan
 
 Quote swift.org: *"More formally, a data race occurs when one thread accesses memory while the same memory is being modified by another thread. The Swift 6 language mode eliminates these issues by preventing data races at compile time."*
 
-RsyncUI adheres to the new concurrency model of Swift 6. However, with the release of version 2.2.1 of RsyncUI, the majority of its work is performed on the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI), it is advantageous to execute these tasks on a background thread rather than the main thread. Executing such tasks on the main thread significantly increases the likelihood of GUI blocking and the application's unresponsiveness.
+RsyncUI adheres to the new concurrency model of Swift 6. The majority of its work is performed on the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI), it is advantageous to execute these tasks on a background thread rather than the main thread. Executing  resource-intensive tasks on the main thread significantly increases the likelihood of  blocking the GUI and the application's unresponsiveness.
 
 
-#### Background threads
+#### Background threads and RsyncUI
 
-In version 2.2.3, the majority of read operations, decoding and encoding data are executed on background threads.
-Additionally, sorting log records and preparing output from rsync for display are also moved to background threads.
+The following are executed on background threads, by adopting the `actor` protocol: 
+
+- read operations
+- decoding and encoding data
+- sorting log records
+- preparing output from rsync for display
+
+are executed on background threads. Executing the above tasks are asynchronous, it does not block GUI updates on the main thread and the run time environment takes care of the scheduling and execution. 
 
 #### Notifications
 

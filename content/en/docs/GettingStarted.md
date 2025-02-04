@@ -46,7 +46,7 @@ The user can abort a task at any time. However, it is essential to allow the tas
 
 By right-clicking on a task, *on column Synchronize ID or Task*, it can be halted or released from halted status. A halted task will be marked and not available for estimate or execute. When releasing a task from halted status, it remember which kind of task it was before halted. 
 
-#### Deep links
+#### URL commands (deep links)
 
 RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
 
@@ -56,7 +56,7 @@ RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating 
 
 All of these actions can be accomplished with a single click. Additionally, this action may also be triggered within RsyncUI.
 
-#### RsyncUI widgets
+#### RsyncUI widgets (URL commands)
 
 Two widgets are embedded in RsyncUI: 
 - one for *estimating and synchronizing*

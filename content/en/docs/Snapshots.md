@@ -57,7 +57,7 @@ where
 
 **Snapshot Creation**
 
-To create a snapshot task, select "snapshot" as the task type in the [add tasks](/docs/addconfigurations/) section. Do not copy and paste the command for execution within a terminal window. RsyncUI automatically saves the snapshot number "n" to the task. This number represents the next available snapshot number and is used to calculate the rsync parameter. The value of "n" is retrieved from the configuration.
+To create a snapshot task, select "snapshot" as the task type in the *Add tasks* section. Do not copy and paste the command for execution within a terminal window. RsyncUI automatically saves the snapshot number "n" to the task. This number represents the next available snapshot number and is used to calculate the rsync parameter. The value of "n" is retrieved from the configuration.
 
 **Snapshot Administration**
 

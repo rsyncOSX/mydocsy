@@ -43,4 +43,4 @@ When enabling user-selected SSH-keypath and Identityfile, please ensure they adh
 
 The prefix must be `~` followed by a `/`. RsyncUI will verify that the SSH-keypath begins with `~` and contains at least two `/` characters before saving the new SSH-keypath.
 
-For more information on passwordless login, please refer to the Tools passwordless login section.
+For more information on passwordless login, please refer to the *Tools passwordless login* section.

@@ -8,7 +8,7 @@ categories = ["changelog"]
 
 ### Version 2.3.3 (build 133) - not yet released
 
-What features will be released in the upcoming release, scheduled for end of February 2025? You may experiment with it yourself; the main branch on GitHub repository is updated with the latest development.
+Version 2.3.3 is scheduled for mid-February 2025. It will be released as release candidate ahead of release.  The main branch on GitHub repository is updated with the latest development.
 
 The primary Sidebar will become context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. If you exclusively utilize RsyncUI for synchronizing tasks to local attached disks, you will not require access to any of the three Sidebar menu options listed below.
 

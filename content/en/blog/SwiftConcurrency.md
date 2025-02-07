@@ -53,15 +53,15 @@ The first observation monitors when the external task generates output. To displ
 
 The second observation monitors when the task is completed, e.g. terminated. Typically, a termination indicates task completion. However, it may also be an abort action from the user, which then sends an interrupt signal to the external task. If RsyncUI fails to detect this signal, RsyncUI will not comprehend when a synchronization task is completed.
 
-In RsyncUI, two methods for enabling observations have been introduced in the version 2.3.2. The preferred method is to utilize the declarative library Combine, developed by Apple. However, the future of Combine is somewhat uncertain. I consulted a developer working with Apple and with a deep understanding of Swift Concurrency, who informed me that Combine is not yet deprecated but may be in the future. Therefore, it is advisable to commence replacing Combine code with alternative solutions. 
+In RsyncUI, two methods for enabling observations have been introduced in the version 2.3.2. The preferred method is to utilize the declarative library Combine, developed by Apple. However, the future of Combine is somewhat uncertain. I consulted a developer working with Apple and with a deep understanding of Swift Concurrency, who informed me that Combine is not deprecated but may be in the future. 
 
-The second method, which may become the sole method for RsyncUI in the future, involves utilizing a central Notification center. Observers for the two mentioned notifications are added to the Notification center, and the appropriate action is triggered when a signal is observed.
+The second method involves utilizing a central Notification center. Observers for the two mentioned notifications are added to the Notification center, and the appropriate action is triggered when a signal is observed.
 
 In forthcoming versions of RsyncUI, both methods will be employed. However, if Combine is deprecated in the future, it is straightforward to replace it. In version 2.1.6, a significant refactoring of code utilizing Combine was implemented. 
 
 #### ChatGPT
 
-I also asked ChatGPT (by Siri) what is recommende of `NotificationCenter.default.publisher` and  `NotificationCenter.default.addObserver`. And ChatGPT responeded:
+I also asked ChatGPT (by Siri) what is recommended of `NotificationCenter.default.publisher` and  `NotificationCenter.default.addObserver`. And ChatGPT responeded:
 .
 
 *In Swift, using NotificationCenter.default.publisher(for:) with the Combine framework is generally preferred for observing notifications, as it offers a more modern, type-safe, and declarative approach compared to the traditional addObserver method. The Combine-based method allows for better memory management and cleaner code, reducing the risk of retain cycles and the need for manual unsubscription. For more details, refer to Apple's documentation on NotificationCenter publishers.*

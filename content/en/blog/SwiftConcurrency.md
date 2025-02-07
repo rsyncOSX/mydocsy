@@ -59,6 +59,15 @@ The second method, which may become the sole method for RsyncUI in the future, i
 
 In forthcoming versions of RsyncUI, both methods will be employed. However, if Combine is deprecated in the future, it is straightforward to replace it. In version 2.1.6, a significant refactoring of code utilizing Combine was implemented. 
 
+#### ChatGPT
+
+I also asked ChatGPT (by Siri) what is recommende of `NotificationCenter.default.publisher` and  `NotificationCenter.default.addObserver`. And ChatGPT responeded:
+.
+
+*In Swift, using NotificationCenter.default.publisher(for:) with the Combine framework is generally preferred for observing notifications, as it offers a more modern, type-safe, and declarative approach compared to the traditional addObserver method. The Combine-based method allows for better memory management and cleaner code, reducing the risk of retain cycles and the need for manual unsubscription. For more details, refer to Apple's documentation on NotificationCenter publishers.*
+
+Until I gain further insights into Apple's future plans for Combine, `NotificationCenter.default.publisher(for:)` remains the preferred solution in RsyncUI.
+
 #### Combine, Publisher and Asynchronous Execution
 
 The Combine framework is exclusively utilized within the `Process` object, which is responsible for initiating external tasks,

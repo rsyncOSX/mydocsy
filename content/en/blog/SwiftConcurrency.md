@@ -97,7 +97,7 @@ NotificationCenter.default.publisher(
 
 #### Observers and Asynchronous Execution
 
-As mentioned above, the second method for observing notifications is adding Observers to the Notification center. And when discovered, the completion handler is executed. The Process object is annotaded to execute on the main thread. And due to *Swift 6 language mode*  and *strict concurrency checking*, the completion handlers are calling asynchronous actions. 
+As previously mentioned, the second method for observing notifications involves adding Observers to the Notification center. Upon the discovery of a notification, the completion handler is executed. The Process object is annotated to execute on the main thread. It appears that the addObserver closure is marked as Sendable, indicating that mutating properties within the closure must be asynchronous. This is due to *the Swift 6 language mode* and *strict concurrency checking*.
 
 ```bash
 // Observers

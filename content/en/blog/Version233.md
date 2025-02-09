@@ -8,7 +8,9 @@ categories = ["changelog"]
 
 ### Version 2.3.3 (build 133) - 9 February 2025
 
-Release candidate. The rc also includes some internal refactor as well.
+Release candidate. The rc also includes some internal refactor as well. You may browse the changes from version 2.3.2 to 2.3.3 by the Full Changelog on release page GitHub.
+
+From this release, the automatic creation of the signing and notarization certificates for RsyncUI.app and the dmg file is enabled by the make command. Previously, the release builds were created using Xcode, but it is more convenient to build everything using a makefile.
 
 The primary Sidebar is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. If you exclusively utilize RsyncUI for synchronizing tasks to local attached disks, you will not require access to any of the three Sidebar menu options listed below.
 

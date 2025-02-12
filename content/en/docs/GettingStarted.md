@@ -9,6 +9,8 @@ lastmod = "2024-01-10"
 
 For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information about the latest version of rsync to [install](/docs/rsync/).
 
+The primary Sidebar menu is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. See last on this page what it looks like.
+
 #### New Tasks and Verification
 
 RsyncUI supports synchronizing data to:
@@ -42,26 +44,28 @@ Please note that this is an external task not controlled by RsyncUI, which execu
 
 The user can abort a task at any time. However, it is essential to allow the task to complete and perform any necessary cleanup operations before starting a new task. This process may take a few seconds, and if not, the applications may become unresponsive.
 
-#### Halting tasks
+#### The Main Sidebar Menu
 
-By right-clicking on a task, *on column Synchronize ID or Task*, it can be halted or released from halted status. A halted task will be marked and not available for estimate or execute. When releasing a task from halted status, it remember which kind of task it was before halted. 
+There are three Sidebar menu options that are contingent upon the properties of a task. 
 
-#### URL commands (deep links)
+- Snapshot: This option is exclusively available for snapshot tasks.
+- Restore: This option is only available for synchronize- and snapshot tasks where *the destination* is located on a *remote server*.
+- Verify remote: This option is only available for synchronize tasks where *the destination* is located on a *remote server*.
 
-RsyncUI  supports deep links by URLs. A deep link is a mechanism for initiating RsyncUI actions, such as estimating and executing, from a URL-linked document saved in a file manager like Notepad. Notepad enables the storage of strings as URL links. For instance, by clicking on a URL link saved in Notepad, one can:
+##### Minimum
 
-- launch RsyncUI
-- access the selected profile, which can be any profile saved by RsyncUI
-- estimate all tasks for the selected profile, after which the data will be synchronized
+This is the minimum. If you exclusively utilize RsyncUI for synchronizing tasks to local attached disks. There are no remote servers and no snapshot task. The only remote server, see column Server, is a server named `raspberrypi`, which is halted.
 
-All of these actions can be accomplished with a single click. Additionally, this action may also be triggered within RsyncUI.
+{{< figure src="/images/started/minimumoptions.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-#### RsyncUI widgets (URL commands)
+##### All options snapshot, restore and verify remote
 
-Two widgets are embedded in RsyncUI: 
-- one for *estimating and synchronizing*
-- and the second for *verifying remote* repository
+This is all menu options, a snapshot task and synchronize task, both with destination on a remote server.
 
-Both widgets retrieve a saved URL link from storage. Within the Tasks view, there is a view for URLs. Within this view, you can save the required URLs. The widgets display whether a validated URL is present. To enable the widgets on macOS, click on the date and time icon located in the upper right corner of your screen. Edit the widgets and select RsyncUI. Then, add the widgets.
+{{< figure src="/images/started/allmenuoptions.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-After enabling the widgets, a single click on the widget will launch RsyncUI and execute the corresponding action. To modify the URLs, update and save the new URLs.
+##### Snapshot and restore
+
+This is snapshot and restore, a snapshot task with destination on a remote server. That is why the restore menu is avaliable as well.
+
+{{< figure src="/images/started/snapshotandrestore.png" alt="" position="center" style="border-radius: 8px;" >}}

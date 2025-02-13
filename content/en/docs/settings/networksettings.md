@@ -31,6 +31,10 @@ Changes to settings are automatically saved.
 
 - the sidebar may be concealed, when on the sidebar will be hidden when RsyncUI start
 
+**Observe mounting of external drives**
+
+- automatic selection of a profile when RsyncUI detects a new mount of a local attached disc
+
 **Confirm Execution:**
 
 - See below.

@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 title = "URL commands"
 date = "2025-02-01"
-tags = ["url commands","deep links"]
-categories = ["synchronize"]
+tags = ["url commands","deep links","synchronize"]
+categories = ["advanced features"]
 +++
 
  Deep links facilitate direct access to application features via URL links. By utilizing deep links, users can execute an estimate and synchronize actions in a single click. Deep links in RsyncUI enable the grouping of actions that typically require multiple user inputs.

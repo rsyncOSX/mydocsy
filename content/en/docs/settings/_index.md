@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 date = "2025-02-07"
 title =  "RsyncUI settings"
-tags = ["userconfig"]
-categories = ["general information"]
+tags = ["rsyncui settings"]
+categories = ["usersettings"]
 +++
 
 There are several settings that can be adjusted. These settings are saved to a permanent storage location.

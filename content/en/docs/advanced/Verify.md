@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 title = "Verify remote"
 date = "2025-02-05"
-tags = ["verify remote"]
-categories = ["synchronize"]
+tags = ["verify remote","synchronize"]
+categories = ["advanced features"]
 +++
 
 Typically, a synchronize action operates in a *one-way* direction of data. Local data is synchronized to a backup media, such as an attached disc or a remote server. Restoring data, for instance, involves retrieving data from a backup when local data has become corrupted or inaccessible.  

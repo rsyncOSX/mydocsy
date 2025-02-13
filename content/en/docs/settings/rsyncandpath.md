@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 date = "2025-02-06"
 title =  "Rsync and path"
-tags = ["userconfig"]
-categories = ["general information"]
+tags = ["rsync and path"]
+categories = ["usersettings"]
 +++
 
 Changes to settings are automatically saved.

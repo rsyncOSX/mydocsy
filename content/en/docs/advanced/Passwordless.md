@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 date = "2025-02-03"
 title = "Passwordless login"
-tags = ["passwordless","ssh-key"]
-categories = ["remote servers"]
+tags = ["passwordless","ssh-key", "remote servers"]
+categories = ["advanced features"]
 +++
 
 To synchronize data to a remote server using RsyncUI, passwordless login via SSH-key authentication is required. It is not possible to provide a user login and password during data synchronization via RsyncUI. SSH-key authentication is generally considered more secure than password-based authentication.

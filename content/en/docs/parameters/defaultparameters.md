@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-03-10"
+date = "2025-01-30"
 title =  "Default parameters"
 tags = ["parameters"]
 categories = ["rsync parameters"]
-lastmod = "2023-12-18"
 +++
 
 Certain default parameters can be *enabled* or *disabled* on a task basis.

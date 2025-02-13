@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-03-10"
+date = "2025-01-30"
 title =  "Parameters to rsync"
 tags = ["parameters"]
 categories = ["rsync parameters"]
-lastmod = "2023-12-18"
 +++
 
 RsyncUI provides default parameters for data synchronization. However, the actual default parameters utilized in tasks are

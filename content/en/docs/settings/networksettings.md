@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 date = "2025-02-05"
 title =  "Monitor and log"
-tags = ["userconfig"]
-categories = ["general information"]
+tags = ["monitoring and logging"]
+categories = ["usersettings"]
 +++
 
 Changes to settings are automatically saved.

@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title =  "New tasks"
 date = "2025-02-11"
-tags = ["add","profile"]
+tags = ["new tasks","profile"]
 categories = ["synchronize"]
 +++
 A task requires a minimum of a local catalog and a remote catalog.

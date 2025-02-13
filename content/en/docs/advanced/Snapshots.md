@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2025-02-01"
 title =  "Snapshots"
 tags = ["snapshot"]
-categories = ["synchronize"]
+categories = ["advanced features"]
 +++
 
 {{< alert >}}

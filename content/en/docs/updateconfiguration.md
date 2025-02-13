@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
-date = "2024-11-28"
 title =  "Update tasks"
+date = "2025-02-09"
 tags = ["update","profile"]
 categories = ["synchronize"]
 +++

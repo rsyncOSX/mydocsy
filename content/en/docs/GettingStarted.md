@@ -8,7 +8,9 @@ categories = ["general information"]
 
 For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information about the latest version of rsync to [install](/docs/rsync/).
 
-The primary Sidebar menu is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. See last on this page what it looks like.
+The primary Sidebar menu is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. 
+
+See last on this page what it looks like.
 
 #### New Tasks and Verification
 
@@ -57,7 +59,7 @@ This is the minimum. If you exclusively utilize RsyncUI for synchronizing tasks 
 
 {{< figure src="/images/started/minimumoptions.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-##### All options snapshot, restore and verify remote
+##### Full Sidebar Menu
 
 This is all menu options, a snapshot task and synchronize task, both with destination on a remote server.
 
@@ -65,6 +67,6 @@ This is all menu options, a snapshot task and synchronize task, both with destin
 
 ##### Snapshot and restore
 
-This is snapshot and restore, a snapshot task with destination on a remote server. That is why the restore menu is avaliable as well.
+This is snapshot and restore, a snapshot task with destination on a remote server. That is why the restore menu is avaliable as well. The *Verify remote* is only for synchronization tasks with destination on a remote server. That is why it is not present.
 
 {{< figure src="/images/started/snapshotandrestore.png" alt="" position="center" style="border-radius: 8px;" >}}

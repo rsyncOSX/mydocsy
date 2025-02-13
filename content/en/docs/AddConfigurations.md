@@ -1,14 +1,17 @@
 +++
 author = "Thomas Evensen"
-date = "2024-11-29"
 title =  "Add tasks"
+date = "2025-02-11"
 tags = ["add","profile"]
 categories = ["synchronize"]
 +++
+A task requires a minimum of a local catalog and a remote catalog.
+
+{{< alert color="warning" >}}
 
 Always verify the result of a new task before executing it using the `--dry-run` option, which performs an estimation run. After adding a task, select the task and then click the `play` icon on the toolbar to perform an estimation run.
 
-A task requires a minimum of a local catalog and a remote catalog.
+{{< /alert >}}
 
 Pressing the `Enter` key will advance to the next field. Pressing the `Enter` key will automatically add a new task after the last input. Alternatively, you can click the `checkmark` icon on the toolbar to add a new task. Tasks are saved to permanent storage after each entry.
 

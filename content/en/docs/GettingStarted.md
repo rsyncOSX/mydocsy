@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
 title = "Getting started"
-date = "2024-11-30"
+date = "2025-02-12"
 tags = ["first time use"]
 categories = ["general information"]
-lastmod = "2024-01-10"
 +++
 
 For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information about the latest version of rsync to [install](/docs/rsync/).
@@ -48,11 +47,11 @@ The user can abort a task at any time. However, it is essential to allow the tas
 
 There are three Sidebar menu options that are contingent upon the properties of a task. 
 
-- Snapshot: This option is exclusively available for snapshot tasks.
-- Restore: This option is only available for synchronize- and snapshot tasks where *the destination* is located on a *remote server*.
-- Verify remote: This option is only available for synchronize tasks where *the destination* is located on a *remote server*.
+- *Snapshot*: this option is exclusively available for snapshot tasks
+- *Restore*: this option is only available for synchronize- and snapshot tasks where *the destination* is located on a *remote server*
+- *Verify remote*: this option is only available for synchronize tasks where *the destination* is located on a *remote server*
 
-##### Minimum
+##### Minimum Sidebar Menu
 
 This is the minimum. If you exclusively utilize RsyncUI for synchronizing tasks to local attached disks. There are no remote servers and no snapshot task. The only remote server, see column Server, is a server named `raspberrypi`, which is halted.
 

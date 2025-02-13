@@ -34,3 +34,13 @@ Both widgets retrieve a saved URL link from storage. Within the Tasks view, ther
 After enabling the widgets, a single click on the widget will launch RsyncUI and execute the corresponding action. To modify the URLs, update and save the new URLs.
 
 #### Snapshots
+
+TBD
+
+#### Parameters to Rsync
+
+TBD
+
+#### Remote Servers
+
+TBD

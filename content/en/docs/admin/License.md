@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
+date = "2025-01-30"
 title =  "MIT License"
 tags = ["license"]
 categories = ["general information"]

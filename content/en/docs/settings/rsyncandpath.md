@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-03-11"
+date = "2025-02-06"
 title =  "Rsync and path"
 tags = ["userconfig"]
 categories = ["general information"]
-lastmod = "2024-03-11"
 +++
 
 Changes to settings are automatically saved.

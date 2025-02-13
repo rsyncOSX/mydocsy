@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
 title = "Important"
-date = "2024-03-10"
+date = "2025-02-12"
 tags = ["important"]
 categories = ["general information"]
-lastmod = "2024-01-10"
 +++
 
 The User Interface of RsyncUI may pose challenges for users unfamiliar with the `rsync` command. The primary objective is to simplify the usage of `rsync`, rather than providing a comprehensive introduction of `rsync` to macOS users. This scope is beyond the intended purpose of the interface.
@@ -19,7 +18,7 @@ Setting incorrect parameters for rsync can result in the deletion of data. Furth
 
 Before executing a new task in RsyncUI, please perform an estimation run, a `--dry-run`, and inspect the result. If you inadvertently set an empty catalog as the source, RsyncUI, via rsync, will delete all files in the destination.
 
-For instructions on executing an estimation run, refer to the *Add tasks* or *Getting started* section.
+For instructions on executing an estimation run, refer to the *New tasks* or *Getting started* section.
 
 ### The --delete parameter and new tasks
 

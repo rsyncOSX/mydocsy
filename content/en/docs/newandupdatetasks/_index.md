@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-title =  "Add tasks"
+title =  "New tasks"
 date = "2025-02-11"
 tags = ["add","profile"]
 categories = ["synchronize"]

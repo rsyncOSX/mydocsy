@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2024-04-16"
+date = "2025-01-30"
 title =  "Latest version of rsync"
 tags = ["rsync version"]
 categories = ["general information"]

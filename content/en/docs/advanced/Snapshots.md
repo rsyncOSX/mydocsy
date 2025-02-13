@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-04-16"
+date = "2025-02-01"
 title =  "Snapshots"
 tags = ["snapshot"]
 categories = ["synchronize"]
-lastmod = "2020-12-13"
 +++
 
 {{< alert >}}

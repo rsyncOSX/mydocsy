@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-03-12"
+date = "2025-02-07"
 title =  "RsyncUI settings"
 tags = ["userconfig"]
 categories = ["general information"]
-lastmod = "2024-03-12"
 +++
 
 There are several settings that can be adjusted. These settings are saved to a permanent storage location.

@@ -1,15 +1,26 @@
 +++
 author = "Thomas Evensen"
 title = "Some advanced features"
-date = "2024-11-30"
+date = "2025-02-05"
 tags = ["advanced features"]
 categories = ["general information"]
-lastmod = "2024-01-10"
 +++
 
 There are a few more or less advanced features in RsyncUI. If you are new to RsyncUI, new to rsync, it is adviced to learn the basics before utilizing the more advanced features.
 
 #### Verify Remote
+
+TBD
+
+#### Passwordless Logins and Remote Servers
+
+TBD
+
+#### Export and Import
+
+TBD
+
+#### Snapshots
 
 TBD
 
@@ -37,14 +48,5 @@ Both widgets retrieve a saved URL link from storage. Within the Tasks view, ther
 
 After enabling the widgets, a single click on the widget will launch RsyncUI and execute the corresponding action. To modify the URLs, update and save the new URLs.
 
-#### Snapshots
 
-TBD
 
-#### Parameters to Rsync
-
-TBD
-
-#### Remote Servers
-
-TBD

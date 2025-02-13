@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-03-11"
+date = "2025-02-04"
 title =  "SSH settings"
 tags = ["userconfig"]
 categories = ["remote servers"]
-lastmod = "2024-03-11"
 +++
 
 In this perspective, you can utilize RsyncUI to assist in creating an SSH key and setting up a global SSH keypath and identity file.

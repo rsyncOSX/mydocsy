@@ -1,10 +1,9 @@
 +++
 author = "Thomas Evensen"
-date = "2024-04-16"
+date = "2025-02-02"
 title = "Tools passwordless login"
 tags = ["passwordless","ssh-key", "tools"]
 categories = ["remote servers"]
-lastmod = "2020-04-16"
 +++
 
 The following SSH tools are utilized: `ssh-keygen` and `ssh-copy-id`. RsyncUI primarily assists in establishing an RSA-based key.

@@ -6,7 +6,7 @@ tags = ["first time use"]
 categories = ["general information"]
 +++
 
-For new users, kindly refer to the [important information](/docs/important/). Additionally, please find information about the latest version of rsync to [install](/docs/rsync/).
+For new users, kindly refer to the *Important* section. Additionally, please find information about the latest version of rsync to install, refer to the *Latest version of rsync* section .
 
 The primary Sidebar menu is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. 
 

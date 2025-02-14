@@ -6,9 +6,7 @@ tags = ["important"]
 categories = ["general information"]
 +++
 
-The User Interface of RsyncUI may pose challenges for users unfamiliar with the `rsync` command. The primary objective is to simplify the usage of `rsync`, rather than providing a comprehensive introduction of `rsync` to macOS users. This scope is beyond the intended purpose of the interface.
-
-For those unfamiliar with the command-line tool `rsync` and its graphical user interface (GUI) RsyncUI, the following information is provided: RsyncUI functions as a graphical layer atop the command-line tool `rsync`. It does not directly perform the underlying operations; `rsync` is responsible for the actual execution.
+The User Interface of RsyncUI may pose challenges for users unfamiliar with the `rsync` command. The primary objective is to simplify the usage of `rsync`, rather than providing a comprehensive introduction of `rsync` to macOS users. This scope is beyond the intended purpose of the interface. RsyncUI is a graphical layer atop the command-line tool `rsync`. It does not directly perform the underlying operations; `rsync` is responsible for the actual synchronization of data.
 
 {{< alert color="warning" >}}
 
@@ -32,7 +30,7 @@ RsyncUI compels data transfer via SSH if the destination is a remote server. The
 
 Through the SSH tunnel, the transfer is encrypted when transmitted over a network connection.
 
-Refer to the chapter on "Passwordless login" for further information on SSH and SSH-keys. This feature cannot be disabled.
+Refer to the *Passwordless login* section for further information on SSH and SSH-keys. This feature cannot be disabled.
 
 ### Safety precautions
 
@@ -46,7 +44,7 @@ If you inadvertently modify the snapshot number, please thoroughly comprehend th
 
 {{< /alert >}}
 
-If you permit RsyncUI to handle the task, you can reasonably expect a safe outcome. RsyncUI is a complimentary and open-source application. Kindly review the [MIT license](/docs/license/).
+If you permit RsyncUI to handle the task, you can reasonably expect a safe outcome. RsyncUI is a complimentary and open-source application. Kindly review the MIT license.
 
 ### Aborting Tasks
 

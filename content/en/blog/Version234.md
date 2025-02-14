@@ -8,7 +8,9 @@ categories = ["changelog"]
 
 ### Version 2.3.4 (build 134) - 12 February 2025
 
-Version 2.3.3 and 2.3.4 are merged into one release, version 2.3.4.
+Version 2.3.3 and 2.3.4 are merged into one release, version 2.3.4. 
+
+The User documentation has undergone a slight restructure. The primary objective of this restructure is to prioritize the presentation of essential information. Subsequently, new users who are familiar with RsyncUI will be able to explore more advanced features.
 
 The following are enhancements in version 2.3.4:
 

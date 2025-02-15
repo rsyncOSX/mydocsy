@@ -5,24 +5,6 @@ date = "2024-11-30"
 tags = ["changelog","about changes"]
 categories = ["changelog"]
 +++
-{{< alert >}}
-
-If you encounter any issues with RsyncUI or have any suggestions for improvements, please do not hesitate to contact me at <thomeven@gmail.com>
-or create an issue on GitHub.
-
-{{< /alert >}}
-
-{{< alert >}}
-
-RsyncUI adheres to the concurrency model introduced in Swift 6. Refer to the official Swift documentation for more information:
-
-*"A data race occurs when one thread accesses memory while another thread is modifying the same memory.
-The Swift 6 language mode eliminates these issues by preventing data races at compile time."*
-
-{{< /alert >}}
-
-
-**Code Refactoring and Review:**
 
 RsyncUI comprises approximately 200 Swift files and 14,700 lines of code. This includes the main repository for RsyncUI and four
 Swift Packages for RsyncUI. Notably, RsyncUI does not rely on external libraries; it is constructed using default Swift libraries and Swift/SwiftUI

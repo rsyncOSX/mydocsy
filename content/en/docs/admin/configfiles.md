@@ -6,7 +6,7 @@ tags = ["files", "JSON"]
 categories = ["general information"]
 +++
 
-RsyncUI read and store *configurations*, *log records* and *user settings* as [JSON](https://en.wikipedia.org/wiki/JSON) files. The location of files is: `$HOME/.rsyncosx/macserialnumber`. RsyncUI get the computer mac serial number at startup. At startup RsyncUI reads the user settings and default configurations from JSON data. Log records are only loaded when viewing logs and when updating the logs after a synchronization task.
+RsyncUI read and store *configurations*, *log records* and *user settings* as JSON (https://en.wikipedia.org/wiki/JSON) files. The location of files is: `$HOME/.rsyncosx/macserialnumber`. RsyncUI get the computer mac serial number at startup. At startup RsyncUI reads the user settings and default configurations from JSON data. Log records are only loaded when viewing logs and when updating the logs after a synchronization task.
 
 #### Configuration files
 
@@ -22,7 +22,7 @@ If profile is utilized:
 
 #### User settings
 
-The [user settings](/docs/settings/) are stored as:
+The user settings are stored as:
 
 `$HOME/.rsyncosx/macserialnumber/rsyncuiconfig.json`
 

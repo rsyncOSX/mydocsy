@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Getting started"
 date = "2025-02-12"
-tags = ["first time use"]
+tags = ["getting started"]
 categories = ["general information"]
 +++
 

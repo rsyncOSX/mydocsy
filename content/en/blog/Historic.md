@@ -10,6 +10,16 @@ categories = ["changelog"]
 
 Dates and version only
 
+- Version 2.2.5 - 2025-01-08
+- Version 2.2.3 - 2024-12-20
+- Version 2.2.1 - 2024-11-30
+- Version 2.2.0 - 2024-11-29
+- Version 2.1.8 - 2024-11-14
+- Version 2.1.6 - 2024-10-29
+- Version 2.1.5  - 2024-10-13
+- Version 2.1.4  - 2024-09-27
+- Version 2.1.3  - 2024-09-16
+- Version 2.1.1  - 2024-07-30
 - Version 1.9.2 (build 100) - 11 June 2024
 - Version 1.9.1 (build 99) - 27 May 2024
 - Version 1.9.0 (build 98) - 12 April 2024

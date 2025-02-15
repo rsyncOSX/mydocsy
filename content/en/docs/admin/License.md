@@ -5,7 +5,7 @@ title =  "MIT License"
 tags = ["license"]
 categories = ["general information"]
 +++
-The MIT License (MIT), also read about [the MIT Licence at Wkipedia](https://en.wikipedia.org/wiki/MIT_License).
+The MIT License (MIT), also read about the MIT Licence (https://en.wikipedia.org/wiki/MIT_License) at Wkipedia.
 
 ```code
 Copyright (c) 2020 - 2025 - Thomas Evensen

@@ -15,3 +15,19 @@ The development of next version, 2.3.5 (build 135) is in progress. The following
 - some other minor internal refactor as well
 
 Please see [the full changelog from version 2.3.4 to now](https://github.com/rsyncOSX/RsyncUI/compare/v2.3.4...v2.3.5). Version 2.3.5 to be relased by end of February 2025.
+
+##### The Verify
+
+Below are changes in the Verify function. **Important**, as an example I have used a git repository. As documented in the user documentation, if remote is a git repository, git manage to update and synchronize local repository. The pictures below are just as an example to present the changes.
+
+The Verify is now triggered from the Synchronize view, by the toolbar. And if you dont have any remote destinations, the Verify functions are hidden.
+
+{{< figure src="/images/235/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/images/235/verify1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+After running the Verify function, which executes both a pull and push task, the result is presented.
+
+{{< figure src="/images/235/verify2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/images/235/verify3.png" alt="" position="center" style="border-radius: 8px;" >}}

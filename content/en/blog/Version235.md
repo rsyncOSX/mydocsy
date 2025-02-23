@@ -19,7 +19,7 @@ Please see [the full changelog from version 2.3.4 to now](https://github.com/rsy
 
 ##### The Estimate Process
 
-The synchronization process remains unchanged. However, if there are no data to synchronize, the estimation process automatically returns to the main Sunchronize view.
+The estimation process remains unchanged. However, if there are no data to synchronize, the estimation process automatically returns to the main Synchronize view.
 
 The estimate indicates that there are data to be synchronized for one of the tasks. Blue numbers denote data to be synchronized.
 

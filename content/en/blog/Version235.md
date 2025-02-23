@@ -10,11 +10,28 @@ categories = ["changelog"]
 
 The development of next version, 2.3.5 (build 135) is in progress. The following are changed:
 
+- the estimate process is updated
 - the Verify function, for remote destinations only, is changed
 - parts of the URL-functions or deep links are refactored (internal)
 - some other minor internal refactor as well
 
 Please see [the full changelog from version 2.3.4 to now](https://github.com/rsyncOSX/RsyncUI/compare/v2.3.4...v2.3.5). Version 2.3.5 to be relased by end of February 2025.
+
+##### The Estimate Process
+
+The synchronization process remains unchanged. However, if there are no data to synchronize, the estimation process automatically returns to the main Sunchronize view.
+
+The estimate indicates that there are data to be synchronized for one of the tasks. Blue numbers denote data to be synchronized.
+
+{{< figure src="/images/235/estimate1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The task is not synchronized; it is only returned by selecting the Navigation arrow on the toolbar. Within the main Synchronize view, the blue checkmark indicates a task with data to be synchronized. The red checkmarks indicate a task that is estimated but has no data to synchronize.
+
+{{< figure src="/images/235/estimate2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+For my Pictures profile, all data is synchronized. After the estimation process, the view automatically returns to the main Synchronize view. All checkmarks are red. Red checkmarks indicate that a task is estimated but no data to synchronize.
+
+{{< figure src="/images/235/estimate3.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ##### The Verify
 

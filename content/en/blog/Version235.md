@@ -17,7 +17,7 @@ The following are changed:
 
 ##### The Estimate Process
 
-The estimation process remains unchanged. However, if there are no data to synchronize, the estimation process automatically returns to the main Synchronize view.
+The internals of the estimation process remains unchanged. However, if there are no data to synchronize, the estimation process automatically returns to the main Synchronize view.
 
 The estimate indicates that there are data to be synchronized for one of the tasks. Blue numbers denote data to be synchronized.
 

@@ -25,7 +25,7 @@ The following parameters cannot be disabled.
 RsyncUI does not officially support the `rsync daemon:` command. However, it is possible to configure a rsync daemon setup.
 Please note that a rsync daemon setup does not encrypt the transfer between the client and server.
 To encrypt the transfer, you need to tunnel the traffic using the SSH protocol. For more information on setting up
-SSH passwordless logins, please refer to the documentation at [passwordless logins](/docs/passwordless/).
+SSH passwordless logins, please refer to the  *Passwordless login* section.
 
 {{< /alert >}}
 

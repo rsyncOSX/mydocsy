@@ -12,9 +12,9 @@ menu: {main: {weight: 10}}
 
 Hello,
 
-My email address is thomeven@gmail.com. If you have any ideas or thoughts about RsyncUI, please do not hesitate to contact me.
+If you have any ideas or thoughts about RsyncUI, please do not hesitate to contact me at thomeven@gmail.com.
 
-**RsyncOSX** was archived and development ceased in August 2024. **RsyncUI** is in active development.  The development of RsyncOSX commenced in early 2016 as a personal project to learn Swift. And the development of RsyncUI commenced in late 2020 to learn SwiftUI.
+I commenced the development of RsyncOSX in August 2016, which was archived and development ceased after 8 years in August 2024, as a project to learn about Swift development. The devlopment of RsyncUI, which is based upon SwiftUI, commenced in late 2020 and it is in active development.
 
 I hold a master's degree in computing science, but I am not a professional developer. I completed my master's degree during the early 1990s, when Linux was released and the Internet became a public service. A few years prior to that, in 1989, the Web was invented at CERN. There is only one developer involved in the development of RsyncUI, and I am committed to ensuring its stability and user-friendliness. While I am not a UI designer, some users may find the UI complex and less user-friendly.
 
@@ -26,16 +26,10 @@ The maintenance and development of RsyncUI are among my hobbies. If you find Rsy
 
 {{% blocks/section color="white" %}}
 
-**A Few Words About the Code**
-
 Although I am an educated IT professional, my professional experience has primarily been as an IT manager rather than a developer.
 My coding experience has been limited to private projects such as RsyncUI and RsyncOSX. Google has been an invaluable resource for research and guidance on solving specific problems. Reading about other developers' code and participating in discussions has provided me with valuable insights.
 
 I am continuously learning and adapting to new releases of Swift, SwiftUI, and Xcode, which introduce new features to master. Major changes and updates are documented in the [changelog](/blog/). Additionally, I utilize tools such as [SwiftLint](https://github.com/realm/SwiftLint), [SwiftFormat](https://github.com/nicklockwood/SwiftFormat), and [periphery](https://github.com/peripheryapp/periphery) to enhance my coding practices.
-
-**No Right or Wrong in Development**
-
-I firmly believe that there is no such thing as a "right" or "wrong" approach to development. There are numerous guidelines available for writing code, but each developer and team selects their preferred methodology based on their expertise and objectives. Over time, my understanding of object-oriented programming (OOP), declarative programming, Swift, and SwiftUI has evolved significantly. While my coding style has changed since I commenced my project in 2015, I am not yet a professional developer. There are still several aspects of Swift and SwiftUI that I lack proficiency in, but I am capable of acquiring knowledge through dedicated study.
 
 **Why Not the App Store?**
 

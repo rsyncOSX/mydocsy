@@ -13,8 +13,6 @@ Certain default parameters can be *enabled* or *disabled* on a task basis.
 - `--compress`: Compresses files before transmission, applicable only to networked tasks.
 - `--delete`: Deletes all files at the destination that are not present in the source.
 
-**Parameters Applicable to All Tasks:**
-
 The following parameters cannot be disabled.
 
 - `--archive`: Ensures that all files are transferred with all attributes preserved.
@@ -29,6 +27,5 @@ SSH passwordless logins, please refer to the  *Passwordless login* section.
 
 {{< /alert >}}
 
-**Enabling the rsync daemon:**
 Enabling the rsync daemon involves adding a double colon `::` to the address parameter in the rsync command.
 This forces rsync to use the rsync daemon remote.

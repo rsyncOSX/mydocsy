@@ -8,6 +8,8 @@ categories = ["changelog"]
 
 ### Version 2.3.6 (build 136) - 7 March 2025
 
+*Please note that there are currently missing localizations in German and Norwegian. The next version will include updated localizations. Due to the urgency of the bug, it was prioritized to release a quick update rather than address the localization issues.*
+
 There is a **bug in discover when there are data to be synchronized**. The bug may cause RsyncUI not to mark a repository for updates, even when there are new and changed files to be synchronized.
 
 Included in release there are also a few UI enhancements and internal refactor of code. Please update when RsyncUI notfies about a new version.

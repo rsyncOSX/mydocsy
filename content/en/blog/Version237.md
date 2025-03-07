@@ -8,4 +8,7 @@ categories = ["changelog"]
 
 ### Version 2.3.7 (build 137) - 7 March 2025
 
-A bug affecting users of the default version of rsync (either openrsync or rsync version 2.6.9) has not been resolved in version 2.3.6. Consequently, a new hotfix release is necessary to address this issue.
+The bug in the previous release version 2.3.6, affecting users of the default version of rsync (either openrsync or rsync version 2.6.9), has not been resolved in version 2.3.6. Consequently, a new hotfix release is necessary to address this issue.
+
+I sincerely apologize for the two consecutive updates today.
+

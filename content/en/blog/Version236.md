@@ -11,3 +11,11 @@ categories = ["changelog"]
 There is a **bug in discover when there are data to be synchronized**. The bug may cause RsyncUI not to mark a repository for updates, even when there are new and changed files to be synchronized.
 
 Included in release there are also a few UI enhancements and internal refactor of code. Please update when RsyncUI notfies about a new version.
+
+To verify there are data to be synchronized, check the output from rsync. Either from the summarized estimated view, or from the main view, select the task.
+
+{{< figure src="/images/236/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+After selecting the task, choose the *magnifyingglass* on the toolbar. It will present the output from rsync.
+
+{{< figure src="/images/236/verify.png" alt="" position="center" style="border-radius: 8px;" >}}

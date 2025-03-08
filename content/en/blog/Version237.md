@@ -10,9 +10,9 @@ categories = ["changelog"]
 
 {{< alert color="warning" >}}
 
-There are still some issues in latest release marking tasks for data to be synchronized. Please force a synchronize of all tasks, with no estimate, by selecting the play icon on the toolbar.  
+There are still some issues in the latest release marking tasks for data to be synchronized. Please force a synchronize of all tasks, without an estimate, by selecting the play icon on the toolbar.
 
-There is also a release candidate uploaded where the above issues are fixed (to be verified before release next version). After estimate, the summarized view is presented even if there are noe data to be synchronized.  This will be a setting to switch on off in next release.
+Additionally, a release candidate has been uploaded where the aforementioned issues have been resolved (to be verified before the release of the next version). After estimating, the summarized view will be presented even if there is no data to be synchronized. This will be a setting that can be turned on and off in the next release.
 
 {{< /alert >}}
 

@@ -12,9 +12,15 @@ categories = ["changelog"]
 
 A **bug exists in the discover function when data synchronization is required**. This bug may prevent RsyncUI from marking a repository for updates, even when there are new and modified files to be synchronized. The release also includes a few UI enhancements and internal code refactoring. 
 
-**Please update your version of RsyncUI when it notifies you of a new version.**
+Another pleasant aspect of constructing a new release using Makefile and command-line tools is the simplicity of the build, notarization, and signing process, which can be completed in a matter of minutes.  Creating a new release is now done in 3-4 minutes by Makefile and  command-line tools. 
 
-Another pleasant aspect of constructing a new release using Makefile and command-line tools is the simplicity of the build, notarization, and signing process, which can be completed in a matter of minutes. 
+The three only manual updates are:
+
+- updating the new release on GitHub releases
+    - uploading the new dmg file, compute the SHA256 checksum for the dmg file,  add the GitHub Full Changlog
+- updating the GitHub file for notify of a new version
+    - RsyncUI pulls a version file, a JSON file, from GitHub at startup and decide if there is an update
+-  creating a new pull request for Homebrew about new version
 
 ### How to verify from main view
 

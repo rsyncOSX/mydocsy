@@ -8,30 +8,13 @@ categories = ["changelog"]
 
 ### Version 2.3.7 (build 137) - 7 March 2025
 
-I sincerely apologize for the two consecutive updates on the same day. There will be released a new version early next week, where localization issues are fixed and QA of bugfix is properly completed. The issue is fixed in code, and a new versiomn to be released after QA of the bugfix.
+I sincerely apologize for the two consecutive updates on the same day. And issue is still not fixed in release. But the issue is fixed in code. There will be released a new version early next week, where localization issues are fixed and QA of bugfix is properly completed.
 
 {{< alert color="warning" >}}
 
 There are still some issues in the latest release marking tasks for data to be synchronized. Please force a synchronize of all tasks, without an estimate, by selecting the play icon on the toolbar.
 
-Additionally, a release candidate has been uploaded where the aforementioned issues have been resolved (to be verified before the release of the next version). After estimating, the summarized view will be presented even if there is no data to be synchronized. This will be a setting that can be turned on and off in the next release.
+Additionally, a release candidate has been uploaded where the aforementioned issues have been resolved, to be verified before the release of the next version. After estimating, the summarized view will be presented even if there is no data to be synchronized. This will be a setting that can be turned on and off in the next release.
 
 {{< /alert >}}
-
-The play icon, force  synchronize of all tasks without an estimate, is between the magic wand (estimate) and reset estimates icon on the toolbar.
-
-{{< figure src="/images/236/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-
-The bug in the previous release version 2.3.6, affecting users of the default version of rsync (either openrsync or rsync version 2.6.9), has not been resolved in version 2.3.6. Consequently, a new hotfix release is necessary to address this issue.
-
-In release notes of version 2.3.6: *Another pleasant aspect of constructing a new release using Makefile and command-line tools is the simplicity of the build, notarization, and signing process, which can be completed in a matter of minutes.* Creating a new release version 2.3.7 was done in 3-4 minutes by Makefile and  command-line tools. 
-
-The three only manual updates are:
-
-- updating the new release on GitHub releases
-    - uploading the new dmg file, compute the SHA256 checksum for the dmg file,  add the GitHub Full Changlog
-- updating the GitHub file for notify of a new version
-    - RsyncUI pulls a version file, a JSON file, from GitHub at startup and decide if there is an update
--  creating a new pull request for Homebrew about new version
 

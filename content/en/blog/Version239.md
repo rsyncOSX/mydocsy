@@ -15,7 +15,7 @@ synchronization is forced without a prior estimation, there will be no progress 
 RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15.
 
 How does RsyncUI determine if there is data to synchronize? The tagging of data to be synchronized is computed within the package
-ParseRsyncOutput (https://github.com/rsyncOSX/ParseRsyncOutput). The parsing of the output of rsync is not particularly complex, and it is
+ParseRsyncOutput, a local Swift Package for RsyncUI. The parsing of the output of rsync is not particularly complex, and it is
 somewhat different for the latest version of rsync compared to the default versions of rsync.
 
 #### Latest version of rsync

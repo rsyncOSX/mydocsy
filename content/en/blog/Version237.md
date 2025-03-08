@@ -8,6 +8,8 @@ categories = ["changelog"]
 
 ### Version 2.3.7 (build 137) - 7 March 2025
 
+I sincerely apologize for the two consecutive updates on the same day. There will be released a new version early next week, where localization issues are fixed and QA of bugfix is properly completed. The issue is fixed in code, and a new versiomn to be released after QA of the bugfix.
+
 {{< alert color="warning" >}}
 
 There are still some issues in the latest release marking tasks for data to be synchronized. Please force a synchronize of all tasks, without an estimate, by selecting the play icon on the toolbar.
@@ -22,10 +24,6 @@ The play icon, force  synchronize of all tasks without an estimate, is between t
 
 
 The bug in the previous release version 2.3.6, affecting users of the default version of rsync (either openrsync or rsync version 2.6.9), has not been resolved in version 2.3.6. Consequently, a new hotfix release is necessary to address this issue.
-
-I sincerely apologize for the two consecutive updates today. There will be released a new version 2.3.8 next week, where localization issues are fixed and QA of bugfix is properly completed. There are some updates in code for version 2.3.8 already.
-
-
 
 In release notes of version 2.3.6: *Another pleasant aspect of constructing a new release using Makefile and command-line tools is the simplicity of the build, notarization, and signing process, which can be completed in a matter of minutes.* Creating a new release version 2.3.7 was done in 3-4 minutes by Makefile and  command-line tools. 
 

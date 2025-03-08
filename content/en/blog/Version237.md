@@ -16,6 +16,10 @@ Additionally, a release candidate has been uploaded where the aforementioned iss
 
 {{< /alert >}}
 
+The play icon, force  synchronize of all tasks without an estimate, is between the magic wand (estimate) and reset estimates icon on the toolbar.
+
+{{< figure src="/images/236/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 
 The bug in the previous release version 2.3.6, affecting users of the default version of rsync (either openrsync or rsync version 2.6.9), has not been resolved in version 2.3.6. Consequently, a new hotfix release is necessary to address this issue.
 

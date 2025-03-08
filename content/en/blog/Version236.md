@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.3.6"
-date = "2025-03-07"
+date = "2025-03-06"
 tags = ["changelog","version 2.3.6"]
 categories = ["changelog"]
 +++

@@ -10,7 +10,9 @@ categories = ["changelog"]
 
 The bug in the previous release version 2.3.6, affecting users of the default version of rsync (either openrsync or rsync version 2.6.9), has not been resolved in version 2.3.6. Consequently, a new hotfix release is necessary to address this issue.
 
-I sincerely apologize for the two consecutive updates today.
+I sincerely apologize for the two consecutive updates today. There will be released a new version 2.3.8 next week, where localization issues are fixed and QA of bugfix is properly completed. There are some updates in code for version 2.3.8 already.
+
+**Note:** you may also force a synchronize of all tasks, with no estimate, by selecting the play icon on the toolbar. 
 
 In release notes of version 2.3.6: *Another pleasant aspect of constructing a new release using Makefile and command-line tools is the simplicity of the build, notarization, and signing process, which can be completed in a matter of minutes.* Creating a new release version 2.3.7 was done in 3-4 minutes by Makefile and  command-line tools. 
 

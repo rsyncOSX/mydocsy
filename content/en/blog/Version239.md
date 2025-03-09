@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.3.9"
-date = "2025-03-08"
+date = "2025-03-09"
 tags = ["changelog","version 2.3.9"]
 categories = ["changelog"]
 +++
@@ -69,7 +69,7 @@ decide if there is tagging of data to be synchronized.
 
 ##### Latest version
 
-There are three numbers which decide data to synchronize or not: number of updates, new files or deleted files.
+There are three numbers which decide data to synchronize or not: number of updates (regular files transferred), new files or deleted files. And they all may be 0 or a number, all three must be verified.
 
 ```
 if filestransferred.count > 5 { my_filestransferred = Int(filestransferred[5]) }
@@ -92,7 +92,7 @@ if let my_numberofdeletedfiles, my_numberofdeletedfiles > 0 {
 
 ##### Default versions
 
-There is only one number which decide data to synchronize or not: number of updates.
+There is only one number which decide data to synchronize or not: number of updates (files transferred).
 
 ```
 if filestransferred.count > 4 { my_filestransferred = Int(filestransferred[4]) }

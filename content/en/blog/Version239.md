@@ -6,7 +6,9 @@ tags = ["changelog","version 2.3.9"]
 categories = ["changelog"]
 +++
 
-### Version 2.3.9 (build 139) - to be released
+### Version 2.3.9 (build 139) - 9 March 2025
+
+The issue with tagging data for synchronize is fixed.
 
 It is crucial that RsyncUI tags tasks with data to be synchronized correct. If the tagging fails, there may be local data that
 is not synchronized. However, there is always the possibility to force a synchronization without an initial estimation. If a

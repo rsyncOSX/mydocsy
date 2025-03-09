@@ -8,7 +8,7 @@ categories = ["changelog"]
 
 ### Version 2.3.9 (build 139) - 9 March 2025
 
-The issue with tagging data for synchronize is fixed.
+The issue with tagging data for synchronize is fixed. There is also a new setting, by default on, see last in post. This setting is overridden when executing tasks by Deep Links (URL links).
 
 It is crucial that RsyncUI tags tasks with data to be synchronized correct. If the tagging fails, there may be local data that
 is not synchronized. However, there is always the possibility to force a synchronization without an initial estimation. If a
@@ -105,3 +105,11 @@ if let my_filestransferred, my_filestransferred > 0  {
     datatosynchronize = true
 }
 ```
+
+##### New setting
+
+The new setting, "Always present the summarized estimate view", on will always present the summarized estimate view, even if there are no data to synchronize.
+
+{{< figure src="/images/239/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/images/239/result.png" alt="" position="center" style="border-radius: 8px;" >}}

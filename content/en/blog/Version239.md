@@ -66,45 +66,15 @@ total size is 24788299  speedup is 58.55
 
 #### How does the tagging work
 
-The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers
-decide if there is tagging of data to be synchronized.
+The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers decide if there is tagging of data to be synchronized. The algorithm for tagging is refactored from version 2.3.9 to version 2.4.0. In version 2.3.9 the elements of the string is converted into array of strings. And the numbers er picked up from within the array. In version 2.4.0 the numbers are are extraced by one line of code. 
 
-##### Latest version
+##### Latest version of rsync
 
 There are three numbers which decide data to synchronize or not: number of updates (regular files transferred), new files or deleted files. And they all may be 0 or a number, all three must be verified.
-
-```
-if filestransferred.count > 5 { my_filestransferred = Int(filestransferred[5]) }
-    else { my_filestransferred = 0 }
-....
-if numberofcreatedfiles.count > 4 { my_numberofcreatedfiles = Int(numberofcreatedfiles[4]) }
-    else { my_numberofcreatedfiles = 0 }
-if numberofdeletedfiles.count > 4 { my_numberofdeletedfiles = Int(numberofdeletedfiles[4]) }
-    else { my_numberofdeletedfiles = 0 }
-if let my_filestransferred, my_filestransferred > 0  {
-    datatosynchronize = true
-}
-if let my_numberofcreatedfiles, my_numberofcreatedfiles > 0 {
-    datatosynchronize = true
-}
-if let my_numberofdeletedfiles, my_numberofdeletedfiles > 0 {
-    datatosynchronize = true
-}
-```
 
 ##### Default versions
 
 There is only one number which decide data to synchronize or not: number of updates (files transferred).
-
-```
-if filestransferred.count > 4 { my_filestransferred = Int(filestransferred[4]) }
-    else { my_filestransferred = 0 }
-....
-
-if let my_filestransferred, my_filestransferred > 0  {
-    datatosynchronize = true
-}
-```
 
 ##### New setting
 

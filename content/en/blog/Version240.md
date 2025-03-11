@@ -16,6 +16,6 @@ The tagging of data to be synchronized is computed within the package ParseRsync
 
 Some parsing of the output from rsync in version 2.3.9 is a kind of convoluted. The objective is to extract the numbers from rsync output as safely and effectively as possible. And there is from version 2.4.0 also a verification of the tagging, if the output from rsync is greater than 20 lines and tagging for data to synchronize is not set, an alert is thrown. Normally, if there are no data to synchronize output from rsync is about 20 lines.
 
-Extract numbers from a string containing letters and digits is from version 2.4.0 of RsyncUI is now a one line code. Example, the string: `Number of created files: 7,191 (reg: 6,846, dir: 345)` as input by this code result in, after converting strings to number `[7191,6846,345]`.  
+Extract numbers from a string containing letters and digits is from version 2.4.0 of RsyncUI is now a one line code. Example, the string: `Number of created files: 7,191 (reg: 6,846, dir: 345)` as input by this code result in, after converting strings to numbers `[7191,6846,345]`.  The thousand mark, `,`, is also removed from string ahead of applying function. 
 
 `let stringArray = str.components(separatedBy: CharacterSet.decimalDigits.inverted).compactMap { $0.isEmpty == true ? nil : $0 }`

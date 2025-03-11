@@ -10,9 +10,9 @@ categories = ["changelog"]
 
 The issue with tagging data for synchronize is fixed. There is also a new setting, by default on, see last in post. This setting is overridden when executing tasks by Deep Links (URL links).
 
-It is crucial that RsyncUI tags tasks with data to be synchronized correct. If the tagging fails, there may be local data that
-is not synchronized. However, there is always the possibility to force a synchronization without an initial estimation. If a
-synchronization is forced without a prior estimation, there will be no progress bar.
+It is imperative that RsyncUI tags tasks with data to be synchronized correctly. If the tagging fails, there may be local data that is not synchronized. RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15.
+
+However, there is always the possibility to force a synchronization without an initial estimation. If a synchronization is forced without a prior estimation, there will be no progress bar.
 
 RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15.
 

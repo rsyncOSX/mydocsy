@@ -6,7 +6,7 @@ tags = ["rsync and path"]
 categories = ["usersettings"]
 +++
 
-Changes to settings are automatically saved.
+Changes to settings are automatically saved. A green thumb up notify when saving is completed.
 
 {{< figure src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 

@@ -6,7 +6,7 @@ tags = ["monitoring and logging"]
 categories = ["usersettings"]
 +++
 
-Changes to settings are automatically saved.
+Changes to settings are automatically saved. A green thumb up notify when saving is completed.
 
 {{< figure src="/images/usersettings/network.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -34,6 +34,10 @@ Changes to settings are automatically saved.
 **Observe mounting of external drives**
 
 - automatic selection of a profile when RsyncUI detects a new mount of a local attached disc
+
+**Always present the summarized estimate view**
+
+- after an estimate, by selecting the Magic Wand on toolbar Synchronize task view, always present the summarized view
 
 **Confirm Execution:**
 

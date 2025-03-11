@@ -68,7 +68,7 @@ total size is 24788299  speedup is 58.55
 
 The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers decide if there is tagging of data to be synchronized. The algorithm for tagging is refactored from version 2.3.9 to version 2.4.0. In version 2.3.9 the elements of the string is converted into array of strings. And the numbers are picked up from within the array. 
 
-In version 2.4.0, next version, the numbers are are extraced by a single line of code. 
+In version 2.4.0, next version, the numbers are extraced by a single line of code. 
 
 ##### Latest version of rsync
 

@@ -10,6 +10,8 @@ categories = ["changelog"]
 
 The development of the next version has commenced. This version is expected to be released by the end of March or the beginning of April 2025. The primary repository on GitHub is always updated with the latest development. It is straightforward to compile your own version from the command line by executing `make archive`. This command will compile a version without debug information, signing, and notarization. However, you must add your own signing credentials in Xcode.
 
+#### Tagging of data to be synchronized
+
 *It is imperative that RsyncUI tags tasks with data to be synchronized correctly. If the tagging fails, there may be local data that is not synchronized. RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15.*
 
 The tagging of data to be synchronized is computed within the package ParseRsyncOutput, a local Swift Package for RsyncUI.
@@ -19,3 +21,15 @@ Parts of the parsing of the output from rsync in version 2.3.9 is a kind of conv
 Extract numbers from a string containing letters and digits is from version 2.4.0 of RsyncUI is now a one line code. Example, the string: `Number of created files: 7,191 (reg: 6,846, dir: 345)` as input by this code result in, after converting strings to numbers `[7191,6846,345]`.  The thousand mark, `,`, is also removed from string ahead of applying function. 
 
 `let stringArray = str.components(separatedBy: CharacterSet.decimalDigits.inverted).compactMap { $0.isEmpty == true ? nil : $0 }`
+
+#### Consolidation of views
+
+The two views, save URLs and global changes, are now part of the *Add and update tasks* view. The save URL view, verify function, is context sensitive. It is only for remote destinations. And both URL save function are only presented when a task is selected.
+
+{{< figure src="/images/240/url.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The global change function, which allows changes for all tasks in one go, is avaliable by toggle the *Toggle global changes* switch. As an example, I will change the user name *thomas* to *changeuser*.  The change is applied, for the example, within the local catalog column.
+
+{{< figure src="/images/240/global1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/images/240/global2.png" alt="" position="center" style="border-radius: 8px;" >}}

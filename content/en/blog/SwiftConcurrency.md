@@ -28,17 +28,52 @@ Quote swift.org: *"More formally, a data race occurs when one thread accesses me
 
 RsyncUI adheres to the new concurrency model of Swift 6. The majority of its work is performed on the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI), it is advantageous to execute these tasks on a background thread rather than the main thread. Executing  resource-intensive tasks on the main thread significantly increases the likelihood of  blocking the GUI and the application's unresponsiveness.
 
-
 #### Background threads and RsyncUI
 
-The following are executed on background threads, by adopting the `actor` protocol: 
+In Swift, concurrency can be categorized as either unstructured or structured. While I am not an expert in this field, I will refrain from delving into the intricacies of the distinction between the two. However, in the context of RsyncUI, structured concurrency is employed for all asynchronous functions executed on background threads. This implies that any asynchronous execution will conclude before the calling function is fully executed. A more illustrative example is provided below:
 
-- read operations
-- decoding and encoding data
-- sorting log records
-- preparing output from rsync for display
+The following tasks are executed on background threads, adhering to the `actor` protocol:
 
-are executed on background threads. Executing the above tasks are asynchronous, it does not block GUI updates on the main thread and the run time environment takes care of the scheduling and execution. 
+- Reading operations
+- Data decoding and encoding
+- Sorting log records
+- Preparing output from rsync for display
+- Checking for updates to RsyncUI
+
+These tasks are executed on background threads. Asynchronous execution of these tasks ensures that GUI updates on the main thread are not blocked. The runtime environment handles scheduling and execution, guaranteeing that all functions within an actor are  `nonisolated func`, which, to my understanding, guarantees their execution on the global executor and prevents blocking of the main thread.
+
+```swift
+actor Getversionofrsync {
+    nonisolated func getversionsofrsyncui() async -> Bool {
+        do {
+            let versions = await DecodeGeneric()
+            if let versionsofrsyncui =
+                try await versions.decodearraydata(VersionsofRsyncUI.self,
+                                                   fromwhere: Resources().getResource(resource: .urlJSON))
+            {
+                let runningversion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+                let check = versionsofrsyncui.filter { runningversion.isEmpty ? true : $0.version == runningversion }
+                if check.count > 0 {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        } catch {
+            return false
+        }
+        return false
+    }
+}
+```
+
+The execution of the calling function is suspended until the function `getversionsofrsyncui()` returns. Upon the function's return, the UI is notified on the main thread if there is a new version available.
+
+```swift
+Task {
+      newversion.notifynewversion = await Getversionofrsync().getversionsofrsyncui()
+}
+```
 
 #### Notifications
 

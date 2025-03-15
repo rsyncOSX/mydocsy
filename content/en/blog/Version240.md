@@ -24,12 +24,6 @@ Extract numbers from a string containing letters and digits is from version 2.4.
 
 #### Consolidation of views
 
-The two views, save URLs and global changes, are now part of the *Add and update tasks* view. The save URL view, verify function, is context sensitive. It is only for remote destinations. And both URL save function are only presented when a task is selected.
+The save URL is now part of the *Add and update tasks* view. The save URL view, verify function, is context sensitive. It is only for remote destinations. And both URL save function are only presented when a task is selected.
 
 {{< figure src="/images/240/url.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-The global change function, which allows changes for all tasks in one go, is avaliable by toggle the *Toggle global changes* switch. As an example, I will change the user name *thomas* to *changeuser*.  The change is applied, for the example, within the local catalog column.
-
-{{< figure src="/images/240/global1.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-{{< figure src="/images/240/global2.png" alt="" position="center" style="border-radius: 8px;" >}}

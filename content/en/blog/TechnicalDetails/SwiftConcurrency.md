@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Swift concurrency"
-date = "2025-01-28"
+date = "2025-03-01"
 tags = ["changelog","swift concurrency", "asynchronous", "notifications"]
 categories = ["changelog"]
 +++

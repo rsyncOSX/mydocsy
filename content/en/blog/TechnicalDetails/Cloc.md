@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 title = "Number of files"
 date = "2025-02-01"
-tags = ["changelog","number of files"]
-categories = ["changelog"]
+tags = ["number of files"]
+categories = ["technical details"]
 +++
 
 Numbers updated: 11 March 2025, version 2.4.0

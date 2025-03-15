@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 title = "Tagging of data"
 date = "2025-03-01"
 tags = ["tagging"]
-categories = ["tagging"]
+categories = ["technical details"]
 +++
 
 ### Tagging of data to be synchronized
@@ -19,7 +19,7 @@ Extract numbers from a string containing letters and digits is from version 2.4.
 Example: 
 
 - the string `Number of created files: 7,191 (reg: 6,846, dir: 345)` as input
-- is converted to `[7191,6846,345]`, the thousand mark, `,`, is also removed from string ahead of applying function
+- is converted to `[7191,6846,345]`, the thousand mark is also removed from string ahead parsing
 
 The function below extract numbers only from the input.
 
@@ -91,9 +91,7 @@ total size is 24788299  speedup is 58.55
 
 #### How does the tagging work
 
-The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers decide if there is tagging of data to be synchronized. The algorithm for tagging is refactored from version 2.3.9 to version 2.4.0. In version 2.3.9 the elements of the string is converted into array of strings. And the numbers are picked up from within the array. 
-
-In version 2.4.0, next version, the numbers are extraced by a single line of code. 
+The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers decide if there is tagging of data to be synchronized. The algorithm for tagging is refactored from version 2.3.9 to version 2.4.0.
 
 ##### Latest version of rsync
 

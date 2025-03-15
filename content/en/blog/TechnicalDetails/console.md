@@ -2,8 +2,8 @@
 author = "Thomas Evensen"
 title = "Console and OSLog"
 date = "2025-02-01"
-tags = ["changelog","console","oslog"]
-categories = ["changelog"]
+tags = ["console","oslog"]
+categories = ["technical details"]
 +++
 
 Included in Swift 5 is a unified logging feature called `OSLog`. This feature provides several methods for logging and investigating the application's activities. By utilizing OSLog, print statements are no longer necessary to follow the execution of code. All logging is performed through OSLog, which is displayed as part of Xcode. OSLog is integrated into all objects that perform work, making it straightforward to identify which commands RsyncUI is executing.

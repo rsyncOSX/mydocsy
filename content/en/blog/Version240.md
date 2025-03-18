@@ -24,9 +24,9 @@ It is imperative that RsyncUI tags tasks with data to be synchronized correctly.
 
 #### Consolidation of views
 
-The Parameters view for rsync is consolidated into one view which includes, pr task, user added parameters for rsync, ssh parameters, backup switch and and add and remove two default parameters. 
+The Parameters view for rsync is consolidated into one view which includes, pr task, user added parameters for rsync, ssh parameters, backup switch and remove parameters. 
 
-The `--delete` parameter is from this version removed as a default parameter when adding new tasks. The parameter may be added within this view.
+The `--delete` parameter is from this version not a default parameter new tasks. The parameter may be added within this view.
 
 {{< figure src="/images/240/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 

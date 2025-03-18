@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.4.0"
-date = "2025-03-14"
+date = "2025-03-18"
 tags = ["changelog","version 2.4.0"]
 categories = ["changelog"]
 +++
@@ -23,6 +23,12 @@ The development of the next version is commenced. This version is expected to be
 It is imperative that RsyncUI tags tasks with data to be synchronized correctly. If the tagging fails, there may be local data that is not synchronized. RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15. There is a new function for parsing output from rsync in version 2.4.0.
 
 #### Consolidation of views
+
+The Parameters view for rsync is consolidated into one view which includes, pr task, user added parameters for rsync, ssh parameters, backup switch and and add and remove two default parameters. 
+
+The `--delete` parameter is from this version removed as a default parameter when adding new tasks. The parameter may be added within this view.
+
+{{< figure src="/images/240/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The save URL is now part of the *Add and update tasks* view. The save URL view, verify function, is context sensitive. It is only for remote destinations. And both URL save function are only presented when a task is selected. The saved URLs are used by RsyncUI Widgest. 
 

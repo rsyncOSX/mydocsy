@@ -16,6 +16,8 @@ And, if you have any questions for me, don´t hesitate to contact me by email th
 
 ### Version 2.4.0 (build 140) - work in progress
 
+There is also a release candidate for version 2.4.0 which will be updated when there are new updates. Updated 18, March 2025.  
+
 The development of the next version is commenced. This version is expected to be released by the end of March or the beginning of April 2025. The primary repository on GitHub is always updated with the latest development.
 
 #### Tagging of data to be synchronized

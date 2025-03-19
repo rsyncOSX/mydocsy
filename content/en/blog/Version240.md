@@ -16,13 +16,25 @@ It is imperative that RsyncUI tags tasks with data to be synchronized correctly.
 
 ####  GUI updates
 
+The sole internal refactoring and update in this release is parsing the output of rsync for numerical values, tagging data for synchronization, and providing a notification in the event of an issue with tagging. The majority of the work in this release consists of GUI updates. The primary challenge is to minimize the number of views while ensuring that all possible settings for RsyncUI are accessible. Additionally, efforts are being made to reduce the complexity of busy views to a minimum.
+
+#### Parameters to rsync
+
 The Parameters view for rsync is consolidated into one view which includes, pr task, user added parameters for rsync, ssh parameters, backup switch and remove parameters.  The `--delete` parameter is from this version **not** a default parameter for new tasks. But, the `--delete` parameter may be added within the *Parameters for rsync* view.
 
 {{< figure src="/images/240/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+#### Add and update tasks
+
 And there is some cleanup within the *Add and update tasks* view as well. 
 
 {{< figure src="/images/240/url.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+#### Verify a remote
+
+{{< figure src="/images/240/verify1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/images/240/verify2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ### Future plans for RsyncUI
 

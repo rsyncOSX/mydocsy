@@ -44,7 +44,7 @@ Select the task for which you want to disable the `--delete` parameter.
 
 {{< figure src="/images/important/delete2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-And then toggle the *Remove default rsync parameter* --delete toggle. After toggle, **remeber to update the task** by the toolbar icon.
+And then toggle the *Remove default rsync parameter* --delete toggle. After toggle, **remember to update the task** by the toolbar icon.
 
 {{< figure src="/images/important/delete3.png" alt="" position="center" style="border-radius: 8px;" >}}
 

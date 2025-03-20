@@ -18,11 +18,15 @@ Before executing a new task in RsyncUI, please perform an estimation run, a `--d
 
 For instructions on executing an estimation run, refer to the *New tasks* or *Getting started* section.
 
-#### The --delete parameter and new tasks
+#### The --delete parameter
+
+In the current release 2.3.9, the `--delete` parameter is a default parameter when adding new tasks. From version 2.4.x, next release, this parameter is no longer set as a parameter when adding new tasks.
 
 {{< alert color="warning" >}}
 
-The `--delete` parameter causes rsync to keep the source and destination in sync. If a file is deleted in source, the `--delete` parameter causes rsync to delete the file in the destination as well. If you keep the `--delete` flag enabled, you may also switch on the *Backup* parameter. The *Backup* causes rsync to explicit save all files within a backup catalog before any changes.
+The `--delete` parameter causes rsync to keep the *source* and *destination* in sync. If a file is deleted in source, the `--delete` parameter causes rsync to delete the file in the destination as well.
+
+If the `--delete` parameter is removed, there will be more data in *destination* when files in *source* are deleted.
 
 {{< /alert >}}
 
@@ -48,11 +52,19 @@ And then toggle the *Remove default rsync parameter* --delete toggle. After togg
 
 {{< figure src="/images/important/delete3.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-#### The backup option
+#### Some options to save changes
+
+There are a two options to automatically save changes to a file when it is changed or deleted.
+
+##### The backup option
 
 Rsync supports a backup flag. By, in RsyncUI, switching **on** RsyncUI adds the following flags. You may change the backup directory to any location you want.
 
 {{< figure src="/images/important/backup.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+##### The snapshot option
+
+Using snapshots requiere that the latest version 3.x of `rsync` is installed. Please refer to the *Snapshots* section how to enable and use snapshots.
 
 #### Remote servers
 

@@ -6,7 +6,10 @@ menu: { main: { weight: 20 } }
 
 {{< alert color="warning" >}}
 
-From version 2.4.x, the `--delete` parameter is not a default parameter adding new tasks. Refer to the *Important* section how to disable the `--delete` parameter for your tasks in current version 2.3.9 of RsyncUI. Disable the `--delete` parameter means that rsync will **not** delete any files in the **destination**. 
+Since version 2.4.x, the `--delete` parameter is no longer set as a default parameter when adding new tasks. Please refer to the *Important* section for instructions on disabling the `--delete` parameter for your tasks in the current version of RsyncUI. Disabling the `--delete` parameter will prevent rsync from deleting any files in the **destination** directory. 
+
+If you are new to `rsync`, I strongly recommend reading the *Important* section as a minimum.
+
 
 {{< /alert >}}
 

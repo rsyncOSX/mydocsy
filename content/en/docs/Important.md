@@ -48,6 +48,11 @@ And then toggle the *Remove default rsync parameter* --delete toggle. After togg
 
 {{< figure src="/images/important/delete3.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+#### The backup option
+
+Rsync supports a backup flag. By, in RsyncUI, switching **on** RsyncUI adds the following flags. You may change the backup directory to any location you want.
+
+{{< figure src="/images/important/backup.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 #### Remote servers
 

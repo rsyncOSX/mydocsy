@@ -4,6 +4,13 @@ linkTitle: Documentation
 menu: { main: { weight: 20 } }
 ---
 
+{{< alert color="warning" >}}
+
+From version 2.4.x, the `--delete` parameter is not a default parameter adding new tasks. Refer to the *Important* section how to disable the `--delete` parameter for your tasks in current version 2.3.9 of RsyncUI. Disable the `--delete` parameter means that rsync will **not** delete any files in the **destination**. 
+
+{{< /alert >}}
+
+
 *RsyncUI* is a macOS application developed using Swift and SwiftUI, designed for macOS Sonoma and subsequent versions. It leverages the command-line tool rsync for file synchronization. Notably, rsync executes the synchronization tasks, while RsyncUI provides a graphical user interface (GUI) on top of rsync. RsyncUI is *digitally signed* and *notarized* by Apple. RsyncUI is 100% open-source software and will remain absolutely free for all time.
 
 #### Privacy statement

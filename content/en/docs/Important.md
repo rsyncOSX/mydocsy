@@ -18,13 +18,38 @@ Before executing a new task in RsyncUI, please perform an estimation run, a `--d
 
 For instructions on executing an estimation run, refer to the *New tasks* or *Getting started* section.
 
-### The --delete parameter and new tasks
+#### The --delete parameter and new tasks
+
+{{< alert color="warning" >}}
+
+The `--delete` parameter causes rsync to keep the source and destination in sync. If a file is deleted in source, the `--delete` parameter causes rsync to delete the file in the destination as well. If you keep the `--delete` flag enabled, you may also switch on the *Backup* parameter. The *Backup* causes rsync to explicit save all files within a backup catalog before any changes.
+
+{{< /alert >}}
 
 The `--delete` parameter is a default parameter set by RsyncUI. It instructs rsync to maintain synchronization between the source and destination. Additionally, it instructs rsync to delete all files in the destination that are not present in the source.
 
 Default parameters set by RsyncUI to rsync can be disabled task by task. However, if you decide to disable a default parameter, be certain you understand the resulting outcome. A disabled default parameter can be reenabled.
 
-### Remote servers
+I asked ChatGPT about the `--delete` parameter as a default parameter to rsync, and the answer is:
+
+*The --delete parameter in rsync is not enabled by default to prevent accidental data loss. It deletes files in the destination that are no longer present in the source, which can be risky if used unintentionally. To use it, you must explicitly include --delete in your command.*
+
+##### How to disable the --delete parameter
+
+Select the *Rsync parameters* from the main sidebar menu. Then select the **Home** button on the toolbar.
+
+{{< figure src="/images/important/delete1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Select the task for which you want to disable the `--delete` parameter.
+
+{{< figure src="/images/important/delete2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+And then toggle the *Remove default rsync parameter* --delete toggle. After toggle, **remeber to update the task** by the toolbar icon.
+
+{{< figure src="/images/important/delete3.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
+#### Remote servers
 
 RsyncUI compels data transfer via SSH if the destination is a remote server. The parameter `-e ssh` to rsync enables data transfer to be tunneled via SSH. It appears that recent versions of rsync or SSH do not require this parameter, but for safety, RsyncUI appends it if the destination is a remote server.
 
@@ -32,7 +57,7 @@ Through the SSH tunnel, the transfer is encrypted when transmitted over a networ
 
 Refer to the *Passwordless login* section for further information on SSH and SSH-keys. This feature cannot be disabled.
 
-### Safety precautions
+#### Safety precautions
 
 `rsync` is a powerful tool, but improper usage can cause damage and data loss. RsyncUI incorporates various verification and checks. However, it is your responsibility to verify that a new task performs as intended before executing it.
 
@@ -46,7 +71,7 @@ If you inadvertently modify the snapshot number, please thoroughly comprehend th
 
 If you permit RsyncUI to handle the task, you can reasonably expect a safe outcome. RsyncUI is a complimentary and open-source application. Kindly review the MIT license.
 
-### Aborting Tasks
+#### Aborting Tasks
 
 Please be cognizant that this is an external task not under the control of RsyncUI. It executes the command-line tool `rsync`.
 RsyncUI monitors the task for progress and termination.

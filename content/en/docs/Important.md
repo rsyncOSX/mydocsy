@@ -26,7 +26,9 @@ In the current release 2.3.9, the `--delete` parameter is a default parameter wh
 
 The `--delete` parameter causes rsync to keep the *source* and *destination* in sync. If a file is deleted in source, the `--delete` parameter causes rsync to delete the file in the destination as well.
 
-If the `--delete` parameter is removed, there will be more data in *destination* when files in *source* are deleted.
+If the delete parameter is removed, there will be more data in *destination* when files in *source* are deleted.
+
+You have to decide if the delete parameter is enabled or not. To keep the *source* and *destination* in 100% sync, the delete parameter must be enabled.
 
 {{< /alert >}}
 

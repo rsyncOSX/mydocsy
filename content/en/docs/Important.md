@@ -60,7 +60,7 @@ There are a two options to automatically save changes to a file when it is chang
 
 ##### The backup option
 
-Rsync supports a backup flag. By, in RsyncUI, switching **on** RsyncUI adds the following flags. You may change the backup directory to any location you want.
+Rsync supports a backup flag. By, in RsyncUI, switching **on** RsyncUI adds the following parameters. You may change the backup directory to any location you want.
 
 {{< figure src="/images/important/backup.png" alt="" position="center" style="border-radius: 8px;" >}}
 

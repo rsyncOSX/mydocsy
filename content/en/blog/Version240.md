@@ -1,14 +1,14 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.4.0"
-date = "2025-03-19"
+date = "2025-03-20"
 tags = ["changelog","version 2.4.0"]
 categories = ["changelog"]
 +++
 
 ### Version 2.4.x (build 14x) - work in progress
 
-There is also a release candidate for version 2.4.x. The release candidate is updated when there are new updates. This version is expected to be released by the end of March or the beginning of April 2025. The primary repository on GitHub is always updated with the latest development.
+There is also a release candidate for version 2.4.x. This version is expected to be released before end of March. The main repository on GitHub is always updated with the latest development.
 
 #### Tagging of data to be synchronized
 
@@ -31,6 +31,8 @@ And there is some cleanup within the *Add and update tasks* view as well.
 {{< figure src="/images/240/url.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 #### Verify a remote
+
+Reduced the info to what is requiered only. 
 
 {{< figure src="/images/240/verify1.png" alt="" position="center" style="border-radius: 8px;" >}}
 

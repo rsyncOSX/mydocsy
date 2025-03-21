@@ -29,5 +29,3 @@ The user can specify a selected SSH keypath and identityfile that will apply to 
 - **Port Number:** The user can specify the port number through which SSH communicates. The default port number is `22`.
 
 If global SSH parameters are set, they will apply to all configurations. It is possible to specify different SSH parameters for each task.
-
-**Global SSH Keypath and Identityfile in Use:**

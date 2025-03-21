@@ -47,18 +47,14 @@ URL´s must start with `rsyncuiapp://`. The two URL´s actions are:
       
 There is a count down in  *six* seconds to abort the synchronize task after estimate. The count down may be bypassed by toggle switch in Settings view.
  
-{{< figure src="/images/url/count.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 **Note**: If only the default profile is in use, parameter is `profile=default`
 
 **Note**: If there is space in Synchronize ID, like "Pictures backup", the URL-parameter is `id=Pictures_backup`. RsyncUI automatically replaces the `_` with space when searching for the ID.
 
 #### View URLs
 
-You may copy the correct URLs and save the URLs in e.g Notepad for easy access to start a synchronize task.
+You may copy the correct URLs and save the URLs in e.g Notepad for easy access to start a synchronize task. 
 
-{{< figure src="/images/url/viewurl.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-##### Errors in URL link
+#### Errors in URL link
 
 If RsyncUI encounters an invalid URL link, it will generate errors. Only well-defined URLs (specifically those supported by RsyncUI) are processed and executed. All URLs are validated as valid, but only defined URLs for RsyncUI are actually executed.

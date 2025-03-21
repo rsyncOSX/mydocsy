@@ -25,10 +25,7 @@ In forthcoming versions of RsyncUI, both methods will be employed. However, if C
 
 #### ChatGPT
 
-I also asked ChatGPT (by Siri) what is recommended of `NotificationCenter.default.publisher` and  `NotificationCenter.default.addObserver`. And ChatGPT responded:
-.
-
-*In Swift, using NotificationCenter.default.publisher(for:) with the Combine framework is generally preferred for observing notifications, as it offers a more modern, type-safe, and declarative approach compared to the traditional addObserver method. The Combine-based method allows for better memory management and cleaner code, reducing the risk of retain cycles and the need for manual unsubscription. For more details, refer to Apple's documentation on NotificationCenter publishers.*
+ChatGPT about what is recommended of `NotificationCenter.default.publisher` and  `NotificationCenter.default.addObserver`. *In Swift, using NotificationCenter.default.publisher(for:) with the Combine framework is generally preferred for observing notifications, as it offers a more modern, type-safe, and declarative approach compared to the traditional addObserver method. The Combine-based method allows for better memory management and cleaner code, reducing the risk of retain cycles and the need for manual unsubscription. For more details, refer to Apple's documentation on NotificationCenter publishers.*
 
 Until I gain further insights into Apple's future plans for Combine, `NotificationCenter.default.publisher(for:)` remains the preferred solution in RsyncUI.
 

@@ -18,7 +18,7 @@ are executed on the main thread.
 
 #### Swift concurrency and asynchronous execution
 
-Concurrency and asynchronous execution are important parts in Swift. The latest version of Swift simplifies the writing of asynchronous code using Swift's `async` and `await` keywords, as well as the `actor` protocol for executing work on other threads not blocking the main thread. The Swift concurrency model is intricate, and it requires, at least for me, dedicated time and study to grasp its fundamentals. 
+Concurrency and asynchronous execution are important parts in Swift. The latest version of Swift simplifies the writing of asynchronous code using Swift `async` and `await` keywords, as well as the `actor` protocol for executing work on other threads not blocking the main thread. The Swift concurrency model is intricate, and it requires, at least for me, dedicated time and study to grasp its fundamentals. 
 
 RsyncUI does not requiere concurrency, but concurrency is automatically introduced by using `actors` , `async` and `await` keywords. It is an objective to execute most work synchronous on the main thread as long as it does not block, like GUI updates, which are performed on the main thread.
 
@@ -28,7 +28,7 @@ Swift version 6 introduced strict concurrency checking. By enabling *Swift 6 lan
 
 Quote swift.org: *"More formally, a data race occurs when one thread accesses memory while the same memory is being modified by another thread. The Swift 6 language mode eliminates these issues by preventing data races at compile time."*
 
-RsyncUI adheres to the new concurrency model of Swift 6. The majority of its work is performed on the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI), it is advantageous to execute these tasks on a other thread not blocking the main thread. Executing  resource-intensive tasks on the main thread significantly increases the likelihood of  blocking the GUI and the application's unresponsiveness.
+RsyncUI adheres to the new concurrency model of Swift 6. The majority of its work is performed on the `@MainActor`, which corresponds to the main thread. If an macOS application performs resource-intensive tasks behind the graphical user interface (GUI), it is advantageous to execute these tasks on an other thread not blocking the main thread. Executing  resource-intensive tasks on the main thread significantly increases the likelihood of  blocking the GUI and the application's unresponsiveness.
 
 #### Other threads and RsyncUI
 
@@ -43,7 +43,7 @@ The following tasks are executed on a single isolated thread, adhering to the `a
 - preparing data from the logfile, not logrecords, for display
 - checking for updates to RsyncUI
 
-These tasks are executed on background threads. Asynchronous execution of these tasks ensures that GUI updates on the main thread are not blocked. The runtime environment handles scheduling and execution, guaranteeing that all functions within an actor are  `nonisolated func`, which, to my understanding, guarantees their execution on the global executor and prevents blocking of the main thread.
+These tasks are executed on other threads than the`@MainActor`. Asynchronous execution of these tasks ensures that GUI updates on the main thread are not blocked. The runtime environment handles scheduling and execution, guaranteeing that all functions within an actor are  `nonisolated func`, which, to my understanding, guarantees their execution on the global executor and prevents blocking of the main thread.
 
 ```swift
 actor Getversionofrsync {

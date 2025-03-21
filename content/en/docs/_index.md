@@ -6,7 +6,9 @@ menu: { main: { weight: 20 } }
 
 {{< alert color="warning" >}}
 
-From version 2.4.1, the `--delete` parameter is no longer set as a default parameter when adding new tasks.  If you are new to `rsync`, I strongly recommend reading the *Important* section as a minimum.
+From version 2.4.1, the `--delete` parameter is no longer set as a default parameter when adding new tasks.  If you are new to `rsync`, I strongly recommend reading the *Important* section as a minimum. 
+
+The documentation that needs to be updated within the next few days, in conjunction with the GUI changes.
 
 {{< /alert >}}
 

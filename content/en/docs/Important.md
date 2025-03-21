@@ -20,23 +20,23 @@ For instructions on executing an estimation run, refer to the *New tasks* or *Ge
 
 #### The --delete parameter
 
-From version 2.4.1, this parameter is no longer set as a parameter when adding new tasks.
+From version 2.4.1, this parameter is no longer set as a parameter when adding *new tasks*. 
 
 {{< alert color="warning" >}}
 
-The `--delete` parameter causes rsync to keep the *source* and *destination* in sync. If a file is deleted in source, the `--delete` parameter causes rsync to delete the file in the destination as well. If the delete parameter is removed, there will be more data in *destination* when files in *source* are deleted.
+The `--delete` parameter causes rsync to keep the *source* and *destination* in sync. If a file is deleted in source, the `--delete` parameter causes rsync to delete the file in the destination as well. If the delete parameter is disabled, there will be more data in *destination* when files in *source* are deleted.
 
 You have to decide if the delete parameter is enabled or not. To keep the *source* and *destination* in 100% sync, the delete parameter must be enabled.
 
 {{< /alert >}}
 
-Default parameters set by RsyncUI to rsync can be disabled and re enabled task by task. However, if you decide to disable a default parameter, be certain you understand the resulting outcome. 
+Default parameters set by RsyncUI to rsync can be disabled and re enabled task by task. However, if you decide to disable or re enable a default parameter, be certain you understand the resulting outcome. 
 
 ChatGPT about the `--delete` parameter as a default parameter to rsync: *The --delete parameter in rsync is not enabled by default to prevent accidental data loss. It deletes files in the destination that are no longer present in the source, which can be risky if used unintentionally. To use it, you must explicitly include --delete in your command.*
 
 ##### How to disable and re enable the --delete parameter
 
-Select the *Rsync parameters* from the main sidebar menu.  Select the task for which you want to disable the `--delete` parameter. And then toggle the *Remove default rsync parameter* --delete toggle. After toggle, **remember to update the task** by the toolbar icon.
+Select the *Rsync parameters* from the main sidebar menu.  Select the task for which you want to disable the `--delete` parameter. And then toggle the *Remove parameters to rsync* --delete toggle. After toggle, **remember to update the task** by the toolbar icon.
 
 {{< figure src="/images/important/deleteparameter.png" alt="" position="center" style="border-radius: 8px;" >}}
 

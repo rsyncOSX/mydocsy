@@ -13,7 +13,7 @@ and preventing data loss, particularly if the remote storage is **not** a Git se
 
 Git is a superior tool for version control. However, in certain situations, creating a Git repository may not be feasible, and this function may prove useful. As a reminder, the Verify function is designed for multiple Macs synchronizing data to a single remote server as a backup. It also assists in deciding whether to push or pull changes to keep the local repository updated.
 
-The verification applies only to remote destinations on servers.
+The verification applies only to remote destinations on servers
 
 {{< alert color="warning" >}}
 
@@ -90,4 +90,4 @@ YXcstpoguax
 
 {{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI indicates  local is more updated than my local repository. However, this is merely an advisory. I must verify this independently to ensure my certainty.
+RsyncUI indicates local is more updated. However, this is merely an advisory. I must verify this independently to ensure my certainty.

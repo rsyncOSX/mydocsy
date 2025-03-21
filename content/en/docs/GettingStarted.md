@@ -8,9 +8,7 @@ categories = ["general information"]
 
 For new users, kindly refer to the *Important* section. Additionally, please find information about the latest version of rsync to install, refer to the *Latest version of rsync* section .
 
-The primary Sidebar menu is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user. 
-
-See last on this page what it looks like.
+The primary Sidebar menu is context-sensitive. The rationale behind a context-sensitive Sidebar menu is to conceal menu options that may be distracting to the user.  See last on this page about the sidebar menu options.
 
 #### New Tasks and Verification
 
@@ -33,11 +31,9 @@ After adding a task, you can execute a `--dry-run` by double-clicking on the tas
 
 {{< alert color="warning" >}}
 
-A verification of a new task can also be executed by opening the Tasks or Rsync parameters view from the main sidebar, selecting the task, and choosing the "play" icon on the toolbar. This action will execute an estimation run, a `--dry-run`, to verify the task.
+A verification of a new task can also be executed by opening the Tasks or Rsync parameters view from the main sidebar, selecting the task, and choosing the "play" icon on the toolbar. This action will execute an estimation run, a \`--dry-run\`, to verify the task.
 
 {{< /alert >}}
-
-You may also select the new task from the Rsync parameters view, copy and paste the synchronization string into a terminal view, and execute the rsync command. The `--dry-run` parameter is appended as default in this view.
 
 ##### Aborting a task
 
@@ -45,7 +41,7 @@ Please note that this is an external task not controlled by RsyncUI, which execu
 
 The user can abort a task at any time. However, it is essential to allow the task to complete and perform any necessary cleanup operations before starting a new task. This process may take a few seconds, and if not, the applications may become unresponsive.
 
-#### The Main Sidebar Menu
+#### The Sidebar Menu options
 
 There are three Sidebar menu options that are contingent upon the properties of a task. 
 
@@ -59,14 +55,15 @@ This is the minimum. If you exclusively utilize RsyncUI for synchronizing tasks 
 
 {{< figure src="/images/started/minimumoptions.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+##### Snapshot and restore
+
+This is snapshot and restore, a snapshot task with destination on a remote server. That is why the restore menu is avaliable as well. The *Verify remote* is only for synchronization tasks with destination on a remote server. That is why it is not present.
+
+{{< figure src="/images/started/snapshotandrestore.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ##### Full Sidebar Menu
 
 This is all menu options, a snapshot task and synchronize task, both with destination on a remote server.
 
 {{< figure src="/images/started/allmenuoptions.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-##### Snapshot and restore
-
-This is snapshot and restore, a snapshot task with destination on a remote server. That is why the restore menu is avaliable as well. The *Verify remote* is only for synchronization tasks with destination on a remote server. That is why it is not present.
-
-{{< figure src="/images/started/snapshotandrestore.png" alt="" position="center" style="border-radius: 8px;" >}}

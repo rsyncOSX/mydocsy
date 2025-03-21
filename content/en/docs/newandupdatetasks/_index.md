@@ -9,7 +9,7 @@ A task requires a minimum of a local catalog and a remote catalog.
 
 {{< alert color="warning" >}}
 
-Always verify the result of a new task before executing it using the `--dry-run` option, which performs an estimation run. After adding a task, select the task and then click the `play` icon on the toolbar to perform an estimation run.
+Always verify the result of a new task before executing it using the \`--dry-run\` option, which performs an estimation run. After adding a task, select the task and then click the \`play\` icon on the toolbar to perform an estimation run.
 
 {{< /alert >}}
 
@@ -27,9 +27,9 @@ Select the tasks you wish to delete and delete them from the Edit menu or by pre
 
 The following data pertains to tasks:
 
-##### Task
+##### Action
 
-- `synchronize`: Default task that maintains synchronization between the source and destination.
+- `synchronize`: Default action that maintains synchronization between the source and destination.
 - `snapshot`: Saves changes and deletions prior to a synchronize operation.
 - `syncremote`: Synchronizes a remote source to a local volume.
 
@@ -52,11 +52,7 @@ The following data pertains to tasks:
 - Remote username: Username for login to the remote server.
 - Remote server: Either server name or IP address for the remote server.
 
-**Copy and Paste:**
+### Copy and Paste Tasks
 
-Shortcuts for copy and paste are `⌘C` and `⌘V`, or from the Edit menu. The copy and paste operation creates a copy of the selected tasks and marks them with the "copy" status.
+Shortcuts for copy and paste are `⌘C` and `⌘V`, or from the Edit menu. The copy and paste operation creates a copy of the selected tasks and marks them with the "copy" status. The copied tasks retain all parameters.
 
-The copied tasks retain all parameters.
-
-{{< figure src="/images/add/copy.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/add/paste.png" alt="" position="center" style="border-radius: 8px;" >}}

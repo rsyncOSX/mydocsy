@@ -6,9 +6,7 @@ menu: { main: { weight: 20 } }
 
 {{< alert color="warning" >}}
 
-From version 2.4.1, the `--delete` parameter is no longer set as a default parameter when adding new tasks.  If you are new to `rsync`, I strongly recommend reading the *Important* section as a minimum. 
-
-The documentation that needs to be updated within the next few days, in conjunction with the GUI changes.
+From version 2.4.1, the \`—delete\` parameter is no longer set as a default parameter when adding *new* tasks.  If you are new to `rsync`, I strongly recommend reading the *Important*  section as a minimum. 
 
 {{< /alert >}}
 
@@ -29,7 +27,3 @@ brew install --cask rsyncui
 ```
 
 If installed via Homebrew, the SHA-256 hash is automatically verified. For downloads from GitHub, please verify the SHA-256 hash manually.
-
-#### Getting Started
-
-For instructions on how to begin using RsyncUI, refer to the *Getting started* section. If you are unfamiliar with RsyncUI and the command-line tool `rsync`, it is recommended to start with the default settings and gain a fundamental understanding of RsyncUI before modifying parameters and exploring Deep links and embedded widgets.

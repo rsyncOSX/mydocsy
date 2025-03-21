@@ -1,18 +1,16 @@
 +++
 author = "Thomas Evensen"
-title = "Version 2.4.0"
-date = "2025-03-20"
+title = "Version 2.4.1"
+date = "2025-03-21"
 tags = ["changelog","version 2.4.0"]
 categories = ["changelog"]
 +++
 
-### Version 2.4.x (build 14x) - work in progress
+### Version 2.4.1 (build 141) - 21 March 2025
 
-There is also a release candidate for version 2.4.x. This version is expected to be released before end of March. The main repository on GitHub is always updated with the latest development.
+It is imperative that RsyncUI tags tasks with data to be synchronized correctly. If the tagging fails, there may be local data that is not synchronized. RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15. There is a new function for parsing output from rsync in version 2.4.1.
 
-#### Tagging of data to be synchronized
-
-It is imperative that RsyncUI tags tasks with data to be synchronized correctly. If the tagging fails, there may be local data that is not synchronized. RsyncUI supports the latest version of rsync and the older default version of rsync included in macOS 14 and macOS 15. There is a new function for parsing output from rsync in version 2.4.x.
+This is most likely the last release before summer 2025. If bugs are reported, they will be fixed.
 
 ####  GUI updates
 
@@ -21,6 +19,8 @@ The sole internal refactoring and update in this release is parsing the output o
 #### Parameters to rsync
 
 The Parameters view for rsync is consolidated into one view which includes, pr task, user added parameters for rsync, ssh parameters, backup switch and remove parameters.  The `--delete` parameter is from this version **not** a default parameter for new tasks. But, the `--delete` parameter may be added within the *Parameters for rsync* view.
+
+Please read the Important section about the delete parameter.
 
 {{< figure src="/images/240/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -32,7 +32,7 @@ And there is some cleanup within the *Add and update tasks* view as well.
 
 #### Verify a remote
 
-Reduced the info to what is requiered only. 
+Reduced the info to what is required only. 
 
 {{< figure src="/images/240/verify1.png" alt="" position="center" style="border-radius: 8px;" >}}
 

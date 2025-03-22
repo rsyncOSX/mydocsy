@@ -16,10 +16,11 @@ RsyncUI supports synchronizing data to:
 
 - local attached disk
 - remote servers on the Internet or local LAN
+    - requiere *passwordless login*  by ssh-key
 
 ##### Local attached disk
 
-RsyncUI can synchronize your data to a local attached disk, remote servers on the Internet, and on your local LAN. If you only want to synchronize data to a local attached disk, connect the disk, add the source and destination, and you are ready for your first task.
+RsyncUI can synchronize your data to a local attached disk. If you only want to synchronize data to a local attached disk, connect the disk, add the source and destination, and you are ready for your first task.
 
 ##### Remote server and passwordless login
 
@@ -27,7 +28,7 @@ If you want to synchronize data to a server, on the Internet, or your local LAN,
 
 ##### Verify new tasks
 
-After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second subsequent double-click will execute the real task, which is synchronize data from local to remote.
+*Always* verify a new task. After adding a task, you can execute a `--dry-run` by double-clicking on the task in the main view. The second subsequent double-click will execute the real task, which is synchronize data from local to remote.
 
 {{< alert color="warning" >}}
 
@@ -35,7 +36,7 @@ A verification of a new task can also be executed by opening the Tasks or Rsync 
 
 {{< /alert >}}
 
-##### Aborting a task
+##### Aborting tasks
 
 Please note that this is an external task not controlled by RsyncUI, which executes the command-line tool `rsync`. RsyncUI monitors the task for progress and termination.
 
@@ -43,7 +44,7 @@ The user can abort a task at any time. However, it is essential to allow the tas
 
 #### The Sidebar Menu options
 
-There are three Sidebar menu options that are contingent upon the properties of a task. 
+There are three Sidebar menu options that are contingent upon the properties of a task. It is sufficient as long as one of the tasks satisfies one of the prerequisites.
 
 - *Snapshot*: this option is exclusively available for snapshot tasks
 - *Restore*: this option is only available for synchronize- and snapshot tasks where *the destination* is located on a *remote server*

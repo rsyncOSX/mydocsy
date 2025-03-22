@@ -25,8 +25,6 @@ Upon launching RsyncUI, it automatically opens the *Synchronize* view. Selecting
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/images/tasks/startestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 The outcome of an estimate is displayed, with blue numbers indicating data that requires synchronization. To execute the actual synchronize tasks, directly from the summarized estimated view, by pressing the left arrow (shortcut `⌘R`) on the toolbar.
 
 By selecting a row within the estimated view, you will be presented with the detailed information.

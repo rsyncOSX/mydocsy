@@ -5,7 +5,8 @@ date = "2025-02-11"
 tags = ["new tasks","profile"]
 categories = ["synchronize"]
 +++
-A task requires a minimum of a local catalog and a remote catalog.
+
+A task requires a minimum of a local catalog, the source, and a remote catalog, the destination.
 
 {{< alert color="warning" >}}
 
@@ -29,9 +30,9 @@ The following data pertains to tasks:
 
 ##### Action
 
-- `synchronize`: Default action that maintains synchronization between the source and destination.
-- `snapshot`: Saves changes and deletions prior to a synchronize operation.
-- `syncremote`: Synchronizes a remote source to a local volume.
+- `synchronize`: default action for synchronize data from the source to the destination
+- `snapshot`: saves changes and deletions prior to a synchronize operation
+- `syncremote`: synchronize data from a remote source to a local volume
 
 ##### Catalog Parameters
 

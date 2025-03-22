@@ -20,7 +20,7 @@ RsyncUI is a desktop application only, there is no server component. It does not
 
 For the most up-to-date information, please refer to the [changelog](/blog/). RsyncUI is constructed as a Universal macOS Binary, ensuring native execution on Apple Silicon and Intel-based Mac computers.
 
-RsyncUI can be installed via Homebrew or download from GitHub (https://github.com/rsyncOSX/RsyncUI/releases):
+RsyncUI can be installed via Homebrew or download from GitHub (https://github.com/rsyncOSX/RsyncUI/releases).
 
 ```bash
 brew install --cask rsyncui

@@ -38,7 +38,7 @@ URL´s must start with `rsyncuiapp://`. The two URL´s actions are:
 | Action                                             | URL                                                                     |
 |----------------------------------------------------|-------------------------------------------------------------------------|
 | Estimate all tasks, automatically synchronize data | `rsyncuiapp://loadprofileandestimate?profile=Pictures`                  |
-| Verify  task, Synchronize ID=Pictures backup       | `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup` |
+| Verify  a task                                     | `rsyncuiapp://loadprofileandverify?profile=Pictures&id=Pictures_backup` |
 
 - *Estimate all tasks and automatically synchronize data*
   - load profile, estimate all tasks and automatically synchronize data

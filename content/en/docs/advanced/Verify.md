@@ -90,4 +90,4 @@ YXcstpoguax
 
 {{< figure src="/images/verify/verifycompleted.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI indicates local is more updated. However, this is merely an advisory. I must verify this independently to ensure my certainty.
+RsyncUI indicates remote is more updated. However, this is merely an advisory. I must verify this independently to ensure my certainty.

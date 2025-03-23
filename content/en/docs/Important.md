@@ -26,7 +26,7 @@ From version 2.4.1, this parameter is no longer set as a parameter when adding *
 
 {{< alert color="warning" >}}
 
-The \`—delete\` parameter enables rsync to maintain 100% synchronization between the source and destination directories. When a file is deleted from the source directory, the \`—delete\` parameter instructs rsync to delete the corresponding file from the destination directory. Conversely, if the \`—delete\` parameter is disabled, the destination directory will contain additional data after deleting files from the source directory.
+The \`—delete\` parameter enables rsync to maintain 100% synchronization between the source and destination. When a file is deleted from the source, the \`—delete\` parameter instructs rsync to delete the corresponding file from the destination. Conversely, if the \`—delete\` parameter is disabled, the destination  will contain additional data after deleting files from the source.
 
 Therefore, it is essential to determine whether the \`—delete\` parameter is enabled or disabled. Enabling the \`—delete\` parameter ensures complete synchronization between the source and destination directories.
 

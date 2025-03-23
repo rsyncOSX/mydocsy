@@ -20,8 +20,6 @@ If the "file.txt" is deleted from the initial snapshot, the filesystem handles t
 
 In RsyncUI, even if all snapshots are marked for deletion, the first and last snapshots are not deleted.
 
-**Note:** Snapshot functionality is not available in a rsync daemon setup.
-
 ### Definition of a Snapshot:
 
 A snapshot is a saved state or backup of data at a specific point in time. Each snapshot is synchronized with the local catalog at the time of creation.
@@ -54,19 +52,19 @@ where
 - `/Users/thomas/data/` is *the source* catalog, only read by rsync
 - `/Volume/backup/snapshots/` is *the destination* catalog where snapshots are synchronized
 
-**Snapshot Creation**
+##### Snapshot Creation
 
-To create a snapshot task, select "snapshot" as the task type in the *Add tasks* section. Do not copy and paste the command for execution within a terminal window. RsyncUI automatically saves the snapshot number "n" to the task. This number represents the next available snapshot number and is used to calculate the rsync parameter. The value of "n" is retrieved from the configuration.
+To create a snapshot task, select "snapshot" as the action in the *Add tasks* section. Do not copy and paste the command for execution within a terminal window. RsyncUI automatically saves the snapshot number "n" to the task. This number represents the next available snapshot number and is used to calculate the rsync parameter. The value of "n" is retrieved from the configuration.
 
-**Snapshot Administration**
+##### Snapshot Administration
 
 Snapshot administration is crucial to maintain an organized and efficient backup system. It involves deleting unnecessary or irrelevant snapshots to prevent clutter and simplify the management of the backup space. Regularly reviewing and deleting snapshots is essential to ensure that only the most relevant data is retained.
 
-**Deleting Snapshots**
+##### Deleting Snapshots
 
 Deleting snapshots is a destructive operation that should be performed with caution. It is important to have a plan in place to determine which snapshots to keep and which to delete. RsyncUI provides a simple plan for deleting and keeping snapshots.
 
-**The Plan for Keep and Delete**
+##### The Plan for Keep and Delete
 
 Selecting the "Tag" button evaluates all snapshots based on the date within the log record. Based on the selected plan and date, snapshots are either tagged with "keep" or "delete." Snapshots tagged with "delete" are also preselected for deletion. To delete the marked snapshots, select the "Delete" button.
 
@@ -85,6 +83,6 @@ The plan is based on three parts, where the parameter `plan` has an effect on *p
   - if `plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
   - if `plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
 
-### Tagging and Deleting Snapshots
+#### Tagging and Deleting Snapshots
 
 It is recommended to optimize the number of snapshots. Select a plan, tag the snapshots, and delete the snapshots marked for deletion.

@@ -10,8 +10,8 @@ The following SSH tools are utilized: `ssh-keygen` and `ssh-copy-id`. RsyncUI pr
 
 The SSH functions facilitate two methods:
 
-- Private and public SSH-key pairs based on default SSH values for RSA keys (`~/.ssh/id_rsa`)
-- Private and public SSH-key pairs based on user-selected values (`~/.ssh_rsyncosx/rsyncosx`)
+- private and public SSH-key pairs based on default SSH values for RSA keys (`~/.ssh/id_rsa`)
+- private and public SSH-key pairs based on user-selected values (`~/.ssh_rsyncosx/rsyncosx`)
 
 If creating a new public SSH-key pair based on default SSH values for RSA keys, RsyncUI does not add any parameters to the rsync
 command because these are default values. SSH parameters are added to the rsync command only when the second method is selected.

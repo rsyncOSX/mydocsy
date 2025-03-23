@@ -11,19 +11,7 @@ determined by whether the rsync operation is performed over a network connection
 
 Users have the ability to modify default parameters as necessary. Parameters to rsync are stored in tasks, including a local ssh parameter if set. The local ssh parameter overrides a global ssh parameter if set.
 
-##### SSH-key Handling
-
-If default ssh-key values are employed and no information regarding ssh-keys is provided in RsyncUI, the parameter `-e ssh` is
-appended to the rsync command to ensure data is tunneled and encrypted using ssh. This applies exclusively to remote servers and data restoration from remote servers.
-
-##### Task-specific SSH Parameters
-
-Task-specific ssh parameters override global ssh parameters configured in the user settings.
-
-- ssh port: Specify if ssh utilizes a port other than the standard port 22.
-- ssh-keypath and identity file: Typically, these are `.ssh/id_rsa`. Set only if alternative keypath and identity file are to be utilized by ssh.
-
-##### Adding Parameters to Rsync
+##### Task-specific Parameters to rsync
 
 To add a parameter to rsync, enter it in the corresponding field. RsyncUI supports seven user-defined parameters. Users can add parameters using any of the fields. However, users are responsible for verifying the accuracy of the added parameters. If an incorrect parameter is added, rsync will generate an error message.
 
@@ -38,6 +26,15 @@ Parameters to rsync are typically constructed as follows. The following are exam
     - `--dry-run`: Executes a simulated synchronization without modifying the files.
 
 For a comprehensive list of parameters for `rsync`, please refer to the official rsync documentation.
+
+##### Task Specific SSH parameter 
+
+If default ssh-key values are employed and no information regarding ssh-keys is provided in RsyncUI, the parameter `-e ssh` is appended to the rsync command to ensure data is tunneled and encrypted using ssh. This applies exclusively to remote servers and data restoration from remote servers.
+
+Task-specific ssh parameters override global ssh parameters configured in the user settings.
+
+- ssh-port: specify if ssh utilizes a port other than the default port 22
+- ssh-keypath and identity file: typically, these are `.ssh/id_rsa`, set only if alternative keypath and identity file are to be utilized by ssh
 
 ##### Backup Switch
 

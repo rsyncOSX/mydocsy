@@ -6,7 +6,7 @@ tags = ["quick task"]
 categories = ["synchronize"]
 lastmod = "2024-03-18"
 +++
-Use QuickTask for quickly synchronize files to either local or remote storage. QuickTask will save the last executed quick task as default values. Default values can be cleared by the toolbar function.
+Use QuickTask for quickly copy or transfer files to either local or remote storage. QuickTask will save the last executed quick task as default values. Default values can be cleared by the toolbar function.
 
 There are two types of quick tasks:
 

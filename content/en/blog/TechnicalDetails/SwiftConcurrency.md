@@ -46,7 +46,7 @@ The following tasks are executed on a single isolated thread, adhering to the `a
 These tasks are executed on other threads than the`@MainActor`. Asynchronous execution of these tasks ensures that GUI updates on the main thread are not blocked. The runtime environment handles scheduling and execution, guaranteeing that all functions within an actor are  `nonisolated func`, which, to my understanding, guarantees their execution on the global executor and prevents blocking of the main thread.
 
 ```swift
-actor Getversionofrsync {
+actor GetversionofRsyncUI {
     nonisolated func getversionsofrsyncui() async -> Bool {
         do {
             let versions = await DecodeGeneric()
@@ -76,7 +76,7 @@ The execution of the calling function is suspended until the function `getversio
 func somefunction() {
     ....
     Task {
-      newversion.notifynewversion = await Getversionofrsync().getversionsofrsyncui()
+      newversion.notifynewversion = await GetversionofRsyncUI().getversionsofrsyncui()
 	}
     ....
 }

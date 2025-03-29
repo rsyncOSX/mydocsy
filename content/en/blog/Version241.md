@@ -40,6 +40,10 @@ Reduced the info to what is required only.
 
 ### Future plans for RsyncUI
 
+*Update:* Development has commenced. The graphical user interface (GUI) portion is relatively straightforward, but the scheduling tracking aspect presents some challenges. The tracking component must be flexible enough to accommodate changes while maintaining minimal memory allocation. The primary objective is to track only the first schedule to execute. Upon completion of this task, the tracking will be extended to the next scheduled event. This process will continue indefinitely. Any modifications to the schedules or tracking data necessitate recalculations. Existing tracking entries will be canceled, and new entries will be added accordingly.
+
+Rest assured, the calendar function will be released during the summer months.
+
 What is the future for the development of RsyncUI? Following the release of version 2.4.x, the next version is likely to be released **after** the summer 2025. Of course, any bugs reported will be fixed. The spring and summer are quite busy as a bird photographer. After the release of version 2.4.x, I will focus on my other major hobby, bird photography. You can find a link to some of my photos on my [GitHub site](https://github.com/rsyncOSX/).
 
 However, I have some plans for the next major version of RsyncUI. By URL or Deep Links, RsyncUI will support loading any profile, estimating and executing synchronization of data. The next major version of RsyncUI will  most likely include a *calendar and scheduling of tasks*.  And, if you have any questions for me, don´t hesitate to contact me by email thomeven@gmail.com. 

@@ -12,9 +12,7 @@ categories = ["technical details"]
 
 The tagging of data to be synchronized is computed within the package ParseRsyncOutput, a local Swift Package for RsyncUI.
 
-Parts of the parsing of the output from rsync in version 2.3.9 is a kind of convoluted. The objective is to extract the numbers from rsync output as safely and effectively as possible. And there is from version 2.4.0 also a verification of the tagging, if the output from rsync is greater than 20 lines and tagging for data to synchronize is not set, an alert is thrown. Normally, if there are no data to synchronize output from rsync is about 20 lines.
-
-Extract numbers from a string containing letters and digits is from version 2.4.0 of RsyncUI is now a one line code. 
+From version 2.4.0, there is  a verification of the tagging, if the output from rsync is greater than 20 lines and tagging for data to synchronize is not set, an alert is thrown. Normally, if there are no data to synchronize output from rsync is about 20 lines. Extract numbers from a string containing letters and digits is from version 2.4.0 of RsyncUI is now a one line code. 
 
 Example: 
 
@@ -41,13 +39,11 @@ The function below extract numbers only from the input.
     }
 ```
 
-The tagging of data to be synchronized is computed within the package
-ParseRsyncOutput, a local Swift Package for RsyncUI. The parsing of the output of rsync is not particularly complex, and it is
-somewhat different for the latest version of rsync compared to the default versions of rsync.
+The parsing of the output of rsync is not particularly complex, and it is somewhat different for the latest version of rsync compared to the default versions of rsync.
 
 #### Latest version of rsync
 
-The trail of output from latest version of rsync is like:
+The trail of output from latest version of rsync, version 3.4.1, is like:
 
 ```
 ....
@@ -91,7 +87,7 @@ total size is 24788299  speedup is 58.55
 
 #### How does the tagging work
 
-The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers decide if there is tagging of data to be synchronized. The algorithm for tagging is refactored from version 2.3.9 to version 2.4.0.
+The output from rsync is parsed and numbers are extracted. After parsing of output, the numbers decide if there is tagging of data to be synchronized.
 
 ##### Latest version of rsync
 

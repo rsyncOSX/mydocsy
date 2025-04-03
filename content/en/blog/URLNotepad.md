@@ -7,8 +7,6 @@ categories = ["synchronize"]
 +++
 A few samples of URL´s I am executing from Notepad. URL´s must start with `rsyncuiapp://`, if not RsyncUI will not recognize the command.  My URL´s saved in Notepad for easy access and execution of my most used tasks. The Notepad page might also be saved as a PDF document which includes til URL links.
 
-{{< figure src="/images/url/notepad.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 ##### Sample URLs which I am using
 
 URLs for estimate and execute.

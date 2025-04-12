@@ -16,7 +16,7 @@ RsyncUI is a complimentary and open-source application. Kindly review the MIT li
 
 {{< /alert >}}
 
-Before executing a new task in RsyncUI, please perform an estimation run, a `--dry-run`, and inspect the result. If you inadvertently set an empty catalog as the source and the delete parameter is *enabled*, RsyncUI, via rsync, will delete all files in the destination.
+Before executing a new task in RsyncUI, please perform an estimation run, a `--dry-run`, and inspect the result. If you inadvertently set an empty catalog as the source and the *delete parameter* is *enabled*, rsync will delete all files in the destination.
 
 For instructions on executing an estimation run, refer to the *New tasks* or *Getting started* section.
 
@@ -34,7 +34,7 @@ Therefore, it is essential to determine whether the \`—delete\` parameter is e
 
 ChatGPT about the `--delete` parameter as a default parameter to rsync: *The --delete parameter in rsync is not enabled by default to prevent accidental data loss. It deletes files in the destination that are no longer present in the source, which can be risky if used unintentionally. To use it, you must explicitly include --delete in your command.*
 
-##### How to disable and re enable the delete parameter
+##### How to disable and enable the delete parameter
 
 Select the *Rsync parameters* from the main sidebar menu.  Select the task for which you want to disable the `--delete` parameter. And then toggle the *Remove parameters to rsync* --delete toggle. After toggle, *remember to update the task* by the toolbar icon.
 

@@ -32,9 +32,7 @@ RsyncUI adheres to the new concurrency model of Swift 6. The majority of its wor
 
 #### Other threads and RsyncUI
 
-In Swift, concurrency can be categorized as unstructured or structured. While I am not an expert in this field, I will refrain from delving into the intricacies of the distinction between the two. However, in the context of RsyncUI, structured concurrency is employed for all asynchronous functions executed on other threads than the main thread. This implies that any asynchronous execution will conclude before the calling function is fully executed. A more illustrative example is provided below:
-
-The following tasks are executed on a single isolated thread, adhering to the `actor` protocol:
+In Swift, concurrency can be categorized as unstructured or structured. While I am not an expert in this field, I will refrain from delving into the intricacies of the distinction between the two.  However, in the context of RsyncUI, all asynchronous functions are unstructured concurrency.  The following tasks are executed on a single isolated thread, adhering to the `actor` protocol:
 
 - reading operations
 - data decoding and encoding

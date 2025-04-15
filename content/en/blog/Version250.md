@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.5.0"
-date = "2025-04-05"
+date = "2025-04-15"
 tags = ["changelog","version 2.5.0"]
 categories = ["changelog"]
 +++
@@ -12,7 +12,7 @@ The development of a calendar function and scheduler is underway. The plan inclu
 
 The scheduler will maintain a single schedule at a time. Upon completion of the scheduled action, the scheduler will transition to the next scheduled action and continue tracking it. The calendar view itself does not store any schedules. Instead, it calculates scheduled dates based on the schedule table and marks them yellow. This approach aims to minimize memory usage and resources while keeping track of schedules.
 
-{{< figure src="/images/250/calendar.png" alt="" position="center" style="border-radius: 8px;" >}}
+The scheduler is not an advanced scheduling tool. Its primary function is to automate selected synchronization tasks as long as RsyncUI is in operation. It may prove useful for users who require regular data synchronization during their work.
 
-{{< figure src="/images/250/calendar2.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/250/calendar.png" alt="" position="center" style="border-radius: 8px;" >}}
 

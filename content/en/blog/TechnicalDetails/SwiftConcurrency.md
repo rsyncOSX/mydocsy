@@ -10,9 +10,10 @@ To commence, I must acknowledge that my comprehension of Swift concurrency is li
 
 The most important works: 
 
-- execution of `rsync` tasks
+- execution of `rsync` synchronize tasks
 - monitoring progress and termination of tasks
-- write operations of data to storage
+- write operations of logdata of synchronize tasks to storage
+    - caution: write operation of synchronized data is taken care of by rsync itself
 
 are executed on the main thread.
 
@@ -78,6 +79,6 @@ func somefunction() {
 	}
     ....
 }
-
-
 ```
+
+The above code snippet presents an unstructured concurrency.  The code within the `Task  { ... }` may be completed after the execution of the calling function is completed. 

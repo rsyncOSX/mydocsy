@@ -14,5 +14,8 @@ The scheduler will maintain a single schedule at a time. Upon completion of the 
 
 The scheduler is not an advanced scheduling tool. Its primary function is to automate selected synchronization tasks as long as RsyncUI is in operation. It may prove useful for users who require regular data synchronization during their work.
 
+The Norwegian and German localization has been removed from this version. Regrettably, due to my limited proficiency in German, I am unable to provide a comprehensive translation in German. From this version, RsyncUI speaks English only. 
+
+
 {{< figure src="/images/250/calendar.png" alt="" position="center" style="border-radius: 8px;" >}}
 

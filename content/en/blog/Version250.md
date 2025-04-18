@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.5.0"
-date = "2025-04-15"
+date = "2025-04-18"
 tags = ["changelog","version 2.5.0"]
 categories = ["changelog"]
 +++
@@ -16,6 +16,14 @@ The scheduler is not an advanced scheduling tool. Its primary function is to aut
 
 The Norwegian and German localization has been removed from this version. Regrettably, due to my limited proficiency in German, I am unable to provide a comprehensive translation in German. From this version, RsyncUI speaks English only. 
 
-
 {{< figure src="/images/250/calendar.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+##### Calendar app
+
+In the process of developing the calendar and schedule functionalities for RsyncUI, I have been primarily working on a separate Calendar application. Subsequently, I have copied the views and model code from this Calendar application to the RsyncUI application. RsyncUI does support incoming URL commands. When the calendar function triggers an action, it generates an URL command for estimating and executing the actual profile. For instance, the URL for the default profile is as follows: `rsyncuiapp://loadprofileandestimate?profile=default`. The Calendar application will actually open RsyncUI by executing the command `NSWorkspace.shared.open(URL(string: url.absoluteString)!)` if the URL string is a URL for RsyncUI.
+
+Consequently, the Calendar application *may* also serve as *a standalone* schedule application for RsyncUI. 
+
+{{< figure src="/images/250/calendarapp.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 

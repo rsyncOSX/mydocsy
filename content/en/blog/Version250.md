@@ -22,7 +22,7 @@ The Norwegian and German localization has been removed from this version. Regret
 
 In the process of developing the calendar and schedule functionalities for RsyncUI, I have been primarily working on a separate Calendar application. Subsequently, I have copied the views and model code from this Calendar application to the RsyncUI application. RsyncUI does support incoming URL commands. When the calendar function triggers an action, it generates an URL command for estimating and executing the actual profile. For instance, the URL for the default profile is as follows: `rsyncuiapp://loadprofileandestimate?profile=default`. The Calendar application will actually open RsyncUI by executing the command `NSWorkspace.shared.open(URL(string: url.absoluteString)!)` if the URL string is a URL for RsyncUI.
 
-Consequently, the Calendar application *may* also serve as *a standalone* schedule application for RsyncUI. 
+Consequently, the Calendar application *may* also serve as *a standalone* schedule application for RsyncUI. The Calendar application will be released as a pilot, demonstrating the scheduling of synchronization of tasks. The primary focus is the user interface (GUI) aspect. 
 
 {{< figure src="/images/250/calendarapp.png" alt="" position="center" style="border-radius: 8px;" >}}
 

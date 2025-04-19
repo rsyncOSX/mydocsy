@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 2.5.0"
-date = "2025-04-18"
+date = "2025-04-19"
 tags = ["changelog","version 2.5.0"]
 categories = ["changelog"]
 +++
@@ -25,5 +25,11 @@ In the process of developing the calendar and schedule functionalities for Rsync
 Consequently, the Calendar application *may* also serve as *a standalone* schedule application for RsyncUI. The Calendar application will be released as a pilot, demonstrating the scheduling of synchronization of tasks. The primary focus is the user interface (GUI) aspect. 
 
 {{< figure src="/images/250/calendarapp.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+##### Try the Calendar App
+
+You may consider try the Calendar application. It is compatible with the most recent version of RsyncUI. The Calendar application will initiate an estimate and synchronize tasks by URL. The Calendar application is signed and notarized. Schedules to be deleted can be selected and the backspace button pressed. After a task is executed, it will automatically be removed from the subsequent task list.
+
+If you try out the [Calendar app](https://github.com/rsyncOSX/CalendarRsyncUI), please create an issue or notify me by email if you have any comments. 
 
 
